@@ -1,0 +1,27 @@
+---
+layout: post
+title: Reviving dead XBee
+excerpt: When everything else fails
+---
+
+Few days ago I got two XBee Series 1 modules (for my M.Tech project) from [Rhydolabz](http://www.rhydolabz.com/) which did not work and appeared dead. Nevertheless I found a way to revive the dead; it's dirt, cheap, dangerous, works on Linux and should only be used if everything else fails.
+
+This requires an Arduino (Diecimila) board, a (sparkfun) XBee shield, the XBee module, a USB cable, X-CTU (Digi's XBee module configuring tool) and Wine (to run X-CTU on Linux). X-CTU is available at Digi's website and can be install using wine on Linux. The idea is to connect the XBee serially over USB and try to reflash the XBee firmware with default settings. X-CTU communicated with the XBee over a virtual COM device in Wine, softlinked to the appropriate ttyUSBxxx (Arduino) device in the _~/.wine/dosdevices_: `ln -s /dev/ttyUSB0 com1`.
+
+We can also explicitly configure wine to use this com device by editing the `system.reg` (using either of the config blocks):
+
+<pre class="prettyprint linenums">
+[Hardware\\Devicemap\\Serialcomm] 1231984861
+"Serial0"="COM1"
+"Serial1"="COM2"
+
+[HKEY_LOCAL_MACHINEhardwaredevicemapserialcomm] 1240428288
+"COM1"="COM1"
+"COM2"="COM2"
+</pre>
+
+Next, **remove** the ATmega microcontroller from the Arduino board (this is important!). We do this so that the X-CTU can talk directly to the XBee via the FTDI chip whose RX/TX are connected directly to the XBee's DIN/DOUT in absence of the microcontroller. The _Sparkfun XBee_ shield has a diode at DOUT pin which reduce the voltage (keeps TX pin's voltage within 3.3V), so this method may not work if the shield is used as such. To fix that, we connect the VCC (3.3V!) and GND pins, and the DIN and DOUT of the XBee directly to the TX and RX pins (potential risk of burning the XBee here, but atleast it works) on the Arduino board respectively as shown in a diagram below (from bildr.org):
+
+<p align="center"><img align="center" src="/images/dead-xbee.png"></p>
+
+Next, we connect the Arduino board and start X-CTU. In that, identify the COM port or add custom COM ports using the User Com Ports tab and select it. On the PC Settings tab, select "No baud change" in Modem Flash Update; select baud rate of 38400, flow rate none, data bits 8, parity none, stop bits one. And on the Modem Configuration page, select appropriate modem (ex: XB24), function set (ex: XBEE 802.15.4), Version (ex: 10EC). Select _Always Update Firmware_ and click on `Write`. This will re-flash the latest firmware on the XBee and hopefully revive the zombie. If it asks for a COM Test, follow the instruction, connect the RST (5th) pin of the XBee to the GND (10th) pin of the XBee to reset it. After this step, XCTU will try to reflash the firmware using the given parameters and hopefully revive the dead XBee in default configuration. After the flash the default baud rate will be 9600 and the XBee can be used as a normal point-to-point serial modem for wireless communication.

@@ -1,0 +1,16 @@
+auto: false
+server: false
+baseurl:  /
+destination: ./_site
+
+exclude: ['README.markdown']
+
+future: true
+lsi: false
+markdown: rdiscount
+pygments: true
+permalink: /posts/:title/
+paginate: 5
+
+rdiscount:
+  extensions: [smart]

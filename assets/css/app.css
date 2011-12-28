@@ -1,0 +1,95 @@
+body {
+  padding-top: 40px;
+  font-size: 14px;
+  background-color: #fff;/*#326a8a;*/
+  color: #333333;
+  background-attachment: fixed;
+  background-position: 0px 40px;
+  background-repeat: no-repeat;
+}
+
+span {
+  padding-top: 40px;
+}
+
+code {
+  background: none repeat scroll 0 0 #DDE8F1;
+  border: 1px dashed #A9C0D2;
+  border-radius: 5px 5px 5px 5px;
+  font-size: 0.9em;
+  line-height: 1.4em;
+  padding: 1px 3px !important;
+}
+
+pre {
+  font-size: 14px;
+}
+
+footer {
+  padding-top: 12px;
+  margin-bottom: -20px;
+}
+
+a {
+  color: #246ab0;
+}
+
+p {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+p > img
+{
+  max-width: 820px;
+}
+
+.label.notice {
+  background-color: #328FCC;
+}
+
+.content > footer p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.content li {
+  color: #333;
+  font-size: 15px;
+}
+
+.container {
+  width: 854px;
+}
+
+.content {
+  border: 2px dashed #ccc;
+  background-color: #fff;
+  margin: 20px 0px;
+  padding: 15px;
+}
+
+/* Topbar special styles */
+.topbar .logo {
+  display: block;
+  float: left;
+  font-weight: 200;
+  line-height: 1;
+  padding: 8px 5px 0px;
+}
+
+.topbar a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.topbar ul .active > a {
+  color: #ff771f;
+}
+
+/* Give a quick and non-cross-browser friendly divider */
+.content .span4 {
+  margin-left: 0;
+  padding-left: 19px;
+  border-left: 1px solid #eee;
+}

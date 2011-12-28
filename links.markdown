@@ -1,0 +1,100 @@
+---
+layout: page
+title: Links
+tagline: Sweets spots on the Internet
+permalink: /links/
+---
+
+{% capture hackers %}
+
+[Hacker News](http://news.ycombinator.com)
+
+[Slashdot](http://slashdot.org)
+
+[Hacker Street India](http://hackerstreet.in)
+
+[FLOSS Weekly](http://twit.tv/floss)
+
+[GigaOM](http://gigaom.com/)
+
+[Wired](http://www.wired.com/)
+
+[Google News](http://news.google.com)
+
+##Hackers
+
+[pk](http://people.videolan.org/~pk/)
+
+[j-b](http://www.jbkempf.com/blog/)
+
+[Choquette](http://twitter.com/beauzeh)
+
+[Etix](http://l0cal.com)
+
+
+[DarkShikari](http://x264dev.multimedia.cx/)
+
+[rms](http://stallman.org/)
+
+{% endcapture %}
+
+{% capture people %}
+
+##Ol' Timers
+
+[Abhishek "ShowStopper"][show]
+
+[Big "Bro"][bro]
+
+[Saket "Tachyon"][tac]
+
+[Balamurugan "Bala"][bala]
+
+[Abhinav Kushwaha][abhinav]
+
+[Kushagra Gour][kushagra]
+
+[Vivek "Vicky"][vivek]
+
+[show]: http://theshowstopper.in
+[bro]: http://avinashyadav.in
+[tac]: http://saketsaurabh.in
+[abhinav]: http://akush.in
+[kushagra]: http://www.kushagragour.in
+[vivek]: http://vyadav.in
+[bala]: http://monsieurbala.in
+
+##Programming
+
+[ACM-ICPC](http://acm.uva.es/)
+
+[UVa OL](http://uva.onlinejudge.org/)
+
+[TopCoder](http://www.topcoder.com)
+
+[SPOJ](http://www.spoj.pl/)
+
+[SGU](http://acm.sgu.ru/)
+
+[Timus](http://acm.timus.ru/)
+
+[CodeChef](http://codechef.com)
+
+[CodeForces](http://projecteuler.net/)
+
+[Petr's blog](http://petr-mitrichev.blogspot.com/)
+
+[Project Euler](http://projecteuler.net/)
+
+[Come on Code On](http://comeoncodeon.wordpress.com/)
+
+{% endcapture%}
+
+<div class="row">
+  <div class="span7 columns">
+    {{ hackers | markdownify }}
+  </div>
+  <div class="span7 columns">
+    {{ people | markdownify }}
+  </div>
+</div>

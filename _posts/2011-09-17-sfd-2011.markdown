@@ -1,0 +1,19 @@
+---
+layout: post
+title: SFD 2011
+excerpt: Software Freedom Day 2011
+---
+
+<p align="center"><img align="middle" src="/images/sfd-2011.jpg"></p>
+
+[**SFD**](http://softwarefreedomday.org) '11 @ IT-BHU went well, explore some photos [here](https://picasaweb.google.com/rohityadav89/SoftwareFreedomDay2011). Software Freedom Day (SFD) is an annual worldwide celebration of Free Software. SFD is a public education effort with the aim of increasing awareness of Free Software and its virtues, and encouraging its use.
+
+Many thanks to *Tabrez* and all the students who attended the event. Hope they will continue to use Linux and open source applications for the rest of their lives. A gist of what went, for your reference:
+
+* Brief history of UNIX, FSF/GNU and Linux, why Linux?
+* Distribution of Ubuntu CDs, Goodies
+* Students tried to partition/Install/Try-Ubuntu
+* People inclined towards Windows, tried Ubuntu on VirtualBox
+* Tour of Gnome and some basic [commands](http://linuxcommand.org/learning_the_shell.php).
+* How to [install software](https://help.ubuntu.com/community/AptGet/Howto) on Debian/Ubuntu based Linux distros.
+* Where to get started with GUI based Linux application development using C/[Gtk+](http://www.zetcode.com/tutorials/gtktutorial/ ) or C++/[Qt4](http://www.zetcode.com/tutorials/qt4tutorial/).

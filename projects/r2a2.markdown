@@ -1,0 +1,7 @@
+---
+layout: project
+title: R2A2
+permalink: /r2a2/
+---
+
+Remotely controlled search and rescue mobile robot powered by IOIO, Android phone, Rover5 platform and bunch of sensors.
