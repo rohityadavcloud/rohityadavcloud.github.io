@@ -48,8 +48,8 @@ title: Projects
       <td>Java, C, Android, IOIO, Rover5</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/speechmobot-small.png"> <a href="/projects/speechmobot">SpeechMoBot</a></td>
-      <td><span class="label notice">hardware</span> Speech controlled Wireless Mobile Robot</td>
+      <td><img src="/images/projects/mtp-small.png"> <a href="/projects/mtp">M.Tech Project</a></td>
+      <td><span class="label notice">hardware</span> Speech controlled wireless mobile robot</td>
       <td>C, Wiring/Processing, Arduino, XBee, EasyVR</td>
     </tr>
     <tr>
