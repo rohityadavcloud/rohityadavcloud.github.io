@@ -17,11 +17,11 @@ Experimental physicist [Dr. Archana Sharma][archana] helped all of us, the *desi
 
 <p align="center"><img align="middle" src="/images/cern/indian-interns.jpg"></p>
 
-My mentor, Dr. Ben Segal arranged a tour of CERN Computer Centre for us (thanks a lot sir for making that possible!). Below is a photographic panaroma of the server farms;
+My mentor, Dr. Ben Segal arranged a tour of CERN Computer Centre for us (thanks a lot sir for making that possible!). Below is a photographic panaroma of the server farm;
 
 <p align="center"><img align="center" src="/images/cern/servers.jpg"></p>
 
-I was so thrilled to stand next to the NEXT computer that ran the world's first web server written and managed by Sir Tim Berners Lee himself.
+I was so thrilled to stand next to the _NEXT_ computer that ran the world's first web server, which was written and managed by Sir Tim Berners Lee himself.
 
 <p align="center"><img align="center" src="/images/cern/www-server.jpg"></p>
 
