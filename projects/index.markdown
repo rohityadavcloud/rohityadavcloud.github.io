@@ -8,7 +8,7 @@ title: Projects
 </div>
 
 <div class="row">
-  <div class="span7">
+  <div class="span5">
     <h2>Open Source <small>Contributions to FOSS</small></h2>
     <dl>
       <dt><img src="/images/projects/vlmc-small.png"> <a href="http://trac.videolan.org/vlmc">VLMC</a>/<a href="https://github.com/rohityadav/libishare">libishare</a></dt>
@@ -20,7 +20,7 @@ title: Projects
     </dl>
   </div>
 
-  <div class="span7">
+  <div class="span5">
     <h2>Laboratory <small>and my experiments</small></h2>
     <h3>HackLab <small><a href="https://github.com/rohityadav/hacklab">Coding, experiments and labwork</a></small></h3>
     <h3>HackTool <small><a href="https://github.com/rohityadav/hacktools">My homebrew hacking tools</a></small></h3>
@@ -28,18 +28,18 @@ title: Projects
   </div>
 </div>
 
-<table id="fancytable" class="zebra-striped bordered-table">
+<table class="table table-striped table-bordered">
   <thead>
     <tr>
-      <th style="min-width: 150px;" class="green header headerSortDown">Project</th>
-      <th class="orange header">Description</th>
-      <th class="blue header">Specs</th>
+      <th style="min-width: 150px;">Project</th>
+      <th>Description</th>
+      <th>Specs</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><img src="/images/projects/tantra-small.png"> <a href="/projects/tantra">Tantra</a></td>
-      <td><span class="label important">system</span> Monolithic x86 unix based kernel development</td>
+      <td><span class="label label-important">system</span> Monolithic x86 unix based kernel development</td>
       <td>C, x86 ASM, Qemu, VirtualBox</td>
     </tr>
     <tr>
@@ -54,27 +54,27 @@ title: Projects
     </tr>
     <tr>
       <td><img src="/images/projects/recipes-small.png"> <a href="/projects/recipes">Recipes</a></td>
-      <td><span class="label success">webapp</span> Webapp to document and share family recipes</td>
-      <td>HTML5, AJAX/Javascript, CouchDB</td>
+      <td><span class="label label-success">webapp</span> Webapp to document and share family recipes</td>
+      <td>Clojure, HTML5, AJAX/Javascript</td>
     </tr>
     <tr>
       <td><img src="/images/projects/cmakeqt-small.png"> <a href="/projects/cmakeqt">CMakeQt</a></td>
-      <td><span class="label warning">desktop</span> CMake based build system template for Qt/C++ projects</td>
+      <td><span class="label label-warning">desktop</span> CMake based build system template for Qt/C++ projects</td>
       <td>C++, Qt</td>
     </tr>
     <tr>
       <td><img src="/images/projects/quizapp-small.png"> <a href="/projects/quizapp">QuizApp</a></td>
-      <td><span class="label success">webapp</span> Webapp to host and conduct quizzes</td>
+      <td><span class="label label-success">webapp</span> Webapp to host and conduct quizzes</td>
       <td>Ruby, Rails</td>
     </tr>
     <tr>
       <td><img src="/images/projects/vmcontroller-small.png"> <a href="/projects/vmcontroller">VMController</a></td>
-      <td><span class="label important">system</span> <a href="http://code.google.com/p/vmcontroller"></a> General purpose virtual machine controller, based on works of David G. Quintas (BOINCVM); this was also my B.Tech project</td>
+      <td><span class="label label-important">system</span> <a href="http://code.google.com/p/vmcontroller"></a> General purpose virtual machine controller, based on works of David G. Quintas (BOINCVM); this was also my B.Tech project</td>
       <td>Python, Twisted, Inject, JSON, STOMP, MorbidMQ, UUID, LibVirt, VirtualBox</td>
     </tr>
     <tr>
       <td><img src="/images/projects/graffiti-small.png"> <a href="/projects/graffiti">Graffiti</a></td>
-      <td><span class="label warning">desktop</span> Interactive LAN whiteboard</td>
+      <td><span class="label label-warning">desktop</span> Interactive LAN whiteboard</td>
       <td>C++, Qt</td>
     </tr>
     <tr>
@@ -84,12 +84,12 @@ title: Projects
     </tr>
     <tr>
       <td><img src="/images/projects/scuttlebutt-small.png"> <a href="/projects/scuttlebutt">ScuttleButt</a></td>
-      <td><span class="label warning">desktop</span> Adobe AIR based rich desktop instant messenger for LAN</td>
+      <td><span class="label label-warning">desktop</span> Adobe AIR based rich desktop instant messenger for LAN</td>
       <td>ActionScript, Flash, AIR</td>
     </tr>
     <tr>
       <td><img src="/images/projects/gtkmoo-small.png"> <a href="/projects/gtkmoo">GtkMoo</a></td>
-      <td><span class="label warning">desktop</span> The Game of Bulls n Cows in C/Gtk+</td>
+      <td><span class="label label-warning">desktop</span> The Game of Bulls n Cows in C/Gtk+</td>
       <td>C, Gtk+</td>
     </tr>
     <tr>

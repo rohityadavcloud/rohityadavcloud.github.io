@@ -8,14 +8,14 @@ permalink: /docs/
 {% capture apache %}{% include apache.markdown %}{% endcapture %}
 {% capture bind9 %}{% include bind9.markdown %}{% endcapture %}
 
-<ul data-tabs="tabs" class="tabs">
-  <li><a href="{{page.url}}" data-original-title="Docs describing 'How-To' instructions" data-placement="above" rel="twipsy"><h2>Docs »</h2></a></li>
-  <li class="active"><a href="#cmds">General</a></li>
+<h2><a href="{{page.url}}">Docs »</a></h2>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#cmds" data-toggle="tab">General</a></li>
   <li data-dropdown="dropdown" class="dropdown">
-    <a class="dropdown-toggle" href="#">Services</a>
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
     <ul class="dropdown-menu">
-      <li><a href="#apache">Apache</a></li>
-      <li><a href="#bind9">Bind9</a></li>
+      <li><a href="#apache" data-toggle="tab">Apache</a></li>
+      <li><a href="#bind9" data-toggle="tab">Bind9</a></li>
     </ul>
   </li>
 </ul>
@@ -31,3 +31,9 @@ permalink: /docs/
     {{ bind9 | markdownify }}
   </div>
 </div>
+
+<script>
+  $(function () {
+    $('.tabs a:last').tab('show')
+  })
+</script>

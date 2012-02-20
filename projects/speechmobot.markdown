@@ -1,7 +1,7 @@
 ---
 layout: project
 title: SpeechMoBot
-permalink: /speechmobot/
+permalink: /mtp/
 ---
 
 Speech Controlled Wireless Mobile Robot
