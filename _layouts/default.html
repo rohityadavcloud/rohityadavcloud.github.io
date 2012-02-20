@@ -5,21 +5,100 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title>{{ page.title }} - Rohit Yadav</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Writings, essays, blog posts, talks and projects by Rohit Yadav.">
   <meta name="keywords" content="rohit,yadav,rohityadav,india,bhu,gsoc,cern,foss,opensource,hack,hacker,kernel,c,c++,python,ruby,erlang,lisp,cmake,vlmc,tantra,vmcontroller,virtualmachine,vm,xen" />
   <meta name="author" content="Rohit Yadav">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <link href="/favicon.ico" rel="shortcut icon" >
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 20px;
+    }
+  </style>
+  <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
   <link href="/assets/js/google-code-prettify/sunburst.css" rel="stylesheet">
   <link href="/assets/css/app.css" rel="stylesheet">
+</head>
+<body>
 
-  <script src="/assets/js/jquery.js" type="text/javascript"></script>
-  <script src="/assets/js/bootstrap-dropdown.js" type="text/javascript"></script>
-  <script src="/assets/js/bootstrap-tabs.js" type="text/javascript"></script>
-  <script src="/assets/js/bootstrap-twipsy.js" type="text/javascript"></script>
+  <div class="navbar navbar-fixed-top" style="z-index: 900;">
+    <div class="navbar-inner">
+      <div class="container">
+
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+
+        <a class="brand logo" href="/"><img src="/assets/img/brand.png"></a>
+
+          <div class="nav-collapse">
+            <ul class="nav">
+
+            <li {% if page.title == "Logs" %}class="active"{% endif %}><a href="/logs"><strong>Logs</strong></a></li>
+
+            <li class= "dropdown{% if page.title == "Projects" %} active{% endif %}">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Projects <b class="caret"></b></strong></a>
+              <ul class="dropdown-menu">
+                <li><a href="/projects">All Projects</a></li>
+                <li class="divider"></li>
+                <li>&nbsp; Selected projects</li>
+                <li><a href="/projects/tantra">Tantra <span class="label label-important">system</span></a></li>
+                <li><a href="/projects/r2a2">R2A2 <span class="label notice">hardware</span></a></li>
+                <li><a href="/projects/recipes">Recipes <span class="label label-success">webapp</span></a></li>
+                <li><a href="/projects/cmakeqt">CMakeQt <span class="label label-warning">desktop</span></a></li>
+                <li><a href="/projects/vmcontroller">VMController <span class="label label-important">system</span></a></li>
+                <li><a href="/projects/graffiti">Graffiti <span class="label label-warning">desktop</span></a></li>
+                <li><a href="/projects/cade9">Cade9 <span class="label notice">hardware</span></a></li>
+              </ul>
+            </li>
+
+            <li {% if page.title == "Docs" %}class="active"{% endif %}><a href="/docs"><strong>Docs</strong></a></li>
+            <li {% if page.title == "Music" %}class="active"{% endif %}><a href="/music"><strong>Music</strong></a></li>
+            <li {% if page.title == "Links" %}class="active"{% endif %}><a href="/links"><strong>Links</strong></a></li>
+            <li {% if page.title == "About" %}class="active"{% endif %}><a href="/about"><strong>About</strong></a></li>
+            </ul>
+
+            <p class="nav pull-right">
+              <a class="logo" href="http://github.com/rohityadav" title="Checkout my projects at Github"><img src="/assets/img/git.png"></a>
+              <a class="logo" href="http://www.linkedin.com/in/rohityadav89" title="LinkedIn Profile"><img src="/assets/img/linkedin.png"></a>
+              <a class="logo" href="http://twitter.com/__rohityadav__" title="Tweets"><img src="/assets/img/twitter.png"></a>
+              <a class="logo" href="/rss" title="Blog Feed"><img src="/assets/img/rss.png"></a>
+            </p>
+
+          </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="container">
+    <div class="row">
+      <div class="span10 offset1" style="border: 2px dashed #ccc; border-radius: 8px 8px 8px 8px; background-color: #fff; padding: 10px 15px;">
+        {{ content }}
+
+        <hr/>
+        <p style="font-size: 12px; text-align: center;">
+        &copy; <a rel="author" href="https://plus.google.com/105500838080334630026?rel=author">Rohit Yadav</a> 2009-2012 | Report <a href="https://github.com/rohityadav/rohityadav.github.com/issues/new">bug</a> or fork <a href="https://github.com/rohityadav/rohityadav.github.com">source</a> | Last updated on {{ site.time | date_to_string }}
+          <br>
+          <a href="https://www.ohloh.net/accounts/58276?ref=Tiny"><img width="80" height="15" alt="Ohloh profile for Rohit Yadav" src="/assets/img/ohloh.gif"/></a>
+          <a href="http://groups.google.com/group/foss-itbhu"><img height="15" src="/assets/img/foss-itbhu.png" alt="FOSS ITBHU"></a>
+          <a href='http://www.catb.org/hacker-emblem/'><img src='/assets/img/hacker.png' alt='hacker emblem' /></a>
+          <a href="http://endsoftpatents.org/innovating-without-patents"><img style="border-width:0" src="/assets/img/patent-free.png"></a>
+          <br>
+        </p>
+      </div>
+      <div class="span1 offset1"></div>
+    </div>
+  </div> <!-- /container -->
+
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
   <script src="/assets/js/jquery.tablesorter.min.js" type="text/javascript"></script>
+  <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
   <script src="/assets/js/google-code-prettify/prettify.js"></script>
   <script>$(function () { prettyPrint() })</script>
   <script src="/assets/js/modernizr.js" type="text/javascript"></script>
@@ -36,64 +115,6 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
-</head>
-<body>
-  <div class="topbar" data-dropdown="dropdown" style="z-index: 900;">
-    <div class="topbar-inner">
-      <div class="container">
-        <ul class="nav">
-          <li><a class="logo" rel="twipsy" data-placement="below" data-original-title="Writings, essays and blog posts" href="/"><img src="/assets/img/brand.png"></a></li>
-          <li {% if page.title == "Archive" %}class="active"{% endif %}><a rel="twipsy" data-placement="below" data-original-title="Archive of writings, essays and blog posts" href="/posts"><strong>Archive</strong></a></li>
-          <li class= "dropdown{% if page.title == "Projects" %} active{% endif %}"><a rel="twipsy" data-placement="right" data-original-title="My work, projects, hacks, experiments and contributions to FOSS" href="/projects" class="dropdown-toggle"><strong>Karma</strong></a>
-            <ul class="dropdown-menu">
-              <li><a href="/projects">All Projects</a></li>
-              <li class="divider"></li>
-              <li>&nbsp; Selected projects</li>
-              <li><a href="/projects/tantra">Tantra <span class="label important">system</span></a></li>
-              <li><a href="/projects/r2a2">R2A2 <span class="label notice">hardware</span></a></li>
-              <li><a href="/projects/recipes">Recipes <span class="label success">webapp</span></a></li>
-              <li><a href="/projects/cmakeqt">CMakeQt <span class="label warning">desktop</span></a></li>
-              <li><a href="/projects/vmcontroller">VMController <span class="label important">system</span></a></li>
-              <li><a href="/projects/graffiti">Graffiti <span class="label warning">desktop</span></a></li>
-              <li><a href="/projects/cade9">Cade9 <span class="label notice">hardware</span></a></li>
-            </ul>
-          </li>
-          <li class= "dropdown"><a rel="twipsy" data-placement="right" data-original-title="Links, Docs, Music, etc. etc." href="#" class="dropdown-toggle"><strong>More</strong></a>
-            <ul class="dropdown-menu">
-              <li {% if page.title == "Docs" %}class="active"{% endif %}><a rel="twipsy" data-placement="right" data-original-title="Docs describing different 'how-to' stuff" href="/docs"><strong>Docs</strong></a></li>
-              <li {% if page.title == "Music" %}class="active"{% endif %}><a rel="twipsy" data-placement="right" data-original-title="Experiments with music instruments" href="/music"><strong>Music</strong></a></li>
-              <li {% if page.title == "Links" %}class="active"{% endif %}><a rel="twipsy" data-placement="right" data-original-title="Sweet spots on the Internet" href="/links"><strong>Links</strong></a></li>
-            </ul>
-          </li>
-          <li {% if page.title == "About" %}class="active"{% endif %}><a rel="twipsy" data-placement="below" data-original-title="About yours truly" href="/about"><strong>About</strong></a></li>
-        </ul>
-        <p class="pull-right">
-          <a class="logo" rel="twipsy" href="http://github.com/rohityadav" data-original-title="Checkout my projects at Github"><img src="/assets/img/git.png"></a>
-          <a class="logo" rel="twipsy" href="http://www.linkedin.com/in/rohityadav89" data-original-title="LinkedIn Profile"><img src="/assets/img/linkedin.png"></a>
-          <a class="logo" rel="twipsy" href="http://twitter.com/__rohityadav__" data-original-title="Tweets"><img src="/assets/img/twitter.png"></a>
-          <a class="logo" rel="twipsy" href="/rss" data-original-title="Blog Feed"><img src="/assets/img/rss.png"></a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="content" style="border-radius: 8px 8px 8px 8px;">
-      <div class="row">
-        <div class="span14 columns">
-        {{ content }}
-        </div>
-      </div>
-      <footer>
-        <p>&copy; <a rel="author" href="https://plus.google.com/105500838080334630026?rel=author">+Rohit Yadav</a> 2009-2011 | Report <a href="https://github.com/rohityadav/rohityadav.github.com/issues/new">bug</a> or fork <a href="https://github.com/rohityadav/rohityadav.github.com">source</a> | Last updated on {{ site.time | date_to_string }}
-          <br>
-          <a href="https://www.ohloh.net/accounts/58276?ref=Tiny"><img width="80" height="15" alt="Ohloh profile for Rohit Yadav" src="/assets/img/ohloh.gif"/></a>
-          <a href="http://groups.google.com/group/foss-itbhu"><img height="15" src="/assets/img/foss-itbhu.png" alt="FOSS ITBHU"></a>
-          <a href='http://www.catb.org/hacker-emblem/'><img src='/assets/img/hacker.png' alt='hacker emblem' /></a>
-          <a href="http://endsoftpatents.org/innovating-without-patents"><img style="border-width:0" src="/assets/img/patent-free.png"></a>
-          <br>
-        </p>
-      </footer>
-    </div>
-  </div> <!-- /container -->
+
 </body>
 </html>

@@ -9,7 +9,7 @@ future: true
 lsi: false
 markdown: rdiscount
 pygments: true
-permalink: /posts/:title/
+permalink: /logs/:title/
 paginate: 5
 
 rdiscount:

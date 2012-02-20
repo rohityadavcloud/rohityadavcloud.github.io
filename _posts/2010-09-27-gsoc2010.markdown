@@ -13,3 +13,5 @@ Apart from the YouTube integration features, I implemented support for network p
 The whole experience was awesome, many thanks to *etix* (my official mentor), *choquette* (my unofficial and most helpful mentor), *j-b* (gsoc admin) and members of the VLMC community.
 
 **UPDATE**: My code now lives in VLMC's official [git repository](http://git.videolan.org/?p=vlmc.git;a=summary) and I'm given commit access *yay*! Checkout my [commits](http://git.videolan.org/?p=vlmc.git&a=search&h=HEAD&st=author&s=Rohit+Yadav); this [particular vout-detached-widget bug on Mac OSX](http://git.videolan.org/?p=vlmc.git;a=commit;h=e9850033b89c7ef5a24a9690d47584729b416eed) was squashed during a sleepless 48-hour marathon.
+
+<br/><br/><br/>

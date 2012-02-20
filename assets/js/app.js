@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('#topbar').dropdown()
-  $("a[rel=twipsy]").twipsy({ placement: "below" })
+  $('.dropdown-toggle').dropdown()
+  $("a[rel=tooltip]").tooltip({ placement: "below" }).tooltip('show')
   $("#fancytable").tablesorter()
 });

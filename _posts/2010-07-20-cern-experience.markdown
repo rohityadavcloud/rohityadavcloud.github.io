@@ -6,6 +6,7 @@ excerpt: Eight week internship at CERN
 
 <p align="center"><img align="center" src="/images/cern/science.jpg"></p>
 During the last 8 weeks I worked as a volunteer summer student at [CERN](http://en.wikipedia.org/wiki/CERN) with my awesome mentor/supervisor [Dr. Ben Segal][ben] and the [CernVM][] team. I continued work of past CERN summer students on [BOINCVM][boincvm] (volunteer cloud computing platform for scientific research based on BOINC infrastructure) by improving code, fixing bugs and testing on Linux, Mac and Windows, using the [CernVM][] virtual software appliance. I also improved server side configuration and administration of a test [BOINCVM][boincvm] project.
+Read [report](/files/docs/internship-cern-report-2010.pdf); [Attestation](/files/docs/cern-attestation.pdf).
 
 <p align="center"><img align="center" src="/images/cern/office.jpg"></p>
 
@@ -27,11 +28,10 @@ I was so thrilled to stand next to the _NEXT_ computer that ran the world's firs
 
 Our group photo just outside the CERN Computer Centre:
 
-<p align="center"> <img align="center" src="/images/cern/computing-centre.jpg"></p>
-
-Bonus video:
-
-<iframe width="820" height="540" src="http://www.youtube.com/embed/LUirGfW__AE" frameborder="0" allowfullscreen></iframe>
+<p align="center"> <img align="center" src="/images/cern/computing-centre.jpg">
+<br/>Bonus video:
+<br/><iframe width="820" height="540" src="http://www.youtube.com/embed/LUirGfW__AE" frameborder="0" allowfullscreen></iframe>
+</p>
 
 [boincvm]: http://code.google.com/p/boincvm
 [CernVM]: http://cernvm.cern.ch/cernvm/

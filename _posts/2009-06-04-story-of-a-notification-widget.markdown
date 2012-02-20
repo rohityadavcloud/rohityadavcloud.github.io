@@ -30,6 +30,6 @@ I implemented a CopyLeft, a concept by RMS; so when you do a right click on the 
 
 After some discussion on videolan's irc channel, I was told that the widget may be used in place of the taskbar icon menu. So, may be in the future, when you right-click the VLC taskbar icon you'll see this floating widget. I cleaned a lot of code before re-sending another patch to the VLC-devel list; it was never entertained (or even considered to be commited) but I learned a lot from the experience. The patches can be searched and downloaded from VideoLAN's mailing list archives.
 
-Meanwhile, I also made a *skins2* theme for VLC, "Dark Pepper", based on the same theme I designed for the MiniMode Widget. Download it from [here](http://www1.videolan.org/vlc/download-skins2-go.php?url=Dark%20Pepper.vlt). A screenshot of the same is below:
+Meanwhile, I also made a *skins2* theme for VLC, "Dark Pepper", based on the same theme I designed for the MiniMode Widget. Download it from [here](http://www1.videolan.org/vlc/download-skins2-go.php?url=Dark%20Pepper.vlt) or [here](/files/Dark-Pepper.vlt). A screenshot of the same is below:
 
 <p style="text-align: center;"><img src="/images/videolan/dark-pepper.png" ><br>Dark Pepper Skins2 theme for VLC</p>
