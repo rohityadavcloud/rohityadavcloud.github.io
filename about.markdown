@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-tagline: yours truly ;)
+tagline: yours truly
 permalink: /about/
 ---
 

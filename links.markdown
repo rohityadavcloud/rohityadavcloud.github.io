@@ -48,8 +48,6 @@ permalink: /links/
 
 [Saket "Tachyon"][tac]
 
-[Balamurugan "Bala"][bala]
-
 [Abhinav Kushwaha][abhinav]
 
 [Kushagra Gour][kushagra]
@@ -91,10 +89,10 @@ permalink: /links/
 {% endcapture%}
 
 <div class="row">
-  <div class="span7 columns">
+  <div class="span5">
     {{ hackers | markdownify }}
   </div>
-  <div class="span7 columns">
+  <div class="span5">
     {{ people | markdownify }}
   </div>
 </div>
