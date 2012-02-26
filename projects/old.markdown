@@ -49,7 +49,7 @@ permalink: /old/
     </tr>
     <tr>
       <td><a href="/files/old/hoadis.zip">HOADIS</a></td>
-      <td><span class="label">old</span> My undergraduate 2nd year minor semester project on information system. Report <a href="/files/docs/swlab-report-hoadis.pdf">here</a></td>
+      <td><span class="label">old</span> My undergraduate 2nd year minor semester project on information system (<a href="/files/docs/swlab-report-hoadis.pdf">report</a>)</td>
       <td>Java, JSP</td>
     </tr>
     <tr>
