@@ -14,7 +14,7 @@ title: Projects
       <dt><img src="/images/projects/vlmc-small.png"> <a href="http://trac.videolan.org/vlmc">VLMC</a>/<a href="https://github.com/rohityadav/libishare">libishare</a></dt>
       <dd>Non-linear video editor based on libVLC.</dd>
       <dt><img src="/images/projects/boincvm.png"> <a href="http://code.google.com/p/boincvm/">BOINC-VM</a></dt>
-      <dd>BOINC-VM Volunteer Cloud Computing Platform.</dd>
+      <dd>BOINC-VM Volunteer Cloud Computing Platform (<a href="/files/docs/internship-cern-report-2010.pdf">report</a>)</dd>
       <dt><img src="/images/projects/haiku.png"> <a href="http://dev.haiku-os.org/ticket/6750">Haiku OS</a></dt>
       <dd>Security bugfixes; fixed broken chmod in <a href="http://cgit.haiku-os.org/haiku/commit/?id=hrev39379">ext2</a> and <a href="http://cgit.haiku-os.org/haiku/commit/?id=hrev39378">bfs</a>.</dd>
     </dl>
@@ -45,7 +45,7 @@ title: Projects
     </tr>
     <tr>
       <td><img src="/images/projects/cmakeqt-small.png"> <a href="https://github.com/rohityadav/cmakeqt">CMakeQt</a></td>
-      <td><span class="label label-warning">desktop</span> CMake based build system template for Qt/C++ projects which is my most watched project on Github and used by many projects</td>
+      <td><span class="label label-warning">desktop</span> CMake based build system template for Qt/C++ projects which is my most watched project on Github and used by many projects (<a href="/files/docs/cmakeqt.pdf">report</a>)</td>
       <td>CMake, NSIS, Qt</td>
     </tr>
     <tr>
@@ -65,7 +65,7 @@ title: Projects
     </tr>
     <tr>
       <td><img src="/images/projects/vmcontroller-small.png"> <a href="http://code.google.com/p/vmcontroller/">VMController</a></td>
-      <td><span class="label label-important">system</span> <a href="http://code.google.com/p/vmcontroller"></a> My B.Tech thesis project on general purpose virtual machine controller, based on works of D. G. Quintas (<a href="/logs/twisted-loop/">blog post</a>)</td>
+      <td><span class="label label-important">system</span> <a href="http://code.google.com/p/vmcontroller"></a> My B.Tech thesis project on general purpose virtual machine controller, based on works of D. G. Quintas (<a href="/logs/twisted-loop/">blog post</a>, <a href="/files/docs/btp-report-vmcontroller.pdf">report</a>)</td>
       <td>Python, Twisted, Inject, JSON, STOMP, MorbidMQ, UUID, LibVirt, VirtualBox</td>
     </tr>
     <tr>
