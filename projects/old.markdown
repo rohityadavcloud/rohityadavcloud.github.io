@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Old Projects
+permalink: /old/
 ---
 
 <div class="page-header">
@@ -23,7 +24,7 @@ title: Old Projects
     </tr>
     <tr>
       <td><img src="/images/projects/scuttlebutt-small.png"> <a href="/files/old/scuttlebutt.zip">ScuttleButt</a></td>
-      <td><span class="label label-warning">desktop</span> <strong>Scuttle<span style="color: rgb(228, 73, 114);">Butt</span></strong> is an award winning (#1 at two international level competitons; <a target="_blank" href="http://techfest.org">AIROMANIA, TechFest/IITB, 2010</a> and <a href="http://itbhu.ac.in/codefest/2010/gumbo-rumble.html">GumboRumble, ITBHU, 2010</a>) Adobe AIR based rich desktop instant messenger for LAN (<a href="src="/images/scuttlebutt-shot.jpg">screenshot</a>)</td>
+      <td><span class="label label-warning">desktop</span> <strong>Scuttle<span style="color: rgb(228, 73, 114);">Butt</span></strong> is an award winning (#1 at two international level competitons; <a target="_blank" href="http://techfest.org">AIROMANIA, TechFest/IITB, 2010</a> and <a href="http://itbhu.ac.in/codefest/2010/gumbo-rumble.html">GumboRumble, ITBHU, 2010</a>) Adobe AIR based rich desktop instant messenger for LAN (<a href="/images/scuttlebutt-shot.jpg">screenshot</a>)</td>
       <td>ActionScript, Flash, AIR</td>
     </tr>
     <tr>

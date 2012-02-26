@@ -28,6 +28,7 @@ title: Projects
   </div>
 </div>
 
+<h2>Side projects <small>to scratch my own itch</small></h2>
 <table class="table table-striped table-bordered">
   <thead>
     <tr>
@@ -43,28 +44,28 @@ title: Projects
       <td>C, x86 ASM, Qemu, VirtualBox</td>
     </tr>
     <tr>
+      <td><img src="/images/projects/cmakeqt-small.png"> <a href="https://github.com/rohityadav/cmakeqt">CMakeQt</a></td>
+      <td><span class="label label-warning">desktop</span> CMake based build system template for Qt/C++ projects which is my most watched project on Github and used by many projects</td>
+      <td>CMake, NSIS, Qt</td>
+    </tr>
+    <tr>
+      <td><img src="/images/projects/recipes-small.png"> <a href="https://github.com/rohityadav/recipes">Recipes</a></td>
+      <td><span class="label label-success">webapp</span> Webapp to document and share family recipes on <a href="http://yadav.im">yadav.im</a></td>
+      <td>Clojure, HTML5, AJAX/Javascript</td>
+    </tr>
+    <tr>
       <td><img src="/images/projects/r2a2-small.png"> <a href="/projects/r2a2">R2A2</a></td>
       <td><span class="label notice">hardware</span> Android powered mobile robot</td>
       <td>Java, C, Android, IOIO, Rover5</td>
     </tr>
     <tr>
       <td><img src="/images/projects/mtp-small.png"> <a href="/projects/mtp">M.Tech Project</a></td>
-      <td><span class="label notice">hardware</span> Speech controlled wireless mobile robot</td>
+      <td><span class="label notice">hardware</span> My M.Tech thesis project on speech controlled wireless mobile robot</td>
       <td>C, Wiring/Processing, Arduino, XBee, EasyVR</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/recipes-small.png"> <a href="/projects/recipes">Recipes</a></td>
-      <td><span class="label label-success">webapp</span> Webapp to document and share family recipes</td>
-      <td>Clojure, HTML5, AJAX/Javascript</td>
-    </tr>
-    <tr>
-      <td><img src="/images/projects/cmakeqt-small.png"> <a href="/projects/cmakeqt">CMakeQt</a></td>
-      <td><span class="label label-warning">desktop</span> CMake based build system template for Qt/C++ projects</td>
-      <td>CMake, NSIS, Qt</td>
-    </tr>
-    <tr>
-      <td><img src="/images/projects/vmcontroller-small.png"> <a href="/projects/vmcontroller">VMController</a></td>
-      <td><span class="label label-important">system</span> <a href="http://code.google.com/p/vmcontroller"></a> My B.Tech thesis project on general purpose virtual machine controller, based on works of D. G. Quintas</td>
+      <td><img src="/images/projects/vmcontroller-small.png"> <a href="http://code.google.com/p/vmcontroller/">VMController</a></td>
+      <td><span class="label label-important">system</span> <a href="http://code.google.com/p/vmcontroller"></a> My B.Tech thesis project on general purpose virtual machine controller, based on works of D. G. Quintas (<a href="/logs/twisted-loop/">blog post</a>)</td>
       <td>Python, Twisted, Inject, JSON, STOMP, MorbidMQ, UUID, LibVirt, VirtualBox</td>
     </tr>
     <tr>
