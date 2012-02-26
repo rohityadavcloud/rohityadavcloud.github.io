@@ -9,7 +9,7 @@ title: Projects
 
 <div class="row">
   <div class="span5">
-    <h2>Open Source <small>Contributions to FOSS</small></h2>
+    <h2>Open Source <small>contributions to FOSS</small></h2>
     <dl>
       <dt><img src="/images/projects/vlmc-small.png"> <a href="http://trac.videolan.org/vlmc">VLMC</a>/<a href="https://github.com/rohityadav/libishare">libishare</a></dt>
       <dd>Non-linear video editor based on libVLC.</dd>
@@ -60,16 +60,11 @@ title: Projects
     <tr>
       <td><img src="/images/projects/cmakeqt-small.png"> <a href="/projects/cmakeqt">CMakeQt</a></td>
       <td><span class="label label-warning">desktop</span> CMake based build system template for Qt/C++ projects</td>
-      <td>C++, Qt</td>
-    </tr>
-    <tr>
-      <td><img src="/images/projects/quizapp-small.png"> <a href="/projects/quizapp">QuizApp</a></td>
-      <td><span class="label label-success">webapp</span> Webapp to host and conduct quizzes</td>
-      <td>Ruby, Rails</td>
+      <td>CMake, NSIS, Qt</td>
     </tr>
     <tr>
       <td><img src="/images/projects/vmcontroller-small.png"> <a href="/projects/vmcontroller">VMController</a></td>
-      <td><span class="label label-important">system</span> <a href="http://code.google.com/p/vmcontroller"></a> General purpose virtual machine controller, based on works of David G. Quintas (BOINCVM); this was also my B.Tech project</td>
+      <td><span class="label label-important">system</span> <a href="http://code.google.com/p/vmcontroller"></a> My B.Tech thesis project on general purpose virtual machine controller, based on works of D. G. Quintas</td>
       <td>Python, Twisted, Inject, JSON, STOMP, MorbidMQ, UUID, LibVirt, VirtualBox</td>
     </tr>
     <tr>
@@ -80,22 +75,12 @@ title: Projects
     <tr>
       <td><img src="/images/projects/cade9-small.png"> <a href="/projects/cade9">Cade9</a></td>
       <td><span class="label notice">hardware</span> ATmega32 based arcade gaming platform</td>
-      <td>ATmega32, C</td>
+      <td>AVR/ATmega32, C</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/scuttlebutt-small.png"> <a href="/projects/scuttlebutt">ScuttleButt</a></td>
-      <td><span class="label label-warning">desktop</span> Adobe AIR based rich desktop instant messenger for LAN</td>
-      <td>ActionScript, Flash, AIR</td>
-    </tr>
-    <tr>
-      <td><img src="/images/projects/gtkmoo-small.png"> <a href="/projects/gtkmoo">GtkMoo</a></td>
-      <td><span class="label label-warning">desktop</span> The Game of Bulls n Cows in C/Gtk+</td>
-      <td>C, Gtk+</td>
-    </tr>
-    <tr>
-      <td><img src="/images/projects/obsolete-small.png"> <a href="/projects/old">Old & Obsolete</a></td>
-      <td><span class="label">old</span> GtkMoo, AutoQt</td>
-      <td>My old projects that I no longer maintain</td>
+      <td><img src="/images/projects/scuttlebutt-small.png"> <a href="/projects/old">Old projects</a></td>
+      <td><span class="label">old</span> Stuff I no longer maintain or use</td>
+      <td></td>
     </tr>
   </tbody>
 </table>
