@@ -1,4 +1,7 @@
 body {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 20px;
   font-size: 14px;
   background-color: #fff;/*#326a8a;*/
   color: #333333;
@@ -14,6 +17,10 @@ code {
   padding: 1px 3px !important;
 }
 
+section {
+  padding-top: 60px;
+}
+
 pre {
   font-size: 14px;
 }
@@ -27,11 +34,9 @@ p {
   line-height: 24px;
 }
 
-/*p > img
-{
-  max-width: 820px;
+img {
+  max-width: 100%;
 }
-*/
 
 .label.notice {
   background-color: #328FCC;
