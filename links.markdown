@@ -15,11 +15,7 @@ permalink: /links/
 
 [FLOSS Weekly](http://twit.tv/floss)
 
-[GigaOM](http://gigaom.com/)
-
 [Wired](http://www.wired.com/)
-
-[Google News](http://news.google.com)
 
 ##Hackers
 
@@ -31,10 +27,15 @@ permalink: /links/
 
 [Etix](http://l0cal.com)
 
-
 [DarkShikari](http://x264dev.multimedia.cx/)
 
 [rms](http://stallman.org/)
+
+
+##Blogs and Websites
+
+[Duartes: Kernel and CPU](http://duartes.org/gustavo/blog/best-of)
+[Amjith: Python hacker](http://amjith.blogspot.in/)
 
 {% endcapture %}
 
