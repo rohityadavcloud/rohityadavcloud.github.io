@@ -35,6 +35,7 @@ permalink: /links/
 ##Blogs and Websites
 
 [Duartes: Kernel and CPU](http://duartes.org/gustavo/blog/best-of)
+
 [Amjith: Python hacker](http://amjith.blogspot.in/)
 
 {% endcapture %}
