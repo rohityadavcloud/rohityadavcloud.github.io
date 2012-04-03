@@ -18,8 +18,8 @@ permalink: /old/
   </thead>
   <tbody>
     <tr>
-      <td><img src="/images/projects/quizapp-small.png"> <a href="https://github.com/rohityadav/quizapp">QuizApp</a></td>
-      <td><span class="label label-success">webapp</span> Webapp to host and conduct quizzes</td>
+      <td><img src="/images/projects/quizapp-small.png"> <a href="/files/old/quizapp.zip">QuizApp</a></td>
+      <td><span class="label label-success">webapp</span> Webapp to host and conduct quizzes. Live <a href="http://quizapp.herokuapp.com/">demo</a>.</td>
       <td>Ruby on Rails</td>
     </tr>
     <tr>
