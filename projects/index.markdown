@@ -28,7 +28,6 @@ title: Projects
   </div>
 </div>
 
-<h2>Side projects <small>to scratch my own itch</small></h2>
 <table class="table table-striped table-bordered">
   <thead>
     <tr>
