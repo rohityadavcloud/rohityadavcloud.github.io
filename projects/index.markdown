@@ -38,7 +38,7 @@ title: Projects
   </thead>
   <tbody>
     <tr>
-      <td><img src="/images/projects/tantra-small.png"> <a href="/projects/tantra">Tantra</a></td>
+      <td><img src="/images/projects/tantra-small.png"> <a href="/projects/tantra">Tantra</a>*</td>
       <td><span class="label label-important">system</span> Monolithic x86 unix based kernel development</td>
       <td>C, x86 ASM, Qemu, VirtualBox</td>
     </tr>
@@ -48,17 +48,17 @@ title: Projects
       <td>CMake, NSIS, Qt</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/recipes-small.png"> <a href="https://github.com/rohityadav/recipes">Recipes</a></td>
+      <td><img src="/images/projects/recipes-small.png"> <a href="https://github.com/rohityadav/recipes">Recipes</a>*</td>
       <td><span class="label label-success">webapp</span> Webapp to document and share family recipes on <a href="http://yadav.im">yadav.im</a></td>
       <td>Clojure, HTML5, AJAX/Javascript</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/r2a2-small.png"> <a href="/projects/r2a2">R2A2</a></td>
+      <td><img src="/images/projects/r2a2-small.png"> <a href="/projects/r2a2">R2A2</a>*</td>
       <td><span class="label notice">hardware</span> Android powered mobile robot</td>
       <td>Java, C, Android, IOIO, Rover5</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/mtp-small.png"> <a href="/projects/mtp">M.Tech Project</a></td>
+      <td><img src="/images/projects/mtp-small.png"> <a href="/projects/mtp">M.Tech Project</a>*</td>
       <td><span class="label notice">hardware</span> My M.Tech thesis project on speech controlled wireless mobile robot</td>
       <td>C, Wiring/Processing, Arduino, XBee, EasyVR</td>
     </tr>
@@ -84,3 +84,5 @@ title: Projects
     </tr>
   </tbody>
 </table>
+
+\* = work in progress
