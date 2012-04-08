@@ -17,9 +17,7 @@ permalink: /links/
 
 [Wired](http://www.wired.com/)
 
-##Hackers
-
-[pk](http://people.videolan.org/~pk/)
+##Amazing People
 
 [j-b](http://www.jbkempf.com/blog/)
 
@@ -31,6 +29,7 @@ permalink: /links/
 
 [rms](http://stallman.org/)
 
+[Notch](http://notch.tumblr.com/)
 
 ##Blogs and Websites
 
@@ -55,6 +54,8 @@ permalink: /links/
 [Kushagra Gour][kushagra]
 
 [Vivek "Vicky"][vivek]
+
+[pk](http://people.videolan.org/~pk/)
 
 [show]: http://theshowstopper.in
 [bro]: http://avinashyadav.in
