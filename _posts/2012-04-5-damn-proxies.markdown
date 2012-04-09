@@ -29,7 +29,7 @@ Or, use surf Internet over as a [SOCKS proxy](http://en.wikipedia.org/wiki/SOCKS
 
 `ssh -C2qTnN -D 8080 username@myserver -p 1123`
 
-How do you use it in a browser, say Firefox? In Firefox open *config:about* set the `network.proxy.socks_remote_dns` field to *true* and in proxy setting leave everything blank and put *localhost* as SOCKS host and whatever *port* (8080 in the example) you used.
+How do you use it in a browser, say Firefox? In Firefox open *about:config* set the `network.proxy.socks_remote_dns` field to *true* and in proxy setting leave everything blank and put *localhost* as SOCKS host and whatever *port* (8080 in the example) you used.
 
 Assuming you've a socks proxy like the one above, you can use `proxychains` to force any application to go through a socks proxy configured in `/etc/proxychains.conf`, and setting a suitable DNS server in `/usr/lib/proxychains3/proxyresolv` (default is 4.2.2.2). How to use proxychains, you ask:
 
