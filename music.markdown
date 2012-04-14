@@ -14,3 +14,7 @@ permalink: /music/
   </div>
 </div>
 <p align="center"><iframe width="820" height="500" src="http://www.youtube.com/embed/mgkE2_ALIlM" frameborder="0" allowfullscreen></iframe></p>
+
+<script type="text/javascript">
+  mixpanel.track("Music Page");
+</script>

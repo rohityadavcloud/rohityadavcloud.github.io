@@ -34,3 +34,7 @@ I find social networks boring and frivolous, I think email is awesome that lets 
 [TechFest]: http://www.techfest.org/
 [CodeFest]: http://itbhu.ac.in/codefest/
 [ScuttleButt]: /files/old/scuttlebutt.zip
+
+<script type="text/javascript">
+  mixpanel.track("About Page");
+</script>

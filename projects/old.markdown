@@ -69,3 +69,7 @@ permalink: /old/
     </tr>
   </tbody>
 </table>
+
+<script type="text/javascript">
+  mixpanel.track("Project Old Page");
+</script>

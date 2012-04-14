@@ -86,3 +86,7 @@ title: Projects
 </table>
 
 \* = work in progress
+
+<script type="text/javascript">
+  mixpanel.track("Project Index Page");
+</script>
