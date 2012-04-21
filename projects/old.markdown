@@ -24,7 +24,7 @@ permalink: /old/
     </tr>
     <tr>
       <td><img src="/images/projects/scuttlebutt-small.png"> <a href="/files/old/scuttlebutt.zip">ScuttleButt</a></td>
-      <td><span class="label label-warning">desktop</span> <strong>Scuttle<span style="color: rgb(228, 73, 114);">Butt</span></strong> is an award winning (#1 at two international level competitons; <a target="_blank" href="http://techfest.org">AIROMANIA, TechFest/IITB, 2010</a> and <a href="http://itbhu.ac.in/codefest/2010/gumbo-rumble.html">GumboRumble, ITBHU, 2010</a>) Adobe AIR based rich desktop instant messenger for LAN (<a href="/images/scuttlebutt-shot.jpg">screenshot</a>)</td>
+      <td><span class="label label-warning">desktop</span> <strong>Scuttle<span style="color: rgb(228, 73, 114);">Butt</span></strong> is an award winning (#1 at two international level competitons; <a target="_blank" href="http://techfest.org">AIROMANIA, TechFest/IITB, 2010</a> and <a href="http://itbhu.ac.in/codefest/2010/gumbo-rumble.html">GumboRumble, ITBHU, 2010</a>) Adobe AIR based rich desktop instant messenger for LAN (<a href="/images/scuttlebutt-shot.jpg">screenshot</a>, <a href="/logs/scuttlebutt/">blog</a>)</td>
       <td>ActionScript, Flash, AIR</td>
     </tr>
     <tr>
@@ -44,7 +44,7 @@ permalink: /old/
     </tr>
     <tr>
       <td><a href="/files/old/vlc-minimode.zip">VLC Minimode Patches</a></td>
-      <td><span class="label">old</span> A Qt widget for VLC that can be used for notification and media playback controller</td>
+      <td><span class="label">old</span> A Qt widget for VLC that can be used for notification and media playback controller (<a href="/logs/story-of-a-notification-widget/">blog</a>)</td>
       <td>C++, Qt</td>
     </tr>
     <tr>
