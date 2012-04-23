@@ -18,7 +18,7 @@ I find social networks boring and frivolous, I think email is awesome that lets 
 [HN]: http://news.ycombinator.com
 [Slashdot]: http://slashdot.org
 [VLMC]: http://trac.videolan.org/vlmc
-[CMakeQt]: https://github.com/rohityadav/cmakeqt
+[CMakeQt]: https://github.com/bhaisahab/cmakeqt
 [Abhishek]: http://theshowstopper.in
 [VMController]: http://code.google.com/p/vmcontroller
 [david-boincvm]: http://bitbucket.org/dgquintas/boincvm
