@@ -45,8 +45,6 @@ permalink: /links/
 
 [Abhishek "ShowStopper"][show]
 
-[Big "Bro"][bro]
-
 [Saket "Tachyon"][tac]
 
 [Abhinav Kushwaha][abhinav]
@@ -55,15 +53,17 @@ permalink: /links/
 
 [Vivek "Vicky"][vivek]
 
-[pk](http://people.videolan.org/~pk/)
+[Pankaj Yadav "pk"][pk]
+
+[Rahul Jain "Baagi"][rahuljain]
 
 [show]: http://theshowstopper.in
-[bro]: http://avinashyadav.in
 [tac]: http://saketsaurabh.in
 [abhinav]: http://akush.in
 [kushagra]: http://www.kushagragour.in
 [vivek]: http://vyadav.in
-[bala]: http://monsieurbala.in
+[pk]: http://people.videolan.org/~pk/
+[rahuljain]: http://rahuljain.org
 
 ##Programming
 
