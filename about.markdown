@@ -1,16 +1,20 @@
 ---
 layout: page
 title: About
-tagline: yours truly
+tagline: bhaisahab
 permalink: /about/
 ---
 
-<img align="left" src="/assets/img/avatar.png"/>
-[Namaste][]! I'm Rohit Yadav ([Devanāgarī][devnagari]: रोहित यादव), one of the 11 computer science and engineering masters' student at <strike>[IT-BHU][]</strike> [IIT-BHU](http://en.wikipedia.org/wiki/Institute_of_Technology,_Banaras_Hindu_University#Conversion_into_an_Indian_Institute_of_Technology). I'm a GNU/Linux evangelist who believes in freedom, sharing and helping people; and in my free time, I like to geekout, read [HN][] &amp; [Slashdot][], play bansuri/flute/guitar, learn new things and sometimes hack open source projects. As one of the [VLMC][] developers, I work on its Linux and Mac OS ports and maintain its CMake based [build system][CMakeQt] that I mostly wrote myself. On Freenode, I'm *rohityadav* and can be found on #vlmc, #videolan. Graffiti is the most creative and fun project which my friend [Abhishek][] and I created from scratch during our sophomore year at [IT-BHU][]. My B.Tech project, [VMController], was based on the [works][david-boincvm] of the amazing [David Garcia Quintas][david]. These days I'm working on my M.Tech *dissertation* in the area of speech controlled mobile robots; volunteering at [WMG-ITBHU](http://14.139.228.210/vpn/); hacking ATmega microcontrollers and Androids; and developing mysterious projects with my friend [pk][] for his [startup][innogrids].
+<img align="left" style="padding: 5px;" src="/assets/img/avatar.jpg"/>
+[Namaste][]! I'm Rohit Yadav ([Devanāgarī][devnagari]: रोहित यादव), currently a IDD/M.Tech (computer science and engineering) student at [IIT-BHU](http://en.wikipedia.org/wiki/Indian_Institute_of_Technology_%28Banaras_Hindu_University%29_Varanasi). I'm an opensource and free software evangelist and in my free time I read [HN][] &amp; [Slashdot][]; hangout with my [gang](http://baagi.org); sometimes I like to beatbox and play bansuri/flute; learn new things; and work on some opensource projects.
 
-In the past I was; [GSoC] student for [VideoLAN][yt-vlmc-wiki] and my [project][gsoc-project] was around [VLMC][]; [Unpaid Associate][boincvm] at CERN and I worked with the awesome [Dr. Ben Segal][ben] and the [CernVM][] team and contributed to the [BOINCVM][boincvm] project; and Adobe AIR app dev contest grand prize winner at the [TechFest][] (AIR-O-MANIA) and the [CodeFest][] (Gumbo Rumble), for [ScuttleButt][]. My areas of interest include (but are not limited to) operating systems, virtualization and hypervisors, embedded systems, algorithms and robotics.
+As one of the [VLMC][] developers, I work on the GNU/Linux and the Mac OS ports and maintain its CMake based [build system][CMakeQt] that I mostly wrote myself. On Freenode, I'm *bhaisahab* and can be found on #vlmc, #baagi. Graffiti was the most creative and fun project which my friend [Abhishek][] and I hacked from scratch during our sophomore year at [IIT-BHU][]. My B.Tech project, [VMController], was based on the [works][david-boincvm] of the amazing [David Garcia Quintas][david].
 
-I find social networks boring and frivolous, I think email is awesome that lets you communicate asynchronously; the fastest way to reach me - <rohityadav89@gmail.com>
+These days I'm writing my M.Tech dissertation on wireless speech controlled mobile robot; volunteering my engineering skills at [WMG-ITBHU](http://14.139.228.210/vpn/); developing a (teaching/hobby/x86) monolithic kernel; hacking Arduinos; and fooling around with [functional](http://learnyouahaskell.com/) programming languages.
+
+In the past I was; [GSoC] student for [VideoLAN][yt-vlmc-wiki] and my [project][gsoc-project] was around [VLMC][]; [Unpaid Associate][boincvm] at CERN and I worked with the awesome [Dr. Ben Segal][ben] and the [CernVM][] team and contributed to the [BOINCVM][boincvm] project; and Adobe AIR app dev contest grand prize winner at the [TechFest][] (AIR-O-MANIA) and the [CodeFest][] (Gumbo Rumble), for [ScuttleButt][]. My areas of interest include (but are not limited to) operating systems, compilers, functional languages, virtualization and hypervisors, embedded systems and robotics.
+
+I find most social networks boring and frivolous, I don't have a facebook account but irc/twitter works. I think mutt is one of the best software ever written and so are GNU/Linux, gcc, vim and irssi; email is awesome and the best way to reach me - <rohityadav89@gmail.com>
 
 [Namaste]: http://en.wikipedia.org/wiki/Namaste
 [devnagari]: http://en.wikipedia.org/wiki/Devan%C4%81gar%C4%AB
@@ -23,8 +27,6 @@ I find social networks boring and frivolous, I think email is awesome that lets 
 [VMController]: http://code.google.com/p/vmcontroller
 [david-boincvm]: http://bitbucket.org/dgquintas/boincvm
 [david]: http://www.linkedin.com/in/davidgarciaquintas
-[pk]: http://people.videolan.org/~pk/
-[innogrids]: http://innogrids.com
 [GSoC]: http://en.wikipedia.org/wiki/Google_Summer_of_Code
 [yt-vlmc-wiki]: http://wiki.videolan.org/SoC_2010/Youtube_Integration_VLMC
 [gsoc-project]: http://www.google-melange.com/gsoc/project/google/gsoc2010/rohit_yadav/25001
