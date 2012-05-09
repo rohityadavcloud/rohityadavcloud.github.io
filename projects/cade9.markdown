@@ -21,6 +21,6 @@ In the video below, I play a game of 1-player pong; the left bat is AI and top 7
 
 Download: <a href="/files/docs/minor-project-cade9.pdf">report, <a href="/files/old/cade9.zip">source code</a>.
 
-<p align = "center"><iframe width="820" height="450" src="http://www.youtube.com/embed/fmwXqJI0i44" frameborder="0" allowfullscreen></iframe></p>
+<p align = "center"><iframe width="820" height="450" src="http://www.youtube.com/embed/F4D6QbLzOpM?rel=0" frameborder="0" allowfullscreen></iframe></p>
 
 [cocoos]: http://www.cocoos.net

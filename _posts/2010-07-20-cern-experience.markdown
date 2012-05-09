@@ -30,7 +30,7 @@ Our group photo just outside the CERN Computer Centre:
 
 <p align="center"> <img align="center" src="/images/cern/computing-centre.jpg">
 <br/>Bonus video:
-<br/><iframe width="820" height="540" src="http://www.youtube.com/embed/LUirGfW__AE" frameborder="0" allowfullscreen></iframe>
+<br/><iframe width="820" height="540" src="http://www.youtube.com/embed/mWPW8cLpm_Q?rel=0" frameborder="0" allowfullscreen></iframe>
 </p>
 
 [boincvm]: http://code.google.com/p/boincvm
