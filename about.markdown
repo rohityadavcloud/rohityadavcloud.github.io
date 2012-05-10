@@ -18,7 +18,7 @@ I find most social networks boring and frivolous, I don't have a facebook accoun
 
 [Namaste]: http://en.wikipedia.org/wiki/Namaste
 [devnagari]: http://en.wikipedia.org/wiki/Devan%C4%81gar%C4%AB
-[IT-BHU]: http://itbhu.ac.in
+[IIT-BHU]: http://itbhu.ac.in
 [HN]: http://news.ycombinator.com
 [Slashdot]: http://slashdot.org
 [VLMC]: http://trac.videolan.org/vlmc
