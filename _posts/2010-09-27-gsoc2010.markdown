@@ -8,7 +8,7 @@ excerpt: GSoC 2011 project
 
 I've successfully completed my [GSoC](http://en.wikipedia.org/wiki/Google_Summer_of_Code) [project](http://www.google-melange.com/gsoc/project/google/gsoc2010/rohit_yadav/25001) (t-shirt is the proof :)  for [VLMC](http://trac.videolan.org/vlmc/) (VideoLAN Movie Creator), progress and report of which can be tracked from my VideoLAN GSoC project's [wiki page](http://wiki.videolan.org/SoC_2010/Youtube_Integration_VLMC). VLMC is a non-linear, cross-platform and open source video editor that uses *libvlc* in the backend.
 
-Apart from the YouTube integration features, I implemented support for network proxy, ported VLMC to Mac OSX and revamped the CMake based build system to automate packaging for Mac (App Bundle/DMG) and Linux (rpm and deb). I also extracted the YouTube video uploading code as a reusable library, [libishare](http://github.com/bhaisahab/libishare).
+Apart from the YouTube integration features, I implemented support for network proxy, ported VLMC to Mac OSX and revamped the CMake based build system to automate packaging for Mac (App Bundle/DMG) and Linux (rpm and deb). I also extracted the YouTube video uploading code as a reusable library, [libishare](http://github.com/bhaisaab/libishare).
 
 The whole experience was awesome, many thanks to *etix* (my official mentor), *choquette* (my unofficial and most helpful mentor), *j-b* (gsoc admin) and members of the VLMC community.
 

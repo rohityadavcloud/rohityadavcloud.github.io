@@ -19,7 +19,7 @@ permalink: /old/
   <tbody>
     <tr>
       <td><img src="/images/projects/quizapp-small.png"> <a href="/files/old/quizapp.zip">QuizApp</a></td>
-      <td><span class="label label-success">webapp</span> Webapp to host and conduct quizzes. Live <a href="http://quizapp.herokuapp.com/">demo</a>. (<a href="https://github.com/bhaisahab/old/tree/master/quizapp/public/images/screenshot">screenshots</a>)</td>
+      <td><span class="label label-success">webapp</span> Webapp to host and conduct quizzes. Live <a href="http://quizapp.herokuapp.com/">demo</a>. (<a href="https://github.com/bhaisaab/old/tree/master/quizapp/public/images/screenshot">screenshots</a>)</td>
       <td>Ruby on Rails</td>
     </tr>
     <tr>

@@ -1,14 +1,14 @@
 ---
 layout: page
 title: About
-tagline: bhaisahab
+tagline: bhaisaab
 permalink: /about/
 ---
 
 <img align="left" style="padding: 5px;" src="/assets/img/avatar.jpg"/>
 [Namaste][]! I'm Rohit Yadav ([Devanāgarī][devnagari]: रोहित यादव), currently a IDD/M.Tech (computer science and engineering) student at [IIT-BHU](http://en.wikipedia.org/wiki/Indian_Institute_of_Technology_%28Banaras_Hindu_University%29_Varanasi). I'm an opensource and free software evangelist and in my free time I read [HN][] &amp; [Slashdot][]; hangout with my [gang](http://baagi.org); sometimes I like to beatbox and play bansuri/flute; learn new things; and work on some opensource projects.
 
-As one of the [VLMC][] developers, I work on the GNU/Linux and the Mac OS ports and maintain its CMake based [build system][CMakeQt] that I mostly wrote myself. On Freenode, I'm *bhaisahab* and can be found on #vlmc, #baagi. Graffiti was the most creative and fun project which my friend [Abhishek][] and I hacked from scratch during our sophomore year at [IIT-BHU][]. My B.Tech project, [VMController], was based on the [works][david-boincvm] of the amazing [David Garcia Quintas][david].
+As one of the [VLMC][] developers, I work on the GNU/Linux and the Mac OS ports and maintain its CMake based [build system][CMakeQt] that I mostly wrote myself. On Freenode, I'm *bhaisaab* and can be found on #vlmc, #baagi. Graffiti was the most creative and fun project which my friend [Abhishek][] and I hacked from scratch during our sophomore year at [IIT-BHU][]. My B.Tech project, [VMController], was based on the [works][david-boincvm] of the amazing [David Garcia Quintas][david].
 
 These days I'm writing my M.Tech dissertation on wireless speech controlled mobile robot; volunteering my engineering skills at [WMG-ITBHU](http://14.139.228.210/vpn/); developing a (teaching/hobby/x86) monolithic kernel; hacking Arduinos; and fooling around with [functional](http://learnyouahaskell.com/) programming languages.
 
@@ -22,7 +22,7 @@ I find most social networks boring and frivolous, I don't have a facebook accoun
 [HN]: http://news.ycombinator.com
 [Slashdot]: http://slashdot.org
 [VLMC]: http://trac.videolan.org/vlmc
-[CMakeQt]: https://github.com/bhaisahab/cmakeqt
+[CMakeQt]: https://github.com/bhaisaab/cmakeqt
 [Abhishek]: http://theshowstopper.in
 [VMController]: http://code.google.com/p/vmcontroller
 [david-boincvm]: http://bitbucket.org/dgquintas/boincvm

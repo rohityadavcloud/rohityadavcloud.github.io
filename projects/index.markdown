@@ -11,7 +11,7 @@ title: Projects
   <div class="span5">
     <h2>Open Source <small>contributions to FOSS</small></h2>
     <dl>
-      <dt><img src="/images/projects/vlmc-small.png"> <a href="http://trac.videolan.org/vlmc">VLMC</a>/<a href="https://github.com/bhaisahab/libishare">libishare</a></dt>
+      <dt><img src="/images/projects/vlmc-small.png"> <a href="http://trac.videolan.org/vlmc">VLMC</a>/<a href="https://github.com/bhaisaab/libishare">libishare</a></dt>
       <dd>Non-linear video editor based on libVLC.</dd>
       <dt><img src="/images/projects/boincvm.png"> <a href="http://code.google.com/p/boincvm/">BOINC-VM</a></dt>
       <dd>BOINC-VM Volunteer Cloud Computing Platform (<a href="/files/docs/internship-cern-report-2010.pdf">report</a>)</dd>
@@ -22,8 +22,8 @@ title: Projects
 
   <div class="span5">
     <h2>Laboratory <small>and my experiments</small></h2>
-    <h3>HackLab <small><a href="https://github.com/bhaisahab/hacklab">Coding, experiments and labwork</a></small></h3>
-    <h3>HackTool <small><a href="https://github.com/bhaisahab/hacktools">My homebrew hacking tools</a></small></h3>
+    <h3>HackLab <small><a href="https://github.com/bhaisaab/hacklab">Coding, experiments and labwork</a></small></h3>
+    <h3>HackTool <small><a href="https://github.com/bhaisaab/hacktools">My homebrew hacking tools</a></small></h3>
     <h2><a href="https://launchpad.net/~rohityadav/">My Launchpad »</a></h2>
   </div>
 </div>
@@ -43,12 +43,12 @@ title: Projects
       <td>C, x86 ASM, Qemu, VirtualBox</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/cmakeqt-small.png"> <a href="https://github.com/bhaisahab/cmakeqt">CMakeQt</a></td>
+      <td><img src="/images/projects/cmakeqt-small.png"> <a href="https://github.com/bhaisaab/cmakeqt">CMakeQt</a></td>
       <td><span class="label label-warning">desktop</span> CMake based build system template for Qt/C++ projects which is my most watched project on Github and used by many projects (<a href="/files/docs/cmakeqt.pdf">report</a>)</td>
       <td>CMake, NSIS, Qt</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/recipes-small.png"> <a href="https://github.com/bhaisahab/recipes">Recipes</a>*</td>
+      <td><img src="/images/projects/recipes-small.png"> <a href="https://github.com/bhaisaab/recipes">Recipes</a>*</td>
       <td><span class="label label-success">webapp</span> Webapp to document and share family recipes on <a href="http://yadav.im">yadav.im</a></td>
       <td>Clojure, HTML5, AJAX/Javascript</td>
     </tr>
