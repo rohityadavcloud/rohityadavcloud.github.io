@@ -25,6 +25,8 @@ title: Projects
     <h3>HackLab <small><a href="https://github.com/bhaisaab/hacklab">Coding, experiments and labwork</a></small></h3>
     <h3>HackTool <small><a href="https://github.com/bhaisaab/hacktools">My homebrew hacking tools</a></small></h3>
     <h2><a href="https://launchpad.net/~rohityadav/">My Launchpad »</a></h2>
+    <h3><a href="https://launchpad.net/~rohityadav/+archive/vlmc">VLMC PPA</a></h3>
+    <h3><a href="https://launchpad.net/~rohityadav/+archive/graffiti">Graffiti PPA</a></h3>
   </div>
 </div>
 
@@ -48,12 +50,12 @@ title: Projects
       <td>CMake, NSIS, Qt</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/recipes-small.png"> <a href="https://github.com/bhaisaab/recipes">Recipes</a>*</td>
+      <td><img src="/images/projects/recipes-small.png"> <a href="https://github.com/bhaisaab/recipes">Recipes</a>^</td>
       <td><span class="label label-success">webapp</span> Webapp to document and share family recipes on <a href="http://yadav.im">yadav.im</a></td>
       <td>Clojure, HTML5, AJAX/Javascript</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/r2a2-small.png"> <a href="/projects/r2a2">R2A2</a>*</td>
+      <td><img src="/images/projects/r2a2-small.png"> <a href="/projects/r2a2">R2A2</a>^</td>
       <td><span class="label notice">hardware</span> Android powered mobile robot</td>
       <td>Java, C, Android, IOIO, Rover5</td>
     </tr>
@@ -85,7 +87,8 @@ title: Projects
   </tbody>
 </table>
 
-\* = work in progress
+\* = in progress
+^ = postponed
 
 <script type="text/javascript">
   mixpanel.track("Project Index Page");
