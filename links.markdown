@@ -53,8 +53,6 @@ permalink: /links/
 
 [Vivek "Vicky"][vivek]
 
-[Pankaj Yadav "pk"][pk]
-
 [Rahul Jain "Baagi"][rahuljain]
 
 [show]: http://theshowstopper.in
@@ -62,7 +60,6 @@ permalink: /links/
 [abhinav]: http://akush.in
 [kushagra]: http://www.kushagragour.in
 [vivek]: http://vyadav.in
-[pk]: http://people.videolan.org/~pk/
 [rahuljain]: http://rahuljain.org
 
 ##Programming
