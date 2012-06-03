@@ -33,7 +33,15 @@ permalink: /links/
 
 ##Blogs and Websites
 
+[Paul Graham's Essays](http://paulgraham.com/articles.html)
+
+[Lambda The Ultimate](http://lambda-the-ultimate.org/)
+
+[Coding Horror](http://www.codinghorror.com/blog/)
+
 [Duartes: Kernel and CPU](http://duartes.org/gustavo/blog/best-of)
+
+[Stevey's Drunken Blog Rants](http://sites.google.com/site/steveyegge2/blog-rants)
 
 [Amjith: Python hacker](http://amjith.blogspot.in/)
 
@@ -54,6 +62,8 @@ permalink: /links/
 [Vivek "Vicky"][vivek]
 
 [Rahul Jain "Baagi"][rahuljain]
+
+[Planet Baagi](http://planet.baagi.org/)
 
 [show]: http://theshowstopper.in
 [tac]: http://saketsaurabh.in
