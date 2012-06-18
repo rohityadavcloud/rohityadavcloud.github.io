@@ -50,7 +50,7 @@ title: Projects
       <td>CMake, NSIS, Qt</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/recipes-small.png"> <a href="https://github.com/bhaisaab/recipes">Recipes</a>^</td>
+      <td><img src="/images/projects/recipes-small.png"> <a href="https://github.com/bhaisaab/recipes">Recipes</a>*</td>
       <td><span class="label label-success">webapp</span> Webapp to document and share family recipes on <a href="http://yadav.im">yadav.im</a></td>
       <td>Clojure, HTML5, AJAX/Javascript</td>
     </tr>
@@ -60,9 +60,9 @@ title: Projects
       <td>Java, C, Android, IOIO, Rover5</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/mtp-small.png"> <a href="/projects/mtp">M.Tech Project</a>*</td>
-      <td><span class="label notice">hardware</span> My M.Tech thesis project on speech controlled wireless mobile robot</td>
-      <td>C, Wiring/Processing, Arduino, XBee, EasyVR</td>
+      <td><img src="/images/projects/mtp-small.png"> <a href="/projects/mtp">MTP</a></td>
+      <td><span class="label notice">hardware</span> Wireless speech controlled mobile robot with obstacle avoidance</td>
+      <td>C/Wiring, Processing, Fritzing, Blender, Arduino, XBee, EasyVR, Sensors</td>
     </tr>
     <tr>
       <td><img src="/images/projects/vmcontroller-small.png"> <a href="http://code.google.com/p/vmcontroller/">VMController</a></td>
