@@ -38,4 +38,4 @@ For the Monitor's visualization I forked the _Processing_ code from this [tutori
 
 <p align = "center"><img align="center" src="/images/projects/mtp/obstacle-avoidance.png"/></p>
 
-For obstacle avoidance I simply used a naive algorithm to sweep and search for a direction without obstacle and move in that direction.
+For obstacle avoidance, I implemented a braindead naive algorithm in which the mobile robot would stop if a obstacle is found less than a given threshold distance and sweep-and-search for a direction without obstacle and move in that direction.
