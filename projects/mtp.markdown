@@ -6,21 +6,23 @@ permalink: /mtp/
 
 <p align = "center"><img align="center" src="/images/projects/mtp/side.png"/></p>
 
-The goal of this project was to design and implement a mobile robot that can be controlled wirelessly using speech as a user interface. Also my first mobile robot which I I built by forking concepts from [here](http://www.youtube.com/watch?v=cKY9tpxtkvE) and [there](http://www.cs.umu.se/education/examina/Rapporter/ShafkatKibria.pdf). I tried to follow open standards and use opensource hardware and software components wherever possible.
+The goal of my project was to design and implement a mobile robot that can be controlled wirelessly using speech as a user interface. This was my first mobile robot which I built by forking concepts from [here](http://www.youtube.com/watch?v=cKY9tpxtkvE) and [there](http://www.cs.umu.se/education/examina/Rapporter/ShafkatKibria.pdf). I tried to follow open standards and use opensource hardware and software components wherever possible.
 
 <p align = "center"><img align="center" src="/images/projects/mtp/blender.png"/></p>
 
-I chose a rover/tank like two-wheeled mobile robot design. Using Blender and some basic freely available Blender models, I modeled the mobile robot and made some animations; the [blend file](/files/docs/mtp/mtp.blend).
+I chose a rover/tank like two-wheeled mobile robot design. Using Blender and some freely available Blender models, I modeled the mobile robot and did some animations; the [blend file](/files/docs/mtp/mtp.blend).
 
 <p align = "center"><img align="center" src="/images/projects/mtp/movement.png"/></p>
 
-After comparing some speech recognition modules, I chose EasyVR an isolated speaker independent speech recognition hardware module. I wanted to use RaspbeeryPi but it was not available at the time so I instead chose Arduino microcontroller board which is a opensource low-cost and easy to program microcontroller platform. For wireless communication I used a pair of ZigBee/IEEE-802.15.4 based radio module, XBee. These radio modules operate in 2.4Ghz frequency band.
+After comparing many speech recognition hardware modules, I chose EasyVR an isolated speaker independent speech recognition hardware module. I wanted to use RaspbeeryPi but it was not available at the time so I used Arduino microcontroller board which is a opensource low-cost and easy to program microcontroller platform. For wireless communication I used a pair of ZigBee/IEEE-802.15.4 based radio module, XBee Series1.
 
 Other main hardware parts I used were:
-- Proximity sensor
-- Half-rotation servo motor
-- DC motors and IC L293D (motor driver)
-- Voltage regulator LM7805
+
+* Infrared Proximity sensor
+* Half-rotation servo motor
+* DC motors and IC L293D (motor driver)
+* Voltage regulator LM7805
+* Tamiya's Gearbox and Universal Plate sets
 
 <p align = "center"><img align="center" src="/images/projects/mtp/robot.jpg"/></p>
 
