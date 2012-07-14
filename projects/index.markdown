@@ -4,7 +4,7 @@ title: Projects
 ---
 
 <div class="page-header">
-  <h1 class="section">Projects <small>hacks, experiments and contributions to FOSS</small></h1>
+  <h1 class="section">Projects <small>hobby, hacks, experiments and contributions to FOSS</small></h1>
 </div>
 
 <div class="row">
