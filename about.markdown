@@ -10,7 +10,7 @@ permalink: /about/
 
 As one of the [VLMC][] developers, I work on its GNU/Linux and Mac OS ports and maintain its CMake based [build system][CMakeQt] that I mostly wrote myself. On Freenode, I'm *bhaisaab* and I hangout on #vlmc, #videolan, #baagi. In my free time, I'm developing a (teaching/hobby/x86) monolithic kernel; hacking Arduinos; and fooling around with [functional](http://learnyouahaskell.com/) programming languages.
 
-And yes I'm a _citrite_ now and as per their policies: "_The views expressed here are mine alone and have not been authorized by, and do not necessarily reflect the views of, Citrix._"
+I'm a _citrite_ now and hacking Apache CloudStack with my team in Hyderabad and as per their policies: "_The views expressed here are mine alone and have not been authorized by, and do not necessarily reflect the views of, Citrix._"
 
 Graffiti was the most creative and fun project which my friend [Abhishek][] and I hacked from scratch during our sophomore year at [IIT-BHU][]. My B.Tech project, [VMController], was based on the [works][david-boincvm] of the amazing [David Garcia Quintas][david]. My M.Tech dissertation was on wireless speech controlled mobile robot with collision free path planning. During my last year at IIT-BHU, my friends and I found an unused 1Gbps NKN (National Knowledge Network) fibre-optics based Internet link and about 196 multicore servers (donated by NVidia), and we used some of those servers to create a VPN server that serves over 3000 students and was a lot better than the BHU-CC proxies.
 
