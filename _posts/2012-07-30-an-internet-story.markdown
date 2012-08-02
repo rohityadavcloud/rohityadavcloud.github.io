@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A VPN Story
+title: An Internet Story
 excerpt: Politics of free Internet in academia
 ---
 
