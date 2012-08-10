@@ -48,18 +48,20 @@ permalink: /links/
 ##Indian Online Stores (Robot Hardware)
 
 [Robokits](http://robokits.co.in)
+
 [RhydoLabz](www.rhydolabz.com)
+
 [RC Dhamaka](http://www.rcdhamaka.com/)
 
-VegaRoboKit.com
+[VegaRoboKit.com][]
 
-XSRobotics.com
+[XSRobotics.com][]
 
-OnlineTps.com
+[OnlineTps.com][]
 
-Technido.com
+[Technido.com][]
 
-ThinnkWare.com
+[ThinnkWare.com][]
 
 Sunrom.com
 
