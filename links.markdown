@@ -45,6 +45,50 @@ permalink: /links/
 
 [Amjith: Python hacker](http://amjith.blogspot.in/)
 
+##Indian Online Stores (Robot Hardware)
+
+[Robokits](http://robokits.co.in)
+[RhydoLabz](www.rhydolabz.com)
+[RC Dhamaka](http://www.rcdhamaka.com/)
+
+VegaRoboKit.com
+
+XSRobotics.com
+
+OnlineTps.com
+
+Technido.com
+
+ThinnkWare.com
+
+Sunrom.com
+
+Probots.co.in
+
+DNATechindia.com
+
+Edubotix.in
+
+NskElectronics.com
+
+The-arelab.org
+
+DiscoverTechcom.com
+
+technologyahead.com
+
+nex-robotics.com
+
+Campuscomponent.com
+
+Xyzeebo.com
+
+RoboticsIndia.com
+
+RoboSoftSystems.co.in
+
+ExtremeElectronics.co.in
+
 {% endcapture %}
 
 {% capture people %}
