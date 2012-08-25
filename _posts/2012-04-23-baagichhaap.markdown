@@ -4,17 +4,15 @@ title: BaagiChhaap
 excerpt: Get yourself baagichhaap'd
 ---
 
-The freaking IDD'07 watched a movie about a [rebel](http://en.wikipedia.org/wiki/Paan_Singh_Tomar) and _Baagi_ became a popular [meme](http://en.wikipedia.org/wiki/Meme) in the ground floor lobby of Saraiya hostel where we all dwell. What is baagi? I would say a misunderstood rebel. How to use this meme? Hangout with us and you'll know :P
-
-<br><center><img align="center" src="/images/baagi/baagi-tomar.gif"></center><br>
+The freaking IDD'07 watched a [movie](http://en.wikipedia.org/wiki/Paan_Singh_Tomar) and _Baagi_ became a popular [meme](http://en.wikipedia.org/wiki/Meme) among us.
 
 [Jain](http://rahuljain.org) is from Dholpur which is near the famous valleys of the [Chambal](http://en.wikipedia.org/wiki/Chambal_River) and having seen a bunch of photos of him posing with some country made rifle he was bound to become the baagi of our gang. And after a Saturday night dinner, the gang decided to do something about it, like open a _dhabha_ or something to do with that meme. Believe me the hobby of domain searching and buying is evil and I warned 'em but they all wanted it badly (intended exaggeration), all 0x7 of them (except tintin kookdookoo) so I booked 'em a [domain](http://baagi.org).
 
-I had to come up with our first prank and as Baagis are known to wear awesome mustaches (real or fake :), I thought let's take any picture and draw a [moochh](http://en.wikipedia.org/wiki/Mustache) on it, programmatically of course!
+I had to come up with a prank and as Baagis are known to wear awesome mustaches, I thought let's take any picture and draw a [moochh](http://en.wikipedia.org/wiki/Mustache) on it, programmatically of course!
 
 <br><center><img align="center" src="/images/baagi/baagichhaap.jpg"></center><br>
 
-And after a fun Sunday evening with python and opencv I hacked up our first prank, [baagichhaap](http://chhaap.baagi.org) that takes in a photo, tries to detect a face (red squares), a nose (blue squares) and a mouth (green squares) and based on the obtained information it draws a _moochh_ on it.
+And after a fun Sunday evening with python and opencv I hacked up the prank, [baagichhaap](http://chhaap.baagi.org) that takes in a photo, tries to detect a face (red squares), a nose (blue squares) and a mouth (green squares) and based on the obtained information it draws a _moochh_ on it.
 
 <br><center><a href="/images/baagi/baagichhaap-branch.jpg"><img align="center" src="/images/baagi/baagichhaap-branch.jpg"></a></center><br>
 
