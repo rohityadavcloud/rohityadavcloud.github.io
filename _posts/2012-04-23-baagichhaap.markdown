@@ -6,6 +6,8 @@ excerpt: Get yourself baagichhaap'd
 
 The freaking IDD'07 watched a [movie](http://en.wikipedia.org/wiki/Paan_Singh_Tomar) and _Baagi_ became a popular [meme](http://en.wikipedia.org/wiki/Meme) among us.
 
+<br><center><img align="center" src="/images/baagi/jain.gif"></center><br>
+
 [Jain](http://rahuljain.org) is from Dholpur which is near the famous valleys of the [Chambal](http://en.wikipedia.org/wiki/Chambal_River) and having seen a bunch of photos of him posing with some country made rifle he was bound to become the baagi of our gang. And after a Saturday night dinner, the gang decided to do something about it, like open a _dhabha_ or something to do with that meme. Believe me the hobby of domain searching and buying is evil and I warned 'em but they all wanted it badly (intended exaggeration), all 0x7 of them (except tintin kookdookoo) so I booked 'em a [domain](http://baagi.org).
 
 I had to come up with a prank and as Baagis are known to wear awesome mustaches, I thought let's take any picture and draw a [moochh](http://en.wikipedia.org/wiki/Mustache) on it, programmatically of course!
