@@ -4,9 +4,11 @@ title: Introducing ScuttleButt
 excerpt: Instant Messenger for LAN
 ---
 
-<center><img width="632" height="528" alt="" src="/images/scuttlebutt-shot.jpg" title="ScuttleButt"></a></center><br>
+<center><img width="632" height="528" alt="" src="/images/techfest.jpg" title="ScuttleButt"></a></center><br>
 
 <a href="/images/scb-logo.png"><img width="134" height="50" src="/images/scb-logo.png" title="logo-black"></a> won the grand prize (Rank #1) at two international level competitons; <a target="_blank" href="http://techfest.org/competitions/codex/airomania/">AIR-O-MANIA</a>, TechFest, IIT-B during Jan 22-24 and at <a href="http://itbhu.ac.in/codefest/2010/gumbo-rumble.html">GumboRumble</a>, IT-BHU. Both these events were industrial defined problems sponsored by Adobe Inc., to foster engineering talent and creativity among student developers in India on its  recently launched Adobe AIR platform. The prize money was enough for me to buy me a brand new concert flute (boy they are costly :) and give treat to my friends.
+
+<center><img width="632" height="528" alt="" src="/images/scuttlebutt-shot.jpg" title="ScuttleButt"></a></center><br>
 
 <br>
 <blockquote><p style="text-align: left;"><strong>Scuttlebutt</strong> |ˈskətlˌbət|  noun<br>

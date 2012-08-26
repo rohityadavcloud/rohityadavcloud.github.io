@@ -18,6 +18,8 @@ Experimental physicist [Dr. Archana Sharma][archana] helped all of us, the *desi
 
 <p align="center"><img align="middle" src="/images/cern/indian-interns.jpg"></p>
 
+<p align="center"><img align="middle" src="/images/cern/bigdata.jpg"></p>
+
 My mentor, Dr. Ben Segal arranged a tour of CERN Computer Centre for us (thanks a lot sir for making that possible!). Below is a photographic panaroma of the server farm;
 
 <p align="center"><img align="center" src="/images/cern/servers.jpg"></p>
