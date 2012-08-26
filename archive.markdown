@@ -12,7 +12,7 @@ permalink: /logs/
       {% for post in site.posts %}
         <tr>
           <td style="padding-top: 8px; width: 90px;">
-<span class="label label-info">{{ post.date | date: "%b %e, %Y" }}</span>
+          <a href="{{ post.url }}"><span class="badge badge-info">{{ post.date | date: "%b %e, %Y" }}</span></a>
           </td>
           <td><h3><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.excerpt }}...</small></h3></td>
         </tr>

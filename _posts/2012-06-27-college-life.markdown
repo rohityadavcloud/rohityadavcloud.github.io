@@ -68,4 +68,4 @@ And that rare time, when the institute website was pwned by some crackers and I 
 
 Seeing you all off to your trains.
 
-<br><p align="center"><img align="center" src="/images/iitbhu/train.jpg"></p><br>
+<br><p align="center"><img align="center" src="/images/iitbhu/train.jpg"></p>

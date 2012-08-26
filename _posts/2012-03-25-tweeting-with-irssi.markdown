@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tweeting in an IRC workflow
-excerpt: Bitlbee, irssi, screen, Cool things make awesome skills
+excerpt: Bitlbee, irssi, screen
 ---
 
 <br><p align="center"><a href="/images/twitter-bitlbee.jpg"><img align="center" src="/images/twitter-bitlbee.jpg"></a></p><br>
