@@ -1,0 +1,39 @@
+---
+layout: post
+title: From Bengaluru to Hyderabad
+excerpt: In search of Opensource
+---
+
+In July, I relocated to Bangalore to join my first real job as a software engineer. The first week was nice, esp. the bootcamp. We started off by understanding the problem. We chose fast conference booking. The problem was to simplify conference room booking and develop a web/mobile app around it.
+
+<br><p align="center"><a href="/images/hyd/bootcamp.jpg"><img align="center" src="/images/hyd/bootcamp.jpg"></a></p><br>
+
+I started off by hacking a Tornado app with a NoSQL database and a backbonejs frontend but since we had limited time I stashed my work and we hacked a RoR webapp instead and I hosted that on my prgmr VPS, on bc.baagi.org.
+
+<br><p align="center"><a href="/images/hyd/bc-feature.png"><img align="center" src="/images/hyd/bc-feature.png"></a></p><br>
+
+We had some innovative and disruptive ideas, like a booking can have non-adjacent time slots, responsive ui for tablets and mobiles, results based on user's booking history, intuitive sorting and searching features, sending email for confirmation.
+
+<br><p align="center"><a href="/images/hyd/app.png"><img align="center" src="/images/hyd/app.png"></a></p><br>
+
+Meanwhile, the HR told us fresh-hires about an interesting position in Hyderabad and that those who would opt for it will lose some (cab, food) benefits but they would get to work on the opensource [Apache CloudStack](http://cloudstack.org/) with the previously acquired Cloud.com team. Startup kind-of environment, amazing opensource product, small team, I was game!
+
+<p align="center"><a href="/images/hyd/cloustack.png"><img align="center" src="/images/hyd/cloudstack.png"></a></p><br>
+
+I left for Hyderabad the very next day. I could n't care less about bootcamp, I researched more about CloudStack and found that in a way it was similar to [VMController](http://code.google.com/p/vmcontroller/), my B.Tech project. I missed the demo/keynote and we failed to grab a prize at the bootcamp but nevertheless our app was very well appreciated. Heck the VP emailed all the mentors and big guys telling 'em about our app and that it was hosted on the Internet. On the last day of the bootcamp I got permission from my mentor to opensource the [source code](https://github.com/bhaisaab/bootcamp-ctx) for everyone to checkout.
+
+<br><p align="center"><a href="/images/hyd/desk.jpg"><img align="center" src="/images/hyd/desk.jpg"></a></p><br>
+
+And here I am, in Hyderabad for more than a month now! I'm enjoying my job, learning new things every day, hacking through the source code and learning from the masters, trying to fix some interesting [bugs](http://bugs.cloudstack.org) and am super excited about what's coming in next few months.
+
+<br><p align="center"><a href="/images/hyd/servers.jpg"><img align="center" src="/images/hyd/servers.jpg"></a></p><br>
+
+The best part is I'm hacking an opensource project (earning those ohloh points :) and getting paid to do that! I get to work on some sweet servers that would run a variety of hypervisors and even baremetal (excited to work on it soon!) and we do releases every month.
+
+<br><p align="center"><a href="/images/hyd/lunch.jpg"><img align="center" src="/images/hyd/lunch.jpg"></a></p><br>
+
+We had a nice welcome/team lunch recently, thank you team!
+
+<br><p align="center"><a href="/images/hyd/bike.jpg"><img align="center" src="/images/hyd/bike.jpg"></a></p><br>
+
+And I bike everyday to work and places; got myself a Schwinn Searcher (2012).
