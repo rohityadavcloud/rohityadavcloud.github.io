@@ -38,6 +38,10 @@ Long sleeping periods and above all full night _bc_.
 
 <br><p align="center"><img align="center" src="/images/iitbhu/bc.gif"></p><br>
 
+That time I rode Nidhi's bicycle.
+
+<br><p align="center"><img align="center" src="/images/iitbhu/bike-nidhi.jpg"></p><br>
+
 That roadtrip...
 
 <br><p align="center"><img align="center" src="/images/iitbhu/roadtrip.jpg"></p><br>
