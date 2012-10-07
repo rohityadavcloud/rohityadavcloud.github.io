@@ -18,7 +18,7 @@ In the past I was; [GSoC] student for [VideoLAN][yt-vlmc-wiki] and my [project][
 
 My areas of interest include (but are not limited to) operating systems, compilers, functional languages, virtualization and hypervisors, embedded systems and _robotics_.
 
-I find most social networks boring and frivolous, I don't have a facebook account but irc/twitter works. I think mutt is one of the best software ever written and so are GNU/Linux, gcc, vim and irssi; email still rocks and the best way to reach me - <rohityadav89@gmail.com>
+I find most social networks boring and frivolous, I don't have a facebook account but irc/twitter works. I think mutt is one of the best software ever written and so are GNU/Linux, zsh, tmux and irssi; email still rocks and the best way to reach me - <rohityadav89@gmail.com>
 
 [Namaste]: http://en.wikipedia.org/wiki/Namaste
 [devnagari]: http://en.wikipedia.org/wiki/Devan%C4%81gar%C4%AB
