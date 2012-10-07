@@ -11,8 +11,8 @@ title: Projects
   <div class="span5">
     <h2>Open Source <small>contributions to FOSS</small></h2>
     <dl>
-      <dt><img src="/images/projects/cloudstack.png"> <a href="https://git-wip-us.apache.org/repos/asf?p=incubator-cloudstack.git;a=summary">Apache CloudStack</a></dt>
-      <dd>Opensource IaaS Cloud Computing Platform</dd>
+      <dt><img src="/images/projects/cloudstack.png"> <a href="http://incubator.apache.org/cloudstack/">Apache CloudStack</a></dt>
+      <dd>Cloud computing orchestrator, IaaS platform</dd>
       <dt><img src="/images/projects/vlmc-small.png"> <a href="http://trac.videolan.org/vlmc">VLMC</a>/<a href="https://github.com/bhaisaab/libishare">libishare</a></dt>
       <dd>Non-linear video editor based on libVLC.</dd>
       <dt><img src="/images/projects/boincvm.png"> <a href="http://code.google.com/p/boincvm/">BOINC-VM</a></dt>
