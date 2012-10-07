@@ -50,11 +50,6 @@ title: Projects
       <td>CMake, NSIS, Qt</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/recipes-small.png"> <a href="https://github.com/bhaisaab/recipes">Recipes</a>*</td>
-      <td><span class="label label-success">webapp</span> Webapp to document and share family recipes on <a href="http://yadav.im">yadav.im</a></td>
-      <td>Clojure, HTML5, AJAX/Javascript</td>
-    </tr>
-    <tr>
       <td><img src="/images/projects/r2a2-small.png"> <a href="/projects/r2a2">R2A2</a>^</td>
       <td><span class="label notice">hardware</span> Android powered mobile robot</td>
       <td>Java, C, Android, IOIO, Rover5</td>
