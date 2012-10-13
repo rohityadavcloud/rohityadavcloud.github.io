@@ -124,9 +124,13 @@ ExtremeElectronics.co.in
 
 [UVa OL](http://uva.onlinejudge.org/)
 
-[TopCoder](http://www.topcoder.com)
+[TopCoder Prob Archive](http://community.topcoder.com/tc?module=ProblemArchive)
+
+[TopCoder Algo Prob Set Analysis](http://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis)
 
 [SPOJ](http://www.spoj.pl/)
+
+[SPOJ Prob Classifier](http://problemclassifier.appspot.com/)
 
 [SGU](http://acm.sgu.ru/)
 
