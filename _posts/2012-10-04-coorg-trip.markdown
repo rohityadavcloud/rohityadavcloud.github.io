@@ -40,3 +40,5 @@ Finally, Mysore Palace.
 And time to return home.
 
 <br><p align="center"><img align="center" src="/images/coorg/mysorepalace.jpg"></p><br>
+
+<small>PS. Remind me to shave my beard next time we go for a trip :P</small>
