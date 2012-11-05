@@ -6,11 +6,11 @@ excerpt: the first official hyd meetup
 
 <p align="center"><img align="center" src="/images/hyd/meetup/cover.jpg"></p><br>
 
-We had our first official [Apache CloudStack](http://incubator.apache.org/cloudstack) [meetup](http://www.meetup.com/CloudStack-Hyderabad-Group/events/86658162/) in Hyderabad yesterday, 1 Nov 2012, at Lemon Tree, Hyderabad. Earlier we gave a small bird eye view [keynote](http://people.apache.org/~bhaisaab/meetups/sep-2012) on Apache CloudStack during a local Hadoop User Group (HUG) [meetup](http://www.meetup.com/hyderabad-hadoop/events/81746952/). This time, the meetup was totally focussed on Apache CloudStack.
+We had our first official [Apache CloudStack](http://incubator.apache.org/cloudstack) [meetup](http://www.meetup.com/CloudStack-Hyderabad-Group/events/86658162/) in Hyderabad yesterday, 1 Nov 2012, at Lemon Tree, Hyderabad. Earlier we gave a small bird eye view [presentation](http://people.apache.org/~bhaisaab/meetups/sep-2012) on Apache CloudStack during a local Hadoop User Group (HUG) [meetup](http://www.meetup.com/hyderabad-hadoop/events/81746952/). This time, the meetup was totally focussed on Apache CloudStack.
 
 <br><p align="center"><img align="center" src="/images/hyd/meetup/start.jpg"></p><br>
 
-The meetup keynotes started at 5PM and ended at 7:20PM, followed by about an hour of networking and discussions, and t-shirts for everyone. It was attended by 134 people and organised by 7 people that includes (Nitin who was out of station at the time), Kishan, Prasanna, Bidisha, Sadhu, Praveen, Hari P and myself.
+The meetup started at 5PM and the presentations ended at 7:20PM, followed by about an hour of networking and discussions, and t-shirts for everyone. It was attended by 134 people and organised by 7 people that includes (Nitin who was out of station at the time), Kishan, Prasanna, Bidisha, Sadhu, Praveen, Hari P and myself.
 
 <p align="center"><iframe width="800" height="450" src="http://www.youtube.com/embed/oJ4b8HFmFTc" frameborder="0" allowfullscreen></iframe></p>
 
@@ -20,7 +20,7 @@ We started by welcoming the attendees and showed them an introductory video on A
 <iframe src="http://www.slideshare.net/slideshow/embed_code/14998432" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
 </p>
 
-[Kevin Kluge](http://www.linkedin.com/pub/kevin-kluge/0/156/715) (Apache CloudStack committer and VP Cloud Platforms Group, Citrix) spoke on building your own IaaS cloud with Apache CloudStack and gave a small demo of CloudStack.
+[Kevin Kluge](http://www.linkedin.com/pub/kevin-kluge/0/156/715) (Apache CloudStack committer and VP Cloud Platforms Group, Citrix) gave his keynote on building your own IaaS cloud with Apache CloudStack and gave a small demo of CloudStack.
 
 <br><p align="center"><img align="center" src="/images/hyd/meetup/kevin.jpg"></p><br>
 
@@ -40,7 +40,7 @@ The last presentation was by [Chirag Jog](https://twitter.com/cheezo) (CTO, Clog
 
 <br><p align="center"><img align="center" src="/images/hyd/meetup/chirag.jpg"></p><br>
 
-All the presentations and photos are downloadable from [here](http://people.apache.org/~bhaisaab/meetups/nov-2012), some select photos are [here](https://plus.google.com/photos/105500838080334630026/albums/5806205455776858881). The keynotes were followed by questions;
+All the presentations and photos are downloadable from [here](http://people.apache.org/~bhaisaab/meetups/nov-2012), some select photos are [here](https://plus.google.com/photos/105500838080334630026/albums/5806205455776858881). The meetup presentations were followed by questions;
 
 <br><p align="center"><img align="center" src="/images/hyd/meetup/questions.jpg"></p><br>
 
