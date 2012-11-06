@@ -21,5 +21,7 @@ The LAN provides a swift medium of information  exchange and present solutions f
 
 Hence, ScuttleButt was made that just works out of the box!
 
+<center><iframe width="640" height="480" src="http://www.youtube.com/embed/7SO8K25Mmzw" frameborder="0" allowfullscreen></iframe></center>
+
 The great thing about ScuttleButt is that it’s a server-less messenger with features such as click n run, automated peer discovery, encoded avatars, status messages, notifications, p2p chatting, group chatting, file transfer and voice chatting! Though some of the features are under development, it just works out of the box. You get the air file (now that code is open sourc'd one can download and build), install it and click to open and that's it!!! Download the source <a href="/files/old/scuttlebutt.zip">archive</a>.
 
