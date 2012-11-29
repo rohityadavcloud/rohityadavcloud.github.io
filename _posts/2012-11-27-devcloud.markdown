@@ -101,7 +101,7 @@ $ cd to /opt/cloudstack # or any other directory, it does not matter
 $ git pull https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
 $ cd incubator-cloudstack
 # Build management server:
-$ mvn clean install -P developer
+$ mvn clean install -P developer,systemvm
 # Deploy database:
 $ mvn -pl developer,tools/devcloud -Ddeploydb -P developer
 # Run the management server:
@@ -132,6 +132,7 @@ $ apt-get install openjdk-6-jdk genisoimage python-pip mysql-server nfs-kernel-s
 $ apt-get install linux-headers-3.2.0-4-686-pae xen-hypervisor-4.1-i386 xcp-xapi xcp-xe xcp-guest-templates xcp-vncterm xen-tools blktap-utils blktap-dkms qemu-keymaps qemu-utils --no-install-recommends
 </pre>
 
+You'll have to build and install mkisofs.
 Remove MySQL password:
 <pre class="prettyprint">
 $ mysql -u root -p
