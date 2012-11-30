@@ -104,6 +104,8 @@ $ cd incubator-cloudstack
 $ mvn clean install -P developer,systemvm
 # Deploy database:
 $ mvn -pl developer,tools/devcloud -Ddeploydb -P developer
+# Export the following only if you want debugging on port 8787
+$ export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=800m -Xdebug -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n"
 # Run the management server:
 $ mvn -pl client jetty:run
 # In Global Settings check `host` to 192.168.56.1 (or .10 if inside DevCloud)
@@ -112,6 +114,16 @@ $ mvn -pl client jetty:run
 # CloudStack's global settings, this will save you some RAM.
 # Now add a basic zone with local storage. May be start more DevCloud hosts by
 # importing more appliances and changing default IPs and reboot!
+</pre>
+
+Make sure your mgmt server is running and you may deploy a basic zone using
+preconfigured settings in `tools/devcloud/devcloud.cfg`:
+
+<pre class="prettyprint">
+$ mvn -P developer -pl tools/devcloud -Ddeploysvr
+# Or in case mvn fails try the following, (can fail if you run mgmt server in debug mode on port 8787)
+$ cd tools/devcloud
+$ python ../marvin/marvin/deployDataCenter.py -i devcloud.cfg
 </pre>
 
 ##DIY DevCloud
@@ -138,6 +150,12 @@ Remove MySQL password:
 $ mysql -u root -p
   > SET PASSWORD FOR root@localhost=PASSWORD('');
   > exit;
+</pre>
+
+Install MySQL Python connector 1.0.7 or latest:
+<pre class="prettyprint">
+$ pip install mysql-connector-python
+# Or, if you have easy_install you can do: easy_install mysql-connector-python
 </pre>
 
 Setup Xen and XCP/XAPI:
