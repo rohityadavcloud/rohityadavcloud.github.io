@@ -86,7 +86,7 @@ simplicity of the distribution.
 Finally, I hit the jackpot with Debian! Debian Wheezy just worked, took me some
 time to create it from scratch (more than ten times) and figure out the correct
 configurations. The new appliance is available for download, [get DevCloud 2.0](http://people.apache.org/~bhaisaab/cloudstack/devcloud/devcloud2.ova)
-(863MB, md5checksum: 75545cc5761a6df18cb87ef3251f57b7).
+(867MB, md5checksum: 144b41193229ead4c9b3213c1c40f005).
 
 Install VirtualBox and import the new DevCloud2 appliance and start it. In
 default settings, it is reachable on ip `192.168.56.10` with username `root` and
