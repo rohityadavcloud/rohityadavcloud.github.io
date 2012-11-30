@@ -98,7 +98,7 @@ on your laptop (host os):
 $ ssh -v root@192.168.56.10
 $ cd to /opt/cloudstack # or any other directory, it does not matter
 # Get the source code:
-$ git pull https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
+$ git clone https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
 $ cd incubator-cloudstack
 # Build management server:
 $ mvn clean install -P developer,systemvm
