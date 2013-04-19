@@ -14,9 +14,12 @@ I'm an opensource and free software evangelist and in my free time I read [HN][]
 to beatbox and play bansuri/xaphoon/tin-whistle/flute; learn new things, hack;
 I love gadgets, electronics, robots and work on some opensource projects.
 
-These days I'm an [Apache CloudStack](http://incubator.apache.org/cloudstack/)
-developer and [committer](https://www.ohloh.net/p/CloudStack/contributors/).
-During the journey of hacking CloudStack I authored
+These days I'm hacking with my awesome team at Delhi based startup [Wingify](http://wingify.com).
+
+I'm one of the [Apache CloudStack](http://incubator.apache.org/cloudstack/)
+[committers](https://www.ohloh.net/p/CloudStack/contributors/).
+Contributing to CloudStack is a hobby now which used to be full time job once
+sponsored by my previous employer Citrix. During the journey of hacking CloudStack I authored
 [cloudmonkey](http://pypi.python.org/pypi/cloudmonkey), created a newer
 [DevCloud2](http://people.apache.org/~bhaisaab/cloudstack/devcloud/devcloud2.ova),
 refactored the api layer and related services, wrote few plugins, worked on
