@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
 
     <title>Rohit Yadav</title>
-    <link href="http://rohityadav.in/atom.xml" rel="self"/>
-    <link href="http://rohityadav.in/"/>
+    <link href="http://bhaisaab.org/atom.xml" rel="self"/>
+    <link href="http://bhaisaab.org/"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>http://rohityadav.in/</id>
+    <id>http://bhaisaab.org/</id>
     
     <author>
       <name>Rohit Yadav</name>
@@ -18,9 +18,9 @@ layout: nil
     {% for post in site.posts %}
     <entry>
       <title>{{ post.title }}</title>
-      <link href="http://rohityadav.in{{ post.url }}"/>
+      <link href="http://bhaisaab.org{{ post.url }}"/>
       <updated>{{ post.date | date_to_xmlschema }}</updated>
-      <id>http://rohityadav.in{{ post.id }}</id>
+      <id>http://bhaisaab.org{{ post.id }}</id>
       <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
     {% endfor %}
