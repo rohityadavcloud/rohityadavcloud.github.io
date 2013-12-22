@@ -5,9 +5,7 @@ tagline: List of algorithms every programmer should know
 permalink: /algorithms/
 ---
 
-
-
-# Basic Datastructures
+## Basics
 
 - [ ] Stack: Array based
 - [ ] Stack: Linkedlist based
@@ -15,15 +13,55 @@ permalink: /algorithms/
 - [ ] Queue: Linkedlist based
 - [ ] Lists: Array based
 - [ ] Lists: Linked list based
+- [ ] Multiset (maps)
+- [ ] Quick Find
+- [ ] Quick Union
+- [ ] Weighted Quick Union
 
-# Recursion
+## Recursion
 
-- [ ] Factorial
+- [✔] Factorial
 - [ ] Factorial: tail recursion
 - [ ] Reversing a string
 - [ ] N-Queens Problem (ex: 8-queens problem)
 
-# Trees (Indexing)
+## Sorting
+
+- [ ] Bubble sort
+- [ ] Selection sort
+- [ ] Insertion sort
+- [ ] Shell sort
+- [ ] Merge sort: recursive
+- [ ] Merge sort: iterative
+- [ ] Quick sort
+- [ ] Max Heap priority queue
+- [ ] Min Heap priority queue
+- [ ] Heap sort
+- [ ] Bucket sort
+- [ ] Counting sort
+
+
+## Searching
+
+- [ ] Sequential search
+- [ ] Binary search
+- [ ] Separate chaining hash table
+- [ ] Linear probing hash table
+- [ ] Ordered set
+- [ ] Whitelist filter
+- [ ] Blacklist filter
+- [ ] Dictionary lookup
+- [ ] File indexing
+
+## Heap based DS
+
+- [ ] Heaps
+- [ ] Binomial Heaps
+- [ ] Fibonacci Heaps
+- [ ] Leftist heaps
+- [ ] Skew heaps
+
+## Trees (Indexing)
 
 - [ ] Binary Search Tree (BST)
 - [ ] AVL Tree (Balanced BST)
@@ -35,37 +73,15 @@ permalink: /algorithms/
 - [ ] B Tree
 - [ ] B+ Tree
 
-# Sorting
+## Graph
 
-## Comparision Sorting
-
-- [ ] Bubble sort
-- [ ] Selection sort
-- [ ] Insertion sort
-- [ ] Shell sort
-- [ ] Merge sort
-- [ ] Quick sort
-
-## Misc sorting
-
-- [ ] Bucket sort
-- [ ] Counting sort
-- [ ] Radix sort
-- [ ] Heap sort
-
-# Heap based DS
-
-- [ ] Heaps
-- [ ] Binomial Heaps
-- [ ] Fibonacci Heaps
-- [ ] Leftist heaps
-- [ ] Skew heaps
-
-# Graph algorithms
-
+- [ ] Undirected graph
 - [ ] Breadth First Search
 - [ ] Depth First Search
 - [ ] Connected components
+- [ ] Cycle in graph
+- [ ] Directed graph
+- [ ] Strong components
 - [ ] Dijkstra's Shortest Path
 - [ ] Prim's Minimum Cost Spanning Tree
 - [ ] Topological Sort (Using Indegree array)
@@ -73,22 +89,35 @@ permalink: /algorithms/
 - [ ] Floyd-Warshall (all pairs shortest paths)
 - [ ] Kruskal Minimum Cost Spanning Tree Algorithm
 
-# Dynamic Programming
+## Strings
+
+- [ ] Radix sort
+- [ ] Trie (multiway etc)
+- [ ] Knuth-Morris-Pratt substring search
+- [ ] Boyer-Moore substring search
+- [ ] Rabin-Karp substring search
+- [ ] NFA for regular expressions
+- [ ] Grep
+- [ ] Huffman coding
+- [ ] Lempel-Ziv-Welch coding
+
+## Dynamic Programming
 
 - [ ] Calculating nth Fibonacci number
 - [ ] Making Change
 - [ ] Longest Common Subsequence
 
-# Geometric Algorithms
+## Geometric Algorithms
 - [ ] 2D Rotation and Scale Matrices
 - [ ] 2D Rotation and Translation Matrices
 - [ ] 2D Changing Coordinate Systems
 - [ ] 3D Rotation and Scale Matrices
 - [ ] 3D Changing Coordinate Systems
 
-# Misc
+## Misc
 - [ ] Disjoint Sets
-- [ ] Huffman Coding
-
+- [ ] Gaussian elimination
+- [ ] Fast Fourier transform
+- [ ] Convex Hull
 
 
