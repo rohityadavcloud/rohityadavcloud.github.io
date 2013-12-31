@@ -65,6 +65,7 @@ tagline: List for 2014
 - [ ] Algorithms Stanford [level-1](https://class.coursera.org/algo-003/lecture)
 - [ ] Algorithms Stanford [level-2](https://class.coursera.org/algo2-2012-001/lecture)
 - [ ] [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
+- [ ] [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
 - [ ] [Machine Learning Stanford](https://class.coursera.org/ml-004/lecture)
 
 ## OOP
