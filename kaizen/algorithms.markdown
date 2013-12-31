@@ -2,7 +2,6 @@
 layout: page
 title: Algorithms
 tagline: List of algorithms every programmer should know
-permalink: /algorithms/
 ---
 
 ## Basics
@@ -39,6 +38,7 @@ permalink: /algorithms/
 - [ ] Heap sort
 - [ ] Bucket sort
 - [ ] Counting sort
+- [ ] Convex Hull
 
 
 ## Searching
@@ -72,6 +72,8 @@ permalink: /algorithms/
 - [ ] Close Hash Table, using buckets
 - [ ] B Tree
 - [ ] B+ Tree
+- [ ] Interval Search Trees
+- [ ] Ternary Search Tries
 
 ## Graph
 
@@ -98,7 +100,8 @@ permalink: /algorithms/
 - [ ] Rabin-Karp substring search
 - [ ] NFA for regular expressions
 - [ ] Grep
-- [ ] Huffman coding
+- [ ] Huffman coding/compression
+- [ ] LZW Compression
 - [ ] Lempel-Ziv-Welch coding
 
 ## Dynamic Programming
@@ -118,6 +121,5 @@ permalink: /algorithms/
 - [ ] Disjoint Sets
 - [ ] Gaussian elimination
 - [ ] Fast Fourier transform
-- [ ] Convex Hull
 
 
