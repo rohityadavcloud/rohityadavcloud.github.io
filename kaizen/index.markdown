@@ -8,7 +8,6 @@ tagline: List for 2014
 ## Workouts
 
 - [ ] Daily practice problems on Euler, TopCoder, Codeforce, SPOJ, Codechef
-- [ ] Weekly 30 mins touch typing
 - [ ] Weekly opensource contributions
 
 ## Life
@@ -16,7 +15,6 @@ tagline: List for 2014
 - [ ] Swimming
 - [ ] Kickboxing
 - [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
-- [ ] Speech delivery, english speaking and book writing
 - [ ] Workout, gym, abs, reach optimal fitness score
 
 ## Languages
@@ -74,17 +72,17 @@ tagline: List for 2014
 
 ## Books
 
-- [ ] Modern OS by Tanenbaum
 - [ ] Art of Computer Programming 1-3
-- [ ] Network Warrior
-- [ ] Land of Lisp
 - [ ] Hacker's delight
-- [ ] The art of war
-- [ ] BSD 4 book by McKusic
+- [ ] Land of Lisp
 - [ ] Design Patterns (head first)
+- [ ] Network Warrior
+- [ ] Modern OS by Tanenbaum
+- [ ] BSD 4 book by McKusic
 - [ ] Intel/AMD proc docs
 - [ ] The mythical man month
 - [ ] The pragmatic programmer
+- [ ] The art of war
 
 ## Exploration
 
