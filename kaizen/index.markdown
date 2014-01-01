@@ -7,28 +7,24 @@ tagline: List for 2014
 
 ## Workouts
 
-- [ ] Daily 10-15 mins touch typing
-- [ ] Practice daily problems on Euler, TopCoder, Codeforce, SPOJ, Codechef
-- [ ] Weekend opensource contributions
+- [ ] Daily practice problems on Euler, TopCoder, Codeforce, SPOJ, Codechef
+- [ ] Weekly 30 mins touch typing
+- [ ] Weekly opensource contributions
 
 ## Life
 
 - [ ] Swimming
-- [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
 - [ ] Kickboxing
-- [ ] Advance beatboxing
-- [ ] Advance Ripstik ollie and tricks
+- [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
+- [ ] Speech delivery, english speaking and book writing
 - [ ] Workout, gym, abs, reach optimal fitness score
-- [ ] 100 pushups
-- [ ] Run 10-50kms
 
 ## Languages
 
 - [ ] Java
 - [ ] Scala (Akka, Play)
-- [ ] [Haskell](http://www.scs.stanford.edu/11au-cs240h/)
-- [ ] LISP
 - [ ] [Javascript](http://www.codecademy.com/tracks/javascript)/Dart/Coffeescript
+- [ ] [Learn C](http://c.learncodethehardway.org/book/)
 - [ ] C++11/C++14, STL, [CPP](http://www.learncpp.com)
 
 ## Learn
@@ -36,23 +32,9 @@ tagline: List for 2014
 - [ ] Android programming
 - [ ] [Angularjs](https://github.com/jmcunningham/AngularJS-Learning), backbonejs, singlepage apps
 
-## Books
-
-- [ ] Modern OS by Tanenbaum
-- [ ] Art of Computer Programming 1-3
-- [ ] Network Warrior
-- [ ] Land of Lisp
-- [ ] Hacker's delight
-- [ ] The art of war
-- [ ] BSD 4 book by McKusic
-- [ ] Design Patterns (head first)
-- [ ] Intel/AMD proc docs
-- [ ] The mythical man month
-- [ ] The pragmatic programmer
-
 ## Hack
 
-- [ ] Tantra x86 Kernel, [learn C](http://c.learncodethehardway.org/book/)
+- [ ] Tantra x86 Kernel
 - [ ] LLVM based toy programming language
 - [ ] Security cam system
 - [ ] R2A2 or some robot
@@ -68,6 +50,15 @@ tagline: List for 2014
 - [ ] [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
 - [ ] [Machine Learning Stanford](https://class.coursera.org/ml-004/lecture)
 
+## Functional Programming
+
+- [ ] Lisp and little schemer book
+- [ ] [Haskell](http://www.scs.stanford.edu/11au-cs240h/)
+- [ ] [Scala Lectures](https://class.coursera.org/progfun-003/lecture) by Martin Odesky
+- [ ] [Reactive Programming](https://class.coursera.org/reactive-001/lecture) M. Odesky
+- [ ] [Topics in Functional Programming](http://en.wikipedia.org/wiki/List_of_functional_programming_topics)
+- [ ] [FP books](http://alexott.net/en/fp/books/)
+
 ## OOP
 
 - [ ] [Design pattern video series](https://www.youtube.com/watch?v=wiQdrH2YpT4&list=PLF206E906175C7E07)
@@ -81,13 +72,19 @@ tagline: List for 2014
 - [ ] Distributed computing [wisc](http://pages.cs.wisc.edu/~cs739-1/ )
 - [ ] Distributed computing [paper reading book](http://pdos.csail.mit.edu/dsrg/)
 
-## Functional Programming
+## Books
 
-- [ ] [Scala Lectures](https://class.coursera.org/progfun-003/lecture) by Martin Odesky
-- [ ] [Reactive Programming](https://class.coursera.org/reactive-001/lecture) M. Odesky
-- [ ] [Topics in Functional Programming](http://en.wikipedia.org/wiki/List_of_functional_programming_topics)
-- [ ] [FP books](http://alexott.net/en/fp/books/)
-
+- [ ] Modern OS by Tanenbaum
+- [ ] Art of Computer Programming 1-3
+- [ ] Network Warrior
+- [ ] Land of Lisp
+- [ ] Hacker's delight
+- [ ] The art of war
+- [ ] BSD 4 book by McKusic
+- [ ] Design Patterns (head first)
+- [ ] Intel/AMD proc docs
+- [ ] The mythical man month
+- [ ] The pragmatic programmer
 
 ## Exploration
 
