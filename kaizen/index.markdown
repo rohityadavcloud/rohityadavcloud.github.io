@@ -39,6 +39,7 @@ tagline: List for 2014
 
 ## Algorithms
 
+- [ ] [USACO training](http://train.usaco.org/usacogate)
 - [ ] [Algorithm Coding](./algorithms.html)
 - [ ] Algorithms Princeton [level-1](https://class.coursera.org/algs4partI-003/lecture)
 - [ ] Algorithms Princeton [level-2](https://class.coursera.org/algs4partII-002/lecture)
