@@ -32,7 +32,7 @@ tagline: List for 2014
 
 ## Hack
 
-- [ ] Tantra x86 Kernel
+- [ ] Tantra x86 Kernel [OSDev books](http://wiki.osdev.org/Books)
 - [ ] LLVM based toy programming language
 - [ ] Security cam system
 - [ ] R2A2 or some robot
@@ -47,6 +47,7 @@ tagline: List for 2014
 - [ ] Algorithms Stanford [level-2](https://class.coursera.org/algo2-2012-001/lecture)
 - [ ] [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
 - [ ] [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
+- [ ] [Analysis of Algorithms](https://www.coursera.org/course/aofa)
 - [ ] [Machine Learning Stanford](https://class.coursera.org/ml-004/lecture)
 
 ## Functional Programming
