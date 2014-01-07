@@ -48,6 +48,7 @@ tagline: List for 2014
 - [ ] [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
 - [ ] [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
 - [ ] [Analysis of Algorithms](https://www.coursera.org/course/aofa)
+- [ ] [SICP Lectures](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/)
 - [ ] [Machine Learning Stanford](https://class.coursera.org/ml-004/lecture)
 
 ## Functional Programming
