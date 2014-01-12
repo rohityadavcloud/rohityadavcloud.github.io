@@ -7,23 +7,23 @@ tagline: List for 2014
 
 ## Workouts
 
-- [ ] Daily practice problems on Euler, TopCoder, Codeforce, SPOJ, Codechef
-- [ ] Weekly opensource contributions
+- [ ] Competitve Programming: [Euler](http://projecteuler.net/), [TopCoder](http://www.topcoder.com), [Codeforce], [SPOJ], [Codechef], [[UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
+- [ ] Weekly opensource contributions to Mozilla, CloudStack, Linux, VideoLAN and others
 
 ## Life
 
 - [ ] Swimming
+- [ ] Workout, gym, abs, reach optimal fitness score
 - [ ] Kickboxing
 - [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
-- [ ] Workout, gym, abs, reach optimal fitness score
 
 ## Languages
 
-- [ ] Java
 - [ ] Scala (Akka, Play)
-- [ ] [Javascript](http://www.codecademy.com/tracks/javascript)/Dart/Coffeescript
+- [ ] Java
 - [ ] [Learn C](http://c.learncodethehardway.org/book/)
 - [ ] C++11/C++14, STL, [CPP](http://www.learncpp.com)
+- [ ] [Javascript](http://www.codecademy.com/tracks/javascript)/Dart/Coffeescript
 
 ## Learn
 
@@ -41,14 +41,17 @@ tagline: List for 2014
 
 - [ ] [USACO training](http://train.usaco.org/usacogate)
 - [ ] [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
-- [ ] Algorithms Princeton [level-1](https://class.coursera.org/algs4partI-003/lecture)
-- [ ] Algorithms Princeton [level-2](https://class.coursera.org/algs4partII-002/lecture)
-- [ ] Algorithms Stanford [level-1](https://class.coursera.org/algo-003/lecture)
-- [ ] Algorithms Stanford [level-2](https://class.coursera.org/algo2-2012-001/lecture)
 - [ ] [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
 - [ ] [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
 - [ ] [Analysis of Algorithms](https://www.coursera.org/course/aofa)
 - [ ] [SICP Lectures](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/)
+
+### Algorithms Lectures
+
+- [ ] Algorithms Princeton [level-1](https://class.coursera.org/algs4partI-003/lecture)
+- [ ] Algorithms Princeton [level-2](https://class.coursera.org/algs4partII-002/lecture)
+- [ ] Algorithms Stanford [level-1](https://class.coursera.org/algo-003/lecture)
+- [ ] Algorithms Stanford [level-2](https://class.coursera.org/algo2-2012-001/lecture)
 - [ ] [Machine Learning Stanford](https://class.coursera.org/ml-004/lecture)
 
 ## Functional Programming
@@ -94,7 +97,7 @@ tagline: List for 2014
 - [ ] Combinators (Y Combinators) and Lambda Calculus
 - [ ] Consensus: RAFT, Paxos
 - [ ] State machines
-- [ ] Protocol Buffers, thrift
+- [ ] Protocol Buffers
 - [ ] Snappy compression algorithm
 - [ ] Network protocols: TCP/IP
 - [ ] Android and web development
