@@ -15,6 +15,7 @@ tagline: List for 2014
 
 - [ ] Swimming
 - [ ] Workout, gym, abs, reach optimal fitness score
+- [ ] Rope skipping
 - [ ] Kickboxing
 - [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
 
