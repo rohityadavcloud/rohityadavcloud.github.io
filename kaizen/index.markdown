@@ -7,7 +7,8 @@ tagline: List for 2014
 
 ## Workouts
 
-- [ ] Competitve Programming: [Euler](http://projecteuler.net/), [TopCoder](http://www.topcoder.com), [Codeforce], [SPOJ], [Codechef], [[UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
+- [ ] Programming Practice: [Euler](http://projecteuler.net/), [TopCoder](http://www.topcoder.com), [SPOJ](http://www.spoj.com/), [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
+- [ ] Competitive Programming: [TopCoder](http://www.topcoder.com), [Codeforce](http://codeforces.com/), [Codechef](http://codechef.com)
 - [ ] Weekly opensource contributions to Mozilla, CloudStack, Linux, VideoLAN and others
 
 ## Life
