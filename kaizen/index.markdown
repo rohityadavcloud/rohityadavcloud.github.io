@@ -34,7 +34,7 @@ tagline: List for 2014
 
 ## Hack
 
-- [ ] Tantra x86 Kernel [OSDev books](http://wiki.osdev.org/Books) [GDB](http://beej.us/guide/bggdb/)
+- [ ] Tantra x86 Kernel [OSDev books](http://wiki.osdev.org/Books) [GDB](http://beej.us/guide/bggdb/) [OSSTEP](http://pages.cs.wisc.edu/~remzi/OSTEP/) [xv6](http://pdos.csail.mit.edu/6.828/2012/xv6.html)
 - [ ] LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
 - [ ] Security cam system
 - [ ] R2A2 or some robot
