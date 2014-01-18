@@ -37,6 +37,22 @@ tagline: List of algorithms every programmer should know
 - [ ] Quick Union
 - [ ] Weighted Quick Union
 
+# Lesser used data structures
+
+- [ ] Tries (prefix trees or crit-bit-trees
+- [ ] Bloom Filter
+- [ ] Rope (string ops)
+- [ ] Skip list
+- [ ] Spatial Indices: R-trees, kd-trees
+- [ ] Zippers
+- [ ] Suffix trie
+- [ ] Splay trees
+- [ ] Disjoint set
+- [ ] Fibonacci heaps
+- [ ] Huffman trees
+- [ ] Circular/ring buffer
+- [ ] Merkle tree
+
 ## Recursion
 
 - [✔] Factorial
