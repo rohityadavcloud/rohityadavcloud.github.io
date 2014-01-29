@@ -238,7 +238,7 @@ $ /etc/init.d/nfs-kernel-server restart
 <div class="offset2 span6">
   <div class="alert alert-info">
     <center>
-    <strong>Please</strong> email your queries on the ACS ML `cloudstack-dev@incubator.apache.org`
+    <strong>Please</strong> email your queries on the ACS ML `dev@cloudstack.apache.org`
     </center>
   </div>
 </div>
