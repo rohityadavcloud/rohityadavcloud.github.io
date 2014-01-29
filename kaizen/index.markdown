@@ -21,11 +21,12 @@ tagline: List for 2014
 
 ## Languages
 
+- [ ] Go
+- [ ] [Javascript](http://www.codecademy.com/tracks/javascript)/Dart/Coffeescript
 - [ ] Scala (Akka, Play)
 - [ ] Java
 - [ ] [Learn C](http://c.learncodethehardway.org/book/)
 - [ ] C++11/C++14, STL, [CPP](http://www.learncpp.com)
-- [ ] [Javascript](http://www.codecademy.com/tracks/javascript)/Dart/Coffeescript
 
 ## Learn
 
@@ -98,6 +99,7 @@ tagline: List for 2014
 - [ ] Software Transactional Memory
 - [ ] Combinators (Y Combinators) and Lambda Calculus
 - [ ] Consensus: RAFT, Paxos
+- [ ] Future, promises, finagle, scala
 - [ ] State machines
 - [ ] Protocol Buffers
 - [ ] Snappy compression algorithm
