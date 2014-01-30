@@ -7,9 +7,17 @@ tagline: List for 2014
 
 ## Workouts
 
-- [ ] Programming Practice: [Euler](http://projecteuler.net/), [TopCoder](http://www.topcoder.com), [SPOJ](http://www.spoj.com/), [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
+- [ ] [USACO training](http://train.usaco.org/usacogate)
+- [ ] Programming Practice: [Euler](http://projecteuler.net/),
+- [ ] Programming Practice: [TopCoder](http://www.topcoder.com)
+- [ ] Programming Practice: [SPOJ](http://www.spoj.com/)
+- [ ] Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
 - [ ] Competitive Programming: [TopCoder](http://www.topcoder.com), [Codeforce](http://codeforces.com/), [Codechef](http://codechef.com)
-- [ ] Weekly opensource contributions to Mozilla, CloudStack, Linux, VideoLAN and others
+- [ ] Opensource contribution - VLMC/VLC
+- [ ] Opensource contribution - CloudStack
+- [ ] Opensource contribution - Mozilla
+- [ ] Opensource contribution - Linux and other
+- [✔] CTF3
 
 ## Life
 
@@ -21,17 +29,53 @@ tagline: List for 2014
 
 ## Languages
 
-- [ ] Go
-- [ ] [Javascript](http://www.codecademy.com/tracks/javascript)/Dart/Coffeescript
-- [ ] Scala (Akka, Play)
-- [ ] Java
-- [ ] [Learn C](http://c.learncodethehardway.org/book/)
-- [ ] C++11/C++14, STL, [CPP](http://www.learncpp.com)
+- [✔] Go
+- [ ] [Javascript](http://www.codecademy.com/tracks/javascript)
+- [ ] Dart/Coffeescript
+- [ ] Scala
+- [✔] Java
+- [✔] Learn [C](http://c.learncodethehardway.org/book/)
+- [✔] C++11/C++14, STL, [CPP](http://www.learncpp.com)
+
+## Tools & Tech
+
+- [✔] VMs: Veewee
+- [ ] VMs: Packer, Serf, Vagrant
+- [ ] VMs: Packer, Serf, Vagrant, Veewee
+- [ ] LXC/Docker
+- [ ] JVM kung-foo
+- [✔] Openresty
+- [✔] RabbitMQ
+- [✔] Percona/MariaDB
+- [✔] Redis
+- [✔] Elasticsearch
+- [✔] LevelDB/RocksDB
+- [ ] MongoDB
+- [ ] WSDL
+- [✔] Thrift
+- [ ] ProtocolBuffer
+- [ ] Avro
+- [ ] Finagle
+- [ ] Zookeeper
+- [ ] etcd
+- [ ] doozerd
+- [ ] Hadoop, Pig, Hive
+- [ ] Scribe/Logstash/Kafka
+- [✔] Puppet+Fab
+- [ ] Chef
+- [ ] Ansible
+- [ ] NodeJS
+- [ ] Play and Akka
+- [✔] Bootstrap
+- [ ] [Angularjs](https://github.com/jmcunningham/AngularJS-Learning)
+- [ ] Backbonejs
+- [ ] Yeoman, Grunt, Bower, NPM
+- [ ] D3
 
 ## Learn
 
 - [ ] Android programming
-- [ ] [Angularjs](https://github.com/jmcunningham/AngularJS-Learning), backbonejs, singlepage apps
+- [ ] Single Page App (SPA) with restful API backend
 
 ## Hack
 
@@ -39,10 +83,10 @@ tagline: List for 2014
 - [ ] LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
 - [ ] Security cam system
 - [ ] R2A2 or some robot
+- [ ] Meta, kaizen list
 
 ## Algorithms
 
-- [ ] [USACO training](http://train.usaco.org/usacogate)
 - [ ] [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
 - [ ] [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
 - [ ] [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
@@ -99,13 +143,8 @@ tagline: List for 2014
 - [ ] Software Transactional Memory
 - [ ] Combinators (Y Combinators) and Lambda Calculus
 - [ ] Consensus: RAFT, Paxos
-- [ ] Future, promises, finagle, scala
 - [ ] State machines
-- [ ] Protocol Buffers
 - [ ] Snappy compression algorithm
 - [ ] Network protocols: TCP/IP
-- [ ] Android and web development
 - [ ] System level debugging
-- [ ] JVM hacking
-- [ ] Zookeeper, Scribe, Mesos, Hadoop, Pig
 - [ ] Performance engineering
