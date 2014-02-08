@@ -77,7 +77,7 @@ title: Projects
       <td>CMake, NSIS, Qt</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/r2a2-small.png"> <a href="/projects/r2a2">R2A2</a>^</td>
+      <td><img src="/images/projects/r2a2-small.png"> R2A2^</td>
       <td><span class="label notice">hardware</span> Android powered mobile robot</td>
       <td>Java, C, Android, IOIO, Rover5</td>
     </tr>

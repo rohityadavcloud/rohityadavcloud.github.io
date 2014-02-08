@@ -38,18 +38,8 @@
 
             <li {% if page.title == "Logs" %}class="active"{% endif %}><a href="/logs"><strong>Logs</strong></a></li>
 
-            <li class= "dropdown{% if page.title == "Projects" %} active{% endif %}">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Work <b class="caret"></b></strong></a>
-              <ul class="dropdown-menu">
-                <li><a href="/projects">All Projects</a></li>
-                <li class="divider"></li>
-                <li>&nbsp; Selected works</li>
-                <li><a href="http://trac.videolan.org/vlmc" target="_blank">VLMC <span class="badge badge-success">opensource</span></a></li>
-                <li><a href="https://github.com/bhaisaab/cmakeqt" target="_blank">CMakeQt <span class="badge badge-warning">desktop</span></a></li>
-                <li><a href="/projects/tantra">Tantra <span class="badge badge-error">system</span></a></li>
-                <li><a href="/projects/r2a2">R2A2 <span class="badge badge-info">hardware</span></a></li>
-                <li><a href="http://code.google.com/p/vmcontroller/" target="_blank">VMController <span class="badge badge-error">system</span></a></li>
-              </ul>
+            <li {% if page.title == "Projects" %}class="active"{% endif %}>
+              <a href="/projects" class="dropdown-toggle" data-toggle="dropdown"><strong>Work</strong></a>
             </li>
 
             <li {% if page.title == "Docs" %}class="active"{% endif %}><a href="/docs"><strong>Docs</strong></a></li>
