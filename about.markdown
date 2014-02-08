@@ -14,7 +14,7 @@ I'm an opensource and free software evangelist and in my free time I read [HN][]
 to beatbox and play bansuri/xaphoon/tin-whistle/flute; learn new things, hack;
 I love gadgets, electronics, robots and work on some opensource projects.
 
-My current hacking gig is at a New Delhi based startup, [Wingify](http://wingify.com).
+My current gig is at a New Delhi based startup, [Wingify](http://wingify.com).
 
 I'm one of the [Apache CloudStack](http://cloudstack.apache.org/)
 [committers](https://www.ohloh.net/p/CloudStack/contributors/).
@@ -62,7 +62,7 @@ My areas of interest include (but are not limited to) operating systems, cloud
 computing, compilers, distributed systems, infra and scalability, functional
 programming languages, virtualization and hypervisors.
 
-I find most social networks boring and frivolous, but irc/twitter works. I think
+I find most social networks boring and frivolous, but email/twitter works. I think
 mutt is one of the best software ever written and so are GNU/Linux, zsh, tmux and
 irssi; email still rocks and is the best way to reach me - <bhaisaab@baagi.org>
 
