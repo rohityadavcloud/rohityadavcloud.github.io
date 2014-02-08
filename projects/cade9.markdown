@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Cade9
-permalink: /cade9/
+permalink: /projects/cade9/
 tagline: AtMEGA32 based arcade gaming platform
 ---
 

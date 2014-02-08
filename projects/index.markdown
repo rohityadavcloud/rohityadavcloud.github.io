@@ -35,7 +35,7 @@ title: Projects
   </div>
 </div>
 
-<h2>Homebrew <small>personal projects</small></h2>
+<h2>Things <small>I've worked on</small></h2>
 
 <table class="table table-striped table-bordered">
   <thead>
@@ -47,9 +47,29 @@ title: Projects
   </thead>
   <tbody>
     <tr>
+      <td><img src="/images/projects/cloudmonkey-small.png"> <a href="https://git-wip-us.apache.org/repos/asf?p=cloudstack-cloudmonkey.git">CloudMonkey</a></td>
+      <td><span class="label label-important">system</span> CloudStack command line interface and interactive shell (<a href="https://cwiki.apache.org/confluence/display/CLOUDSTACK/CloudStack+cloudmonkey+CLI">wiki</a>, <a href="https://pypi.python.org/pypi/cloudmonkey">pypi</a>)</td>
+      <td>Python</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/bhaisaab/agentredrabbit">agentredrabbit</a></td>
+      <td><span class="label label-important">system</span> Transport agent that moves data from Redis to RabbitMQ</td>
+      <td>Python</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/bhaisaab/lua-resty-rabbitmqstomp">lua-resty-rabbitmqstomp</a></td>
+      <td><span class="label label-important">system</span> Opinionated Lua RabbitMQ client library for the ngx_lua apps based on the cosocket API</td>
+      <td>Lua</td>
+    </tr>
+    <tr>
       <td><img src="/images/projects/tantra-small.png"> <a href="/projects/tantra">Tantra</a>*</td>
       <td><span class="label label-important">system</span> Monolithic x86 unix based kernel development</td>
       <td>C, x86 ASM, Qemu, VirtualBox</td>
+    </tr>
+    <tr>
+      <td><img src="/images/projects/cade9-small.png"> <a href="/projects/cade9">Cade9</a></td>
+      <td><span class="label notice">hardware</span> ATmega32 based arcade gaming platform</td>
+      <td>AVR/ATmega32, C</td>
     </tr>
     <tr>
       <td><img src="/images/projects/cmakeqt-small.png"> <a href="https://github.com/bhaisaab/cmakeqt">CMakeQt</a></td>
@@ -72,16 +92,6 @@ title: Projects
       <td>Python, Twisted, Inject, JSON, STOMP, MorbidMQ, UUID, LibVirt, VirtualBox</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/graffiti-small.png"> <a href="/projects/graffiti">Graffiti</a></td>
-      <td><span class="label label-warning">desktop</span> Interactive LAN whiteboard</td>
-      <td>C++, Qt</td>
-    </tr>
-    <tr>
-      <td><img src="/images/projects/cade9-small.png"> <a href="/projects/cade9">Cade9</a></td>
-      <td><span class="label notice">hardware</span> ATmega32 based arcade gaming platform</td>
-      <td>AVR/ATmega32, C</td>
-    </tr>
-    <tr>
       <td><img src="/images/projects/scuttlebutt-small.png"> <a href="/projects/old">Old projects</a></td>
       <td><span class="label">old</span> Stuff I no longer maintain or use</td>
       <td></td>
@@ -91,7 +101,3 @@ title: Projects
 
 \* = in progress
 ^ = postponed
-
-<script type="text/javascript">
-  mixpanel.track("Project Index Page");
-</script>
