@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Tantra
-permalink: /projects/tantra/
+permalink: /tantra/
 ---
 
 <div class="alert alert-error">

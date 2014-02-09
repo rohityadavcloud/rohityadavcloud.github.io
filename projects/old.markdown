@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Old Projects
-permalink: /projects/old/
+permalink: /old/
 ---
 
 <div class="page-header">
