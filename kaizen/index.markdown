@@ -11,39 +11,40 @@ tagline: List for 2014
 - [ ] Programming Practice: [Euler](http://projecteuler.net/),
 - [ ] Programming Practice: [TopCoder](http://www.topcoder.com)
 - [ ] Programming Practice: [SPOJ](http://www.spoj.com/)
+- [ ] Programming Practice: [HackerRank](https://www.hackerrank.com/)
 - [ ] Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
 - [ ] Competitive Programming: [TopCoder](http://www.topcoder.com), [Codeforce](http://codeforces.com/), [Codechef](http://codechef.com)
-- [ ] Opensource contribution - VLMC/VLC
 - [ ] Opensource contribution - CloudStack
 - [ ] Opensource contribution - Mozilla
-- [ ] Opensource contribution - Linux and other
+- [ ] Opensource contribution - LLVM/Rust/Go compilers
+- [ ] Opensource contribution - Linux and others
 - [✔] CTF3
 
 ## Life
 
 - [ ] Swimming
 - [ ] Workout, gym, abs, reach optimal fitness score
-- [ ] Rope skipping
 - [ ] Kickboxing
 - [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
 
 ## Languages
 
-- [✔] Go
-- [ ] [Javascript](http://www.codecademy.com/tracks/javascript)
-- [ ] Dart/Coffeescript
-- [ ] Scala
-- [✔] Java
-- [✔] Learn [C](http://c.learncodethehardway.org/book/)
-- [✔] C++11/C++14, STL, [CPP](http://www.learncpp.com)
+- [ ] Go
+- [ ] Javascript
+- [ ] Java
+- [ ] Java/Android
+- [ ] C++11/C++14, STL, [CPP](http://www.learncpp.com)
+- [ ] Learn [C](http://c.learncodethehardway.org/book)
+- [ ] Haskell/Lisp (functional programming)
+- [ ] Ruby/Rails
+- [ ] Python
 
 ## Tools & Tech
 
 - [✔] VMs: Veewee
 - [ ] VMs: Packer, Serf, Vagrant
-- [ ] VMs: Packer, Serf, Vagrant, Veewee
 - [ ] LXC/Docker
-- [ ] JVM kung-foo
+- [ ] JVM GC kung-foo
 - [✔] Openresty
 - [✔] RabbitMQ
 - [✔] Percona/MariaDB
@@ -55,6 +56,7 @@ tagline: List for 2014
 - [✔] Thrift
 - [ ] ProtocolBuffer
 - [ ] Avro
+- [ ] Zipkin/Dapper (tracing system)
 - [ ] Finagle
 - [ ] Zookeeper
 - [ ] etcd
@@ -71,11 +73,6 @@ tagline: List for 2014
 - [ ] Backbonejs
 - [ ] Yeoman, Grunt, Bower, NPM
 - [ ] D3
-
-## Learn
-
-- [ ] Android programming
-- [ ] Single Page App (SPA) with restful API backend
 
 ## Hack
 
