@@ -26,6 +26,7 @@ tagline: List for 2014
 - [ ] Workout, gym, abs, reach optimal fitness score
 - [ ] Kickboxing
 - [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
+- [ ] Learn to work abacus
 
 ## Languages
 
