@@ -24,21 +24,28 @@ tagline: List for 2014
 
 - [ ] Swimming
 - [ ] Workout, gym, abs, reach optimal fitness score
-- [ ] Kickboxing
 - [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
-- [ ] Learn to work abacus
+- [ ] Kickboxing
 
 ## Languages
 
+### Learn
+
 - [ ] Go
+- [ ] Java/Android
+- [ ] Rust
+- [ ] Haskell (FP)
+- [ ] Lisp (FP)
+- [ ] Scala (FP)
+
+### Master
 - [ ] Javascript
 - [ ] Java
-- [ ] Java/Android
 - [ ] C++11/C++14, STL, [CPP](http://www.learncpp.com)
 - [ ] Learn [C](http://c.learncodethehardway.org/book)
-- [ ] Haskell/Lisp (functional programming)
 - [ ] Ruby/Rails
 - [ ] Python
+- [ ] Advance Bash
 
 ## Tools & Tech
 
@@ -50,6 +57,8 @@ tagline: List for 2014
 - [✔] RabbitMQ
 - [✔] Percona/MariaDB
 - [✔] Redis
+- [ ] Advance Redis (clustering etc.)
+- [ ] Advance Memcache (clustering, sharding etc.)
 - [✔] Elasticsearch
 - [✔] LevelDB/RocksDB
 - [ ] MongoDB
@@ -65,23 +74,22 @@ tagline: List for 2014
 - [ ] Hadoop, Pig, Hive
 - [ ] Scribe/Logstash/Kafka
 - [✔] Puppet+Fab
-- [ ] Chef
+- [ ] Chef/Chef Solo
 - [ ] Ansible
-- [ ] NodeJS
+- [ ] Salt(stack)
 - [ ] Play and Akka
 - [✔] Bootstrap
 - [ ] [Angularjs](https://github.com/jmcunningham/AngularJS-Learning)
-- [ ] Backbonejs
-- [ ] Yeoman, Grunt, Bower, NPM
 - [ ] D3
+- [ ] Yeoman, Grunt, Bower, NPM
 
 ## Hack
 
 - [ ] Tantra x86 Kernel [OSDev books](http://wiki.osdev.org/Books) [GDB](http://beej.us/guide/bggdb/) [OSSTEP](http://pages.cs.wisc.edu/~remzi/OSTEP/) [xv6](http://pdos.csail.mit.edu/6.828/2012/xv6.html)
 - [ ] LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
-- [ ] Security cam system
 - [ ] R2A2 or some robot
 - [ ] Meta, kaizen list
+- [✔] Security cam system
 
 ## Algorithms
 
@@ -123,16 +131,15 @@ tagline: List for 2014
 
 ## Books
 
-- [ ] Art of Computer Programming 1-3
-- [ ] Hacker's delight
+- [ ] The pragmatic programmer
 - [ ] Land of Lisp
-- [ ] Design Patterns (head first)
-- [ ] Network Warrior
+- [ ] Hacker's delight
+- [ ] Art of Computer Programming 1-3
 - [ ] Modern OS by Tanenbaum
 - [ ] BSD 4 book by McKusic
 - [ ] Intel/AMD proc docs
-- [ ] The mythical man month
-- [ ] The pragmatic programmer
+- [ ] Design Patterns (head first)
+- [ ] Network Warrior
 - [ ] The art of war
 
 ## Exploration
