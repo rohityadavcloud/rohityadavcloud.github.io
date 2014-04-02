@@ -161,6 +161,10 @@ tagline: List for 2014
 - [ ] [Browser security handbook](https://code.google.com/p/browsersec/wiki/Part1)
 - [ ] [Bit twidling hack](http://graphics.stanford.edu/~seander/bithacks.html)
 
+## Interesting stuff
+
+- [Folklore](http://www.folklore.org)
+
 ## Exploration
 
 - [ ] [Code Kata](http://codekata.com/kata/codekata-how-it-started/)
