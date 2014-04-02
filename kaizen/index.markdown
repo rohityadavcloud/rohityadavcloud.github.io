@@ -132,9 +132,15 @@ tagline: List for 2014
 ## Books
 
 - [ ] The pragmatic programmer
+- [ ] Code Complete 2
+- [ ] Programming Pearls by Jon B.
+- [ ] Refactoring by Fowler, Beck, Brant etc.
+- [ ] Design of Unix OS By Bach
+- [ ] Design pattern by Gang of Four
+- [ ] Art of Computer Programming 1-3
+- [ ] SICP
 - [ ] Land of Lisp
 - [ ] Hacker's delight
-- [ ] Art of Computer Programming 1-3
 - [ ] Modern OS by Tanenbaum
 - [ ] BSD 4 book by McKusic
 - [ ] Intel/AMD proc docs
@@ -144,6 +150,7 @@ tagline: List for 2014
 
 ## Exploration
 
+- [ ] [Code Kata](http://codekata.com/kata/codekata-how-it-started/)
 - [ ] Optimistic Locking
 - [ ] Software Transactional Memory
 - [ ] Combinators (Y Combinators) and Lambda Calculus
