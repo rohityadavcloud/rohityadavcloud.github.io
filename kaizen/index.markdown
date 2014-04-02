@@ -156,6 +156,10 @@ tagline: List for 2014
 - [ ] Design Patterns (head first)
 - [ ] Network Warrior
 - [ ] The art of war
+- [ ] [Go and crypto](https://leanpub.com/gocrypto/read)
+- [ ] [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
+- [ ] [Browser security handbook](https://code.google.com/p/browsersec/wiki/Part1)
+- [ ] [Bit twidling hack](http://graphics.stanford.edu/~seander/bithacks.html)
 
 ## Exploration
 
