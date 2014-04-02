@@ -83,9 +83,18 @@ tagline: List for 2014
 - [ ] D3
 - [ ] Yeoman, Grunt, Bower, NPM
 
+## Kernel hacking
+
+- [ ] Tantra - write a book/manual on DIY x86 kernel
+- [ ] [xv6](http://pdos.csail.mit.edu/6.828/2012/xv6.html)
+- [ ] [OSDev books](http://wiki.osdev.org/Books)
+- [ ] [GDB](http://beej.us/guide/bggdb/)
+- [ ] [OSSTEP](http://pages.cs.wisc.edu/~remzi/OSTEP/)
+- [ ] [JoelG's bootloader stuff](http://joelgompert.com/OS/TableOfContents.htm)
+- [ ] [Stackoverflow resource](http://stackoverflow.com/questions/43180/what-are-some-resources-for-getting-started-in-operating-system-development)
+
 ## Hack
 
-- [ ] Tantra x86 Kernel [OSDev books](http://wiki.osdev.org/Books) [GDB](http://beej.us/guide/bggdb/) [OSSTEP](http://pages.cs.wisc.edu/~remzi/OSTEP/) [xv6](http://pdos.csail.mit.edu/6.828/2012/xv6.html)
 - [ ] LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
 - [ ] R2A2 or some robot
 - [ ] Meta, kaizen list
