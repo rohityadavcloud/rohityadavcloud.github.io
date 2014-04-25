@@ -140,8 +140,10 @@ tagline: List for 2014
 
 ## Books
 
-- [ ] The pragmatic programmer
+- [-] The pragmatic programmer
 - [ ] Code Complete 2
+- [ ] The Mythical Man Month
+- [ ] Don't Make Me Think: A Common Sense Approach to Web Usability
 - [ ] Programming Pearls by Jon B.
 - [ ] Refactoring by Fowler, Beck, Brant etc.
 - [ ] Design of Unix OS By Bach
