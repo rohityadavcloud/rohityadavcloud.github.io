@@ -8,6 +8,8 @@ tagline: List for 2014
 ## Workouts
 
 - [ ] [USACO training](http://train.usaco.org/usacogate)
+- [ ] [Reddit Daily Programmer](http://www.reddit.com/r/dailyprogrammer)
+- [ ] [Guided programming course](https://codility.com/train/)
 - [ ] Programming Practice: [Euler](http://projecteuler.net/),
 - [ ] Programming Practice: [TopCoder](http://www.topcoder.com)
 - [ ] Programming Practice: [SPOJ](http://www.spoj.com/)
@@ -107,9 +109,12 @@ tagline: List for 2014
 - [ ] [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
 - [ ] [Analysis of Algorithms](https://www.coursera.org/course/aofa)
 - [ ] [SICP Lectures](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/)
+- [ ] [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
+- [ ] [Introduction to Programming in Java](http://introcs.cs.princeton.edu/java/home/)
 
 ### Algorithms Lectures
 
+- [ ] [The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
 - [ ] Algorithms Princeton [level-1](https://class.coursera.org/algs4partI-003/lecture)
 - [ ] Algorithms Princeton [level-2](https://class.coursera.org/algs4partII-002/lecture)
 - [ ] Algorithms Stanford [level-1](https://class.coursera.org/algo-003/lecture)
@@ -140,7 +145,7 @@ tagline: List for 2014
 
 ## Books
 
-- [-] The pragmatic programmer
+- [✔] The pragmatic programmer
 - [ ] Code Complete 2
 - [ ] The Mythical Man Month
 - [ ] Don't Make Me Think: A Common Sense Approach to Web Usability
@@ -160,12 +165,24 @@ tagline: List for 2014
 - [ ] The art of war
 - [ ] [Go and crypto](https://leanpub.com/gocrypto/read)
 - [ ] [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
+- [ ] [The Architecture of Opensource Applications](http://aosabook.org/en/index.html)
 - [ ] [Browser security handbook](https://code.google.com/p/browsersec/wiki/Part1)
 - [ ] [Bit twidling hack](http://graphics.stanford.edu/~seander/bithacks.html)
+- [ ] [How to Make a Computer Operating System](http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/)
+- [ ] [xv6](http://pdos.csail.mit.edu/6.828/2012/xv6/book-rev7.pdf)
+
 
 ## Interesting stuff
 
 - [Folklore](http://www.folklore.org)
+- [Build your own Lisp](http://www.buildyourownlisp.com/contents)
+- [Matsano Crypto Challenge](http://www.matasano.com/articles/crypto-challenges/)
+- [Eudyptula Challenge: Linux programming](http://eudyptula-challenge.org/) [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.4/html/book1.htm)
+
+## Stack
+
+- [ ] [The Log: What every software engineer should know about real-time data's unifying abstraction](http://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
+- [ ] [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
 
 ## Exploration
 
