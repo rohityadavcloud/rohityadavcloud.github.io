@@ -108,7 +108,7 @@ alsamixer --unmute
 speaker-test -c2
 
 # X
-pacman -S xorg-server xorg-server-utils xorg-init
+pacman -S xorg-server xorg-server-utils xorg-xinit
 
 # VirtualBox drivers
 pacman -S virtualbox-guest-utils
