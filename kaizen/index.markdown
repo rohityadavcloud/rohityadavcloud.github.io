@@ -164,11 +164,15 @@ tagline: List for 2014
 
 ## Interesting stuff
 
+- [Web Fundamentals by Google](https://developers.google.com/web/fundamentals/)
+- [12 Factor Apps](http://12factor.net/)
 - [Folklore](http://www.folklore.org)
 - [Build your own Lisp](http://www.buildyourownlisp.com/contents)
 - [Matsano Crypto Challenge](http://www.matasano.com/articles/crypto-challenges/)
 - [Eudyptula Challenge: Linux programming](http://eudyptula-challenge.org/) [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.4/html/book1.htm)
 - [Multitasking](http://kukuruku.co/hub/opensource/multitasking-management-in-the-operating-system-kernel)
+- [Understanding Virtual Memory](http://www.redhat.com/magazine/001nov04/features/vm/)
+- [Google XSS game](https://xss-game.appspot.com/level1)
 
 ## Stack
 
