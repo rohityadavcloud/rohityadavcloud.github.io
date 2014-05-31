@@ -4,6 +4,8 @@ title: Algorithms
 tagline: List of algorithms every programmer should know
 ---
 
+http://macgyverdev.blogspot.se/2014/04/become-better-programmer-with.html
+
 ## Problem types
 
     Dynamic Programming

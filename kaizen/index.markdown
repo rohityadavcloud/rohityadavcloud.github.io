@@ -24,30 +24,25 @@ tagline: List for 2014
 
 ## Life
 
-- [ ] Swimming
 - [ ] Workout, gym, abs, reach optimal fitness score
+- [ ] Swimming
 - [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
-- [ ] Kickboxing
 
 ## Languages
 
 ### Learn
 
 - [ ] Go
-- [ ] Java/Android
-- [ ] Rust
-- [ ] Haskell (FP)
+- [ ] Android Java
+- [ ] Javascript
 - [ ] Lisp (FP)
 - [ ] Scala (FP)
+- [ ] Haskell (FP)
 
-### Master
-- [ ] Javascript
+### Refresh and Master
 - [ ] Java
 - [ ] C++11/C++14, STL, [CPP](http://www.learncpp.com)
 - [ ] Learn [C](http://c.learncodethehardway.org/book)
-- [ ] Ruby/Rails
-- [ ] Python
-- [ ] Advance Bash
 
 ## Tools & Tech
 
@@ -58,18 +53,15 @@ tagline: List for 2014
 - [✔] Openresty
 - [✔] RabbitMQ
 - [✔] Percona/MariaDB
-- [✔] Redis
-- [ ] Advance Redis (clustering etc.)
-- [ ] Advance Memcache (clustering, sharding etc.)
+- [✔] Redis and advance stuff
+- [ ] Advance Memcache
 - [✔] Elasticsearch
 - [✔] LevelDB/RocksDB
 - [ ] MongoDB
 - [ ] WSDL
 - [✔] Thrift
 - [ ] ProtocolBuffer
-- [ ] Avro
 - [ ] Zipkin/Dapper (tracing system)
-- [ ] Finagle
 - [ ] Zookeeper
 - [ ] etcd
 - [ ] doozerd
@@ -100,7 +92,6 @@ tagline: List for 2014
 - [ ] LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
 - [ ] R2A2 or some robot
 - [ ] Meta, kaizen list
-- [✔] Security cam system
 
 ## Algorithms
 
@@ -146,25 +137,24 @@ tagline: List for 2014
 ## Books
 
 - [✔] The pragmatic programmer
-- [ ] Code Complete 2
-- [ ] The Mythical Man Month
-- [ ] Don't Make Me Think: A Common Sense Approach to Web Usability
-- [ ] Programming Pearls by Jon B.
-- [ ] Refactoring by Fowler, Beck, Brant etc.
-- [ ] Design of Unix OS By Bach
-- [ ] Design pattern by Gang of Four
-- [ ] Art of Computer Programming 1-3
-- [ ] SICP
-- [ ] Land of Lisp
 - [ ] Hacker's delight
+- [ ] SICP
+- [ ] Art of Computer Programming 1-3
+- [ ] Land of Lisp
+- [ ] Design of Unix OS By Bach
 - [ ] Modern OS by Tanenbaum
 - [ ] BSD 4 book by McKusic
+- [ ] Network Warrior
+- [ ] Design pattern by Gang of Four
+- [ ] [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
+- [ ] Code Complete 2
+- [ ] The Mythical Man Month
+- [ ] Programming Pearls by Jon B.
+- [ ] Refactoring by Fowler, Beck, Brant etc.
 - [ ] Intel/AMD proc docs
 - [ ] Design Patterns (head first)
-- [ ] Network Warrior
 - [ ] The art of war
 - [ ] [Go and crypto](https://leanpub.com/gocrypto/read)
-- [ ] [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
 - [ ] [The Architecture of Opensource Applications](http://aosabook.org/en/index.html)
 - [ ] [Browser security handbook](https://code.google.com/p/browsersec/wiki/Part1)
 - [ ] [Bit twidling hack](http://graphics.stanford.edu/~seander/bithacks.html)
@@ -178,6 +168,7 @@ tagline: List for 2014
 - [Build your own Lisp](http://www.buildyourownlisp.com/contents)
 - [Matsano Crypto Challenge](http://www.matasano.com/articles/crypto-challenges/)
 - [Eudyptula Challenge: Linux programming](http://eudyptula-challenge.org/) [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.4/html/book1.htm)
+- [Multitasking](http://kukuruku.co/hub/opensource/multitasking-management-in-the-operating-system-kernel)
 
 ## Stack
 
@@ -196,3 +187,14 @@ tagline: List for 2014
 - [ ] Network protocols: TCP/IP
 - [ ] System level debugging
 - [ ] Performance engineering
+
+## Agendas
+
+- [ ] Algorithms and Data structures
+- [ ] Programming
+- [ ] Functional Programming and Lambda Calculus
+- [ ] Compilers
+- [ ] Operating Systems
+- [ ] Database and Information Retrievel
+- [ ] Artificial Intelligence
+- [ ] Machine Learning
