@@ -16,11 +16,6 @@ tagline: List for 2014
 - [ ] Programming Practice: [HackerRank](https://www.hackerrank.com/)
 - [ ] Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
 - [ ] Competitive Programming: [TopCoder](http://www.topcoder.com), [Codeforce](http://codeforces.com/), [Codechef](http://codechef.com)
-- [ ] Opensource contribution - CloudStack
-- [ ] Opensource contribution - Mozilla
-- [ ] Opensource contribution - LLVM/Rust/Go compilers
-- [ ] Opensource contribution - Linux and others
-- [✔] CTF3
 
 ## Life
 
@@ -54,13 +49,11 @@ tagline: List for 2014
 - [✔] Elasticsearch
 - [✔] LevelDB/RocksDB
 - [ ] MongoDB
+- [ ] HBase/Cassandra
 - [ ] WSDL
-- [✔] Thrift
-- [ ] ProtocolBuffer
+- [ ] Thrift / Protocol Buffers / JSON RPC
 - [ ] Zipkin/Dapper (tracing system)
-- [ ] Zookeeper
-- [ ] etcd
-- [ ] doozerd
+- [ ] Zookeeper / etcd
 - [ ] Hadoop, Pig, Hive
 - [ ] Scribe/Logstash/Kafka
 - [✔] Puppet+Fab
