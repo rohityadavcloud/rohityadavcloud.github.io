@@ -30,24 +30,20 @@ tagline: List for 2014
 
 ## Languages
 
-### Learn
+### Master
 
 - [ ] Go
-- [ ] Android Java
+- [ ] JAVA (EE + Android)
 - [ ] Javascript
-- [ ] Lisp (FP)
-- [ ] Scala (FP)
-- [ ] Haskell (FP)
-
-### Refresh and Master
-- [ ] Java
-- [ ] C++11/C++14, STL, [CPP](http://www.learncpp.com)
+- [ ] Python3
 - [ ] Learn [C](http://c.learncodethehardway.org/book)
+- [ ] C++11/C++14, STL, [CPP](http://www.learncpp.com)
+- [ ] Lisp (FP)
+- [ ] Haskell (FP)
 
 ## Tools & Tech
 
-- [✔] VMs: Veewee
-- [ ] VMs: Packer, Serf, Vagrant
+- [ ] Packer & Vagrant
 - [ ] LXC/Docker
 - [ ] JVM GC kung-foo
 - [✔] Openresty
