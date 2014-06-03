@@ -160,6 +160,7 @@ tagline: List for 2014
 
 ## Interesting stuff
 
+- [Lambda Calculus](https://www.youtube.com/playlist?list=PL4A05CF0478DAD704)
 - [Web Fundamentals by Google](https://developers.google.com/web/fundamentals/)
 - [12 Factor Apps](http://12factor.net/)
 - [Folklore](http://www.folklore.org)
