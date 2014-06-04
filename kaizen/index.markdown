@@ -84,6 +84,7 @@ tagline: List for 2014
 
 ## Algorithms
 
+- [ ] [Algorithm Design Manual](http://www.cs.sunysb.edu/~algorith/video-lectures/2012/CSE373_(CSE373-01)_2013_Spring_2013-02-12.html)
 - [ ] [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
 - [ ] [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
 - [ ] [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
