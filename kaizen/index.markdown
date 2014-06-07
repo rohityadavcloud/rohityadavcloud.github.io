@@ -27,7 +27,7 @@ tagline: List for 2014
 
 ### Master
 
-- [ ] Go
+- [ ] Go [Go by example](https://gobyexample.com/)
 - [ ] JAVA (EE + Android)
 - [ ] Javascript
 - [ ] Python3
