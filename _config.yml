@@ -5,10 +5,8 @@ exclude: ['README.markdown']
 
 future: true
 lsi: false
-markdown: rdiscount
 highligher: pygments
+safe: true
+timezone: Asia/Kolkata
 permalink: /logs/:title/
 paginate: 5
-
-rdiscount:
-  extensions: [smart]

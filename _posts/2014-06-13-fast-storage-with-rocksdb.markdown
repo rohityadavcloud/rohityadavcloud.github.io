@@ -7,7 +7,7 @@ excerpt: C++, Thrift & RocksDB
 <div class="row">
 <div class="offset2 span6">
   <div class="alert alert-info">
-    <center><a href="engineering.wingify.com/fast-storage-with-rocksdb/">Cross-posted on Wingify's engineering blog</a></center>
+    <center><a href="engineering.wingify.com/fast-storage-with-rocksdb/">Cross-posted from Wingify's engineering blog</a></center>
   </div>
 </div>
 </div>
