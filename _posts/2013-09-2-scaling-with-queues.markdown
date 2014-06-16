@@ -7,7 +7,7 @@ excerpt: distributed systems at Wingify
 <div class="row">
 <div class="offset2 span6">
   <div class="alert alert-info">
-    <center><a href="http://engineering.wingify.com/scaling-with-queues">Cross-posting my blog on Wingify's engineering blog</a></center>
+    <center><a href="http://engineering.wingify.com/scaling-with-queues">Cross-posted on Wingify's engineering blog</a></center>
   </div>
 </div>
 </div>
