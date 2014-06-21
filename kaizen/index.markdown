@@ -68,7 +68,7 @@ tagline: List for 2014
 
 ## Kernel hacking
 
-- [ ] Tantra - write a book/manual on DIY x86 kernel
+- [ ] Tantra - write a book/manual on DIY x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
 - [ ] [xv6](http://pdos.csail.mit.edu/6.828/2012/xv6.html)
 - [ ] [OSDev books](http://wiki.osdev.org/Books)
 - [ ] [GDB](http://beej.us/guide/bggdb/)
