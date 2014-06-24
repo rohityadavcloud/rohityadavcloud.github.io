@@ -19,7 +19,7 @@ tagline: List for 2014
 
 ## Life
 
-- [ ] Workout, gym, abs, reach optimal fitness score
+- [ ] Workouts, gym, fitness
 - [ ] Swimming
 - [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
 
@@ -28,26 +28,23 @@ tagline: List for 2014
 ### Master
 
 - [ ] Go
-- [ ] JAVA (EE + Android)
+- [ ] Java
 - [ ] Javascript
-- [ ] Python3
-- [ ] Learn [C](http://c.learncodethehardway.org/book)
-- [ ] C++11/C++14, STL, [CPP](http://www.learncpp.com)
+
+# Hobby
+
 - [ ] Lisp (FP)
 - [ ] Haskell (FP)
+- [ ] Python3
+- [ ] C++11/C++14, STL, [CPP](http://www.learncpp.com)
+- [ ] Learn [C](http://c.learncodethehardway.org/book)
+- [ ] x86/64 Assembly and advance instruction usage
 
 ## Tools & Tech
 
 - [ ] Packer & Vagrant
 - [ ] LXC/Docker
 - [ ] JVM GC kung-foo
-- [✔] Openresty
-- [✔] RabbitMQ
-- [✔] Percona/MariaDB
-- [✔] Redis and advance stuff
-- [ ] Advance Memcache
-- [✔] Elasticsearch
-- [✔] LevelDB/RocksDB
 - [ ] MongoDB
 - [ ] HBase/Cassandra
 - [ ] WSDL
@@ -56,12 +53,10 @@ tagline: List for 2014
 - [ ] Zookeeper / etcd
 - [ ] Hadoop, Pig, Hive
 - [ ] Scribe/Logstash/Kafka
-- [✔] Puppet+Fab
 - [ ] Chef/Chef Solo
 - [ ] Ansible
 - [ ] Salt(stack)
 - [ ] Play and Akka
-- [✔] Bootstrap
 - [ ] [Angularjs](https://github.com/jmcunningham/AngularJS-Learning)
 - [ ] D3
 - [ ] Yeoman, Grunt, Bower, NPM
@@ -81,6 +76,7 @@ tagline: List for 2014
 - [ ] LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
 - [ ] R2A2 or some robot
 - [ ] Meta, kaizen list
+- [ ] Autonomic cloud controller
 
 ## Algorithms
 
@@ -127,17 +123,16 @@ tagline: List for 2014
 
 ## Books
 
-- [✔] The pragmatic programmer
 - [ ] Hacker's delight
+- [ ] Design pattern by Gang of Four
+- [ ] [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
+- [ ] Land of Lisp
+- [ ] Network Warrior
 - [ ] SICP
 - [ ] Art of Computer Programming 1-3
-- [ ] Land of Lisp
 - [ ] Design of Unix OS By Bach
 - [ ] Modern OS by Tanenbaum
 - [ ] BSD 4 book by McKusic
-- [ ] Network Warrior
-- [ ] Design pattern by Gang of Four
-- [ ] [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
 - [ ] Code Complete 2
 - [ ] The Mythical Man Month
 - [ ] Programming Pearls by Jon B.
@@ -150,7 +145,6 @@ tagline: List for 2014
 - [ ] [Browser security handbook](https://code.google.com/p/browsersec/wiki/Part1)
 - [ ] [Bit twidling hack](http://graphics.stanford.edu/~seander/bithacks.html)
 - [ ] [How to Make a Computer Operating System](http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/)
-- [ ] [xv6](http://pdos.csail.mit.edu/6.828/2012/xv6/book-rev7.pdf)
 
 
 ## Interesting stuff
