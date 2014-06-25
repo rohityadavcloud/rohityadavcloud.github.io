@@ -6,6 +6,8 @@ exclude: ['README.markdown']
 future: true
 lsi: false
 highligher: pygments
+markdown: kramdown
+encoding: "utf-8"
 safe: true
 timezone: Asia/Kolkata
 permalink: /logs/:title/
