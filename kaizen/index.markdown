@@ -22,6 +22,7 @@ tagline: List for 2014
 - [ ] Workouts, gym, fitness
 - [ ] Swimming
 - [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
+- [ ] Accurate and speed typing 150WPM
 
 ## Languages
 
