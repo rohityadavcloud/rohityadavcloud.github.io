@@ -22,7 +22,7 @@ tagline: List for 2014
 - [ ] Workouts, gym, fitness
 - [ ] Swimming
 - [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
-- [ ] Accurate and speed typing 150WPM
+- [ ] Accurate and speed typing 120WPM
 
 ## Languages
 
@@ -36,28 +36,28 @@ tagline: List for 2014
 
 - [ ] Lisp (FP)
 - [ ] Haskell (FP)
-- [ ] Python3
 - [ ] C++11/C++14, STL, [CPP](http://www.learncpp.com)
-- [ ] Learn [C](http://c.learncodethehardway.org/book)
-- [ ] x86/64 Assembly and advance instruction usage
+- [ ] [C](http://c.learncodethehardway.org/book)
+- [ ] x86/64 Assembly and advance instruction sets
 
 ## Tools & Tech
 
 - [ ] Packer & Vagrant
 - [ ] LXC/Docker
-- [ ] JVM GC kung-foo
+- [ ] JVM/GC
 - [ ] MongoDB
 - [ ] HBase/Cassandra
 - [ ] WSDL
 - [ ] Thrift / Protocol Buffers / JSON RPC
 - [ ] Zipkin/Dapper (tracing system)
 - [ ] Zookeeper / etcd
+- [ ] ELK stack
 - [ ] Hadoop, Pig, Hive
 - [ ] Scribe/Logstash/Kafka
 - [ ] Chef/Chef Solo
 - [ ] Ansible
 - [ ] Salt(stack)
-- [ ] Play and Akka
+- [ ] DropWizard
 - [ ] [Angularjs](https://github.com/jmcunningham/AngularJS-Learning)
 - [ ] D3
 - [ ] Yeoman, Grunt, Bower, NPM
@@ -75,9 +75,8 @@ tagline: List for 2014
 ## Hack
 
 - [ ] LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
-- [ ] R2A2 or some robot
 - [ ] Meta, kaizen list
-- [ ] Autonomic cloud controller
+- [ ] Autonomic cloud resource manager
 
 ## Algorithms
 
@@ -181,7 +180,7 @@ tagline: List for 2014
 - [ ] System level debugging
 - [ ] Performance engineering
 
-## Agendas
+## Fields
 
 - [ ] Algorithms and Data structures
 - [ ] Programming
