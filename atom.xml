@@ -9,12 +9,12 @@ layout: nil
     <link href="http://bhaisaab.org/"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
     <id>http://bhaisaab.org/</id>
-    
+
     <author>
       <name>Rohit Yadav</name>
       <email>rohityadav89@gmail.com</email>
     </author>
-    
+
     {% for post in site.posts %}
     <entry>
       <title>{{ post.title }}</title>
