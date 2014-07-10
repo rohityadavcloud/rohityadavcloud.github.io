@@ -52,11 +52,9 @@ tagline: List for 2014
 - [ ] Zipkin/Dapper (tracing system)
 - [ ] Zookeeper / etcd
 - [ ] ELK stack
-- [ ] Hadoop, Pig, Hive
 - [ ] Scribe/Logstash/Kafka
 - [ ] Chef/Chef Solo
 - [ ] Ansible
-- [ ] Salt(stack)
 - [ ] DropWizard
 - [ ] [Angularjs](https://github.com/jmcunningham/AngularJS-Learning)
 - [ ] D3
@@ -87,6 +85,7 @@ tagline: List for 2014
 - [ ] [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
 - [ ] [Analysis of Algorithms](https://www.coursera.org/course/aofa)
 - [ ] [SICP Lectures](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/)
+- [ ] [Interactive SICP](http://xuanji.appspot.com/isicp/index.html)
 - [ ] [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
 - [ ] [Introduction to Programming in Java](http://introcs.cs.princeton.edu/java/home/)
 
@@ -95,13 +94,9 @@ tagline: List for 2014
 - [ ] [The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
 - [ ] Algorithms Princeton [level-1](https://class.coursera.org/algs4partI-003/lecture)
 - [ ] Algorithms Princeton [level-2](https://class.coursera.org/algs4partII-002/lecture)
-- [ ] Algorithms Stanford [level-1](https://class.coursera.org/algo-003/lecture)
-- [ ] Algorithms Stanford [level-2](https://class.coursera.org/algo2-2012-001/lecture)
-- [ ] [Machine Learning Stanford](https://class.coursera.org/ml-004/lecture)
 
 ## Functional Programming
 
-- [ ] Lisp and little schemer book
 - [ ] [Haskell](http://www.scs.stanford.edu/11au-cs240h/)
 - [ ] [Scala Lectures](https://class.coursera.org/progfun-003/lecture) by Martin Odesky
 - [ ] [Reactive Programming](https://class.coursera.org/reactive-001/lecture) M. Odesky
