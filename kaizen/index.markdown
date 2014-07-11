@@ -7,6 +7,8 @@ tagline: List for 2014
 
 ## Workouts
 
+- [ ] [Geeks for geeks](http://www.geeksforgeeks.org/)
+- [ ] [Algo exerlist](https://code.google.com/p/prep/wiki/ExercisesList)
 - [ ] [USACO training](http://train.usaco.org/usacogate)
 - [ ] [Reddit Daily Programmer](http://www.reddit.com/r/dailyprogrammer)
 - [ ] [Guided programming course](https://codility.com/train/)
@@ -59,6 +61,17 @@ tagline: List for 2014
 - [ ] [Angularjs](https://github.com/jmcunningham/AngularJS-Learning)
 - [ ] D3
 - [ ] Yeoman, Grunt, Bower, NPM
+- [ ] Consistent hashing: http://en.wikipedia.org/wiki/Consistent_hashing
+- [ ] Distributed hash table: http://en.wikipedia.org/wiki/Distributed_hash_table
+- [ ] Paxos: http://research.microsoft.com/en-us/um/people/lamport/pubs/pubs.html#paxos-simple
+- [ ] Sharding: http://en.wikipedia.org/wiki/Shard_(database_architecture)
+- [ ] Bigtable: http://research.google.com/archive/bigtable.html
+- [ ] Mapreduce: http://research.google.com/archive/mapreduce.html
+- [ ] GFS: http://research.google.com/archive/gfs.html
+- [ ] Chubby: http://research.google.com/archive/chubby.html
+- [ ] Paxos at Google: http://research.google.com/archive/paxos_made_live.html
+- [ ] Megastore: http://research.google.com/pubs/pub36971.html
+
 
 ## Kernel hacking
 
@@ -140,7 +153,7 @@ tagline: List for 2014
 - [ ] [Browser security handbook](https://code.google.com/p/browsersec/wiki/Part1)
 - [ ] [Bit twidling hack](http://graphics.stanford.edu/~seander/bithacks.html)
 - [ ] [How to Make a Computer Operating System](http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/)
-
+- [ ] Intro to Information Retrieval
 
 ## Interesting stuff
 
@@ -162,6 +175,7 @@ tagline: List for 2014
 - [ ] [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
 - [ ] [Go language patterns](https://sites.google.com/site/gopatterns/)
 - [ ] [Hacker's guide to git](http://wildlyinaccurate.com/a-hackers-guide-to-git)
+- [ ] [Mutexes vs semaphore](http://www.barrgroup.com/Embedded-Systems/How-To/RTOS-Mutex-Semaphore)
 
 ## Exploration
 
