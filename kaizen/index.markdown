@@ -26,6 +26,30 @@ tagline: List for 2014
 - [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
 - [ ] Accurate and speed typing 120WPM
 
+# Travel
+
+- Sevill
+- London
+- Paris
+- Granada
+- Prague
+- Athens
+- Amsterdam
+- Berlin
+- Lyon
+- Budapest
+- Vienna
+- Rome, Florence
+- Lisbon
+- Rio de Janeiro
+- Kyoto
+- Tokyo
+- Beijing
+- Kathmandu
+- Istanbul
+- Singapore
+- Buenos Aires
+
 ## Languages
 
 ### Master
