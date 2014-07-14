@@ -6,6 +6,10 @@ tagline: List of algorithms every programmer should know
 
 http://macgyverdev.blogspot.se/2014/04/become-better-programmer-with.html
 
+
+Algo visualization:
+http://www.comp.nus.edu.sg/~stevenha/visualization/
+
 ## Problem types
 
     Dynamic Programming
