@@ -189,6 +189,7 @@ tagline: List for 2014
 - [Multitasking](http://kukuruku.co/hub/opensource/multitasking-management-in-the-operating-system-kernel)
 - [Understanding Virtual Memory](http://www.redhat.com/magazine/001nov04/features/vm/)
 - [Google XSS game](https://xss-game.appspot.com/level1)
+- [Cache Primer](http://fgiesen.wordpress.com/2014/07/07/cache-coherency/)
 
 ## Stack
 
