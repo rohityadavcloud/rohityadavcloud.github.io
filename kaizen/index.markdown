@@ -30,13 +30,11 @@ tagline: List for 2014
 
 - Sevill
 - London
-- Paris
 - Granada
 - Prague
 - Athens
 - Amsterdam
 - Berlin
-- Lyon
 - Budapest
 - Vienna
 - Rome, Florence
