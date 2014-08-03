@@ -23,30 +23,7 @@ tagline: List for 2014
 
 - [ ] Workouts, gym, fitness
 - [ ] Swimming
-- [ ] [French](http://www.duolingo.com/skill/fr/Basics-2/1)
 - [ ] Accurate and speed typing 120WPM
-
-# Travel
-
-- Sevill
-- London
-- Granada
-- Prague
-- Athens
-- Amsterdam
-- Berlin
-- Budapest
-- Vienna
-- Rome, Florence
-- Lisbon
-- Rio de Janeiro
-- Kyoto
-- Tokyo
-- Beijing
-- Kathmandu
-- Istanbul
-- Singapore
-- Buenos Aires
 
 ## Languages
 
