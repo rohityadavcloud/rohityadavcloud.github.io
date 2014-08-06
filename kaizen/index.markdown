@@ -176,6 +176,7 @@ tagline: List for 2014
 - [ ] [Go language patterns](https://sites.google.com/site/gopatterns/)
 - [ ] [Hacker's guide to git](http://wildlyinaccurate.com/a-hackers-guide-to-git)
 - [ ] [Mutexes vs semaphore](http://www.barrgroup.com/Embedded-Systems/How-To/RTOS-Mutex-Semaphore)
+- [ ] [Learning Linux](http://www.tldp.org/LDP/tlk/tlk-toc.html)
 
 ## Exploration
 
