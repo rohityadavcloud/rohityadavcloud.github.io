@@ -1,8 +1,8 @@
 ---
-layout: page
-title: Logs
+layout: default
+title: Home
 tagline: Writings, essays and blog posts
-permalink: /logs/
+permalink: /
 ---
 
 <div class="row">
