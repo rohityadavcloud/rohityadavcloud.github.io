@@ -87,6 +87,7 @@ tagline: List for 2014
 - [ ] LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
 - [ ] Meta, kaizen list
 - [ ] Autonomic cloud resource manager
+- [ ] [Projects](https://github.com/karan/Projects)
 
 ## Algorithms
 
