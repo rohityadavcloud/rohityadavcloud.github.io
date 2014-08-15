@@ -5,9 +5,10 @@ permalink: /about/
 ---
 
 <img align="left" style="padding: 5px;" src="/assets/img/avatar.jpg"/>
-Hi, I'm Rohit Yadav, currently a Software Architect at [ShapeBlue](http://shapeblue.com).
-I'm also one of the committers of [Apache CloudStack](http://cloudstack.apache.org)
-since 2012. I graduated from [IIT-BHU](http://en.wikipedia.org/wiki/Indian_Institute_of_Technology_%28Banaras_Hindu_University%29_Varanasi)
+Hi, I'm Rohit Yadav, a software architect at [ShapeBlue](http://shapeblue.com),
+founder of [ScaleNina](http://www.scaleninja.com) and active committers of
+[Apache CloudStack](http://cloudstack.apache.org).
+I graduated from [IIT-BHU](http://en.wikipedia.org/wiki/Indian_Institute_of_Technology_%28Banaras_Hindu_University%29_Varanasi)
 with degrees of [B.Tech](http://en.wikipedia.org/wiki/Bachelor_of_Technology) and
 [M.Tech](http://en.wikipedia.org/wiki/Master_of_Engineering) in computer science
 and engineering in 2012.
@@ -25,12 +26,13 @@ file systems, job schedulers, programming languages, operating systems and compi
 
 I also do contract/consultancy work and short term remote assignments.
 
-GPG: [Keybase](https://keybase.io/bhaisaab) \| [Raw](https://keybase.io/bhaisaab/key.asc)
+Email: <rohit@scale.ninja>
 
-IRC: bhaisaab (on freenode and other networks)
-
-Email: <bhaisaab@baagi.org>
+LinkedIn: [in/bhaisaab](https://www.linkedin.com/in/bhaisaab)
 
 Twitter: [@_bhaisaab](https://twitter.com/_bhaisaab)
 
-LinkedIn: [in/bhaisaab](https://www.linkedin.com/in/bhaisaab)
+IRC: bhaisaab (on freenode and other networks)
+
+Keys: [GPG](https://keybase.io/bhaisaab/key.asc) | [Keybase](https://keybase.io/bhaisaab)
+
