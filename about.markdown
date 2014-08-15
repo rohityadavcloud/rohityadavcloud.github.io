@@ -31,6 +31,6 @@ IRC: bhaisaab (on freenode and other networks)
 
 Email: <bhaisaab@baagi.org>
 
-Twitter: [@_bhaisaab](https://twitter.com/bhaisaab)
+Twitter: [@_bhaisaab](https://twitter.com/_bhaisaab)
 
 LinkedIn: [in/bhaisaab](https://www.linkedin.com/in/bhaisaab)
