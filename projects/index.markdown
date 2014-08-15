@@ -26,12 +26,6 @@ title: Projects
     <h2>Laboratory <small>and my experiments</small></h2>
     <h3>HackLab <small><a href="https://github.com/bhaisaab/hacklab">Coding, experiments and labwork</a></small></h3>
     <h3>HackTool <small><a href="https://github.com/bhaisaab/hacktools">My homebrew hacking tools</a></small></h3>
-    <h2><a href="https://launchpad.net/~rohityadav/">My Launchpad »</a></h2>
-    <h3><a href="https://launchpad.net/~rohityadav/+archive/vlmc">VLMC PPA</a></h3>
-    <h3><a href="https://launchpad.net/~rohityadav/+archive/graffiti">Graffiti PPA</a></h3>
-    <br/>
-    <h2>Publications</h2>
-    <p><b>Volunteer Clouds and Citizen Cyberscience for LHC Physics</b>. Sanchez, C.A. and Blomer, J. and Buncic, P. and Chen, G. and Ellis, J. and Quintas, D.G. and Harutyunyan, A. and Grey, F. and Lombraña González, D. and Marquina, M. and P., Mato and J., Rantala and H., Schulz and B, Segal. and A., Sharma and P., Skands and D., Weir and J., Wu and W., Wu and R., Yadav. In Journal of Physics: Conference Series, pp. 062022, doi: <a href="http://dx.doi.org/10.1088/1742-6596/331/6/062022">10.1088/1742-6596/331/6/062022</a></p>
   </div>
 </div>
 
