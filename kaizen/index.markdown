@@ -19,25 +19,11 @@ tagline: List for 2014
 
 ## Languages
 
+- [ ] Go
 - [ ] Java
 - [ ] Javascript
-- [ ] Go
-- [ ] Haskell (FP)
 - [ ] Lisp/Scheme (FP)
-
-## Tech
-
-- [ ] [Angularjs](https://github.com/jmcunningham/AngularJS-Learning)
-- [ ] Consistent hashing: http://en.wikipedia.org/wiki/Consistent_hashing
-- [ ] Distributed hash table: http://en.wikipedia.org/wiki/Distributed_hash_table
-- [ ] Paxos: http://research.microsoft.com/en-us/um/people/lamport/pubs/pubs.html#paxos-simple
-- [ ] Sharding: http://en.wikipedia.org/wiki/Shard_(database_architecture)
-- [ ] Bigtable: http://research.google.com/archive/bigtable.html
-- [ ] Mapreduce: http://research.google.com/archive/mapreduce.html
-- [ ] GFS: http://research.google.com/archive/gfs.html
-- [ ] Chubby: http://research.google.com/archive/chubby.html
-- [ ] Paxos at Google: http://research.google.com/archive/paxos_made_live.html
-- [ ] Megastore: http://research.google.com/pubs/pub36971.html
+- [ ] Haskell (FP)
 
 ## Kernel
 
@@ -47,11 +33,12 @@ tagline: List for 2014
 - [ ] [OSSTEP](http://pages.cs.wisc.edu/~remzi/OSTEP/)
 - [ ] [JoelG's bootloader stuff](http://joelgompert.com/OS/TableOfContents.htm)
 - [ ] [Stackoverflow resource](http://stackoverflow.com/questions/43180/what-are-some-resources-for-getting-started-in-operating-system-development)
+- [ ] [How to Make a Computer Operating System](http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/)
+- [ ] OS lectures by Mckusic
 
 ## Hack
 
 - [ ] Tantra - write a book/manual on DIY x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
-- [ ] Meta, kaizen list
 - [ ] LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
 
 ## Programming and Algorithms
@@ -77,35 +64,22 @@ tagline: List for 2014
 - [ ] [Haskell](http://www.scs.stanford.edu/11au-cs240h/)
 - [ ] [Scala Lectures](https://class.coursera.org/progfun-003/lecture) by Martin Odesky
 - [ ] [Reactive Programming](https://class.coursera.org/reactive-001/lecture) M. Odesky
-- [ ] [Topics in Functional Programming](http://en.wikipedia.org/wiki/List_of_functional_programming_topics)
-- [ ] [FP books](http://alexott.net/en/fp/books/)
 
-## Systems
+## Compilers
 
 - [ ] Compilers [Stanford](https://class.coursera.org/compilers-003/lecture)
 - [ ] [Automata](https://class.coursera.org/automata-002/lecture) by Ullman
-- [ ] OS lectures by Mckusic
-- [ ] Distributed computing [wisc](http://pages.cs.wisc.edu/~cs739-1/ )
-- [ ] Distributed computing [paper reading book](http://pdos.csail.mit.edu/dsrg/)
 
 ## Read
 
 - [ ] [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
 - [ ] [Browser security handbook](https://code.google.com/p/browsersec/wiki/Part1)
-- [ ] [How to Make a Computer Operating System](http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/)
 
 ## Interesting stuff
 
 - [Lambda Calculus](https://www.youtube.com/playlist?list=PL4A05CF0478DAD704)
-- [Web Fundamentals by Google](https://developers.google.com/web/fundamentals/)
-- [12 Factor Apps](http://12factor.net/)
-- [Folklore](http://www.folklore.org)
 - [Build your own Lisp](http://www.buildyourownlisp.com/contents)
-- [Matsano Crypto Challenge](http://www.matasano.com/articles/crypto-challenges/)
 - [Eudyptula Challenge: Linux programming](http://eudyptula-challenge.org/) [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.4/html/book1.htm)
-- [Multitasking](http://kukuruku.co/hub/opensource/multitasking-management-in-the-operating-system-kernel)
-- [Understanding Virtual Memory](http://www.redhat.com/magazine/001nov04/features/vm/)
-- [Cache Primer](http://fgiesen.wordpress.com/2014/07/07/cache-coherency/)
 
 ## Stack
 
@@ -114,5 +88,4 @@ tagline: List for 2014
 - [ ] [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
 - [ ] [Go language patterns](https://sites.google.com/site/gopatterns/)
 - [ ] [Hacker's guide to git](http://wildlyinaccurate.com/a-hackers-guide-to-git)
-- [ ] [Mutexes vs semaphore](http://www.barrgroup.com/Embedded-Systems/How-To/RTOS-Mutex-Semaphore)
 - [ ] [Learning Linux](http://www.tldp.org/LDP/tlk/tlk-toc.html)
