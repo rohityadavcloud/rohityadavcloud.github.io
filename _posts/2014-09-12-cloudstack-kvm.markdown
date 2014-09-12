@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to install CloudStack with KVM host
-excerpt: KVM, Apache CloudStack, MySQL, NFS
+excerpt: KVM & CloudStack
 ---
 
 This is a how-to guide on setting up CloudStack on Ubuntu and with KVM host in

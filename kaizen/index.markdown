@@ -40,6 +40,10 @@ tagline: List for 2014
 
 - [ ] Tantra - write a book/manual on DIY x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
 - [ ] LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
+- [ ] 4 bit CPU
+- [ ] Kernel/OS
+- [ ] Compiler
+- [ ] Database
 
 ## Programming and Algorithms
 
