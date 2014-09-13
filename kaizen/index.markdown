@@ -87,6 +87,7 @@ tagline: List for 2014
 
 ## Stack
 
+- [ ] http://www.ycombinator.com/rfs/
 - [ ] [The Log: What every software engineer should know about real-time data's unifying abstraction](http://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
 - [ ] [Jay kreps -- lambda arch](http://radar.oreilly.com/2014/07/questioning-the-lambda-architecture.html)
 - [ ] [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
