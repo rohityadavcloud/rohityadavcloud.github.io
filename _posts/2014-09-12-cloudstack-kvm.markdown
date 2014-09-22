@@ -146,7 +146,7 @@ We'll setup NFS and preseed systemvm.
     apt-get install nfs-kernel-server quota
     echo /export  *(rw,async,no_root_squash,no_subtree_check) > /etc/exports
     exportfs -a
-    sed -i -e 's/^RPCMOUNTDOPTS=--manage-gids$/RPCMOUNTDOPTS="-p 892 --manage-gids"/g' /etc/default/nfs-kernel-server
+    sed -i -e 's/^RPCMOUNTDOPTS="--manage-gids"$/RPCMOUNTDOPTS="-p 892 --manage-gids"/g' /etc/default/nfs-kernel-server
     sed -i -e 's/^NEED_STATD=$/NEED_STATD=yes/g' /etc/default/nfs-common
     sed -i -e 's/^STATDOPTS=$/STATDOPTS="--port 662 --outgoing-port 2020"/g' /etc/default/nfs-common
     sed -i -e 's/^RPCRQUOTADOPTS=$/RPCRQUOTADOPTS="-p 875"/g' /etc/default/quota
