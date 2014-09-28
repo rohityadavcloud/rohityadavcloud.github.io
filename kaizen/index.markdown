@@ -17,11 +17,15 @@ tagline: List for 2014
 - [ ] Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
 - [ ] Checkout [projects](https://github.com/karan/Projects)
 
-## Languages
+## Focus
 
 - [ ] Go
 - [ ] Java
-- [ ] Javascript
+- [ ] AngularJS/JS
+- [ ] Android
+
+## Hobby
+
 - [ ] Lisp/Scheme (FP)
 - [ ] Haskell (FP)
 
@@ -38,7 +42,7 @@ tagline: List for 2014
 
 ## Hack
 
-- [ ] Tantra - write a book/manual on DIY x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
+- [ ] Tantra - DIY x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
 - [ ] LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
 - [ ] 4 bit CPU
 - [ ] Kernel/OS
