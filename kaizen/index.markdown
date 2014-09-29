@@ -39,6 +39,17 @@ tagline: List for 2014
 - [ ] [Stackoverflow resource](http://stackoverflow.com/questions/43180/what-are-some-resources-for-getting-started-in-operating-system-development)
 - [ ] [How to Make a Computer Operating System](http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/)
 - [ ] OS lectures by Mckusic
+- [ ] http://www.landley.net/ols/ols2007/tutorial.txt
+- [ ] https://github.com/dbader/potatoes
+- [ ] http://www.sal.ksu.edu/faculty/tim/ossg/index.html
+- [ ] http://freevideolectures.com/Course/2653/CSE-30341-Operating-Systems/1
+- [ ] http://www.osdever.net/bkerndev/Docs/intro.htm
+- [ ] http://www.ibm.com/developerworks/library/l-linuxboot/index.html
+- [ ] http://duartes.org/gustavo/blog/post/kernel-boot-process/
+- [ ] http://duartes.org/gustavo/blog/post/how-computers-boot-up/
+- [ ] http://www.superfrink.net/athenaeum/
+- [ ] 8086: http://www.csi.ucd.ie/staff/jcarthy/home/alp/alp-05.pdf
+- [ ] http://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf
 
 ## Hack
 
