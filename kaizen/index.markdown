@@ -91,6 +91,7 @@ tagline: List for 2014
 
 ## Stack
 
+- [ ] http://megalomaniacbore.blogspot.ch/2014/04/virtual-cpu-in-c-4001-cpu.html
 - [ ] http://www.ycombinator.com/rfs/
 - [ ] [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
 - [ ] [Go language patterns](https://sites.google.com/site/gopatterns/)
