@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <img align="left" style="padding: 5px;" src="/assets/img/avatar.jpg"/>
-Hi, I'm Rohit Yadav, a software architect at [ShapeBlue](http://shapeblue.com),
+[Namaste](http://en.wikipedia.org/wiki/Namaste)! I'm Rohit Yadav, a software architect at [ShapeBlue](http://shapeblue.com),
 founder of [ScaleNinja](http://www.scaleninja.com) and an active committer of
 opensource [Apache CloudStack](http://cloudstack.apache.org) project.
 I graduated from [IIT-BHU](http://en.wikipedia.org/wiki/Indian_Institute_of_Technology_%28Banaras_Hindu_University%29_Varanasi)
@@ -26,7 +26,7 @@ file systems, job schedulers, programming languages, operating systems and compi
 
 I also do contract/consultancy work and short term remote assignments.
 
-Email: <rohit@scale.ninja>
+Email: <rohit@scaleninja.com>
 
 LinkedIn: [in/bhaisaab](https://www.linkedin.com/in/bhaisaab)
 
