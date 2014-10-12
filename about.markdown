@@ -34,5 +34,9 @@ Twitter: [@_bhaisaab](https://twitter.com/_bhaisaab)
 
 IRC: bhaisaab (on freenode and other networks)
 
-Keys: [GPG](https://keybase.io/bhaisaab/key.asc) | [Keybase](https://keybase.io/bhaisaab)
+[GPG public key](/gpg.pub) | [Keybase](https://keybase.io/bhaisaab)
+
+(GPG fingerprint = 5ED1 E112 2DC5 E8A4 A451 12C2 4842 4821 0EE3 D884)
+
+[SSH public key](/ssh.pub)
 
