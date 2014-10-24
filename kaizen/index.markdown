@@ -50,6 +50,7 @@ tagline: List for 2014
 - [ ] http://www.superfrink.net/athenaeum/
 - [ ] 8086: http://www.csi.ucd.ie/staff/jcarthy/home/alp/alp-05.pdf
 - [ ] http://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf
+- [ ] http://crimsonglow.ca/~kjiwa/x86-dos-boot-sector-in-c.html
 
 ## Hack
 
