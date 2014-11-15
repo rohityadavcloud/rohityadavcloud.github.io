@@ -17,12 +17,18 @@ tagline: List for 2014
 - [ ] Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
 - [ ] Checkout [projects](https://github.com/karan/Projects)
 
-## Focus
 
-- [ ] Go
-- [ ] Java
-- [ ] AngularJS/JS
-- [ ] Android
+## Stash
+
+- Ansible
+- AngularJS, ReactJS, Grunt
+- Golang and webapp dev
+- MongoDB
+- MySQL/Postgres Ops
+- ElasticSearch
+- Docker
+- Java and design patterns
+- Android app dev
 
 ## Hobby
 
@@ -94,6 +100,15 @@ tagline: List for 2014
 
 - [ ] [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
 - [ ] [Browser security handbook](https://code.google.com/p/browsersec/wiki/Part1)
+- B-trees
+- Hash tables
+- Log Structured Merge tree
+- Raft
+- Consistent hashing
+- [Quorum read/writes](https://en.wikipedia.org/wiki/Quorum_%28distributed_computing%29)
+- Merkel trees
+- [Vector Clocks](https://en.wikipedia.org/wiki/Vector_clock)
+- Memory allocation and garbage collection
 
 ## Interesting stuff
 
@@ -103,10 +118,20 @@ tagline: List for 2014
 
 ## Stack
 
+- [ ] http://wrapbootstrap.com/preview/WB07H3237
+- [ ] http://ehesp.github.io/Responsive-Dashboard
+- [ ] [Golang web app dev](https://github.com/astaxie/build-web-application-with-golang/blob/master/en/eBook/preface.md)
+- [ ] http://codegangsta.gitbooks.io/building-web-apps-with-go/content/
+- [ ] http://startupclass.samaltman.com/
+- [ ] https://github.com/yeoman/generator-angular#readme
+- [ ] https://github.com/mgechev/angularjs-style-guide/blob/master/README.md
+- [ ] https://docs.angularjs.org/guide/concepts
+- [ ] http://dave.cheney.net/resources-for-new-go-programmers
+- [ ] http://nicolasmerouze.com/middlewares-golang-best-practices-examples/
+- [ ] http://bouk.co/blog/idiomatic-generics-in-go/
 - [ ] http://megalomaniacbore.blogspot.ch/2014/04/virtual-cpu-in-c-4001-cpu.html
 - [ ] http://www.ycombinator.com/rfs/
 - [ ] [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
 - [ ] [Go language patterns](https://sites.google.com/site/gopatterns/)
-- [ ] [Golang web app dev](https://github.com/astaxie/build-web-application-with-golang/blob/master/en/eBook/preface.md)
 - [ ] [Hacker's guide to git](http://wildlyinaccurate.com/a-hackers-guide-to-git)
 - [ ] [Learning Linux](http://www.tldp.org/LDP/tlk/tlk-toc.html)
