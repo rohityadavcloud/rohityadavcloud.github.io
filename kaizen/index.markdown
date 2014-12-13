@@ -161,6 +161,12 @@ tagline: List for 2014
 
 ## Stack
 
+- [ ] [Restful json apis in Go](http://thenewstack.io/make-a-restful-json-api-go/)
+- [ ] [Ssh server in Go](http://blog.appsdeck.eu/post/105010314493/writing-a-replacement-to-openssh-using-go-2-2)
+- [ ] [ZipFS Golang base FUSE](https://github.com/bazillion/zipfs)
+- [ ] [Parser/lexer in Go](http://blog.gopheracademy.com/advent-2014/parsers-lexers/)
+- [ ] [Tutorial on implementing malloc, free, calloc](http://danluu.com/malloc-tutorial/)
+- [ ] [Git clone in Haskell](http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up)
 - [ ] http://ebtables.netfilter.org/br_fw_ia/br_fw_ia.html
 - [ ] http://wrapbootstrap.com/preview/WB07H3237
 - [ ] [Golang web app dev](https://github.com/astaxie/build-web-application-with-golang/blob/master/en/eBook/preface.md)
