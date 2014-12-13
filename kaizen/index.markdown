@@ -4,7 +4,6 @@ title: Kaizen
 tagline: List for 2014
 ---
 
-
 ## Workouts
 
 - [ ] [USACO training](http://train.usaco.org/usacogate)
@@ -14,26 +13,71 @@ tagline: List for 2014
 - [ ] Programming Practice: [TopCoder](http://www.topcoder.com)
 - [ ] Programming Practice: [SPOJ](http://www.spoj.com/)
 - [ ] Programming Practice: [HackerRank](https://www.hackerrank.com/)
+- [ ] Programming Practice: [Codeforces](http://codeforces.com/)
 - [ ] Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
 - [ ] Checkout [projects](https://github.com/karan/Projects)
 
-
 ## Stash
 
-- Ansible
-- AngularJS, ReactJS, Grunt
-- Golang and webapp dev
-- MongoDB
-- MySQL/Postgres Ops
-- ElasticSearch
-- Docker
 - Java and design patterns
+- Phabricator, Gerrit
+- AngularJS
+- Karma (testing)
+- ReactJS
+- Ember
+- Backbone
+- D3
+- Grunt, bower
+- Go
+- Golang based webapp dev
+- MongoDB
+- ElasticSearch
+- FoundationDB
+- Docker
+- Rocket
+- Ceph
+- Gluster
+- Ansible
+- OpenStack
+- Atlas (hashicorp)
+- Vagrant
+- Packer
+- Serf
+- Consul
+- Terraform
+- Etcd
+- Atomic, CoreOS
+- Mesos, Chronos, Marathon
+- Jetty (HTTP)
+- Undertow
+- Jersey (REST)
+- Jackson (JSON)
+- Guava
+- Guice
+- Hibernate (ORM and Validator)
+- Metrics (Dropwizard)
+- Logback, log4j
+- Ehcache
+- Gradle
+- Grails
 - Android app dev
+- Scala
+- HHVM and HackLang
+- PlanOut (A/B testing)
+- RocksDB/LevelDB
+- OSQuery
+- Presto
+- FBThrift
+- Watchman
+- Lisp
+- Haskell
 
-## Hobby
+## Learn and R&D
 
-- [ ] Lisp/Scheme (FP)
-- [ ] Haskell (FP)
+- Algorithms
+- Kernel
+- Compiler
+- Networking and IPv6
 
 ## Kernel
 
@@ -62,8 +106,6 @@ tagline: List for 2014
 
 - [ ] Tantra - DIY x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
 - [ ] LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
-- [ ] 4 bit CPU
-- [ ] Kernel/OS
 - [ ] Compiler
 - [ ] Database
 
