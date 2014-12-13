@@ -20,7 +20,6 @@ tagline: List for 2014
 ## Stash
 
 - Java and design patterns
-- Phabricator, Gerrit
 - AngularJS
 - Karma (testing)
 - ReactJS
@@ -69,6 +68,7 @@ tagline: List for 2014
 - Presto
 - FBThrift
 - Watchman
+- GroupCache
 - Lisp
 - Haskell
 
