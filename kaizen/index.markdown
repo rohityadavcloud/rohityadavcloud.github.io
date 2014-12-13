@@ -101,6 +101,7 @@ tagline: List for 2014
 - [ ] 8086: http://www.csi.ucd.ie/staff/jcarthy/home/alp/alp-05.pdf
 - [ ] http://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf
 - [ ] http://crimsonglow.ca/~kjiwa/x86-dos-boot-sector-in-c.html
+- [ ] http://adelaideos.sourceforge.net/
 
 ## Hack
 
@@ -161,21 +162,11 @@ tagline: List for 2014
 ## Stack
 
 - [ ] http://ebtables.netfilter.org/br_fw_ia/br_fw_ia.html
-- [ ] http://adelaideos.sourceforge.net/
 - [ ] http://wrapbootstrap.com/preview/WB07H3237
-- [ ] http://ehesp.github.io/Responsive-Dashboard
 - [ ] [Golang web app dev](https://github.com/astaxie/build-web-application-with-golang/blob/master/en/eBook/preface.md)
-- [ ] http://codegangsta.gitbooks.io/building-web-apps-with-go/content/
-- [ ] http://startupclass.samaltman.com/
-- [ ] https://github.com/yeoman/generator-angular#readme
-- [ ] https://github.com/mgechev/angularjs-style-guide/blob/master/README.md
-- [ ] https://docs.angularjs.org/guide/concepts
-- [ ] http://dave.cheney.net/resources-for-new-go-programmers
-- [ ] http://nicolasmerouze.com/middlewares-golang-best-practices-examples/
-- [ ] http://bouk.co/blog/idiomatic-generics-in-go/
-- [ ] http://megalomaniacbore.blogspot.ch/2014/04/virtual-cpu-in-c-4001-cpu.html
-- [ ] http://www.ycombinator.com/rfs/
-- [ ] [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
 - [ ] [Go language patterns](https://sites.google.com/site/gopatterns/)
+- [ ] http://codegangsta.gitbooks.io/building-web-apps-with-go/content/
+- [ ] http://megalomaniacbore.blogspot.ch/2014/04/virtual-cpu-in-c-4001-cpu.html
+- [ ] [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
 - [ ] [Hacker's guide to git](http://wildlyinaccurate.com/a-hackers-guide-to-git)
 - [ ] [Learning Linux](http://www.tldp.org/LDP/tlk/tlk-toc.html)
