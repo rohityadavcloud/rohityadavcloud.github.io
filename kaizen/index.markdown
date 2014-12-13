@@ -118,6 +118,8 @@ tagline: List for 2014
 
 ## Stack
 
+- [ ] http://ebtables.netfilter.org/br_fw_ia/br_fw_ia.html
+- [ ] http://adelaideos.sourceforge.net/
 - [ ] http://wrapbootstrap.com/preview/WB07H3237
 - [ ] http://ehesp.github.io/Responsive-Dashboard
 - [ ] [Golang web app dev](https://github.com/astaxie/build-web-application-with-golang/blob/master/en/eBook/preface.md)
