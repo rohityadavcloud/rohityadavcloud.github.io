@@ -179,14 +179,15 @@ tagline: List for 2014
 
 ## Stack
 
+- [ ] http://danluu.com/malloc-tutorial/
+- [ ] http://megalomaniacbore.blogspot.ch/2014/04/virtual-cpu-in-c-4001-cpu.html
+- [ ] http://ebtables.netfilter.org/br_fw_ia/br_fw_ia.html
+- [ ] http://wrapbootstrap.com/preview/WB07H3237
+- [ ] http://blog.gopheracademy.com/advent-2014/parsers-lexers/
 - [ ] [Ssh server in Go](http://blog.appsdeck.eu/post/105010314493/writing-a-replacement-to-openssh-using-go-2-2)
 - [ ] [ZipFS Golang base FUSE](https://github.com/bazillion/zipfs)
 - [ ] [Parser/lexer in Go](http://blog.gopheracademy.com/advent-2014/parsers-lexers/)
-- [ ] [Tutorial on implementing malloc, free, calloc](http://danluu.com/malloc-tutorial/)
 - [ ] [Git clone in Haskell](http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up)
-- [ ] http://ebtables.netfilter.org/br_fw_ia/br_fw_ia.html
-- [ ] http://wrapbootstrap.com/preview/WB07H3237
-- [ ] http://megalomaniacbore.blogspot.ch/2014/04/virtual-cpu-in-c-4001-cpu.html
 - [ ] [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
 - [ ] [Hacker's guide to git](http://wildlyinaccurate.com/a-hackers-guide-to-git)
 - [ ] [Learning Linux](http://www.tldp.org/LDP/tlk/tlk-toc.html)
