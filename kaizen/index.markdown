@@ -121,12 +121,30 @@ tagline: List for 2014
 
 ### Algorithms Lectures
 
+- [ ] [Introduction to Programming in Java](http://introcs.cs.princeton.edu/java/home/)
 - [ ] [The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
 - [ ] Algorithms Princeton [level-1](https://class.coursera.org/algs4partI-003/lecture)
 - [ ] Algorithms Princeton [level-2](https://class.coursera.org/algs4partII-002/lecture)
+- [ ] [Stanford Algorithms 1](https://www.coursera.org/course/algo)
+- [ ] [Stanford Algorithms 2](https://www.coursera.org/course/algo2)
 - [ ] [Analysis of Algorithms](https://www.coursera.org/course/aofa)
 - [ ] [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
-- [ ] [Introduction to Programming in Java](http://introcs.cs.princeton.edu/java/home/)
+- [ ] [Game Theory Tokyo University](https://www.coursera.org/course/welcomegametheory)
+- [ ] [Game Theory 1 Stanford](https://www.coursera.org/course/gametheory)
+- [ ] [Game Theory 2 Stanford](https://www.coursera.org/course/gametheory2)
+- [ ] [Bioinformatics Algorithms 1](https://www.coursera.org/course/bioinformatics)
+- [ ] [Bioinformatics Algorithms 2](https://www.coursera.org/course/bioinformatics2)
+- [ ] [Stanford Cryptography 1](https://www.coursera.org/course/crypto)
+- [ ] [Stanford Cryptography 2](https://www.coursera.org/course/crypto2)
+
+### Deep learning
+
+- [ ] [Machine Learning](https://www.coursera.org/course/ml)
+- [ ] [Linear Algebra](https://www.khanacademy.org/math/linear-algebra)
+- [ ] [Linear Algebra Brown University](https://www.coursera.org/course/matrix)
+- [ ] [Neural Network](https://www.coursera.org/course/neuralnets)
+- [ ] [Deep Learning Python tutorial](http://deeplearning.net/tutorial/deeplearning.pdf)
+- [ ] [Deep Learning MIT book](http://www.iro.umontreal.ca/~bengioy/dlbook/)
 
 ## Functional Programming
 
@@ -146,10 +164,10 @@ tagline: List for 2014
 - B-trees
 - Hash tables
 - Log Structured Merge tree
+- Merkel trees
 - Raft
 - Consistent hashing
 - [Quorum read/writes](https://en.wikipedia.org/wiki/Quorum_%28distributed_computing%29)
-- Merkel trees
 - [Vector Clocks](https://en.wikipedia.org/wiki/Vector_clock)
 - Memory allocation and garbage collection
 
@@ -161,7 +179,6 @@ tagline: List for 2014
 
 ## Stack
 
-- [ ] [Restful json apis in Go](http://thenewstack.io/make-a-restful-json-api-go/)
 - [ ] [Ssh server in Go](http://blog.appsdeck.eu/post/105010314493/writing-a-replacement-to-openssh-using-go-2-2)
 - [ ] [ZipFS Golang base FUSE](https://github.com/bazillion/zipfs)
 - [ ] [Parser/lexer in Go](http://blog.gopheracademy.com/advent-2014/parsers-lexers/)
@@ -169,9 +186,6 @@ tagline: List for 2014
 - [ ] [Git clone in Haskell](http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up)
 - [ ] http://ebtables.netfilter.org/br_fw_ia/br_fw_ia.html
 - [ ] http://wrapbootstrap.com/preview/WB07H3237
-- [ ] [Golang web app dev](https://github.com/astaxie/build-web-application-with-golang/blob/master/en/eBook/preface.md)
-- [ ] [Go language patterns](https://sites.google.com/site/gopatterns/)
-- [ ] http://codegangsta.gitbooks.io/building-web-apps-with-go/content/
 - [ ] http://megalomaniacbore.blogspot.ch/2014/04/virtual-cpu-in-c-4001-cpu.html
 - [ ] [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
 - [ ] [Hacker's guide to git](http://wildlyinaccurate.com/a-hackers-guide-to-git)
