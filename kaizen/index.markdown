@@ -179,6 +179,7 @@ tagline: List for 2014
 
 ## Stack
 
+- [ ] https://training.kalzumeus.com/newsletters/archive/sales_automation
 - [ ] http://danluu.com/malloc-tutorial/
 - [ ] http://megalomaniacbore.blogspot.ch/2014/04/virtual-cpu-in-c-4001-cpu.html
 - [ ] http://ebtables.netfilter.org/br_fw_ia/br_fw_ia.html
