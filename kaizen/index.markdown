@@ -179,6 +179,8 @@ tagline: List for 2014
 
 ## Stack
 
+- [ ] http://www.bottomupcs.com/index.html
+- [ ] http://dbp-consulting.com/tutorials/debugging/linuxProgramStartup.html
 - [ ] https://quip.com/r69HA9GhGa7J
 - [ ] https://training.kalzumeus.com/newsletters/archive/sales_automation
 - [ ] http://danluu.com/malloc-tutorial/
