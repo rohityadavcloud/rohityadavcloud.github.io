@@ -71,11 +71,6 @@ title: Projects
       <td>CMake, NSIS, Qt</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/r2a2-small.png"> R2A2^</td>
-      <td><span class="label notice">hardware</span> Android powered mobile robot</td>
-      <td>Java, C, Android, IOIO, Rover5</td>
-    </tr>
-    <tr>
       <td><img src="/images/projects/mtp-small.png"> <a href="/projects/mtp">MTP</a></td>
       <td><span class="label notice">hardware</span> Wireless speech controlled mobile robot with obstacle avoidance</td>
       <td>C/Wiring, Processing, Fritzing, Blender, Arduino, XBee, EasyVR, Sensors</td>
