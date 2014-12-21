@@ -4,39 +4,37 @@ title: About
 permalink: /about/
 ---
 
-<img align="left" style="padding: 5px;" src="/assets/img/avatar.jpg"/>
 [Namaste](http://en.wikipedia.org/wiki/Namaste)! I'm Rohit Yadav, a software architect at [ShapeBlue](http://shapeblue.com),
 founder of [ScaleNinja](http://www.scaleninja.com) and an active committer of
-opensource [Apache CloudStack](http://cloudstack.apache.org) project.
+opensource [Apache CloudStack](http://cloudstack.apache.org) project and also known as creator of [CloudMonkey](http://github.com/apache/cloudstack-cloudmonkey).
 I graduated from [IIT-BHU](http://en.wikipedia.org/wiki/Indian_Institute_of_Technology_%28Banaras_Hindu_University%29_Varanasi)
 with degrees of [B.Tech](http://en.wikipedia.org/wiki/Bachelor_of_Technology) and
 [M.Tech](http://en.wikipedia.org/wiki/Master_of_Engineering) in computer science
-and engineering in 2012.
+and engineering in 2012. Refer my [LinkedIn](https://linkedin.com/in/bhaisaab) profile for more details. I also do [contract/consultancy](mailto:rohit@scaleninja.com) work and short term remote assignments. [GPG](/gpg.pub) | [Keybase](https://keybase.io/bhaisaab) | [SSH](/ssh.pub).
 
-Previously, I've worked at [Wingify](http://wingify.com), [Citrix](http://citrix.com),
-[CERN](http://ph-dep-sft.web.cern.ch) and was a Google Summer of Code 2010 student for
-[VideoLAN](http://videolan.org). I love opensource and have contributed to
-opensource projects such as VLC-android, veewee, VLMC, BOINCVM, HaikuOS in the
-past. I'm a proud EFF member and supporter of freedom of speech, free press, net
-neutrality, the Free Software Foundation and the Wikimedia Foundation.
-
-My areas of interest include (but are not limited to) cloud computing, distributed
-systems, fault-tolerant systems, infrastructure scalability, virtualization, hypervisors,
-file systems, job schedulers, programming languages, operating systems and compilers.
-
-I also do contract/consultancy work and short term remote assignments.
-
-Email: <rohit@scaleninja.com>
-
-LinkedIn: [in/bhaisaab](https://www.linkedin.com/in/bhaisaab)
-
-Twitter: [@_bhaisaab](https://twitter.com/_bhaisaab)
-
-IRC: bhaisaab (on freenode and other networks)
-
-[GPG public key](/gpg.pub) | [Keybase](https://keybase.io/bhaisaab)
-
-(GPG fingerprint = 5ED1 E112 2DC5 E8A4 A451 12C2 4842 4821 0EE3 D884)
-
-[SSH public key](/ssh.pub)
-
+So far in my life I've met amazing individuals and do-ers who I know closely or I've worked with.
+They all have inspired me and continue to inspire and amaze me. The list is big but
+I'll still try to chronologically share an incomplete list here; my mother for my existence, her care and kindness;
+my [father](http://en.wikipedia.org/wiki/Rajpal_Singh_Yadav) for inspiring me with his life lessons and scientific work;
+Himadri Sarkar for introducing me to Linux and the world of opensource;
+Harshath for introducing me to vim, touch typing, and inspiring to program and make new things;
+[Abhishek](http://theshowstopper.in) for our work on [Graffiti](https://github.com/bhaisaab/graffiti) and for inspiring me with his body building obsession;
+[Saket Jalan](https://www.facebook.com/saket1409) for inspiring me with his problem solving skills, C++ chops;
+Pankaj for inspiring me with his networking knowledge, hacking skills, opensource contributions and work on VPN;
+[Kushagra](http://kushagragour.in/) for inspiring me with his art, games and awesomesauce frontend skills;
+my unofficial GSoC mentor Hugo Beauzée-Luyssen for his amazing C++ coding skills and contributions to the VLMC project;
+my GSoC mentor [J-B](http://www.jbkempf.com/) for his community work in VideoLAN, help with git and my contributions to the VLMC and VLC-android projects;
+my mentor at CERN [Dr. Ben Segal](http://ben.web.cern.ch/ben/) for inspiring me with his stories and experience;
+the amazing [David Garcia Quintas](https://www.linkedin.com/in/davidgarciaquintas) for introducing me to Python at CERN, our work on BoincVM/VMController and his badass [coding and problem solving skills](https://github.com/dgquintas/my-code-samples) (he's the best programmer I've ever worked with);
+Artem for inspiring with his work on job schedulers, virtualization and large backend systems;
+Jacob for inspiring with his work on distributed file systems;
+Prasanna for inspiring me with his work in the opensource community, killer terminal-foo, mutt-chops and devops skills;
+Abhinandan "Abhi" Prateek for being open, friendly and for supporting my CloudStack community work;
+Murali for inspiring me with his networking skills and helping me walk the CloudStack code;
+Kishan for inspiring me with his calmness, work and efficiency;
+Min Chen, Kelven Yang and Edison Su for inspiring me with their hard work and coding skills;
+Alex Huang for inspiring me with his work on CloudStack's architecture and general (Java) design skills;
+Chiradeep for inspiring me with his work on networking in CloudStack, CloudStack's architecture and no-BS approach to problems;
+Pushkal for inspiring with his startup GetMeAShop, his winning attitude and [chutzpah](http://en.wikipedia.org/wiki/Chutzpah);
+Giles for suggesting me personal improvements and mentoring me on various things;
+my friends and colleagues in the CloudStack community (Hugo, Sebastien, Daan, Ian, Chip, Joe, David, Darren, Laszlo, Wilder, Leo, Remi, Mike, Wido, Will, Pierre, there are so many of them to list here - please forgive me if I missed to include any) for inspiring me with their contributions.

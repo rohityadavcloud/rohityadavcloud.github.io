@@ -1,7 +1,7 @@
 ---
 layout: project
 title: MTP
-permalink: /mtp/
+permalink: /projects/mtp/
 ---
 
 <p align = "center"><img align="center" src="/images/projects/mtp/side.png"/></p>
