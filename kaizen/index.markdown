@@ -161,6 +161,7 @@ tagline: List for 2014
 
 - [ ] [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
 - [ ] [Browser security handbook](https://code.google.com/p/browsersec/wiki/Part1)
+- [Distributed Systems principles course](http://dcg.ethz.ch/lectures/podc_allstars/)
 - B-trees
 - Hash tables
 - Log Structured Merge tree
