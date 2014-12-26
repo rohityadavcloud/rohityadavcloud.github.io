@@ -19,7 +19,6 @@ tagline: List for 2014
 
 ## Stash
 
-- Java and design patterns
 - AngularJS
 - Karma (testing)
 - ReactJS
@@ -195,5 +194,4 @@ tagline: List for 2014
 - [ ] [Parser/lexer in Go](http://blog.gopheracademy.com/advent-2014/parsers-lexers/)
 - [ ] [Git clone in Haskell](http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up)
 - [ ] [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
-- [ ] [Hacker's guide to git](http://wildlyinaccurate.com/a-hackers-guide-to-git)
 - [ ] [Learning Linux](http://www.tldp.org/LDP/tlk/tlk-toc.html)
