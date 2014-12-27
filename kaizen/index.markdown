@@ -12,6 +12,7 @@ tagline: List for 2015
 - Complex datastructures (merkel tree, db stuff)
 - OS read, hack Linux, make a small kernel
 - Misc: Go, Java, Android app dev
+- Hackdays and one weekends off
 
 Misc:
 - Running (30 mins - 1hr)
