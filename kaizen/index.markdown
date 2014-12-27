@@ -4,6 +4,29 @@ title: Kaizen
 tagline: List for 2015
 ---
 
+<div style="display:none">
+
+## Top 2015
+
+- Algorithms (books, art of programming etc) + practice + challenges (codeforces etc)
+- Complex datastructures (merkel tree, db stuff)
+- OS read, hack Linux, make a small kernel
+- Misc: Go, Java, Android app dev
+
+Misc:
+- Running (30 mins - 1hr)
+- 80Kg, abs, pull ups
+- Swimming
+
+Work:
+- ACS UI (AngularJS, ElasticSearch/Mongo/PostgreSQL/MySQL/Redis/RabbitMQ etc)
+- Networking IPv6, VR-DMZ
+- CloudStack source reading and architecture
+- Features: docker, bhyve, libvirtd
+- Misc: bandar testing tool, QA infra, Developer Book, cloudmonkey in Go, db migration (flyway)
+
+</div>
+
 ## Tip
 
 - Networking and IPv6
@@ -59,27 +82,25 @@ tagline: List for 2015
 
 ## Kernel
 
+- OS lectures by Mckusic
+- [Bottom Up Learning](http://www.bottomupcs.com/index.html)
 - [xv6](http://pdos.csail.mit.edu/6.828/2012/xv6.html)
+- [Potato teaching OS](https://github.com/dbader/potatoes)
+- [Adelaideos Teaching OS](http://adelaideos.sourceforge.net)
 - [OSDev books](http://wiki.osdev.org/Books)
 - [GDB](http://beej.us/guide/bggdb/)
 - [OSSTEP](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- [JoelG's bootloader stuff](http://joelgompert.com/OS/TableOfContents.htm)
 - [Stackoverflow resource](http://stackoverflow.com/questions/43180/what-are-some-resources-for-getting-started-in-operating-system-development)
 - [How to Make a Computer Operating System](http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/)
-- OS lectures by Mckusic
-- http://www.landley.net/ols/ols2007/tutorial.txt
-- https://github.com/dbader/potatoes
-- http://www.sal.ksu.edu/faculty/tim/ossg/index.html
-- http://freevideolectures.com/Course/2653/CSE-30341-Operating-Systems/1
-- http://www.osdever.net/bkerndev/Docs/intro.htm
-- http://www.ibm.com/developerworks/library/l-linuxboot/index.html
-- http://duartes.org/gustavo/blog/post/kernel-boot-process/
-- http://duartes.org/gustavo/blog/post/how-computers-boot-up/
-- http://www.superfrink.net/athenaeum/
-- 8086: http://www.csi.ucd.ie/staff/jcarthy/home/alp/alp-05.pdf
-- http://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf
-- http://crimsonglow.ca/~kjiwa/x86-dos-boot-sector-in-c.html
-- http://adelaideos.sourceforge.net/
+- [OS Study Guide](http://www.sal.ksu.edu/faculty/tim/ossg/index.html)
+- [How to Kernel basics](http://www.osdever.net/bkerndev/Docs/intro.htm)
+- [JoelG's bootloader stuff](http://joelgompert.com/OS/TableOfContents.htm)
+- [Inside Linux boot process](http://www.ibm.com/developerworks/library/l-linuxboot/index.html)
+- [Kernel boot process](http://duartes.org/gustavo/blog/post/kernel-boot-process/)
+- [How computer boots up](http://duartes.org/gustavo/blog/post/how-computers-boot-up/)
+- [Intro to 8086](http://www.csi.ucd.ie/staff/jcarthy/home/alp/alp-05.pdf)
+- [Writing simple OS from Scratch](http://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf)
+- [OS and related links](http://www.superfrink.net/athenaeum)
 
 ## Compilers
 
@@ -109,23 +130,17 @@ tagline: List for 2015
 - [Quorum read/writes](https://en.wikipedia.org/wiki/Quorum_%28distributed_computing%29)
 - [Vector Clocks](https://en.wikipedia.org/wiki/Vector_clock)
 - Memory allocation and garbage collection
-- [Lambda Calculus](https://www.youtube.com/playlist?list=PL4A05CF0478DAD704)
 - [Build your own Lisp](http://www.buildyourownlisp.com/contents)
 - [Eudyptula Challenge: Linux programming](http://eudyptula-challenge.org/) | [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.4/html/book1.htm)
+- [Lambda Calculus](https://www.youtube.com/playlist?list=PL4A05CF0478DAD704)
 
 ## Stack
 
-- [CodeKata](http://codekata.com/)
-- http://people.csail.mit.edu/mrub/evm/#code
-- http://www.bottomupcs.com/index.html
-- http://dbp-consulting.com/tutorials/debugging/linuxProgramStartup.html
-- https://quip.com/r69HA9GhGa7J
-- https://training.kalzumeus.com/newsletters/archive/sales_automation
-- http://danluu.com/malloc-tutorial/
-- http://megalomaniacbore.blogspot.ch/2014/04/virtual-cpu-in-c-4001-cpu.html
-- http://ebtables.netfilter.org/br_fw_ia/br_fw_ia.html
 - http://wrapbootstrap.com/preview/WB07H3237
-- http://blog.gopheracademy.com/advent-2014/parsers-lexers/
+- [CodeKata](http://codekata.com/)
+- [Eulerian Imaging Algos](http://people.csail.mit.edu/mrub/evm/#code)
+- [Malloc tutorial](http://danluu.com/malloc-tutorial/)
+- [Writing virtual CPU in C++](http://megalomaniacbore.blogspot.ch/2014/04/virtual-cpu-in-c-4001-cpu.html)
 - [Ssh server in Go](http://blog.appsdeck.eu/post/105010314493/writing-a-replacement-to-openssh-using-go-2-2)
 - [ZipFS Golang base FUSE](https://github.com/bazillion/zipfs)
 - [Parser/lexer in Go](http://blog.gopheracademy.com/advent-2014/parsers-lexers/)
