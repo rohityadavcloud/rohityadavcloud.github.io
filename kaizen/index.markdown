@@ -9,7 +9,7 @@ tagline: List for 2015
 - Networking and IPv6
 - AngularJS / Karma (testing)
 - Postgresql, MongoDB, FoundationDB, ElasticSearch
-- Golang [webapp dev](https://github.com/astaxie/build-web-application-with-golang/blob/master/en/preface.md) | [Building webapps by Codegangsta](http://codegangsta.gitbooks.io/building-web-apps-with-go/content/) | [MySQL/DB & Go](http://go-database-sql.org/index.html) | [Effective Go](http://golang.org/doc/effective_go.html) | [Go by example](https://gobyexample.com/) | [Golang spec](https://golang.org/ref/spec)
+- Golang [webapp dev](https://github.com/astaxie/build-web-application-with-golang/blob/master/en/preface.md), [Building webapps by Codegangsta](http://codegangsta.gitbooks.io/building-web-apps-with-go/content/), [MySQL/DB & Go](http://go-database-sql.org/index.html), [Effective Go](http://golang.org/doc/effective_go.html), [Go by example](https://gobyexample.com/), [Golang spec](https://golang.org/ref/spec)
 - [USACO training](http://train.usaco.org/usacogate)
 
 ## Stash
