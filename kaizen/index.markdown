@@ -115,6 +115,8 @@ tagline: List for 2015
 
 ## Stack
 
+- [CodeKata](http://codekata.com/)
+- http://people.csail.mit.edu/mrub/evm/#code
 - http://www.bottomupcs.com/index.html
 - http://dbp-consulting.com/tutorials/debugging/linuxProgramStartup.html
 - https://quip.com/r69HA9GhGa7J
