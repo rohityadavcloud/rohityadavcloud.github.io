@@ -32,10 +32,12 @@ tagline: List for 2015
 - LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
 - Compiler
 - Database
-- Kaizen list
+- Kaizen list, time keeping/scheduling
 - GPS track android app
-- Code sharing RBAC
+- Code sharing RBAC shack
 - Email server
+- tweet buffer like scheduler app
+- invoice/accounting app
 
 ## Programming and Algorithms
 
