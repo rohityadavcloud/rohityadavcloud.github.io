@@ -38,6 +38,8 @@ Work:
 
 ## Stash
 
+- [SPOJ top](http://www.spoj.com/problems/classical/sort=-6)
+- [List of things](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
 - [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
 - [Introduction to Programming in Java](http://introcs.cs.princeton.edu/java/home/)
 - Algorithms Princeton [level-1](https://class.coursera.org/algs4partI-003/lecture)
@@ -50,6 +52,7 @@ Work:
 - [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
 - [Book: The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
 - [Book: Analysis of Algorithms](https://www.coursera.org/course/aofa) | [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
+
 
 - ReactJS (and others)
 - Android app dev, Gradle
