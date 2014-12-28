@@ -147,6 +147,8 @@ Work:
 - [Git clone in Haskell](http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up)
 - [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
 - [Learning Linux](http://www.tldp.org/LDP/tlk/tlk-toc.html)
+- [Paxos explained](http://harry.me/blog/2014/12/27/neat-algorithms-paxos/?hn=1)
+- [Exact string matching algorithms](http://www-igm.univ-mlv.fr/~lecroq/string/)
 
 ## Closet
 
