@@ -42,6 +42,15 @@ Work:
 - [Introduction to Programming in Java](http://introcs.cs.princeton.edu/java/home/)
 - Algorithms Princeton [level-1](https://class.coursera.org/algs4partI-003/lecture)
 - Algorithms Princeton [level-2](https://class.coursera.org/algs4partII-002/lecture)
+- [Stanford Algorithms 1](https://www.coursera.org/course/algo)
+- [Stanford Algorithms 2](https://www.coursera.org/course/algo2)
+- [Algo](http://www.aduni.org/courses/algorithms/index.php?view=cw)
+- [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
+- [Humblefool's CodeSchool](http://mycodeschool.com/problems) [Winter coding @ MyCodeSchool](http://wintercoding.mycodeschool.com/)
+- [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
+- [Book: The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
+- [Book: Analysis of Algorithms](https://www.coursera.org/course/aofa) | [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
+
 - ReactJS (and others)
 - Android app dev, Gradle
 - Docker/Rocket/CoreOS
@@ -70,16 +79,6 @@ Work:
 - Programming Practice: [HackerRank](https://www.hackerrank.com/)
 - Programming Practice: [Codeforces](http://codeforces.com/)
 - Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
-- [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
-- [Humblefool's CodeSchool](http://mycodeschool.com/problems) [Winter coding @ MyCodeSchool](http://wintercoding.mycodeschool.com/)
-- [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
-
-### Algorithms Lectures
-
-- [The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
-- [Stanford Algorithms 1](https://www.coursera.org/course/algo)
-- [Stanford Algorithms 2](https://www.coursera.org/course/algo2)
-- [Analysis of Algorithms](https://www.coursera.org/course/aofa) | [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
 
 ## Kernel
 
