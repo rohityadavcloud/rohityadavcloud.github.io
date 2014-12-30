@@ -30,11 +30,12 @@ Work:
 
 ## Tip
 
-- Networking and IPv6
 - AngularJS / Karma (testing)
-- Postgresql, MongoDB, FoundationDB, ElasticSearch
-- Golang [webapp dev](https://github.com/astaxie/build-web-application-with-golang/blob/master/en/preface.md), [Building webapps by Codegangsta](http://codegangsta.gitbooks.io/building-web-apps-with-go/content/), [MySQL/DB & Go](http://go-database-sql.org/index.html), [Effective Go](http://golang.org/doc/effective_go.html), [Go by example](https://gobyexample.com/), [Golang spec](https://golang.org/ref/spec)
+- ReactJS/Flux
+- MySQL, MongoDB, ElasticSearch, Memcache, Redis, RabbitMQ
+- Go: readline/cmd, micro webframework
 - [USACO training](http://train.usaco.org/usacogate)
+- Networking and IPv6
 
 ## Stash
 
@@ -54,7 +55,6 @@ Work:
 - [Book: Analysis of Algorithms](https://www.coursera.org/course/aofa) | [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
 
 
-- ReactJS (and others)
 - Android app dev, Gradle
 - Docker/Rocket/CoreOS
 - Ceph/Gluster
