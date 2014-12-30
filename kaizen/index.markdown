@@ -112,6 +112,7 @@ Work:
 
 ### Deep learning
 
+- [Deep learning list](http://jmozah.github.io/links/)
 - [Machine Learning](https://www.coursera.org/course/ml)
 - [Linear Algebra](https://www.khanacademy.org/math/linear-algebra)
 - [Linear Algebra Brown University](https://www.coursera.org/course/matrix)
