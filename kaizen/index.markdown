@@ -74,6 +74,7 @@ Work:
 - Email server
 - tweet buffer like scheduler app
 - invoice/accounting app
+- readline in [go](https://github.com/bhaisaab/currycli), example [linenoise](https://github.com/antirez/linenoise), [already](https://github.com/peterh/liner) [existing?](https://github.com/gobs/cmd)
 
 ## Programming and Algorithms
 
@@ -109,6 +110,7 @@ Work:
 
 - Compilers [Stanford](https://class.coursera.org/compilers-003/lecture)
 - [Automata](https://class.coursera.org/automata-002/lecture) by Ullman
+- [Toy compiler](https://github.com/lsegal/my_toy_compiler), [Writing own compiler](http://gnuu.org/2009/09/18/writing-your-own-toy-compiler/)
 
 ### Deep learning
 
