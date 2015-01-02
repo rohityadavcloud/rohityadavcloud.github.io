@@ -142,7 +142,7 @@ Work:
 
 ## Stack
 
-- http://wrapbootstrap.com/preview/WB07H3237
+- https://software.intel.com/en-us/blogs/2014/05/10/debugging-performance-issues-in-go-programs
 - [CodeKata](http://codekata.com/)
 - [Eulerian Imaging Algos](http://people.csail.mit.edu/mrub/evm/#code)
 - [Malloc tutorial](http://danluu.com/malloc-tutorial/)
