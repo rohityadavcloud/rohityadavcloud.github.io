@@ -4,42 +4,19 @@ title: Kaizen
 tagline: List for 2015
 ---
 
-<div style="display:none">
-
-## Top 2015
-
-- Algorithms (books, art of programming etc) + practice + challenges (codeforces etc)
-- Complex datastructures (merkel tree, db stuff)
-- OS read, hack Linux, make a small kernel
-- Misc: Go, Java, Android app dev
-- Hackdays and one weekends off
-
-Misc:
-- Running (30 mins - 1hr)
-- 80Kg, abs, pull ups
-- Swimming
-
-Work:
-- ACS UI (AngularJS, ElasticSearch/Mongo/PostgreSQL/MySQL/Redis/RabbitMQ etc)
-- Networking IPv6, VR-DMZ
-- CloudStack source reading and architecture
-- Features: docker, bhyve, libvirtd
-- Misc: bandar testing tool, QA infra, Developer Book, cloudmonkey in Go, db migration (flyway)
-
-</div>
-
 ## Tip
 
-- AngularJS / Karma (testing)
-- ReactJS/Flux
-- MySQL, MongoDB, ElasticSearch, Memcache, Redis, RabbitMQ
-- Go: readline/cmd, micro webframework
-- [USACO training](http://train.usaco.org/usacogate)
-- Networking and IPv6
+- UI, AngularJS / Karma (testing)
+- MySQL, Mongo, ElasticSearch, Memcache, Redis, RabbitMQ
+- Go: micro webframework, webapp
+- Read: Networking, OS, Algos
+- Networking and IPv6, VR/DMZ
+- ACS source reading, docker, bhyve, libvirtd, bandar testing, QA infra, devbook, db migration (flyway), cloudmonkey/go
+- Health, swimming, running
+- [USACO training](http://train.usaco.org/usacogate), algo practice, complex DS
 
 ## Stash
 
-- http://addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript
 - [SPOJ top](http://www.spoj.com/problems/classical/sort=-6)
 - [List of things](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
 - [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
