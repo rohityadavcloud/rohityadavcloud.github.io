@@ -14,7 +14,6 @@ with degrees of [B.Tech](http://en.wikipedia.org/wiki/Bachelor_of_Technology) an
 [M.Tech](http://en.wikipedia.org/wiki/Master_of_Engineering) in computer science
 and engineering in 2012. Refer my [LinkedIn](https://linkedin.com/in/bhaisaab) profile for more details. I also do [contract/consultancy](mailto:rohit@scaleninja.com) work and short term remote assignments. [GPG](/gpg.pub) | [Keybase](https://keybase.io/bhaisaab) | [SSH](/ssh.pub) | [EMAIL](mailto:rohit@scaleninja.com).
 
-<!---
 So far in my life I've met amazing individuals and do-ers who I know closely or I've worked with.
 They all have inspired me and continue to inspire and amaze me. The list is big but
 I'll still try to chronologically share an incomplete list here;
@@ -34,4 +33,3 @@ the amazing [David Garcia Quintas](https://www.linkedin.com/in/davidgarciaquinta
 [Vaidik](https://github.com/vaidik) for inspiring me with his geekery, Python skills, startup interests and Mozillian experiences;
 [Pushkal](https://twitter.com/pushkalcodes) for inspiring with his startup [GetMeAShop](http://www.getmeashop.com), his winning attitude and [chutzpah](http://en.wikipedia.org/wiki/Chutzpah);
 my friends and colleagues in the CloudStack community for inspiring me with their contributions.
--->
