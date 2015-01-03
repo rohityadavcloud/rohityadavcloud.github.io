@@ -39,6 +39,7 @@ Work:
 
 ## Stash
 
+- http://addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript
 - [SPOJ top](http://www.spoj.com/problems/classical/sort=-6)
 - [List of things](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
 - [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
