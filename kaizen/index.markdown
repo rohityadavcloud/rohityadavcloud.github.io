@@ -17,6 +17,7 @@ tagline: List for 2015
 
 ## Stash
 
+- http://talks.golang.org/2013/advconc.slide#4
 - [JS desing patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript)
 - [SPOJ top](http://www.spoj.com/problems/classical/sort=-6)
 - [List of things](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
