@@ -17,6 +17,8 @@ tagline: List for 2015
 
 ## Stash
 
+- https://docs.angularjs.org/guide/concepts
+- https://github.com/0xAX/linux-insides/blob/master/linux-bootstrap-1.md
 - http://mattias-.github.io/2015-01-03/DIY-Make-Your-Own-Programming-language/
 - http://talks.golang.org/2013/advconc.slide#4
 - [JS desing patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript)
@@ -69,7 +71,7 @@ tagline: List for 2015
 
 - OS lectures by Mckusic
 - [Bottom Up Learning](http://www.bottomupcs.com/index.html)
-- [xv6](http://pdos.csail.mit.edu/6.828/2012/xv6.html)
+- [xv6 and 6.828](http://pdos.csail.mit.edu/6.828/2014/schedule.html)
 - [Potato teaching OS](https://github.com/dbader/potatoes)
 - [Adelaideos Teaching OS](http://adelaideos.sourceforge.net)
 - [OSDev books](http://wiki.osdev.org/Books)
