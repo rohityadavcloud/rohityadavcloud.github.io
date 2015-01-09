@@ -6,9 +6,10 @@ tagline: List for 2015
 
 ## Tip
 
-- UI, AngularJS / Karma (testing)
-- MySQL, Mongo, ElasticSearch, Memcache, Redis, RabbitMQ
-- Go: micro webframework, webapp
+- [ ] AngularJS
+- [ ] Karma (testing)
+- [ ] Go: micro webframework, webapp
+- [ ] MySQL, Mongo, ElasticSearch, Memcache, Redis, RabbitMQ
 - Read: Networking, OS, Algos
 - Networking and IPv6, VR/DMZ
 - ACS source reading, docker, bhyve, libvirtd, bandar testing, QA infra, devbook, db migration (flyway), cloudmonkey/go
