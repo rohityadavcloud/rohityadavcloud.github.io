@@ -18,6 +18,7 @@ tagline: List for 2015
 
 ## Stash
 
+- https://github.com/prakhar1989/awesome-courses
 - https://docs.angularjs.org/guide/concepts
 - https://github.com/0xAX/linux-insides/blob/master/linux-bootstrap-1.md
 - http://mattias-.github.io/2015-01-03/DIY-Make-Your-Own-Programming-language/
