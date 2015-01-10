@@ -18,6 +18,7 @@ tagline: List for 2015
 
 ## Stash
 
+- http://blog.golang.org/gothamgo
 - https://github.com/prakhar1989/awesome-courses
 - https://docs.angularjs.org/guide/concepts
 - https://github.com/0xAX/linux-insides/blob/master/linux-bootstrap-1.md
@@ -71,6 +72,7 @@ tagline: List for 2015
 
 ## Kernel
 
+- http://littleosbook.github.io/
 - OS lectures by Mckusic
 - [Bottom Up Learning](http://www.bottomupcs.com/index.html)
 - [xv6 and 6.828](http://pdos.csail.mit.edu/6.828/2014/schedule.html)
