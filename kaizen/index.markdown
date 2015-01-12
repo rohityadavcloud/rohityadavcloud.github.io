@@ -20,6 +20,7 @@ tagline: List for 2015
 
 - http://ori.scs.stanford.edu/
 - http://blog.golang.org/gothamgo
+- http://danluu.com/new-cpu-features/
 - https://github.com/prakhar1989/awesome-courses
 - https://docs.angularjs.org/guide/concepts
 - https://github.com/0xAX/linux-insides/blob/master/linux-bootstrap-1.md
