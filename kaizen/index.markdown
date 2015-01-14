@@ -97,6 +97,11 @@ tagline: List for 2015
 
 ## Compilers
 
+- http://stackoverflow.com/questions/1669/learning-to-write-a-compiler
+- http://homepage.ntlworld.com/edmund.grimley-evans/cc500/
+- http://compilers.iecc.com/crenshaw/
+- http://bellard.org/tcc/
+- http://llvm.org/docs/tutorial/
 - Compilers [Stanford](https://class.coursera.org/compilers-003/lecture)
 - [Automata](https://class.coursera.org/automata-002/lecture) by Ullman
 - [Toy compiler](https://github.com/lsegal/my_toy_compiler), [Writing own compiler](http://gnuu.org/2009/09/18/writing-your-own-toy-compiler/)
