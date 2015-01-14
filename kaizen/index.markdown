@@ -18,6 +18,7 @@ tagline: List for 2015
 
 ## Stash
 
+- http://en.wikipedia.org/wiki/Exponentiation_by_squaring
 - http://ori.scs.stanford.edu/
 - http://blog.golang.org/gothamgo
 - http://danluu.com/new-cpu-features/
