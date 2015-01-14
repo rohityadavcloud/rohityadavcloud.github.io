@@ -18,6 +18,7 @@ tagline: List for 2015
 
 ## Stash
 
+- http://ori.scs.stanford.edu/
 - http://blog.golang.org/gothamgo
 - https://github.com/prakhar1989/awesome-courses
 - https://docs.angularjs.org/guide/concepts
