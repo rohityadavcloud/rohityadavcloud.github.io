@@ -75,6 +75,7 @@ tagline: List for 2015
 
 ## Kernel
 
+- https://github.com/rust-lang/rust/wiki/Operating-system-development
 - http://littleosbook.github.io/
 - OS lectures by Mckusic
 - [Bottom Up Learning](http://www.bottomupcs.com/index.html)
