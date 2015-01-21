@@ -19,6 +19,7 @@ tagline: List for 2015
 ## Stash
 
 - http://en.wikipedia.org/wiki/List_of_algorithms
+- http://setosa.io/ev/eigenvectors-and-eigenvalues/
 - http://xlinux.nist.gov/dads/
 - https://en.wikipedia.org/wiki/Entscheidungsproblem
 - https://en.wikipedia.org/wiki/Hilbert%27s_problems
