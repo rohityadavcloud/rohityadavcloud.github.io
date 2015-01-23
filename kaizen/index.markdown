@@ -22,6 +22,8 @@ tagline: List for 2015
 
 ## Algorithms
 
+- http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/MIT6_042JF10_notes.pdf
+- https://www.cs.princeton.edu/courses/archive/fall06/cos341/handouts/mathcs.pdf
 - [Maths for computer science](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/)
 - [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
 - [List of things](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
