@@ -7,7 +7,8 @@ tagline: List for 2015
 ## Tip
 
 - AngularJS, Karma (testing), Go (micro-framework)
-- Networking and IPv6, VR/DMZ, Docker/Rocket, Bhyve, DB migration, QA infra
+- IPv6, VR/DMZ, Docker/Rocket, Bhyve, DB migration, QA infra
+- Goal: swimming, algorithms, kernel
 
 ## Programming
 
@@ -28,7 +29,7 @@ tagline: List for 2015
 - [Stanford Algorithms 1](https://www.coursera.org/course/algo)
 - [Stanford Algorithms 2](https://www.coursera.org/course/algo2)
 - [Book: The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
-- [Book: Analysis of Algorithms](https://www.coursera.org/course/aofa) | [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
+- [Book: Analysis of Algorithms](https://www.coursera.org/course/aofa), [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
 - [Introduction to Programming in Java](http://introcs.cs.princeton.edu/java/home/)
 - [Algo](http://www.aduni.org/courses/algorithms/index.php?view=cw)
 - [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
@@ -121,6 +122,22 @@ tagline: List for 2015
 - Compilers [Stanford](https://class.coursera.org/compilers-003/lecture)
 - [Automata](https://class.coursera.org/automata-002/lecture) by Ullman
 - [Toy compiler](https://github.com/lsegal/my_toy_compiler), [Writing own compiler](http://gnuu.org/2009/09/18/writing-your-own-toy-compiler/)
+- [Build your own Lisp](http://www.buildyourownlisp.com/contents)
+
+## Read
+
+- [JS desing patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript)
+- [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
+- B-trees
+- Hash tables
+- Log Structured Merge tree
+- Merkel trees
+- Raft
+- Consistent hashing
+- [Quorum read/writes](https://en.wikipedia.org/wiki/Quorum_%28distributed_computing%29)
+- [Vector Clocks](https://en.wikipedia.org/wiki/Vector_clock)
+- Memory allocation and garbage collection
+- [Eudyptula Challenge: Linux programming](http://eudyptula-challenge.org/) | [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.4/html/book1.htm)
 
 ### Deep learning
 
@@ -132,27 +149,11 @@ tagline: List for 2015
 - [Deep Learning Python tutorial](http://deeplearning.net/tutorial/deeplearning.pdf)
 - [Deep Learning MIT book](http://www.iro.umontreal.ca/~bengioy/dlbook/)
 
-## Read
-
-- [JS desing patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript)
-- [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
-- [Distributed Systems principles course](http://dcg.ethz.ch/lectures/podc_allstars/)
-- [Distribute systems course in Go](http://www.cs.cmu.edu/~dga/15-440/F12/syllabus.html)
-- B-trees
-- Hash tables
-- Log Structured Merge tree
-- Merkel trees
-- Raft
-- Consistent hashing
-- [Quorum read/writes](https://en.wikipedia.org/wiki/Quorum_%28distributed_computing%29)
-- [Vector Clocks](https://en.wikipedia.org/wiki/Vector_clock)
-- Memory allocation and garbage collection
-- [Build your own Lisp](http://www.buildyourownlisp.com/contents)
-- [Eudyptula Challenge: Linux programming](http://eudyptula-challenge.org/) | [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.4/html/book1.htm)
-- [Lambda Calculus](https://www.youtube.com/playlist?list=PL4A05CF0478DAD704)
-
 ## Closet
 
+- [Distributed Systems principles course](http://dcg.ethz.ch/lectures/podc_allstars/)
+- [Distribute systems course in Go](http://www.cs.cmu.edu/~dga/15-440/F12/syllabus.html)
+- [Lambda Calculus](https://www.youtube.com/playlist?list=PL4A05CF0478DAD704)
 - Checkout [projects](https://github.com/karan/Projects)
 - [Haskell](http://www.scs.stanford.edu/11au-cs240h/)
 - [Scala Lectures](https://class.coursera.org/progfun-003/lecture) by Martin Odesky
