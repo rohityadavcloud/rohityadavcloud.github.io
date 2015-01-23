@@ -22,6 +22,7 @@ tagline: List for 2015
 
 ## Algorithms
 
+- [Maths for computer science](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/)
 - [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
 - [List of things](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
 - Algorithms Princeton [level-1](https://class.coursera.org/algs4partI-003/lecture)
