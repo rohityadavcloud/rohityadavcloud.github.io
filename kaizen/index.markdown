@@ -45,6 +45,7 @@ tagline: List for 2015
 
 ## Stash
 
+- https://github.com/teropa/build-your-own-angularjs, http://teropa.info/build-your-own-angular
 - http://hackershelf.com/browse/
 - http://unicode.org/reports/tr15/
 - http://en.wikipedia.org/wiki/List_of_algorithms
@@ -93,6 +94,9 @@ tagline: List for 2015
   https://github.com/spf13/cobra
   https://github.com/spf13/viper
   https://github.com/go-martini/martini
+  https://github.com/Unknwon/macaron/
+  https://github.com/dropbox/godropbox
+  https://github.com/elazarl/goproxy
 
 ## Kernel
 
