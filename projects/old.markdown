@@ -17,8 +17,28 @@ permalink: /projects/old/
     </tr>
   </thead>
   <tbody>
+     <tr>
+      <td><a href="https://github.com/wingify/agentredrabbit">agentredrabbit</a></td>
+      <td><span class="label label-important">system</span> Transport agent that moves data from Redis to RabbitMQ</td>
+      <td>Python</td>
+    </tr>
     <tr>
-      <td><img src="/images/projects/graffiti-small.png"> <a href="https://github.com/bhaisaab/graffiti">Graffiti</a></td>
+      <td><a href="https://github.com/wingify/lua-resty-rabbitmqstomp">lua-resty-rabbitmqstomp</a></td>
+      <td><span class="label label-important">system</span> Opinionated Lua RabbitMQ client library for the ngx_lua apps based on the cosocket API</td>
+      <td>Lua</td>
+    </tr>
+    <tr>
+      <td><img src="/images/projects/mtp-small.png"> <a href="/projects/mtp">MTP</a></td>
+      <td><span class="label notice">hardware</span> Wireless speech controlled mobile robot with obstacle avoidance</td>
+      <td>C/Wiring, Processing, Fritzing, Blender, Arduino, XBee, EasyVR, Sensors</td>
+    </tr>
+    <tr>
+      <td><img src="/images/projects/vmcontroller-small.png"> <a href="http://code.google.com/p/vmcontroller/">VMController</a></td>
+      <td><span class="label label-important">system</span> <a href="http://code.google.com/p/vmcontroller"></a> My B.Tech thesis project on general purpose virtual machine controller, based on works of D. G. Quintas (<a href="/logs/twisted-loop/">blog post</a>, <a href="/files/docs/btp-report-vmcontroller.pdf">report</a>)</td>
+      <td>Python, Twisted, Inject, JSON, STOMP, MorbidMQ, UUID, LibVirt, VirtualBox</td>
+    </tr>
+    <tr>
+      <td><img src="/images/projects/graffiti-small.png"> <a href="https://github.com/bhaisaab/old">Graffiti</a> <a href="/files/old/graffiti-0.2.74b9024git-Linux-x86_64.deb">[DEB]</a> <a href="/files/old/graffiti-0.2.74b9024git-Linux-x86_64.rpm">[RPM]</a></td>
       <td><span class="label label-warning">desktop</span> Interactive LAN whiteboard</td>
       <td>C++, Qt</td>
     </tr>

@@ -24,8 +24,7 @@ title: Projects
 
   <div class="span5">
     <h2>Laboratory <small>and my experiments</small></h2>
-    <h3>HackLab <small><a href="https://github.com/bhaisaab/hacklab">Coding, experiments and labwork</a></small></h3>
-    <h3>HackTool <small><a href="https://github.com/bhaisaab/hacktools">My homebrew hacking tools</a></small></h3>
+    <h3>HackLab <small><a href="https://github.com/bhaisaab/hacklab">Sketchbook of coding, experiments and practices</a></small></h3>
   </div>
 </div>
 
@@ -46,24 +45,9 @@ title: Projects
       <td>Python</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/bhaisaab/agentredrabbit">agentredrabbit</a></td>
-      <td><span class="label label-important">system</span> Transport agent that moves data from Redis to RabbitMQ</td>
-      <td>Python</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/bhaisaab/lua-resty-rabbitmqstomp">lua-resty-rabbitmqstomp</a></td>
-      <td><span class="label label-important">system</span> Opinionated Lua RabbitMQ client library for the ngx_lua apps based on the cosocket API</td>
-      <td>Lua</td>
-    </tr>
-    <tr>
       <td><img src="/images/projects/tantra-small.png"> <a href="/projects/tantra">Tantra</a>*</td>
       <td><span class="label label-important">system</span> Monolithic x86 unix based kernel development</td>
       <td>C, x86 ASM, Qemu, VirtualBox</td>
-    </tr>
-    <tr>
-      <td><img src="/images/projects/cade9-small.png"> <a href="/projects/cade9">Cade9</a></td>
-      <td><span class="label notice">hardware</span> ATmega32 based arcade gaming platform</td>
-      <td>AVR/ATmega32, C</td>
     </tr>
     <tr>
       <td><img src="/images/projects/cmakeqt-small.png"> <a href="https://github.com/bhaisaab/cmakeqt">CMakeQt</a></td>
@@ -71,14 +55,9 @@ title: Projects
       <td>CMake, NSIS, Qt</td>
     </tr>
     <tr>
-      <td><img src="/images/projects/mtp-small.png"> <a href="/projects/mtp">MTP</a></td>
-      <td><span class="label notice">hardware</span> Wireless speech controlled mobile robot with obstacle avoidance</td>
-      <td>C/Wiring, Processing, Fritzing, Blender, Arduino, XBee, EasyVR, Sensors</td>
-    </tr>
-    <tr>
-      <td><img src="/images/projects/vmcontroller-small.png"> <a href="http://code.google.com/p/vmcontroller/">VMController</a></td>
-      <td><span class="label label-important">system</span> <a href="http://code.google.com/p/vmcontroller"></a> My B.Tech thesis project on general purpose virtual machine controller, based on works of D. G. Quintas (<a href="/logs/twisted-loop/">blog post</a>, <a href="/files/docs/btp-report-vmcontroller.pdf">report</a>)</td>
-      <td>Python, Twisted, Inject, JSON, STOMP, MorbidMQ, UUID, LibVirt, VirtualBox</td>
+      <td><img src="/images/projects/cade9-small.png"> <a href="/projects/cade9">Cade9</a></td>
+      <td><span class="label notice">hardware</span> ATmega32 based arcade gaming platform</td>
+      <td>AVR/ATmega32, C</td>
     </tr>
     <tr>
       <td><img src="/images/projects/scuttlebutt-small.png"> <a href="/projects/old">Old projects</a></td>
