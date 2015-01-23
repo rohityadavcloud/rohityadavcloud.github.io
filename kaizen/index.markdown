@@ -70,6 +70,12 @@ tagline: List for 2015
 - invoice/accounting app
 - readline in [go](https://github.com/bhaisaab/currycli), example [linenoise](https://github.com/antirez/linenoise), [already](https://github.com/peterh/liner) [existing?](https://github.com/gobs/cmd)
 
+- CLI:
+  https://github.com/codegangsta/cli
+  https://github.com/spf13/cobra
+  https://github.com/spf13/viper
+  https://github.com/go-martini/martini
+
 ## Programming and Algorithms
 
 - [Geeks for geeks](http://www.geeksforgeeks.org/)
