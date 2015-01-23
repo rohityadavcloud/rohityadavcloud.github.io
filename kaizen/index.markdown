@@ -49,9 +49,7 @@ tagline: List for 2015
 - http://blog.golang.org/gothamgo
 - http://danluu.com/new-cpu-features/
 - https://github.com/prakhar1989/awesome-courses
-- https://docs.angularjs.org/guide/concepts
 - https://github.com/0xAX/linux-insides/blob/master/linux-bootstrap-1.md
-- http://mattias-.github.io/2015-01-03/DIY-Make-Your-Own-Programming-language/
 - http://talks.golang.org/2013/advconc.slide#4
 - https://software.intel.com/en-us/blogs/2014/05/10/debugging-performance-issues-in-go-programs
 - [CodeKata](http://codekata.com/)
@@ -114,6 +112,7 @@ tagline: List for 2015
 
 ## Compilers
 
+- http://mattias-.github.io/2015-01-03/DIY-Make-Your-Own-Programming-language/
 - http://stackoverflow.com/questions/1669/learning-to-write-a-compiler
 - http://homepage.ntlworld.com/edmund.grimley-evans/cc500/
 - http://compilers.iecc.com/crenshaw/
