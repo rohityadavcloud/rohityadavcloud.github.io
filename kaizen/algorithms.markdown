@@ -67,10 +67,10 @@ http://www.comp.nus.edu.sg/~stevenha/visualization/
 
 ## Sorting
 
-- ✔ Bubble sort
-- ✔ Selection sort
-- ✔ Insertion sort
-- ✔ Merge sort: recursive
+✔ Bubble sort
+✔ Selection sort
+✔ Insertion sort
+✔ Merge sort: recursive
 - Merge sort: iterative
 - Shell sort, 3-way sort
 - Quick sort
