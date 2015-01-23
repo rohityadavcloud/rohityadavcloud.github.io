@@ -14,30 +14,34 @@ tagline: List for 2015
 
 - [SPOJ top](http://www.spoj.com/problems/classical/sort=-6)
 - [USACO training](http://train.usaco.org/usacogate)
-- [Geeks for geeks](http://www.geeksforgeeks.org/)
 - Programming Practice: [Euler](http://projecteuler.net/),
 - Programming Practice: [HackerRank](https://www.hackerrank.com/)
 - Programming Practice: [Codeforces](http://codeforces.com/)
 - Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
+- [Geeks for geeks](http://www.geeksforgeeks.org/)
+- [Humblefool's CodeSchool](http://mycodeschool.com/problems) [Winter coding @ MyCodeSchool](http://wintercoding.mycodeschool.com/)
+- [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
 
 ## Algorithms
 
-- http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/MIT6_042JF10_notes.pdf
-- https://www.cs.princeton.edu/courses/archive/fall06/cos341/handouts/mathcs.pdf
-- [Maths for computer science](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/)
 - [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
 - [List of things](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
 - Algorithms Princeton [level-1](https://class.coursera.org/algs4partI-003/lecture)
 - Algorithms Princeton [level-2](https://class.coursera.org/algs4partII-002/lecture)
+- [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
 - [Stanford Algorithms 1](https://www.coursera.org/course/algo)
 - [Stanford Algorithms 2](https://www.coursera.org/course/algo2)
 - [Book: The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
 - [Book: Analysis of Algorithms](https://www.coursera.org/course/aofa), [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
 - [Introduction to Programming in Java](http://introcs.cs.princeton.edu/java/home/)
-- [Algo](http://www.aduni.org/courses/algorithms/index.php?view=cw)
-- [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
-- [Humblefool's CodeSchool](http://mycodeschool.com/problems) [Winter coding @ MyCodeSchool](http://wintercoding.mycodeschool.com/)
-- [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
+
+## Maths
+
+- http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/MIT6_042JF10_notes.pdf
+- https://www.cs.princeton.edu/courses/archive/fall06/cos341/handouts/mathcs.pdf
+- [Maths for computer science](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/)
+- [Linear Algebra](https://www.khanacademy.org/math/linear-algebra)
+- [Linear Algebra Brown University](https://www.coursera.org/course/matrix)
 
 ## Stash
 
@@ -146,8 +150,6 @@ tagline: List for 2015
 
 - [Deep learning list](http://jmozah.github.io/links/)
 - [Machine Learning](https://www.coursera.org/course/ml)
-- [Linear Algebra](https://www.khanacademy.org/math/linear-algebra)
-- [Linear Algebra Brown University](https://www.coursera.org/course/matrix)
 - [Neural Network](https://www.coursera.org/course/neuralnets)
 - [Deep Learning Python tutorial](http://deeplearning.net/tutorial/deeplearning.pdf)
 - [Deep Learning MIT book](http://www.iro.umontreal.ca/~bengioy/dlbook/)
