@@ -39,6 +39,7 @@ tagline: List for 2015
 
 ## Stash
 
+- http://hackershelf.com/browse/
 - http://unicode.org/reports/tr15/
 - http://en.wikipedia.org/wiki/List_of_algorithms
 - http://setosa.io/ev/eigenvectors-and-eigenvalues/
