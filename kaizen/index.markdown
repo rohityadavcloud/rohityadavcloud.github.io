@@ -45,6 +45,7 @@ tagline: List for 2015
 
 ## Stash
 
+- https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1?wed
 - https://github.com/teropa/build-your-own-angularjs, http://teropa.info/build-your-own-angular
 - http://hackershelf.com/browse/
 - http://unicode.org/reports/tr15/
