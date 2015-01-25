@@ -101,6 +101,7 @@ tagline: List for 2015
 
 ## Kernel
 
+- https://www.devimperium.com/tutorials/start_your_small_operating_system_in_assembly
 - https://github.com/rust-lang/rust/wiki/Operating-system-development
 - http://littleosbook.github.io/
 - OS lectures by Mckusic
