@@ -99,8 +99,15 @@ tagline: List for 2015
   https://github.com/dropbox/godropbox
   https://github.com/elazarl/goproxy
 
+## Small OS
+
+- https://bitbucket.org/ctank/ardos-ide/src/?at=master
+- http://antipastohw.blogspot.in/2009/11/4-operating-systems-for-arduino.html
+
 ## Kernel
 
+- http://www.cs.cmu.edu/~410/lecture.html
+- http://warsus.github.io/lions-/
 - https://www.devimperium.com/tutorials/start_your_small_operating_system_in_assembly
 - https://github.com/rust-lang/rust/wiki/Operating-system-development
 - http://littleosbook.github.io/
