@@ -107,6 +107,7 @@ tagline: List for 2015
 
 ## Kernel
 
+- http://0xax.gitbooks.io/linux-insides/content/
 - http://www.cs.cmu.edu/~410/lecture.html
 - http://warsus.github.io/lions-/
 - https://www.devimperium.com/tutorials/start_your_small_operating_system_in_assembly
