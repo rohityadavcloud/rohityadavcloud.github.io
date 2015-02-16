@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-<img style="display: block; margin: auto;" src="/images/about.jpg">
-
 [Namaste](http://en.wikipedia.org/wiki/Namaste)! I'm Rohit Yadav, a software architect at [ShapeBlue](http://shapeblue.com),
 founder of [ScaleNinja](http://www.scaleninja.com) and an active committer of
 opensource [Apache CloudStack](http://cloudstack.apache.org) project and also known as creator of [CloudMonkey](http://github.com/apache/cloudstack-cloudmonkey).
