@@ -49,7 +49,3 @@ discussions;
 <br><p align="center"><img align="center" src="/images/hyd/meetup/discussions.jpg"></p><br>
 
 and people picking up the CloudStack t-shirts on their way out. Big thanks to all the speakers, attendees and my co-organizers. See you in the next meetups, in [FOSS.in 2012](http://foss.in) or during [CloudStack Collaboration 2012](http://collab12.cloudstack.org/).
-
-
-<br><p align="center"><img align="center" src="/images/hyd/meetup/next.jpg"></p>
-
