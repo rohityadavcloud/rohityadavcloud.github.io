@@ -24,7 +24,7 @@ title: Projects
 
   <div class="span5">
     <h2>Laboratory <small>and my experiments</small></h2>
-    <h3>HackLab <small><a href="https://github.com/bhaisaab/hacklab">Sketchbook of coding, experiments and practices</a></small></h3>
+    <h3>HackLab <small><a href="https://github.com/bhaisaab/hacklab">Sketchbook of experiments and programming workouts</a></small></h3>
   </div>
 </div>
 
