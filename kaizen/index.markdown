@@ -45,6 +45,7 @@ tagline: List for 2015
 
 ## Stash
 
+- http://www.slideshare.net/ktoso/distributed-consensus-aka-what-do-we-eat-for-lunch
 - http://intronetworks.cs.luc.edu/
 - https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1?wed
 - https://github.com/teropa/build-your-own-angularjs, http://teropa.info/build-your-own-angular
