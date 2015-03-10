@@ -45,6 +45,19 @@ tagline: List for 2015
 
 ## Stash
 
+- https://github.com/0xAX/linux-insides
+- https://www.codementor.io/reactjs/tutorial/react-vs-angularjs
+- http://blog.risingstack.com/from-angularjs-to-react-the-isomorphic-way/
+- http://facebook.github.io/flux/docs/examples-and-tools.html
+- http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome
+- https://methane.github.io/2015/02/reduce-allocation-in-go-code/
+- https://groups.google.com/forum/#!msg/coreos-dev/wf7G6rA7Bf4/Olmxmo13WKQJ
+- http://nginx.com/blog/microservices-at-netflix-architectural-best-practices/
+- http://underscore.io/training/courses/creative-scala/
+- http://nbviewer.ipython.org/github/rlabbe/Kalman-and-Bayesian-Filters-in-Python/blob/master/table_of_contents.ipynb
+- http://www.aaronsw.com/weblog/djb
+- http://www.aaronsw.com/weblog/001502
+- https://www.omniref.com/ruby/gems/stream_sampler/0.0.1/symbols/StreamSampler?#annotation=4094626&line=2
 - http://www.slideshare.net/ktoso/distributed-consensus-aka-what-do-we-eat-for-lunch
 - http://intronetworks.cs.luc.edu/
 - https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1?wed
@@ -61,7 +74,6 @@ tagline: List for 2015
 - http://blog.golang.org/gothamgo
 - http://danluu.com/new-cpu-features/
 - https://github.com/prakhar1989/awesome-courses
-- https://github.com/0xAX/linux-insides/blob/master/linux-bootstrap-1.md
 - http://talks.golang.org/2013/advconc.slide#4
 - https://software.intel.com/en-us/blogs/2014/05/10/debugging-performance-issues-in-go-programs
 - [CodeKata](http://codekata.com/)
@@ -108,7 +120,6 @@ tagline: List for 2015
 
 ## Kernel
 
-- http://0xax.gitbooks.io/linux-insides/content/
 - http://www.cs.cmu.edu/~410/lecture.html
 - http://warsus.github.io/lions-/
 - https://www.devimperium.com/tutorials/start_your_small_operating_system_in_assembly
@@ -149,8 +160,6 @@ tagline: List for 2015
 
 ## Read
 
-- [JS desing patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript)
-- [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
 - B-trees
 - Hash tables
 - Log Structured Merge tree
@@ -161,6 +170,14 @@ tagline: List for 2015
 - [Vector Clocks](https://en.wikipedia.org/wiki/Vector_clock)
 - Memory allocation and garbage collection
 - [Eudyptula Challenge: Linux programming](http://eudyptula-challenge.org/) | [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.4/html/book1.htm)
+
+## Books
+
+- [Linux Internals](http://0xax.gitbooks.io/linux-insides/content/)
+- [JS desing patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript)
+- [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
+- [Games people play](http://www.amazon.co.uk/Games-People-Play-Psychology-Relationships/dp/0141040270)
+- [Games in game theory](http://en.wikipedia.org/wiki/List_of_games_in_game_theory)
 
 ### Deep learning
 
