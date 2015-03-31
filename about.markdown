@@ -4,13 +4,21 @@ title: About
 permalink: /about/
 ---
 
-[Namaste](http://en.wikipedia.org/wiki/Namaste)! I'm Rohit Yadav, a software architect at [ShapeBlue](http://shapeblue.com),
-founder of [ScaleNinja](http://www.scaleninja.com) and an active committer of
-opensource [Apache CloudStack](http://cloudstack.apache.org) project and also known as creator of [CloudMonkey](http://github.com/apache/cloudstack-cloudmonkey).
+[Namaste](http://en.wikipedia.org/wiki/Namaste)!
+
+I'm Rohit Yadav, founder of [ScaleNinja](http://www.scaleninja.com) and a software
+architect working with [ShapeBlue](http://shapeblue.com). I'm a passionate opensource
+contributor and an active committer and PMC member of the [Apache
+CloudStack](http://cloudstack.apache.org) project. I'm also the author and maintainer of
+Apache CloudStack [CloudMonkey](http://github.com/apache/cloudstack-cloudmonkey).
 I graduated from [IIT-BHU](http://en.wikipedia.org/wiki/Indian_Institute_of_Technology_%28Banaras_Hindu_University%29_Varanasi)
 with degrees of [B.Tech](http://en.wikipedia.org/wiki/Bachelor_of_Technology) and
 [M.Tech](http://en.wikipedia.org/wiki/Master_of_Engineering) in computer science
-and engineering in 2012. Refer my [LinkedIn](https://linkedin.com/in/bhaisaab) profile for more details. I also do [contract/consultancy](mailto:rohit@scaleninja.com) work and short term remote assignments. [GPG](/gpg.pub) | [Keybase](https://keybase.io/bhaisaab) | [SSH](/ssh.pub) | [EMAIL](mailto:rohit@scaleninja.com).
+and engineering in 2012. Refer my [LinkedIn](https://linkedin.com/in/bhaisaab)
+profile for more details. I also do
+[contract/consultancy](mailto:rohit@scaleninja.com) work and short term remote
+assignments. [GPG](/gpg.pub) | [Keybase](https://keybase.io/bhaisaab) |
+[SSH](/ssh.pub) | [EMAIL](mailto:rohit@scaleninja.com).
 
 So far in my life I've met amazing individuals and do-ers who I know closely or I've worked with.
 They all have inspired me and continue to inspire and amaze me. The list is big but
@@ -29,5 +37,4 @@ the amazing [David Garcia Quintas](https://www.linkedin.com/in/davidgarciaquinta
 [Alex Huang](http://en.wikipedia.org/wiki/Alex_Huang) for inspiring me with his work on CloudStack's architecture and general (Java) design skills;
 [Chiradeep](https://twitter.com/chiradeep) for inspiring me with his work on networking and architecture in CloudStack;
 [Vaidik](https://github.com/vaidik) for inspiring me with his geekery, Python skills, startup interests and Mozillian experiences;
-[Pushkal](https://twitter.com/pushkalcodes) for inspiring with his startup [GetMeAShop](http://www.getmeashop.com), his winning attitude and [chutzpah](http://en.wikipedia.org/wiki/Chutzpah);
-my friends and colleagues in the CloudStack community for inspiring me with their contributions.
+my friends and colleagues in the Apache CloudStack community.
