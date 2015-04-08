@@ -6,9 +6,19 @@ tagline: List for 2015
 
 ## Tip
 
-- AngularJS, Karma (testing), Go (micro-framework)
-- IPv6, VR/DMZ, Docker/Rocket, Bhyve, DB migration, QA infra
-- Goal: swimming, algorithms, kernel
+- Life: ~~swimming~~, ~~bmi weight~~, pushups, chinups, 6packs
+- Skill: algorithms, data structures
+- Practice: USACO, 100 classic spoj, competitive programming
+- Hack: Tantra kernel
+
+### Misc
+
+- Platform: Java, Rails
+- Database: MySQL, RocksDB
+- Hobby Lang: ASM, C, C++, Python, JavaScipt, Go, rust, functional (Scala, Haskell, OCaml, Erlang, Lisp)
+- Platform: Web (AngularJS2, React+Bootstrap), Mobile (Android)
+- CloudStack: (Bhyve, Docker, QA infra, IPv6)
+- Theory: Distributed system, OS, Compilers (lambda calculus), DS/Algo/SICP, Networking, Math, machine learning, AI, deep learning, Game theory, psychology, cryptography
 
 ## Programming
 
