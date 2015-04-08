@@ -12,3 +12,6 @@ safe: true
 timezone: Asia/Kolkata
 permalink: /logs/:title/
 paginate: 5
+
+kramdown:
+  input: GFM
