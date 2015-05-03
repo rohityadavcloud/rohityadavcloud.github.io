@@ -136,6 +136,7 @@ tagline: List for 2015
 - https://www.devimperium.com/tutorials/start_your_small_operating_system_in_assembly
 - https://github.com/rust-lang/rust/wiki/Operating-system-development
 - http://littleosbook.github.io/
+- https://sortix.org/
 - OS lectures by Mckusic
 - [Bottom Up Learning](http://www.bottomupcs.com/index.html)
 - [xv6 and 6.828](http://pdos.csail.mit.edu/6.828/2014/schedule.html)
