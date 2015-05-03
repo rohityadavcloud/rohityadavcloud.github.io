@@ -33,6 +33,8 @@ permalink: /links/
 
 ##Blogs and Websites
 
+[Cloudier than Thou by Chiradeep](https://cloudierthanthou.wordpress.com/)
+
 [Paul Graham's Essays](http://paulgraham.com/articles.html)
 
 [Lambda The Ultimate](http://lambda-the-ultimate.org/)
