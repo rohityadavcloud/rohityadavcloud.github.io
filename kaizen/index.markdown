@@ -4,43 +4,46 @@ title: Kaizen
 tagline: List for 2015
 ---
 
+## Physical world
+
+- Swimming, todo: vertical float, backstroke, butterfly
+- Pushups, todo: 50
+- Chinups, todo: 20
+- VI packs
+
 ## Tip
 
-- Life: ~~swimming~~, ~~bmi weight~~, pushups, chinups, 6packs
-- Skill: algorithms, data structures
-- Practice: USACO, 100 classic spoj, competitive programming
-- Hack: Tantra kernel
+- [USACO training](http://train.usaco.org/usacogate)
+- [SPOJ top 100](http://www.spoj.com/problems/classical/sort=-6)
+- Algorithms Princeton [level-1](https://class.coursera.org/algs4partI-003/lecture)
+- Algorithms Princeton [level-2](https://class.coursera.org/algs4partII-002/lecture)
+- [Stanford Algorithms 1](https://www.coursera.org/course/algo)
+- [Stanford Algorithms 2](https://www.coursera.org/course/algo2)
+- [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
 
-### Misc
+## Learning
 
-- Platform: Java, Rails
-- Database: MySQL, RocksDB
-- Hobby Lang: ASM, C, C++, Python, JavaScipt, Go, rust, functional (Scala, Haskell, OCaml, Erlang, Lisp)
-- Platform: Web (AngularJS2, React+Bootstrap), Mobile (Android)
-- CloudStack: (Bhyve, Docker, QA infra, IPv6)
-- Theory: Distributed system, OS, Compilers (lambda calculus), DS/Algo/SICP, Networking, Math, machine learning, AI, deep learning, Game theory, psychology, cryptography
+- [Distributed Systems principles course](http://dcg.ethz.ch/lectures/podc_allstars/)
+- [Distribute systems course in Go](http://www.cs.cmu.edu/~dga/15-440/F12/syllabus.html)
+- Java, Scala, Go, Python3
+- Angular, React, Android
+- OS, Compilers, Networking, Machine Learning, Game Theory, Psychology
+- Lisp, Erlang/Elixir, Haskell
 
 ## Programming
 
-- [SPOJ top](http://www.spoj.com/problems/classical/sort=-6)
-- [USACO training](http://train.usaco.org/usacogate)
+- [Geeks for geeks](http://www.geeksforgeeks.org/)
 - Programming Practice: [Euler](http://projecteuler.net/),
 - Programming Practice: [HackerRank](https://www.hackerrank.com/)
 - Programming Practice: [Codeforces](http://codeforces.com/)
 - Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
-- [Geeks for geeks](http://www.geeksforgeeks.org/)
 - [Humblefool's CodeSchool](http://mycodeschool.com/problems) [Winter coding @ MyCodeSchool](http://wintercoding.mycodeschool.com/)
 - [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
 
 ## Algorithms
 
-- [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
 - [List of things](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
-- Algorithms Princeton [level-1](https://class.coursera.org/algs4partI-003/lecture)
-- Algorithms Princeton [level-2](https://class.coursera.org/algs4partII-002/lecture)
 - [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
-- [Stanford Algorithms 1](https://www.coursera.org/course/algo)
-- [Stanford Algorithms 2](https://www.coursera.org/course/algo2)
 - [Book: The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
 - [Book: Analysis of Algorithms](https://www.coursera.org/course/aofa), [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
 - [Introduction to Programming in Java](http://introcs.cs.princeton.edu/java/home/)
@@ -201,8 +204,6 @@ tagline: List for 2015
 
 ## Closet
 
-- [Distributed Systems principles course](http://dcg.ethz.ch/lectures/podc_allstars/)
-- [Distribute systems course in Go](http://www.cs.cmu.edu/~dga/15-440/F12/syllabus.html)
 - [Lambda Calculus](https://www.youtube.com/playlist?list=PL4A05CF0478DAD704)
 - Checkout [projects](https://github.com/karan/Projects)
 - [Haskell](http://www.scs.stanford.edu/11au-cs240h/)
