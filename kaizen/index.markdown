@@ -30,6 +30,21 @@ tagline: List for 2015
 - OS, Compilers, Networking, Machine Learning, Game Theory, Psychology
 - Lisp, Erlang/Elixir, Haskell
 
+## Tools
+
+- LXC/Docker
+- Weave
+- Kubernetes
+- Mesos
+- Zipkin/Dapper
+- Chef, Ansible
+- Dropwizard
+- Gradle
+- Zookeeper/etcd
+- Consul, packer, terraform, serf, vault, vagrant
+- Google: Borg, Bigtable, Spanner, Mapreduce, Millwheel, LMCTFY
+- Apollo: https://github.com/Capgemini/Apollo
+
 ## Programming
 
 - [Geeks for geeks](http://www.geeksforgeeks.org/)
@@ -58,6 +73,18 @@ tagline: List for 2015
 
 ## Stash
 
+- http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf
+- http://blog.jamesdbloom.com/JVMInternals.html
+- http://www.nilbot.net/posts/256210-percolation-threshold-go
+- http://blog.altoros.com/golang-internals-part-2-diving-into-the-go-compiler.html
+- https://github.com/caiorss/Functional-Programming
+- http://beej.us/guide/bgnet/output/html/multipage/index.html
+- https://gist.github.com/jonhoo/05774c1e47dbe4d57169
+- http://www.blog.felixangell.com/virtual-machine-in-c/
+- http://www.blog.felixangell.com/part-1-lets-build-an-interpreted-language-in-go/
+- http://blog.siftscience.com/blog/2015/best-practices-for-building-large-react-applications
+- http://nullprogram.com/blog/2015/03/19/
+- http://www.davespace.co.uk/blog/20150131-branchless-sequences.html
 - https://gist.github.com/debasishg/8172796
 - https://github.com/0xAX/linux-insides
 - https://www.codementor.io/reactjs/tutorial/react-vs-angularjs
