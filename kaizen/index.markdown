@@ -45,6 +45,14 @@ tagline: List for 2015
 - Google: Borg, Bigtable, Spanner, Mapreduce, Millwheel, LMCTFY
 - Apollo: https://github.com/Capgemini/Apollo
 
+### APIs
+
+- https://www.mashape.com/
+- https://apiblueprint.org/#get-started
+- http://swagger.io/
+- https://apiary.io/
+- http://www.mashery.com/product/io-docs
+
 ## Programming
 
 - [Geeks for geeks](http://www.geeksforgeeks.org/)
@@ -73,6 +81,7 @@ tagline: List for 2015
 
 ## Stash
 
+- http://www.nongnu.org/quagga/docs/quagga.html
 - http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf
 - http://blog.jamesdbloom.com/JVMInternals.html
 - http://www.nilbot.net/posts/256210-percolation-threshold-go
