@@ -81,6 +81,8 @@ tagline: List for 2015
 
 ## Stash
 
+- https://doc.rust-lang.org/book/README.html
+- http://security.stackexchange.com/questions/45963/diffie-hellman-key-exchange-in-plain-english/45971#45971
 - http://www.nongnu.org/quagga/docs/quagga.html
 - http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf
 - http://blog.jamesdbloom.com/JVMInternals.html
