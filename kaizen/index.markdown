@@ -81,6 +81,7 @@ tagline: List for 2015
 
 ## Stash
 
+- http://www.cs.virginia.edu/~evans/cs216/guides/x86.html
 - https://doc.rust-lang.org/book/README.html
 - http://security.stackexchange.com/questions/45963/diffie-hellman-key-exchange-in-plain-english/45971#45971
 - http://www.nongnu.org/quagga/docs/quagga.html
