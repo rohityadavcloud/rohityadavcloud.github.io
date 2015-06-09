@@ -11,6 +11,26 @@ tagline: List for 2015
 - Chinups, todo: 20
 - VI packs
 
+## Travel
+
+Cherrapunji
+Darjelling
+Nilgiris
+Manali to Leh Biking
+Choki Dhani, Jaipur
+Ladakh
+Sikkim
+Andaman
+Corbett
+Goa
+Bhangarh Fort: haunted place
+Rishikesh
+Roopkund trek
+Chadar trek
+Almora
+Udaipur
+Kerala backwaters
+
 ## Tip
 
 - [USACO training](http://train.usaco.org/usacogate)
