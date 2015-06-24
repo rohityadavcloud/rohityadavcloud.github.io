@@ -101,6 +101,7 @@ Kerala backwaters
 
 ## Stash
 
+- https://gcc.gnu.org/onlinedocs/gcc-5.1.0/jit/intro/index.html
 - https://speakerdeck.com/nineties/creating-a-language-using-only-assembly-language
 - http://www.cs.virginia.edu/~evans/cs216/guides/x86.html
 - https://doc.rust-lang.org/book/README.html
