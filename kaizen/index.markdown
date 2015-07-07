@@ -20,6 +20,24 @@ tagline: List for 2015
 - [Stanford Algorithms 2](https://www.coursera.org/course/algo2)
 - [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
 
+## Programming
+
+- [Geeks for geeks](http://www.geeksforgeeks.org/)
+- Programming Practice: [Euler](http://projecteuler.net/),
+- Programming Practice: [HackerRank](https://www.hackerrank.com/)
+- Programming Practice: [Codeforces](http://codeforces.com/)
+- Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
+- [Humblefool's CodeSchool](http://mycodeschool.com/problems) [Winter coding @ MyCodeSchool](http://wintercoding.mycodeschool.com/)
+- [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
+
+## Algorithms
+
+- [List of things](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
+- [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
+- [Book: The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
+- [Book: Analysis of Algorithms](https://www.coursera.org/course/aofa), [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
+- [Introduction to Programming in Java](http://introcs.cs.princeton.edu/java/home/)
+
 ## Stack
 
 ### Language
@@ -67,32 +85,6 @@ tagline: List for 2015
 - Platform: Libvirt/qemu, Linux
 - Locking/consensus: Etcd, Zookeeper
 - Experimental: Docker, Weave, Kubernetes, Mesos, Vagrant, Packer, Serf/Consul, Terraform, Vault, Capgemini/Apollo
-
-## Programming
-
-- [Geeks for geeks](http://www.geeksforgeeks.org/)
-- Programming Practice: [Euler](http://projecteuler.net/),
-- Programming Practice: [HackerRank](https://www.hackerrank.com/)
-- Programming Practice: [Codeforces](http://codeforces.com/)
-- Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
-- [Humblefool's CodeSchool](http://mycodeschool.com/problems) [Winter coding @ MyCodeSchool](http://wintercoding.mycodeschool.com/)
-- [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
-
-## Algorithms
-
-- [List of things](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
-- [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
-- [Book: The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
-- [Book: Analysis of Algorithms](https://www.coursera.org/course/aofa), [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
-- [Introduction to Programming in Java](http://introcs.cs.princeton.edu/java/home/)
-
-## Maths
-
-- http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/MIT6_042JF10_notes.pdf
-- https://www.cs.princeton.edu/courses/archive/fall06/cos341/handouts/mathcs.pdf
-- [Maths for computer science](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/)
-- [Linear Algebra](https://www.khanacademy.org/math/linear-algebra)
-- [Linear Algebra Brown University](https://www.coursera.org/course/matrix)
 
 ## Stash
 
@@ -163,15 +155,15 @@ tagline: List for 2015
 
 - Tantra - DIY x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
 - LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
-- Distributed file system like ceph/gluster
-- Compiler
-- Database
-- Kaizen list, time keeping/scheduling
+- Toy Distributed file system like ceph/gluster
+- Toy Compiler
+- Toy Database
 - GPS track android app
-- Code sharing RBAC shack
+- Kaizen list, time keeping/scheduling
+- MergeShack: Code sharing RBAC shack
 - Email server
-- tweet buffer like scheduler app
-- invoice/accounting app
+- Android: tweet buffer like scheduler app
+- Invoice/accounting app
 - readline in [go](https://github.com/bhaisaab/currycli), example [linenoise](https://github.com/antirez/linenoise), [already](https://github.com/peterh/liner) [existing?](https://github.com/gobs/cmd)
 - CLI:
   https://github.com/codegangsta/cli
@@ -215,6 +207,14 @@ tagline: List for 2015
 - [Intro to 8086](http://www.csi.ucd.ie/staff/jcarthy/home/alp/alp-05.pdf)
 - [Writing simple OS from Scratch](http://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf)
 - [OS and related links](http://www.superfrink.net/athenaeum)
+
+## Maths
+
+- http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/MIT6_042JF10_notes.pdf
+- https://www.cs.princeton.edu/courses/archive/fall06/cos341/handouts/mathcs.pdf
+- [Maths for computer science](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/)
+- [Linear Algebra](https://www.khanacademy.org/math/linear-algebra)
+- [Linear Algebra Brown University](https://www.coursera.org/course/matrix)
 
 ## Compilers
 
