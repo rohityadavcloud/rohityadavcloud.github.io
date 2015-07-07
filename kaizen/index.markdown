@@ -7,29 +7,8 @@ tagline: List for 2015
 ## Physical world
 
 - Swimming, todo: vertical float, backstroke, butterfly
-- Pushups, todo: 50
-- Chinups, todo: 20
-- VI packs
-
-## Travel
-
-Cherrapunji
-Darjelling
-Nilgiris
-Manali to Leh Biking
-Choki Dhani, Jaipur
-Ladakh
-Sikkim
-Andaman
-Corbett
-Goa
-Bhangarh Fort: haunted place
-Rishikesh
-Roopkund trek
-Chadar trek
-Almora
-Udaipur
-Kerala backwaters
+- Gym: VI packs, pushups, chinups, pullups
+- Travel: Antarctica, Darjelling, Leh/Ladakh, Sikkim, Andaman, Rishikesh, Udaipur, Kerala
 
 ## Tip
 
@@ -41,29 +20,24 @@ Kerala backwaters
 - [Stanford Algorithms 2](https://www.coursera.org/course/algo2)
 - [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
 
-## Learning
+## Stack
 
-- [Distributed Systems principles course](http://dcg.ethz.ch/lectures/podc_allstars/)
-- [Distribute systems course in Go](http://www.cs.cmu.edu/~dga/15-440/F12/syllabus.html)
-- Java, Scala, Go, Python3
-- Angular, React, Android
-- OS, Compilers, Networking, Machine Learning, Game Theory, Psychology
-- Lisp, Erlang/Elixir, Haskell
+### Language
 
-## Tools
+- Langs: Java 7/8, Python2/3
+- Good to have: C, C++, Ruby
+- Experimental: Go, Rust, Scala, Elixir, Clojure
+- Fun: Haskell, Lisp, Erlang, LLVM, Assembly
+- Mobile: Java/Android, Swift
 
-- LXC/Docker
-- Weave
-- Kubernetes
-- Mesos
-- Zipkin/Dapper
-- Chef, Ansible
-- Dropwizard
-- Gradle
-- Zookeeper/etcd
-- Consul, packer, terraform, serf, vault, vagrant
-- Google: Borg, Bigtable, Spanner, Mapreduce, Millwheel, LMCTFY
-- Apollo: https://github.com/Capgemini/Apollo
+### Web Development
+
+- Web langs: HTML5, CSS3, JavaScipt (ES5/6), TypeScript, CoffeeScript, Less/Saas
+- Web tech: Websockets, local storage
+- Web tools: Grunt, Gulp, Bower, NPM
+- Web JS Frameworks: Backbone, Angular, React, Meteor
+- Web backend frameworks: Ruby on Rails, Django, DropWizard, Groovy, Play
+- Web frontend framework: Bootstrap, Material Design (Google)
 
 ### APIs
 
@@ -72,6 +46,27 @@ Kerala backwaters
 - http://swagger.io/
 - https://apiary.io/
 - http://www.mashery.com/product/io-docs
+
+### Persistence and Processing
+
+- DB: MySQL, PostgreSQL, SQLite, ElasticSearch, Redis, Memcache
+- DB ORMs/frameworks: SQLAlchemy, Liquibase, Jooq, Flyway
+- Queue: Kafka, RabbitMQ
+- Task queue: Celery, Gearman
+- RPC: Protocol Buffers, Thrift, Cap n Proto
+
+### Devops and Infra
+
+- VCS: Git/Github, Mercurial/Bitbucket
+- Automation: Ansible, Chef, Bash
+- Build system: Maven, Gradle, CMake, Makefiles
+- CI: Jenkins, Go CD, BuildBot, Strider
+- Logging: Sentry, Graylog, Scribe, Logstash
+- Monitoring: Graphite, Promethus, Sensu, Munin, Nagios
+- Tracing: Zipkin/Dapper,
+- Platform: Libvirt/qemu, Linux
+- Locking/consensus: Etcd, Zookeeper
+- Experimental: Docker, Weave, Kubernetes, Mesos, Vagrant, Packer, Serf/Consul, Terraform, Vault, Capgemini/Apollo
 
 ## Programming
 
@@ -178,7 +173,6 @@ Kerala backwaters
 - tweet buffer like scheduler app
 - invoice/accounting app
 - readline in [go](https://github.com/bhaisaab/currycli), example [linenoise](https://github.com/antirez/linenoise), [already](https://github.com/peterh/liner) [existing?](https://github.com/gobs/cmd)
-- Play - Jetty (HTTP), Jersey (REST), Jackson (JSON), Guava, Guice, Hibernate (ORM and Validator), Metrics (Dropwizard), Logback, log4j, Ehcache
 - CLI:
   https://github.com/codegangsta/cli
   https://github.com/spf13/cobra
@@ -243,6 +237,7 @@ Kerala backwaters
 - Merkel trees
 - Raft
 - Consistent hashing
+- Google tech: Borg, Bigtable, Spanner, Mapreduce, Millwheel, LMCTFY
 - [Quorum read/writes](https://en.wikipedia.org/wiki/Quorum_%28distributed_computing%29)
 - [Vector Clocks](https://en.wikipedia.org/wiki/Vector_clock)
 - Memory allocation and garbage collection
@@ -266,6 +261,8 @@ Kerala backwaters
 
 ## Closet
 
+- [Distributed Systems principles course](http://dcg.ethz.ch/lectures/podc_allstars/)
+- [Distribute systems course in Go](http://www.cs.cmu.edu/~dga/15-440/F12/syllabus.html)
 - [Lambda Calculus](https://www.youtube.com/playlist?list=PL4A05CF0478DAD704)
 - Checkout [projects](https://github.com/karan/Projects)
 - [Haskell](http://www.scs.stanford.edu/11au-cs240h/)
