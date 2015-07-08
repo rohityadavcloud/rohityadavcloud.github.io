@@ -1,4 +1,5 @@
 ---
+redirect_from: "/kaizen/"
 layout: page
 title: Kaizen
 ---
