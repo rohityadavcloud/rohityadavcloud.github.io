@@ -153,7 +153,7 @@ We'll setup NFS and preseed systemvm.
 
 I prefer to download the systemvm first and then preseed it:
 
-    wget http://people.apache.org/~bhaisaab/cloudstack/systemvmtemplates/systemvm64template-2014-09-11-4.3-kvm.qcow2.bz2
+    wget http://packages.shapeblue.com/systemvmtemplate/4.3/systemvm64template-4.3-kvm.qcow2.bz2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
               -m /export/secondary -f systemvm64template-2014-09-11-4.3-kvm.qcow2.bz2 -h kvm \
               -o localhost -r cloud -d cloudpassword
