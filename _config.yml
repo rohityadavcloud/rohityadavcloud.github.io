@@ -14,5 +14,3 @@ lsi: false
 exclude: ['README.markdown']
 highlighter: pygments
 permalink: logs/:title/
-gems:
-  - jekyll-redirect-from
