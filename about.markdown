@@ -10,8 +10,21 @@ permalink: /about/
 [ScaleNinja](http://www.scaleninja.com) and a software architect at
 [ShapeBlue](http://shapeblue.com).
 
-I'm an [active committer](https://github.com/apache/cloudstack/graphs/contributors)
-and a PMC member of the [Apache CloudStack](http://cloudstack.apache.org) project.
-I'm also the author and primary maintainer of Apache CloudStack [CloudMonkey](http://github.com/apache/cloudstack-cloudmonkey). Help yourself with my [LinkedIn](https://linkedin.com/in/bhaisaab), [Github](https://github.com/bhaisaab) and [Twitter](https://twitter.com/_bhaisaab). For consulting and short term assignments, [drop a line](mailto:rohit@scaleninja.com).
+I'm an [active
+committer](https://github.com/apache/cloudstack/graphs/contributors) and a PMC
+member of the [Apache CloudStack](http://cloudstack.apache.org) project.  I'm
+also the author and primary maintainer of Apache CloudStack
+[CloudMonkey](http://github.com/apache/cloudstack-cloudmonkey). Help yourself
+with my [LinkedIn](https://linkedin.com/in/bhaisaab),
+[Github](https://github.com/bhaisaab) and
+[Twitter](https://twitter.com/_bhaisaab). For consulting and short term
+assignments, [drop a line](mailto:rohit@scaleninja.com).
 
-I started as a hobbyist contributing to few opensource projects such as [VLC/VLC-android](http://git.videolan.org/?p=vlc-ports/android.git;a=search;h=HEAD;s=Rohit+Yadav;st=author), [VLMC](http://trac.videolan.org/vlmc) and [few](http://cgit.haiku-os.org/haiku/commit/?id=hrev39379) [patches](http://cgit.haiku-os.org/haiku/commit/?id=hrev39378) to HaikuOS. My hobbies in the physical world includes playing concert flute and bansuri, exploring nature, exploring new programming languages, beatboxing, swimming and working out in the gym.
+I started as a hobbyist contributing to few opensource projects such as
+[VLC/VLC-android](http://git.videolan.org/?p=vlc-ports/android.git;a=search;h=HEAD;s=Rohit+Yadav;st=author),
+[VLMC](http://trac.videolan.org/vlmc) and
+[few](http://cgit.haiku-os.org/haiku/commit/?id=hrev39379)
+[patches](http://cgit.haiku-os.org/haiku/commit/?id=hrev39378) to HaikuOS; but
+now that I'm professionally working on opensource full-time, I've developed few
+hobbies in the physical world that includes playing concert flute and bansuri,
+exploring nature, beatboxing, swimming and working out in the gym.
