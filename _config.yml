@@ -1,14 +1,18 @@
-baseurl:  /
-destination: ./_site
+title: Bhaisaab
+author: Rohit Yadav
+email: rohit@scaleninja.com
+description: >
+  Writings, essays, blog posts and talks by Rohit Yadav.
+baseurl: ""
+url: http://bhaisaab.org
 
-exclude: ['README.markdown']
-
+markdown: kramdown
+timezone: Asia/Kolkata
+encoding: "utf-8"
 future: true
 lsi: false
-highligher: pygments
-markdown: kramdown
-encoding: "utf-8"
-safe: true
-timezone: Asia/Kolkata
-permalink: /logs/:title/
-paginate: 5
+exclude: ['README.markdown']
+highlighter: pygments
+permalink: logs/:title/
+gems:
+  - jekyll-redirect-from

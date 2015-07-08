@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Building CloudStack SystemVMs
-excerpt: Appliance build automation using Jenkins
 ---
 
 CloudStack uses virtual appliances as part of its orchestration. For example, it
@@ -38,45 +37,38 @@ then use `vhd-util` to convert it to Xen VHD image.
 Unfortunately, the vhd-util [I got did not work for me](http://download.cloud.com.s3.amazonaws.com/tools/vhd-util),
 so I just compiled my own from an approach suggested on [this blog](http://blogs.citrix.com/2012/10/04/convert-a-raw-image-to-xenserver-vhd/):
 
-<pre class="prettyprint">
-sudo apt-get install bzip2 python-dev gcc g++ build-essential libssl-dev
-uuid-dev zlib1g-dev libncurses5-dev libx11-dev python-dev iasl bin86 bcc
-gettext libglib2.0-dev libyajl-dev
-# On 64 bit system
-sudo apt-get install libc6-dev-i386
-# Build vhd-util from source
-wget -q http://bits.xensource.com/oss-xen/release/4.2.0/xen-4.2.0.tar.gz
-tar -xzf xen-4.2.0.tar.gz
-cd xen-4.2.0/tools/
-wget https://github.com/citrix-openstack/xenserver-utils/raw/master/blktap2.patch -qO - | patch -p0
-./configure --disable-monitors --disable-ocamltools --disable-rombios --disable-seabios
-cd blktap2/vhd
-make -j 2
-sudo make install
-</pre>
+    sudo apt-get install bzip2 python-dev gcc g++ build-essential libssl-dev
+    uuid-dev zlib1g-dev libncurses5-dev libx11-dev python-dev iasl bin86 bcc
+    gettext libglib2.0-dev libyajl-dev
+    # On 64 bit system
+    sudo apt-get install libc6-dev-i386
+    # Build vhd-util from source
+    wget -q http://bits.xensource.com/oss-xen/release/4.2.0/xen-4.2.0.tar.gz
+    tar -xzf xen-4.2.0.tar.gz
+    cd xen-4.2.0/tools/
+    wget https://github.com/citrix-openstack/xenserver-utils/raw/master/blktap2.patch -qO - | patch -p0
+    ./configure --disable-monitors --disable-ocamltools --disable-rombios --disable-seabios
+    cd blktap2/vhd
+    make -j 2
+    sudo make install
 
 Last thing was to setup rvm for the jenkins user:
 
-<pre class="prettyprint">
-$ \curl -L https://get.rvm.io | bash -s stable --ruby
-# In case of dependency or openssl error:
-$ rvm requirements run
-$ rvm reinstall 1.9.3
-</pre>
+    $ \curl -L https://get.rvm.io | bash -s stable --ruby
+    # In case of dependency or openssl error:
+    $ rvm requirements run
+    $ rvm reinstall 1.9.3
 
 One issue with `rvm` is that it requires a login shell, which I fixed in `build.sh`
 using `#!/bin/bash -xl`. But the build job failed for me due to missing env variables.
 `$HOME` needs to be defined and rvm should be in path. The shell commands used to
 run the jenkins job:
 
-<pre class="prettyprint">
-whoami
-export PATH=/home/jenkins/.rvm/bin:$PATH
-export rvm_path=/home/jenkins/.rvm
-export HOME=/home/jenkins/
-cd tools/appliance
-rm -fr iso/ dist/
-chmod +x build.sh
-./build.sh
-</pre>
-
+    whoami
+    export PATH=/home/jenkins/.rvm/bin:$PATH
+    export rvm_path=/home/jenkins/.rvm
+    export HOME=/home/jenkins/
+    cd tools/appliance
+    rm -fr iso/ dist/
+    chmod +x build.sh
+    ./build.sh

@@ -2,36 +2,33 @@
 layout: default
 ---
 
-<ul class="pager">
-  <li class="previous">
-  {% if page.previous %} 
-    <a rel="prev" title="Previous: {{ page.previous.title }}" href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a>
-  {% endif %}
-  </li>
-  <li class="next">
-  {% if page.next %} 
-    <a rel="next" title="Next: {{ page.next.title }}" href="{{ page.next.url }}">{{ page.next.title }} &rarr;</a>
-  {% endif %}
-  </li>
-</ul>
+<div class="post">
 
-<div class="page-header">
-  <h3><small>{{ page.date | date: "%B %e, %Y" }}</small></h3>
-  <h1><a href='{{page.url}}'>{{page.title}}</a> <small>{{ page.excerpt }}</small></h1>
+  <header class="post-header">
+    <h2 class="post-title">{{ page.title }}</h2>
+    <div> 
+      <p class="post-meta" style="margin-top: -15px">
+        <img src="/assets/avatar.jpg" style="margin-right: 10px; margin-top: 15px"/>
+        <span style="display: inline-table;">
+          <a href="/about">Rohit Yadav</a><br>{{ page.date | date: "%b %-d, %Y" }}
+        </span>
+      </p>
+    </div>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'yadavium';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments.</a></noscript>
+
 </div>
-
-{{ content }}
-
-<br/>
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-  var disqus_shortname = 'yadavium';
-  (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-  mixpanel.track("Blog Post");
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

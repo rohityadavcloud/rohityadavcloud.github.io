@@ -13,6 +13,6 @@ SAML Discussion @ Networking Panel Discussion [(Video)](https://www.youtube.com/
 
 [DevCloud and CloudMonkey Demos](/files/talks/ccc12-devcloud+cloudmonkey.pdf), CCC Las Vegas, 2 Dec 2012
 
-<br><img style="display: block; margin: auto;" src="/images/committers.jpg">
+<br><img style="display: block; margin: auto;" src="/images/cloudstack/committers.jpg">
 
 <p style="text-align:center">Apache CloudStack Committers, CloudStack Collaboration Conference (CCC) Las Vegas, 2 Dec 2012</p>

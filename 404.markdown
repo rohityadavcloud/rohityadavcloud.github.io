@@ -1,0 +1,9 @@
+---
+layout: page
+title: 404
+permalink: /404.html
+---
+
+<div style="text-align: center">
+<h2>Page not Found!</h2>
+</div>

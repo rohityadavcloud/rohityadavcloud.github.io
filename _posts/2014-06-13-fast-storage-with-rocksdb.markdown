@@ -1,17 +1,11 @@
 ---
 layout: post
 title: Fast Storage with RocksDB
-excerpt: C++, Thrift & RocksDB
 ---
 
-<div class="row">
-<div class="offset2 span6">
-  <div class="alert alert-info">
-    <center><a href="http://engineering.wingify.com/fast-storage-with-rocksdb/">Cross-posted from Wingify's engineering blog</a></center>
-  </div>
+<div class="post-image">
+    <small>Note: Cross-posted from Wingify's engineering <a href="http://engineering.wingify.com/fast-storage-with-rocksdb">blog</a></small>
 </div>
-</div>
-
 
 In November last year, I started developing an infrastructure that would allow [Wingify](http://wingify.com) to
 collect, store, search and retrieve high volume data. The idea was
@@ -29,18 +23,18 @@ First, let me start by sharing the use cases of such a system in VWO; the
 following screenshot shows a feature where users can enter a URL to check if VWO
 Smart Code was installed on it.
 
-<div style="text-align:center; margin:5px">
-<img src="/images/rocks0.png"><br>
-<p>VWO Smart Code checker</p>
+<div class="post-image">
+    <img src="/images/wingify/rocks0.png"><br>
+    <p>VWO Smart Code checker</p>
 </div>
 
 The following screenshot shows another feature where users can see a list of URLs
 matching a complex wildcard pattern, regex pattern, string rule etc. while
 creating a campaign.
 
-<div style="text-align:center; margin:5px">
-<img src="/images/rocks1.png"><br>
-<p>VWO URL Matching Helper</p>
+<div class="post-image">
+    <img src="/images/wingify/rocks1.png"><br>
+    <p>VWO URL Matching Helper</p>
 </div>
 
 I [reviewed](http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis)
@@ -66,9 +60,9 @@ to encourage the readers to read
 [about](http://google-opensource.blogspot.in/2011/07/leveldb-fast-persistent-key-value-store.html)
 [LevelDB](https://code.google.com/p/leveldb/) and to read the RocksDB [wiki](https://github.com/facebook/rocksdb/wiki).
 
-<div style="text-align:center; margin:5px">
-<img src="/images/rocks2.png"><br>
-<p>RocksDB FB Group</p>
+<div class="post-image">
+    <img src="/images/wingify/rocks2.png"><br>
+    <p>RocksDB FB Group</p>
 </div>
 
 For capturing the URLs with peak velocity up to 10k serves/s, I reused Wingify's
@@ -85,40 +79,37 @@ The _HarvestDB_ service implements five remote procedures - ping, get,
 put, search and purge. The following [Thrift IDL](http://thrift.apache.org/docs/idl)
 describes this service.
 
-{% highlight cpp %}
+    namespace cpp harvestdb
+    namespace go harvestdb
+    namespace py harvestdb
+    namespace php HarvestDB
 
-namespace cpp harvestdb
-namespace go harvestdb
-namespace py harvestdb
-namespace php HarvestDB
+    struct Url {
+        1: required i64    timestamp;
+        2: required string url;
+        3: required string version;
+    }
 
-struct Url {
-    1: required i64    timestamp;
-    2: required string url;
-    3: required string version;
-}
+    typedef list<Url> UrlList
 
-typedef list<Url> UrlList
+    struct UrlResult {
+        1: required i32          prefix;
+        2: required i32          found;
+        3: required i32          total;
+        4: required list<string> urls;
+    }
 
-struct UrlResult {
-    1: required i32          prefix;
-    2: required i32          found;
-    3: required i32          total;
-    4: required list<string> urls;
-}
-
-service HarvestDB {
-    bool ping(),
-    Url get(1:i32 prefix, 2:string url),
-    bool put(1:i32 prefix, 2:Url url),
-    UrlResult search(1:i32 prefix,
-                     2:string includeRegex,
-                     3:string excludeRegex,
-                     4:i32 size,
-                     5:i32 timeout),
-    bool purge(1:i32 prefix, 2:i64 timestamp)
-}
-{% endhighlight %}
+    service HarvestDB {
+        bool ping(),
+        Url get(1:i32 prefix, 2:string url),
+        bool put(1:i32 prefix, 2:Url url),
+        UrlResult search(1:i32 prefix,
+                         2:string includeRegex,
+                         3:string excludeRegex,
+                         4:i32 size,
+                         5:i32 timeout),
+        bool purge(1:i32 prefix, 2:i64 timestamp)
+    }
 
 Clients use `ping` to check _HarvestDB_ server connectivity before executing
 other procedures. RabbitMQ consumers consume collected URLs and `put` them to
@@ -131,9 +122,9 @@ capable of handling (benchmarked) workload of up to 24k writes/second while cons
 less than 500MB RAM. The future work will be on replication, sharding and fault
 tolerance of this service. The following diagram illustrates this architecture.
 
-<div style="text-align:center; margin:5px">
-<img src="/images/rocks3.png"><br>
-<p>Overall architecture</p>
+<div class="post-image">
+    <img src="/images/wingify/rocks3.png"><br>
+    <p>Overall architecture</p>
 </div>
 
 [Discussion on Hacker News](https://news.ycombinator.com/item?id=7899353)

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: DevCloud for CloudStack Development
-excerpt: Xen on VirtualBox
 ---
 
 [Apache CloudStack](http://incubator.apache.org/cloudstack) development is
@@ -14,7 +13,7 @@ And talk about development, sometimes reproducing a bug can take hours or days
 (been there done that :) and moreover a developer may not have access to such
 an infrastructure all the time.
 
-##The Solution
+### The Solution
 
 To solve the problem of infrastructure availability for development and testing,
 earlier this year [Edison](http://www.linkedin.com/pub/disheng-su/5/ab9/90b),
@@ -33,7 +32,7 @@ a host and whatnot. DevCloud is now used by a lot of people, especially during
 the first release of Apache CloudStack, the 4.0.0-incubating, DevCloud was used
 for the release testing.
 
-##My Experiment
+### My Experiment
 
 When I tried DevCloud for the first time, I thought it was neat, an awesome all
 in a box solution for offline development. The limitations were; only one host
@@ -54,7 +53,7 @@ run KVM on VirtualBox, which did not work as KVM does not support PV and require
 HVM so it cannot run on processors without Intel-VT or Amd-V. None of which is
 emulated by VirtualBox.
 
-##Motivation
+### Motivation
 
 CloudStack's build system was changed from Ant to Maven, and this required some
 [changes in DevCloud](https://cwiki.apache.org/confluence/display/CLOUDSTACK/CloudStack+devcloud+environment+setup)
@@ -72,7 +71,7 @@ of DevCloud with the following goals:
   * Reduce exported appliance (ova) file size.
   * It should be seamless, it should work out of the box.
 
-##DevCloud 2.0
+### DevCloud 2.0
 
 I started by creating an appliance using Ubuntu 12.04.1 server which failed for me.
 The network interfaces would stop working after reboot and few users reported
@@ -93,40 +92,36 @@ default settings, it is reachable on ip `192.168.56.10` with username `root` and
 password `password`. Next start hacking either inside the DevCloud appliance or
 on your laptop (host os):
 
-<pre class="prettyprint">
-# ssh inside DevCloud if building inside it:
-$ ssh -v root@192.168.56.10
-$ cd to /opt/cloudstack # or any other directory, it does not matter
-# Get the source code:
-$ git clone https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
-$ cd incubator-cloudstack
-# Build management server:
-$ mvn clean install -P developer,systemvm
-# Deploy database:
-$ mvn -pl developer,tools/devcloud -Ddeploydb -P developer
-# Export the following only if you want debugging on port 8787
-$ export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=800m -Xdebug -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n"
-# Run the management server:
-$ mvn -pl client jetty:run
-# In Global Settings check `host` to 192.168.56.1 (or .10 if inside DevCloud)
-# and `system.vm.use.local.storage` to true, restart mgmt server.
-# Set the maximum number of console proxy vms to 0 if you don't need one from
-# CloudStack's global settings, this will save you some RAM.
-# Now add a basic zone with local storage. May be start more DevCloud hosts by
-# importing more appliances and changing default IPs and reboot!
-</pre>
+    # ssh inside DevCloud if building inside it:
+    $ ssh -v root@192.168.56.10
+    $ cd to /opt/cloudstack # or any other directory, it does not matter
+    # Get the source code:
+    $ git clone https://git-wip-us.apache.org/repos/asf/incubator-cloudstack.git
+    $ cd incubator-cloudstack
+    # Build management server:
+    $ mvn clean install -P developer,systemvm
+    # Deploy database:
+    $ mvn -pl developer,tools/devcloud -Ddeploydb -P developer
+    # Export the following only if you want debugging on port 8787
+    $ export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=800m -Xdebug -Xrunjdwp:transport=dt_socket,address=8787,server=y,suspend=n"
+    # Run the management server:
+    $ mvn -pl client jetty:run
+    # In Global Settings check `host` to 192.168.56.1 (or .10 if inside DevCloud)
+    # and `system.vm.use.local.storage` to true, restart mgmt server.
+    # Set the maximum number of console proxy vms to 0 if you don't need one from
+    # CloudStack's global settings, this will save you some RAM.
+    # Now add a basic zone with local storage. May be start more DevCloud hosts by
+    # importing more appliances and changing default IPs and reboot!
 
 Make sure your mgmt server is running and you may deploy a basic zone using
 preconfigured settings in `tools/devcloud/devcloud.cfg`:
 
-<pre class="prettyprint">
-$ mvn -P developer -pl tools/devcloud -Ddeploysvr
-# Or in case mvn fails try the following, (can fail if you run mgmt server in debug mode on port 8787)
-$ cd tools/devcloud
-$ python ../marvin/marvin/deployDataCenter.py -i devcloud.cfg
-</pre>
+    $ mvn -P developer -pl tools/devcloud -Ddeploysvr
+    # Or in case mvn fails try the following, (can fail if you run mgmt server in debug mode on port 8787)
+    $ cd tools/devcloud
+    $ python ../marvin/marvin/deployDataCenter.py -i devcloud.cfg
 
-##DIY DevCloud
+### DIY DevCloud
 
 Install VirtualBox and get the [Debian Wheezy
 7.0](http://www.debian.org/devel/debian-installer/). I used the netinst i386
@@ -138,109 +133,89 @@ here](http://people.apache.org/~bhaisaab/vms/debian-wheezy-basex86.ova).
 
 Install required tools and Xen-i386:
 
-<pre class="prettyprint">
-$ apt-get install git vim tcpdump ebtables --no-install-recommends
-$ apt-get install openjdk-6-jdk genisoimage python-pip mysql-server nfs-kernel-server --no-install-recommends
-$ apt-get install linux-headers-3.2.0-4-686-pae xen-hypervisor-4.1-i386 xcp-xapi xcp-xe xcp-guest-templates xcp-vncterm xen-tools blktap-utils blktap-dkms qemu-keymaps qemu-utils --no-install-recommends
-</pre>
+    $ apt-get install git vim tcpdump ebtables --no-install-recommends
+    $ apt-get install openjdk-6-jdk genisoimage python-pip mysql-server nfs-kernel-server --no-install-recommends
+    $ apt-get install linux-headers-3.2.0-4-686-pae xen-hypervisor-4.1-i386 xcp-xapi xcp-xe xcp-guest-templates xcp-vncterm xen-tools blktap-utils blktap-dkms qemu-keymaps qemu-utils --no-install-recommends
 
-You'll have to build and install mkisofs.
-Remove MySQL password:
-<pre class="prettyprint">
-$ mysql -u root -p
-  > SET PASSWORD FOR root@localhost=PASSWORD('');
-  > exit;
-</pre>
+You may need to build and install mkisofs. Remove MySQL password:
+
+    $ mysql -u root -p
+      > SET PASSWORD FOR root@localhost=PASSWORD('');
+      > exit;
 
 Install MySQL Python connector 1.0.7 or latest:
-<pre class="prettyprint">
-$ pip install mysql-connector-python
-# Or, if you have easy_install you can do: easy_install mysql-connector-python
-</pre>
+
+    $ pip install mysql-connector-python
+      # Or, if you have easy_install you can do: easy_install mysql-connector-python
 
 Setup Xen and XCP/XAPI:
 
-<pre class="prettyprint">
-$ echo "bridge" > /etc/xcp/network.conf
-$ update-rc.d xendomains disable
-$ echo TOOLSTACK=xapi > /etc/default/xen
-$ sed -i 's/GRUB_DEFAULT=.\+/GRUB_DEFAULT="Xen 4.1-i386"/' /etc/default/grub
-$ sed -i 's/GRUB_CMDLINE_LINUX=.\+/GRUB_CMDLINE_LINUX="apparmor=0"\nGRUB_CMDLINE_XEN="dom0_mem=400M,max:500M dom0_max_vcpus=1"/' /etc/default/grub
-$ update-grub
-$ sed -i 's/VNCTERM_LISTEN=.\+/VNCTERM_LISTEN="-v 0.0.0.0:1"/' /usr/lib/xcp/lib/vncterm-wrapper
-$ cat > /usr/lib/xcp/plugins/echo << EOF
-#!/usr/bin/env python
+    $ echo "bridge" > /etc/xcp/network.conf
+    $ update-rc.d xendomains disable
+    $ echo TOOLSTACK=xapi > /etc/default/xen
+    $ sed -i 's/GRUB_DEFAULT=.\+/GRUB_DEFAULT="Xen 4.1-i386"/' /etc/default/grub
+    $ sed -i 's/GRUB_CMDLINE_LINUX=.\+/GRUB_CMDLINE_LINUX="apparmor=0"\nGRUB_CMDLINE_XEN="dom0_mem=400M,max:500M dom0_max_vcpus=1"/' /etc/default/grub
+    $ update-grub
+    $ sed -i 's/VNCTERM_LISTEN=.\+/VNCTERM_LISTEN="-v 0.0.0.0:1"/' /usr/lib/xcp/lib/vncterm-wrapper
+    $ cat > /usr/lib/xcp/plugins/echo << EOF
+    #!/usr/bin/env python
 
-# Simple XenAPI plugin
-import XenAPIPlugin, time
+    # Simple XenAPI plugin
+    import XenAPIPlugin, time
 
-def main(session, args):
-    if args.has_key("sleep"):
-        secs = int(args["sleep"])
-        time.sleep(secs)
-    return "args were: %s" % (repr(args))
+    def main(session, args):
+        if args.has_key("sleep"):
+            secs = int(args["sleep"])
+            time.sleep(secs)
+        return "args were: %s" % (repr(args))
 
-if __name__ == "__main__":
-    XenAPIPlugin.dispatch({"main": main})
-EOF
+    if __name__ == "__main__":
+        XenAPIPlugin.dispatch({"main": main})
+    EOF
 
-$ chmod -R 777 /usr/lib/xcp
-$ mkdir -p /root/.ssh
-$ ssh-keygen -A -q
-</pre>
+    $ chmod -R 777 /usr/lib/xcp
+    $ mkdir -p /root/.ssh
+    $ ssh-keygen -A -q
 
 Network settings, /etc/network/interfaces:
 
-<pre class="prettyprint">
-auto lo
-iface lo inet loopback
+    auto lo
+    iface lo inet loopback
 
-auto eth0
-iface eth0 inet manual
+    auto eth0
+    iface eth0 inet manual
 
-allow-hotplug eth1
-iface eth1 inet manual
+    allow-hotplug eth1
+    iface eth1 inet manual
 
-auto xenbr0
-iface xenbr0 inet static
-        bridge_ports eth0
-        address 192.168.56.10
-        netmask 255.255.255.0
-        network 192.168.56.0
-        broadcast 192.168.56.255
-        gateway 192.168.56.1
-        dns_nameservers 8.8.8.8 8.8.4.4
-        post-up route del default gw 192.168.56.1; route add default gw 192.168.56.1 metric 100;
+    auto xenbr0
+    iface xenbr0 inet static
+            bridge_ports eth0
+            address 192.168.56.10
+            netmask 255.255.255.0
+            network 192.168.56.0
+            broadcast 192.168.56.255
+            gateway 192.168.56.1
+            dns_nameservers 8.8.8.8 8.8.4.4
+            post-up route del default gw 192.168.56.1; route add default gw 192.168.56.1 metric 100;
 
-auto xenbr1
-iface xenbr1 inet dhcp
-        bridge_ports eth1
-        dns_nameservers 8.8.8.8 8.8.4.4
-        post-up route add default gw 10.0.3.2
-</pre>
+    auto xenbr1
+    iface xenbr1 inet dhcp
+            bridge_ports eth1
+            dns_nameservers 8.8.8.8 8.8.4.4
+            post-up route add default gw 10.0.3.2
 
 Preseed the SystemVM templates in `/opt/storage/secondary`, follow directions
 from
 [here](http://incubator.apache.org/cloudstack/docs/en-US/Apache_CloudStack/4.0.0-incubating/html/Installation_Guide/management-server-install-flow.html#prepare-system-vm-template).
 Configure NFS server and local storage.
 
-<pre class="prettyprint">
-$ mkdir -p /opt/storage/secondary
-$ mkdir -p /opt/storage/primary
-$ hostuuid=`xe host-list |grep uuid|awk '{print $5}'`
-$ xe sr-create host-uuid=$hostuuid name-label=local-storage shared=false type=file device-config:location=/opt/storage/primary
-$ echo "/opt/storage/secondary *(rw,no_subtree_check,no_root_squash,fsid=0)" > /etc/exports
-$ #preseed systemvm template, may be copy files from devcloud's /opt/storage/secondary
-$ /etc/init.d/nfs-kernel-server restart
-</pre>
+    $ mkdir -p /opt/storage/secondary
+    $ mkdir -p /opt/storage/primary
+    $ hostuuid=`xe host-list |grep uuid|awk '{print $5}'`
+    $ xe sr-create host-uuid=$hostuuid name-label=local-storage shared=false type=file device-config:location=/opt/storage/primary
+    $ echo "/opt/storage/secondary *(rw,no_subtree_check,no_root_squash,fsid=0)" > /etc/exports
+    $ #preseed systemvm template, may be copy files from devcloud's /opt/storage/secondary
+    $ /etc/init.d/nfs-kernel-server restart
 
-<div class="row">
-<div class="offset2 span6">
-  <div class="alert alert-info">
-    <center>
-    <strong>Please</strong> email your queries on the ACS ML `dev@cloudstack.apache.org`
-    </center>
-  </div>
-</div>
-</div>
-
+Hope this posts helps you understand how you can build your own DevCloud appliance. If you have any questions, please send an email to CloudStack's Developer Mailing list: [dev@cloudstack.apache.org](mailto:dev@cloudstack.apache.org)

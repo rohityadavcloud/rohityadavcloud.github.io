@@ -1,7 +1,6 @@
 ---
 layout: post
 title: How to install CloudStack with KVM host
-excerpt: KVM & CloudStack
 ---
 
 This is a how-to guide on setting up CloudStack on Ubuntu and with KVM host in
@@ -45,7 +44,7 @@ Reset `root` password and remember this password:
 
     passwd root
 
-## Networking
+### Networking
 
 Ubuntu s**ks at configuring networking, you need to reboot everytime to apply
 changes, and they don't have systemd yet. Though, its Unity feels more
@@ -138,7 +137,7 @@ Now, let's setup managment server database;
     service mysql restart
     cloudstack-setup-databases cloud:cloudpassword@localhost --deploy-as=root:passwordOfRoot -i <stick your cloudbr0 IP here>
 
-## Storage
+### Storage
 
 We'll setup NFS and preseed systemvm.
 
@@ -173,7 +172,7 @@ Time to setup cloudstack-agent, libvirt and KVM:
     sed -i -e 's/libvirtd_opts="-d"/libvirtd_opts="-d -l"/' /etc/init/libvirt-bin.conf
     service libvirt-bin restart
 
-## Firewall
+### Firewall
 
 Finally punch in holes on the firewall, free 'em ports, substitute your network
 in the following:
@@ -208,7 +207,7 @@ in the following:
     ufw allow proto tcp from any to any port 5900:6100
     ufw allow proto tcp from any to any port 49152:49216
 
-## Launch Cloud
+### Launch Cloud
 
 All set! Make sure tomcat is not running, start the agent and management server:
 
@@ -233,4 +232,3 @@ Keep an eye on your `/var/log/cloudstack/management/management-server.log` and
 `/var/log/cloudstack/agent/agent.log` for possible issues. [Read the admin
 docs](http://cloudstack-administration.readthedocs.org/en/latest/index.html)
 for more cloudy admin tasks. Have fun hacking your CloudStack cloud.
-

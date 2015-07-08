@@ -1,19 +1,13 @@
 ---
 layout: post
 title: Scaling with Queues
-excerpt: distributed systems at Wingify
 ---
 
-<div class="row">
-<div class="offset2 span6">
-  <div class="alert alert-info">
-    <center><a href="http://engineering.wingify.com/scaling-with-queues">Cross-posted from Wingify's engineering blog</a></center>
-  </div>
-</div>
+<div class="post-image">
+    <small>Note: Cross-posted from Wingify's engineering <a href="http://engineering.wingify.com/scaling-with-queues">blog</a></small>
 </div>
 
-
-Our home-grown [geo-distributed architecture](http://visualwebsiteoptimizer.com/split-testing-blog/geo-distributed-architecture/)
+Our home-grown [geo-distributed architecture](https://vwo.com/blog/geo-distributed-architecture/)
 based CDN allows us to delivery dynamic javascript content with minimum
 latencies possible. Using the same architecture we do data acquisition as well.
 Over the years we've done a lot of changes to our backend, this post talks
@@ -36,9 +30,9 @@ does some quick checks, transformations and writes the data to a [Redis](http://
 server which is used as fast in-memory data sink. The data stored in Redis is
 later moved, processed and stored in our database servers.
 
-<div style="text-align:center; margin:5px">
-<img src="/images/queue1.png"><br>
-<p>Previous Architecture</p>
+<div class="post-image">
+  <img src="/images/wingify/queue1.png"><br>
+  <p>Previous Architecture</p>
 </div>
 
 This was the architecture when I had [joined](http://team.wingify.com/friday-engineering-talks-at-wingify)
@@ -84,9 +78,9 @@ data to a new database. This allowed us to compare realtime data from the two
 pipelines. During this period we tweaked our implementation a lot, rewrote the
 producers and consumers thrice and had two major phases of refactoring.
 
-<div style="text-align:center; margin:5px">
-<img src="/images/queue2.png"><br>
-<p>A/B testing of existing and new architecture</p>
+<div class="post-image">
+  <img src="/images/wingify/queue2.png"><br>
+  <p>A/B testing of existing and new architecture</p>
 </div>
 
 Based on [results](http://ldr.io/1565jPu) against a 1G DigitalOcean instance like
@@ -96,9 +90,9 @@ redundancy and failover were addressed in this migration as well.
 The new architecture ensures no single point of failure and has mechanisms to
 recover from failure and fault.
 
-<div style="text-align:center; margin:5px">
-<img src="/images/queue3.png"><br>
-<p>Queue (RabbitMQ) based architecture in production</p>
+<div class="post-image">
+  <img src="/images/wingify/queue3.png"><br>
+  <p>Queue (RabbitMQ) based architecture in production</p>
 </div>
 
 We've [opensourced `agentredrabbit`](https://github.com/wingify/agentredrabbit)
@@ -107,9 +101,9 @@ moving data in chunks from Redis lists to RabbitMQ with some assumptions and que
 name conventions. The flow diagram below has hints on how it works, checkout the
 [README for details](https://github.com/wingify/agentredrabbit).
 
-<div style="text-align:center; margin:5px">
-<img src="/images/queue4.png"><br>
-<p>Flow diagram of "agentredrabbit"</p>
+<div class="post-image">
+  <img src="/images/wingify/queue4.png"><br>
+  <p>Flow diagram of "agentredrabbit"</p>
 </div>
 
 [Discussion on Hacker News](https://news.ycombinator.com/item?id=6359786)
