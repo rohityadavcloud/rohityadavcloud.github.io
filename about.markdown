@@ -17,12 +17,12 @@ also the author and primary maintainer of Apache CloudStack
 [CloudMonkey](http://github.com/apache/cloudstack-cloudmonkey). Help yourself
 with my [LinkedIn](https://linkedin.com/in/bhaisaab),
 [Github](https://github.com/bhaisaab) and
-[Twitter](https://twitter.com/_bhaisaab). For consulting and short term
+[Twitter](https://twitter.com/_bhaisaab). For consulting and short-term
 assignments, [drop a line](mailto:rohit@scaleninja.com).
 
 I started as a hobbyist contributing to few opensource projects such as
 [VLC/VLC-android](http://git.videolan.org/?p=vlc-ports/android.git;a=search;h=HEAD;s=Rohit+Yadav;st=author),
-[VLMC](http://trac.videolan.org/vlmc) and
+[VLMC](http://trac.videolan.org/vlmc) and a
 [few](http://cgit.haiku-os.org/haiku/commit/?id=hrev39379)
 [patches](http://cgit.haiku-os.org/haiku/commit/?id=hrev39378) to HaikuOS; but
 now that I'm professionally working on opensource full-time, I've developed few
