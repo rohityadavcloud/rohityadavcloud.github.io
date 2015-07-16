@@ -36,20 +36,25 @@ title: Kaizen
 
 #### Language
 
-- Langs: Java 7/8, Python2/3
-- Good to have: C, C++, Ruby
-- Experimental: Go, Rust, Scala, Elixir, Clojure
-- Fun: Haskell, Lisp, Erlang, LLVM, Assembly
-- Mobile: Java/Android, Swift
+- Way forward: Java, Python
+- Nicely done: Go, Ruby
+- Funky: Scala, Clojure, Elixir
+- Powerful evil: C, C++, Rust, Assembly, LLVM
+- Gray beard: Haskell, Lisp, Scheme, Erlang, OCaml
 
 #### Web Development
 
-- Web langs: HTML5, CSS3, JavaScipt (ES5/6), TypeScript, CoffeeScript, Less/Saas
-- Web tech: Websockets, local storage
-- Web tools: Grunt, Gulp, Bower, NPM
-- Web JS Frameworks: Backbone, Angular, React, Meteor
-- Web backend frameworks: Ruby on Rails, Django, DropWizard, Groovy, Play
-- Web frontend framework: Bootstrap, Material Design (Google)
+- Frontend langs: HTML5, CSS3, JavaScipt (ES5/6), TypeScript, CoffeeScript, Less/Saas
+- Browser tech: Websockets, local storage
+- Web dev tools: Grunt, Gulp, Bower, NPM
+- JS Frameworks: Backbone, Angular, React, Meteor
+- UI frontend framework: Bootstrap, Material Design (Google)
+
+- Web backend frameworks:
+  + Ruby (Rails, Sinatra)
+  + Python (Django, Flask)
+  + Java (Dropwizard, Grails, Play, Spark, Spring, Scalatra, Vaadin, Lift)
+  + Go (revel, beego, many libs)
 
 #### APIs
 
@@ -74,11 +79,42 @@ title: Kaizen
 - Build system: Maven, Gradle, CMake, Makefiles
 - CI: Jenkins, Go CD, BuildBot, Strider
 - Logging: Sentry, Graylog, Scribe, Logstash
-- Monitoring: Graphite, Promethus, Sensu, Munin, Nagios
+- Monitoring: Graphite, Promethius, Sensu, Munin, Nagios
 - Tracing: Zipkin/Dapper,
 - Platform: Libvirt/qemu, Linux
 - Locking/consensus: Etcd, Zookeeper
 - Experimental: Docker, Weave, Kubernetes, Mesos, Vagrant, Packer, Serf/Consul, Terraform, Vault, Capgemini/Apollo
+
+### Hack
+
+#### Webapps
+
+- Matrimonial app
+- Accounting/invoicing app
+- CloudStack QA crowdsourcing app
+- CloudStack UI (mostly frontend intensive)
+- Kaizen list, time keeping/scheduling
+- MergeShack: Code sharing RBAC shack
+
+#### Misc
+
+- Tantra - DIY x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
+- LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
+- Toy Distributed file system like ceph/gluster
+- Toy Compiler
+- Toy Database
+- GPS track android app
+- Email server
+- Android: tweet buffer like scheduler app
+- readline in [go](https://github.com/bhaisaab/currycli), example [linenoise](https://github.com/antirez/linenoise), [already](https://github.com/peterh/liner) [existing?](https://github.com/gobs/cmd)
+- CLI:
+  https://github.com/codegangsta/cli
+  https://github.com/spf13/cobra
+  https://github.com/spf13/viper
+  https://github.com/go-martini/martini
+  https://github.com/Unknwon/macaron/
+  https://github.com/dropbox/godropbox
+  https://github.com/elazarl/goproxy
 
 ### Stash
 
@@ -144,29 +180,6 @@ title: Kaizen
 - [Learning Linux](http://www.tldp.org/LDP/tlk/tlk-toc.html)
 - [Paxos explained](http://harry.me/blog/2014/12/27/neat-algorithms-paxos/?hn=1)
 - [Exact string matching algorithms](http://www-igm.univ-mlv.fr/~lecroq/string/)
-
-### Hack
-
-- Tantra - DIY x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
-- LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
-- Toy Distributed file system like ceph/gluster
-- Toy Compiler
-- Toy Database
-- GPS track android app
-- Kaizen list, time keeping/scheduling
-- MergeShack: Code sharing RBAC shack
-- Email server
-- Android: tweet buffer like scheduler app
-- Invoice/accounting app
-- readline in [go](https://github.com/bhaisaab/currycli), example [linenoise](https://github.com/antirez/linenoise), [already](https://github.com/peterh/liner) [existing?](https://github.com/gobs/cmd)
-- CLI:
-  https://github.com/codegangsta/cli
-  https://github.com/spf13/cobra
-  https://github.com/spf13/viper
-  https://github.com/go-martini/martini
-  https://github.com/Unknwon/macaron/
-  https://github.com/dropbox/godropbox
-  https://github.com/elazarl/goproxy
 
 ### Small OS
 
