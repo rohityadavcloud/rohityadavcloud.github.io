@@ -5,6 +5,8 @@ tagline:
 permalink: /talks/
 ---
 
+[Understanding CloudStack Internals](/files/talks/london-meetup-understanding-cloudstack-internals.pdf), CloudStack EU User Group Meetup, London, 21 May 2015
+
 [Extending CloudStack with Plugins and Events (and *)](/files/talks/ccceu14-extending-cloudstack.pdf) [(Video)](https://www.youtube.com/watch?v=gFjIJU2csno), CCCEU Budapest, 21 November 2014
 
 SAML Discussion @ Networking Panel Discussion [(Video)](https://www.youtube.com/watch?v=i_ttBpiX4xM&t=15m55s), CCCEU Budapest, 20 November 2014
