@@ -51,9 +51,9 @@ title: Kaizen
 - UI frontend framework: Bootstrap, Material Design (Google)
 
 - Web backend frameworks:
-  + Ruby (Rails, Sinatra)
-  + Python (Django, Flask)
-  + Java (Dropwizard, Grails, Play, Spark, Spring, Scalatra, Vaadin, Lift)
+  + Ruby (Rails)
+  + Python (Django)
+  + Java (Dropwizard {jackson, guava, guice, jersey, hibernate, gradle, jetty/netty/slf4j}, Grails, Play, Spring, Vaadin, Lift)
   + Go (revel, beego, many libs)
 
 #### APIs
@@ -89,12 +89,25 @@ title: Kaizen
 
 #### Webapps
 
-- Matrimonial app
 - Accounting/invoicing app
+- Matrimonial app
 - CloudStack QA crowdsourcing app
 - CloudStack UI (mostly frontend intensive)
-- Kaizen list, time keeping/scheduling
 - MergeShack: Code sharing RBAC shack
+- Kaizen list, time keeping/scheduling
+
+#### Mobile
+
+- Offline buffer-app like app
+
+#### CloudStack
+
+- Cloudflare DNS plugin
+- R&D: tcpdump, ebtables, iptables, quagga
+- Components: Storage, Networking, Distributed systems/locks
+- New: Docker, KVM (vm snapshot, live migration, How does a hypervisor use page table flags to track dirty pages during a migration?)
+- QA infra, Simulator, crowdsourcing test results
+- DevCloud (XenServer, KVM), VMWare ESX6?
 
 #### Misc
 
@@ -115,6 +128,20 @@ title: Kaizen
   https://github.com/Unknwon/macaron/
   https://github.com/dropbox/godropbox
   https://github.com/elazarl/goproxy
+
+#### Infrastructure workouts
+
+- Design and implement a durable complex event-processing service with exactly-once semantics.
+- Create an internal framework for writing new API endpoints
+- You've scaled a large system before. You realize that 95% of scaling is doing nitty-gritty detail work.
+- You have extensive experience with server operations, though you lean more towards writing code.
+- Design and implement a distributed authentication service
+- Implement efficient realtime queries on top of MongoDB by consuming the MongoDB replication log.
+- Add features to DDP, Meteor's state synchronization protocol. For example, you might add protocol-level support for pagination of realtime datasets, and write a DDP caching proxy that performs this pagination in a separate tier from the application logic.
+- Write a kernel for a distributed operating system that schedules application processes across a set of machines. Make it capable of updating itself in place without any downtime.
+- Implement an advanced package dependency resolver on top of a pseudoboolean SAT solver.
+- Perform static analysis on JavaScript to automatically determine the correct load order for the files, when the app developer hasn't specified it.
+- Write a full implementation of SQL that runs in-memory in a web browser, and also supports arbitrary realtime queries and speculative local execution of updates that are in flight to the server.
 
 ### Stash
 
