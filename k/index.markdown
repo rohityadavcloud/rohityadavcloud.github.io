@@ -52,9 +52,9 @@ title: Kaizen
 
 - Web backend frameworks:
   + Ruby (Rails)
-  + Python (Django)
-  + Java (Dropwizard {jackson, guava, guice, jersey, hibernate, gradle, jetty/netty/slf4j}, Grails, Play, Spring, Vaadin, Lift)
+  + Java (Dropwizard {jackson, guava, guice, jersey, hibernate, gradle, jetty/netty/slf4j}, Vaadin, Grails, Play)
   + Go (revel, beego, many libs)
+  + Python (Django)
 
 #### APIs
 
