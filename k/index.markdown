@@ -53,16 +53,13 @@ title: Kaizen
 - Web backend frameworks:
   + Ruby (Rails)
   + Java (Dropwizard {jackson, guava, guice, jersey, hibernate, gradle, jetty/netty/slf4j}, Vaadin, Grails, Play)
-  + Go (revel, beego, many libs)
-  + Python (Django)
+  + Go
 
 #### APIs
 
-- https://www.mashape.com/
-- https://apiblueprint.org/#get-started
 - http://swagger.io/
 - https://apiary.io/
-- http://www.mashery.com/product/io-docs
+- https://apiblueprint.org/#get-started
 
 #### Persistence and Processing
 
