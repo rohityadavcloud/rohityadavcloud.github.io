@@ -55,6 +55,49 @@ title: Kaizen
   + Java (Dropwizard {jackson, guava, guice, jersey, hibernate, gradle, jetty/netty/slf4j}, Vaadin, Grails, Play)
   + Go
 
+- Framework parts:
+  + URL router and handlers
+  + Caching
+  + Model:
+    * DB backends
+    * ORM
+    * Schema migration
+  + APIs
+  + static file/binary serving
+  + middleware
+  + websockets
+  + Data validation
+  + serialization (html, xml, json)
+  + RPC
+  + Templates
+  + Forms
+  + File uploading, storage
+  + File generation: csv, pdf
+  + Auth:
+    * Cookies
+    * Session
+    * RBAC, Groups, roles, users, teams/orgs
+  + Administration
+  + i18n, l10n
+  + debugging
+  + logging
+  + monitoring
+  + jobs
+  + queue
+  + search
+  + configuration
+  + email/alerting
+  + unit/integration testing
+  + Security:
+    * clickjacking
+    * XSS
+    * CSRF
+    * Remote code execution
+    * SQL injection
+    * Cryptographic signing (sessionkey)
+    * cors
+    * acceptlang, acceptflags (headers)
+
 #### APIs
 
 - http://swagger.io/
