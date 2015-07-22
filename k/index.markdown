@@ -91,6 +91,7 @@ title: Kaizen
 
 - Accounting/invoicing app
 - Matrimonial app
+- Random notes taking app
 - CloudStack QA crowdsourcing app
 - CloudStack UI (mostly frontend intensive)
 - MergeShack: Code sharing RBAC shack
