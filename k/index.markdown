@@ -186,6 +186,7 @@ title: Kaizen
 
 ### Stash
 
+- http://open.mesosphere.com/intro-course/ex1.html
 - http://neuralnetworksanddeeplearning.com/
 - https://gcc.gnu.org/onlinedocs/gcc-5.1.0/jit/intro/index.html
 - https://speakerdeck.com/nineties/creating-a-language-using-only-assembly-language
