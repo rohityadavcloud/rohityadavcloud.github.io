@@ -186,6 +186,8 @@ title: Kaizen
 
 ### Stash
 
+- http://adriansampson.net/blog/llvm.html
+- http://www.postgresguide.com/setup/install.html
 - http://open.mesosphere.com/intro-course/ex1.html
 - http://neuralnetworksanddeeplearning.com/
 - https://gcc.gnu.org/onlinedocs/gcc-5.1.0/jit/intro/index.html
