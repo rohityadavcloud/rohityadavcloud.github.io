@@ -73,8 +73,9 @@ Next, install ESXi 5.5 with at least 8GB RAM and 4 cores. Once done, enable SSH
 and ESXi shell on the host.
 
 For some reason, vCenter 5.5 on Windows Server 2008 R2 never worked for me; so I
-tried using the vCenter 5.5 ova appliance which worked for me. I was unable to
-upload/deploy the ova using the vSphere client, but made it work using ovftool:
+tried using the vCenter 5.5 ova appliance which worked for me. I also could not get
+the vSphere client to upload the ova to the ESXi host, but ovftool tool worked
+for me:
 
     $ ovftool --diskMode=thin --name=vCenter55 VMware-vCenter-Server-Appliance-5.5.0.10200-1891314_OVF10.ova vi://root@password:192.168.1.58/
 
