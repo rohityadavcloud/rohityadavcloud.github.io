@@ -35,7 +35,7 @@ As an example, the following worked for me on Ubuntu 14.04.2:
 
 Install [qemu-kvm dependencies](http://wiki.qemu.org/Hosts/Linux#Fedora_Linux_.2F_Debian_GNU_Linux_.2F_Ubuntu_Linux_.2F_Linux_Mint) or simply run `apt-get build-dep qemu-kvm`.
 
-Next, apply this patch:
+Next, apply this [patch](http://mattinaction.blogspot.in/2014/05/install-and-run-full-functional-vmware.html):
 
     --- qemu-2.0.0+dfsg.orig/hw/i386/pc_piix.c
     +++ qemu-2.0.0+dfsg/hw/i386/pc_piix.c
