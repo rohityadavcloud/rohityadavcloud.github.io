@@ -56,7 +56,7 @@ Finally, commit the patch and build the package:
 
 Assuming you're on x86 architecture, install the qemu-system-x86 package:
 
-    $ dpkg -i qemu-system-x86_2.0.0+dfsg-2ubuntu1.15_amd64.deb
+    $ dpkg -i ../qemu-system-x86_2.0.0+dfsg-2ubuntu1.15_amd64.deb
 
 In my case I setup a ESXi 5.5 VM with NIC adapter set to `vmxnet3`.
 NIC adapter to vmxnet3. In case of CloudStack, you can update the VM details
@@ -82,5 +82,6 @@ for me:
 Once done, you can reduce the vCenter VM RAM to 2-3GB using the vSphere 5.5
 Windows client. Once vCenter VM has started you can open the vCenter URL in your
 browser to configure it, and later use the vSphere client to add the host to the
-vCenter VM.
+vCenter VM. I had issue with running certain ESXi 5.5 ISOs on Ubuntu 14.04, but
+on Ubuntu 15.04 it has worked out of the box so I recommend using Ubuntu 15.04.
 
