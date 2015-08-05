@@ -57,6 +57,7 @@ Finally, commit the patch and build the package:
 Assuming you're on x86 architecture, install the qemu-system-x86 package:
 
     $ dpkg -i ../qemu-system-x86_2.0.0+dfsg-2ubuntu1.15_amd64.deb
+    $ apt-mark hold qemu-system-x86
 
 In my case I setup a ESXi 5.5 VM with NIC adapter set to `vmxnet3`.
 NIC adapter to vmxnet3. In case of CloudStack, you can update the VM details
@@ -64,10 +65,10 @@ using CloudMonkey:
 
     $ cloudmonkey update virtualmachine id=382ba742-125b-45fa-8c50-d0c8608c3b59 details[0].nicAdapter=vmxnet3
 
-With CloudStack 4.5.1 and above, I recommend following settings in the `agent.properties` for maximum efficiency:
+With CloudStack 4.5.1 and above, I recommend following settings (at least vmx) in the `agent.properties` for maximum efficiency:
 
     guest.cpu.mode=host-passthrough
-    guest.cpu.features=vmx
+    guest.cpu.features=vmx smx ept vnmi ht lm
 
 Next, install ESXi 5.5 with at least 8GB RAM and 4 cores. Once done, enable SSH
 and ESXi shell on the host.
