@@ -72,6 +72,13 @@ With CloudStack 4.5.1 and above, I recommend following settings in the `agent.pr
 Next, install ESXi 5.5 with at least 8GB RAM and 4 cores. Once done, enable SSH
 and ESXi shell on the host.
 
+SSH to the ESXi VM, add the following to `/etc/vmware/config` and reboot the host:
+
+    hv.assumeEnabled="TRUE"
+    vhv.allow = "TRUE"
+    vhv.enable = "TRUE"
+    vmx.allowNested = "TRUE"
+
 For some reason, vCenter 5.5 on Windows Server 2008 R2 never worked for me; so I
 tried using the vCenter 5.5 ova appliance which worked for me. I also could not get
 the vSphere client to upload the ova to the ESXi host, but ovftool tool worked
