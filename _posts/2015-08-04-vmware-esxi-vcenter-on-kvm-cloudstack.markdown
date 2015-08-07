@@ -86,6 +86,16 @@ the vSphere client to upload the ova to the ESXi host, but ovftool tool worked
 for me:
 
     $ ovftool --diskMode=thin --name=vCenter55 VMware-vCenter-Server-Appliance-5.5.0.10200-1891314_OVF10.ova vi://root@password:192.168.1.58/
+      Opening OVA source: VMware-vCenter-Server-Appliance-5.5.0.10200-1891314_OVF10.ova
+      The manifest validates
+      Source is signed and the certificate validates
+      Enter login information for target vi://192.168.1.58/
+      Username: root
+      Password: ********
+      Opening VI target: vi://root@192.168.1.58:443/
+      Deploying to VI: vi://root@192.168.1.58:443/
+      Transfer Completed
+      Completed successfully
 
 Once done, you can reduce the vCenter VM RAM to 2-3GB using the vSphere 5.5
 Windows client. Once vCenter VM has started you can open the vCenter URL in your
