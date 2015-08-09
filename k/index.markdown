@@ -193,9 +193,7 @@ title: Kaizen
 - https://gcc.gnu.org/onlinedocs/gcc-5.1.0/jit/intro/index.html
 - https://speakerdeck.com/nineties/creating-a-language-using-only-assembly-language
 - http://www.cs.virginia.edu/~evans/cs216/guides/x86.html
-- https://doc.rust-lang.org/book/README.html
 - http://security.stackexchange.com/questions/45963/diffie-hellman-key-exchange-in-plain-english/45971#45971
-- http://www.nongnu.org/quagga/docs/quagga.html
 - http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf
 - http://blog.jamesdbloom.com/JVMInternals.html
 - http://www.nilbot.net/posts/256210-percolation-threshold-go
@@ -209,7 +207,6 @@ title: Kaizen
 - http://nullprogram.com/blog/2015/03/19/
 - http://www.davespace.co.uk/blog/20150131-branchless-sequences.html
 - https://gist.github.com/debasishg/8172796
-- https://github.com/0xAX/linux-insides
 - https://www.codementor.io/reactjs/tutorial/react-vs-angularjs
 - http://blog.risingstack.com/from-angularjs-to-react-the-isomorphic-way/
 - http://facebook.github.io/flux/docs/examples-and-tools.html
@@ -340,6 +337,7 @@ title: Kaizen
 
 ### Closet
 
+- [Distributed system lectures/talks](http://research.microsoft.com/apps/catalog/default.aspx?p=1&sb=no&ps=25&t=videos&sf=&s=&r=&vr=166581&ra=)
 - [Distributed Systems principles course](http://dcg.ethz.ch/lectures/podc_allstars/)
 - [Distribute systems course in Go](http://www.cs.cmu.edu/~dga/15-440/F12/syllabus.html)
 - [Lambda Calculus](https://www.youtube.com/playlist?list=PL4A05CF0478DAD704)
