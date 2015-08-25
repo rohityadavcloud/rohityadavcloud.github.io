@@ -354,3 +354,12 @@ title: Kaizen
 - [Interactive SICP](http://xuanji.appspot.com/isicp/index.html)
 - [Stanford Cryptography 1](https://www.coursera.org/course/crypto)
 - [Stanford Cryptography 2](https://www.coursera.org/course/crypto2)
+
+### Trvl
+
+d-list; Mumbai, Banaras, Geneva, Coorg, Vegas, Reno, DC, SF, SC, Hyd, Blr, Goa, Mysore, Jaipur, Agra, Budapest, London, Paris, Athens, SriLanka; Udaipur
+tf-list; dublin, nepal, bhutan
+t-list; jodhpur, jaisalmer, chandigarh, wagah border, kolkata, chadar-trek, roopkund-trek, leh-ladakh, mcledoganj, dharamshala, manali, spiti, rishikesh, corbett, munna, andaman, lakswadeep, gokarna, darjeeling, almora, sikkim, kerala, kasol, cherrupunji, bhangarh, hampi, kutch, amritsar, assam, diu/daman, pushkar, ranthambore, kumbhalgarh fort, chittorgarh fort, mount abu, alwar
+
+surat: jagdishchandra bose aquarium, dumas beach, dandi beach, science center, surat castle, hazira beach, bardoli (salt march), Iskon
+chandigarh: rock garden, sukhna lake, rose garden, timber trail, nepli forest, pinjore gardens, mohali stadium
