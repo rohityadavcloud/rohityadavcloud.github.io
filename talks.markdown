@@ -5,6 +5,8 @@ tagline:
 permalink: /talks/
 ---
 
+[Integrating CloudStack in your Organization using Single Sign On](/files/talks/ccceu15-samlsso.pdf), CCCEU Dublin, 8 October 2015
+
 [Understanding CloudStack Internals](/files/talks/london-meetup-understanding-cloudstack-internals.pdf), CloudStack EU User Group Meetup, London, 21 May 2015
 
 [Extending CloudStack with Plugins and Events (and *)](/files/talks/ccceu14-extending-cloudstack.pdf) [(Video)](https://www.youtube.com/watch?v=gFjIJU2csno), CCCEU Budapest, 21 November 2014
