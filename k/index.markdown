@@ -253,6 +253,7 @@ title: Kaizen
 - [Materialize](http://materializecss.com/mobile.html)
 - [Polymer](https://elements.polymer-project.org/)
 - [Semantic UI](http://semantic-ui.com/)
+- [Large Scale JS](http://addyosmani.com/largescalejavascript/)
 
 ### Small OS
 
