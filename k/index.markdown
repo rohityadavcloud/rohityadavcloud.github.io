@@ -250,6 +250,9 @@ title: Kaizen
 - [Paxos explained](http://harry.me/blog/2014/12/27/neat-algorithms-paxos/?hn=1)
 - [Exact string matching algorithms](http://www-igm.univ-mlv.fr/~lecroq/string/)
 - [Frontend book](https://frontendmasters.gitbooks.io/front-end-handbook/content/tools.html)
+- [Materialize](http://materializecss.com/mobile.html)
+- [Polymer](https://elements.polymer-project.org/)
+- [Semantic UI](http://semantic-ui.com/)
 
 ### Small OS
 
