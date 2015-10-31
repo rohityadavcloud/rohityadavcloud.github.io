@@ -249,6 +249,7 @@ title: Kaizen
 - [Learning Linux](http://www.tldp.org/LDP/tlk/tlk-toc.html)
 - [Paxos explained](http://harry.me/blog/2014/12/27/neat-algorithms-paxos/?hn=1)
 - [Exact string matching algorithms](http://www-igm.univ-mlv.fr/~lecroq/string/)
+- [Frontend book](https://frontendmasters.gitbooks.io/front-end-handbook/content/tools.html)
 
 ### Small OS
 
