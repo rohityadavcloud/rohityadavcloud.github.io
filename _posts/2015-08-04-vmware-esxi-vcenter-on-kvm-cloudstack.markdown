@@ -103,3 +103,15 @@ browser to configure it, and later use the vSphere client to add the host to the
 vCenter VM. I had issue with running certain ESXi 5.5 ISOs on Ubuntu 14.04, but
 on Ubuntu 15.04 it has worked out of the box so I recommend using Ubuntu 15.04.
 
+Update: For ESXi 6.0, you can simply use E1000 based nic. For qemu 2.2+, you don't need
+to patch the qemu-system-x86 package but instead add the following in the VM's
+virt xml directly:
+
+      virsh edit <domain name>
+
+      <features>
+        <kvm>
+          <hidden state='on'/>
+        </kvm>
+        <vmport state='off'/>
+      </features>
