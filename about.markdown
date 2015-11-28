@@ -25,6 +25,6 @@ I started as a hobbyist contributing to few opensource projects such as
 [VLMC](http://trac.videolan.org/vlmc) and a
 [few](http://cgit.haiku-os.org/haiku/commit/?id=hrev39379)
 [patches](http://cgit.haiku-os.org/haiku/commit/?id=hrev39378) to HaikuOS; but
-now that I'm professionally working on opensource full-time, I've developed few
-hobbies in the physical world that includes playing concert flute and bansuri,
-exploring nature, beatboxing, swimming and working out in the gym.
+now that I'm professionally working on opensource full-time, most of my
+hobbies now exist in the physical world such as playing [bansuri](https://en.wikipedia.org/wiki/Bansuri),
+beatboxing, swimming and working out in the gym.
