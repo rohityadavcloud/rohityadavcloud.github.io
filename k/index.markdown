@@ -12,7 +12,6 @@ title: Kaizen
 - Algorithms Princeton [level-2](https://class.coursera.org/algs4partII-002/lecture)
 - [Stanford Algorithms 1](https://www.coursera.org/course/algo)
 - [Stanford Algorithms 2](https://www.coursera.org/course/algo2)
-- [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
 
 ### Programming
 
@@ -21,13 +20,13 @@ title: Kaizen
 - Programming Practice: [Euler](http://projecteuler.net/),
 - Programming Practice: [HackerRank](https://www.hackerrank.com/)
 - Programming Practice: [Codeforces](http://codeforces.com/)
-- Programming Practice: [SPOJ](http://spoj.com/)
 - Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
 - [Humblefool's CodeSchool](http://mycodeschool.com/problems) [Winter coding @ MyCodeSchool](http://wintercoding.mycodeschool.com/)
 - [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
 
 ### Algorithms
 
+- [Algorithm Coding](./algorithms.html) ([refernce impls](https://github.com/kennyledet/Algorithm-Implementations))
 - [List of things](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
 - [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
 - [Book: The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
@@ -136,15 +135,6 @@ title: Kaizen
 - MergeShack: Code sharing RBAC shack
 - Offline buffer-app like mobile app
 
-#### CloudStack
-
-- Cloudflare DNS plugin
-- R&D: tcpdump, ebtables, iptables, quagga
-- Components: Storage, Networking, Distributed systems/locks
-- New: Docker, KVM (vm snapshot, live migration, How does a hypervisor use page table flags to track dirty pages during a migration?)
-- QA infra, Simulator, crowdsourcing test results
-- DevCloud (XenServer, KVM), VMWare ESX6?
-
 #### Misc
 
 - Tantra - DIY x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
@@ -152,9 +142,6 @@ title: Kaizen
 - Toy Distributed file system like ceph/gluster
 - Toy Compiler
 - Toy Database
-- GPS track android app
-- Email server
-- Android: tweet buffer like scheduler app
 - readline in [go](https://github.com/bhaisaab/currycli), example [linenoise](https://github.com/antirez/linenoise), [already](https://github.com/peterh/liner) [existing?](https://github.com/gobs/cmd)
 - CLI:
   https://github.com/codegangsta/cli
@@ -181,79 +168,28 @@ title: Kaizen
 
 ### Stash
 
-- http://adriansampson.net/blog/llvm.html
-- http://www.postgresguide.com/setup/install.html
-- http://open.mesosphere.com/intro-course/ex1.html
-- http://neuralnetworksanddeeplearning.com/
-- https://gcc.gnu.org/onlinedocs/gcc-5.1.0/jit/intro/index.html
-- https://speakerdeck.com/nineties/creating-a-language-using-only-assembly-language
-- http://www.cs.virginia.edu/~evans/cs216/guides/x86.html
-- http://security.stackexchange.com/questions/45963/diffie-hellman-key-exchange-in-plain-english/45971#45971
-- http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf
-- http://blog.jamesdbloom.com/JVMInternals.html
-- http://www.nilbot.net/posts/256210-percolation-threshold-go
-- http://blog.altoros.com/golang-internals-part-2-diving-into-the-go-compiler.html
-- https://github.com/caiorss/Functional-Programming
-- http://beej.us/guide/bgnet/output/html/multipage/index.html
-- https://gist.github.com/jonhoo/05774c1e47dbe4d57169
-- http://www.blog.felixangell.com/virtual-machine-in-c/
-- http://www.blog.felixangell.com/part-1-lets-build-an-interpreted-language-in-go/
-- http://blog.siftscience.com/blog/2015/best-practices-for-building-large-react-applications
-- http://nullprogram.com/blog/2015/03/19/
-- http://www.davespace.co.uk/blog/20150131-branchless-sequences.html
-- https://gist.github.com/debasishg/8172796
-- https://www.codementor.io/reactjs/tutorial/react-vs-angularjs
-- http://blog.risingstack.com/from-angularjs-to-react-the-isomorphic-way/
-- http://facebook.github.io/flux/docs/examples-and-tools.html
-- http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome
-- https://methane.github.io/2015/02/reduce-allocation-in-go-code/
-- https://groups.google.com/forum/#!msg/coreos-dev/wf7G6rA7Bf4/Olmxmo13WKQJ
-- http://nginx.com/blog/microservices-at-netflix-architectural-best-practices/
-- http://underscore.io/training/courses/creative-scala/
-- http://nbviewer.ipython.org/github/rlabbe/Kalman-and-Bayesian-Filters-in-Python/blob/master/table_of_contents.ipynb
-- http://www.aaronsw.com/weblog/djb
-- http://www.aaronsw.com/weblog/001502
-- https://www.omniref.com/ruby/gems/stream_sampler/0.0.1/symbols/StreamSampler?#annotation=4094626&line=2
-- http://www.slideshare.net/ktoso/distributed-consensus-aka-what-do-we-eat-for-lunch
-- http://intronetworks.cs.luc.edu/
-- https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1?wed
-- https://github.com/teropa/build-your-own-angularjs, http://teropa.info/build-your-own-angular
-- http://hackershelf.com/browse/
-- http://unicode.org/reports/tr15/
-- http://en.wikipedia.org/wiki/List_of_algorithms
-- http://setosa.io/ev/eigenvectors-and-eigenvalues/
-- http://xlinux.nist.gov/dads/
-- https://en.wikipedia.org/wiki/Entscheidungsproblem
-- https://en.wikipedia.org/wiki/Hilbert%27s_problems
-- http://en.wikipedia.org/wiki/Exponentiation_by_squaring
-- http://ori.scs.stanford.edu/
-- http://blog.golang.org/gothamgo
-- http://danluu.com/new-cpu-features/
 - https://github.com/prakhar1989/awesome-courses
-- http://talks.golang.org/2013/advconc.slide#4
-- https://software.intel.com/en-us/blogs/2014/05/10/debugging-performance-issues-in-go-programs
-- [CodeKata](http://codekata.com/)
-- [Eulerian Imaging Algos](http://people.csail.mit.edu/mrub/evm/#code)
-- [Malloc tutorial](http://danluu.com/malloc-tutorial/)
-- [Writing virtual CPU in C++](http://megalomaniacbore.blogspot.ch/2014/04/virtual-cpu-in-c-4001-cpu.html)
-- [Ssh server in Go](http://blog.appsdeck.eu/post/105010314493/writing-a-replacement-to-openssh-using-go-2-2)
-- [ZipFS Golang base FUSE](https://github.com/bazillion/zipfs)
-- [Parser/lexer in Go](http://blog.gopheracademy.com/advent-2014/parsers-lexers/)
+
+- http://www.postgresguide.com
+- http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf
+- http://www.cs.virginia.edu/~evans/cs216/guides/x86.html
+- http://blog.jamesdbloom.com/JVMInternals.html
+- http://blog.altoros.com/golang-internals-part-2-diving-into-the-go-compiler.html
+- http://beej.us/guide/bgnet/output/html/singlepage/bgnet.html
+- https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1?wed
+- http://intronetworks.cs.luc.edu/
+- http://xlinux.nist.gov/dads/
+- http://en.wikipedia.org/wiki/List_of_algorithms
+- http://danluu.com/new-cpu-features/
 - [Git clone in Haskell](http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up)
 - [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
-- [Learning Linux](http://www.tldp.org/LDP/tlk/tlk-toc.html)
-- [Paxos explained](http://harry.me/blog/2014/12/27/neat-algorithms-paxos/?hn=1)
-- [Exact string matching algorithms](http://www-igm.univ-mlv.fr/~lecroq/string/)
-- [Frontend book](https://frontendmasters.gitbooks.io/front-end-handbook/content/tools.html)
-- [Materialize](http://materializecss.com/mobile.html)
-- [Polymer](https://elements.polymer-project.org/)
-- [Semantic UI](http://semantic-ui.com/)
 - [Large Scale JS](http://addyosmani.com/largescalejavascript/)
 
-### Small OS
+### Distributed Systems
 
-- https://bitbucket.org/ctank/ardos-ide/src/?at=master
-- http://antipastohw.blogspot.in/2009/11/4-operating-systems-for-arduino.html
+- [Distributed system lectures/talks](http://research.microsoft.com/apps/catalog/default.aspx?p=1&sb=no&ps=25&t=videos&sf=&s=&r=&vr=166581&ra=)
+- [Distributed Systems principles course](http://dcg.ethz.ch/lectures/podc_allstars/)
+- [Distribute systems course in Go](http://www.cs.cmu.edu/~dga/15-440/F12/syllabus.html)
 
 ### Kernel
 
@@ -287,10 +223,7 @@ title: Kaizen
 ### Maths
 
 - http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/MIT6_042JF10_notes.pdf
-- https://www.cs.princeton.edu/courses/archive/fall06/cos341/handouts/mathcs.pdf
 - [Maths for computer science](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/)
-- [Linear Algebra](https://www.khanacademy.org/math/linear-algebra)
-- [Linear Algebra Brown University](https://www.coursera.org/course/matrix)
 
 ### Compilers
 
@@ -307,8 +240,6 @@ title: Kaizen
 
 ### Read
 
-- B-trees
-- Hash tables
 - Log Structured Merge tree
 - Merkel trees
 - Raft
@@ -324,8 +255,6 @@ title: Kaizen
 - [Linux Internals](http://0xax.gitbooks.io/linux-insides/content/)
 - [JS desing patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript)
 - [Game programming patterns](http://gameprogrammingpatterns.com/index.html)
-- [Games people play](http://www.amazon.co.uk/Games-People-Play-Psychology-Relationships/dp/0141040270)
-- [Games in game theory](http://en.wikipedia.org/wiki/List_of_games_in_game_theory)
 
 #### Deep learning
 
@@ -337,19 +266,11 @@ title: Kaizen
 
 ### Closet
 
-- [Distributed system lectures/talks](http://research.microsoft.com/apps/catalog/default.aspx?p=1&sb=no&ps=25&t=videos&sf=&s=&r=&vr=166581&ra=)
-- [Distributed Systems principles course](http://dcg.ethz.ch/lectures/podc_allstars/)
-- [Distribute systems course in Go](http://www.cs.cmu.edu/~dga/15-440/F12/syllabus.html)
 - [Lambda Calculus](https://www.youtube.com/playlist?list=PL4A05CF0478DAD704)
 - Checkout [projects](https://github.com/karan/Projects)
 - [Haskell](http://www.scs.stanford.edu/11au-cs240h/)
 - [Scala Lectures](https://class.coursera.org/progfun-003/lecture) by Martin Odesky
 - [Reactive Programming](https://class.coursera.org/reactive-001/lecture) M. Odesky
-- [Bioinformatics Algorithms 1](https://www.coursera.org/course/bioinformatics)
-- [Bioinformatics Algorithms 2](https://www.coursera.org/course/bioinformatics2)
-- [Game Theory Tokyo University](https://www.coursera.org/course/welcomegametheory)
-- [Game Theory 1 Stanford](https://www.coursera.org/course/gametheory)
-- [Game Theory 2 Stanford](https://www.coursera.org/course/gametheory2)
 - [SICP Lectures](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/)
 - [Interactive SICP](http://xuanji.appspot.com/isicp/index.html)
 - [Stanford Cryptography 1](https://www.coursera.org/course/crypto)
