@@ -17,9 +17,11 @@ title: Kaizen
 ### Programming
 
 - [Geeks for geeks](http://www.geeksforgeeks.org/)
+- Programming Practice: [InterviewBit](http://interviewbit.com/),
 - Programming Practice: [Euler](http://projecteuler.net/),
 - Programming Practice: [HackerRank](https://www.hackerrank.com/)
 - Programming Practice: [Codeforces](http://codeforces.com/)
+- Programming Practice: [SPOJ](http://spoj.com/)
 - Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
 - [Humblefool's CodeSchool](http://mycodeschool.com/problems) [Winter coding @ MyCodeSchool](http://wintercoding.mycodeschool.com/)
 - [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
@@ -36,8 +38,8 @@ title: Kaizen
 
 #### Language
 
-- Way forward: Java, Python
-- Nicely done: Go, Ruby
+- Way forward: Java, Go
+- Nicely done: Python, Ruby
 - Funky: Scala, Clojure, Elixir
 - Powerful evil: C, C++, Rust, Assembly, LLVM
 - Gray beard: Haskell, Lisp, Scheme, Erlang, OCaml
@@ -54,6 +56,7 @@ title: Kaizen
   + Ruby (Rails)
   + Java (Dropwizard {jackson, guava, guice, jersey, hibernate, gradle, jetty/netty/slf4j}, Vaadin, Grails, Play)
   + Go
+  + Python (Django)
 
 - Framework parts:
   + URL router and handlers
@@ -127,19 +130,11 @@ title: Kaizen
 
 ### Hack
 
-#### Webapps
-
 - Accounting/invoicing app (http://webzash.org/image/tid/3, weave?)
-- Matrimonial app
-- Random notes taking app
 - CloudStack QA crowdsourcing app
 - CloudStack UI (mostly frontend intensive)
 - MergeShack: Code sharing RBAC shack
-- Kaizen list, time keeping/scheduling
-
-#### Mobile
-
-- Offline buffer-app like app
+- Offline buffer-app like mobile app
 
 #### CloudStack
 
@@ -360,11 +355,11 @@ title: Kaizen
 - [Stanford Cryptography 1](https://www.coursera.org/course/crypto)
 - [Stanford Cryptography 2](https://www.coursera.org/course/crypto2)
 
-### Trvl
+### 2016
 
-d-list; Mumbai, Banaras, Geneva, Coorg, Vegas, Reno, DC, SF, SC, Hyd, Blr, Goa, Mysore, Jaipur, Agra, Budapest, London, Paris, Athens, SriLanka; Udaipur; Dublin; Chickmangluru; Surat
-
-tf-list; nepal, bhutan
-t-list; jodhpur, jaisalmer, chandigarh, wagah border, kolkata, chadar-trek, roopkund-trek, leh-ladakh, mcledoganj, dharamshala, manali, spiti, rishikesh, corbett, munna, andaman, lakswadeep, gokarna, darjeeling, almora, sikkim, kerala, kasol, cherrupunji, bhangarh, hampi, kutch, amritsar, assam, diu/daman, pushkar, ranthambore, kumbhalgarh fort, chittorgarh fort, mount abu, alwar
-
-chandigarh: rock garden, sukhna lake, rose garden, timber trail, nepli forest, pinjore gardens, mohali stadium
+- Backend (Java 8, Go), UI stack, Android
+- Programming practice or projects
+- Algorithms
+- Distributed Systems
+- OS + DIY kernel
+- Compilers + DIY compiler
