@@ -231,7 +231,7 @@ title: Kaizen
 - http://stackoverflow.com/questions/1669/learning-to-write-a-compiler
 - http://homepage.ntlworld.com/edmund.grimley-evans/cc500/
 - http://compilers.iecc.com/crenshaw/
-- https://github.com/rui314/8cc
+- https://github.com/rui314/8cc (http://www.sigbus.info/how-i-wrote-a-self-hosting-c-compiler-in-40-days.html)
 - http://bellard.org/tcc/
 - http://llvm.org/docs/tutorial/
 - Compilers [Stanford](https://class.coursera.org/compilers-003/lecture)
