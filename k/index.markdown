@@ -4,6 +4,8 @@ layout: page
 title: Kaizen
 ---
 
+##[/awesome](https://github.com/sindresorhus/awesome)
+
 ### Tip
 
 - [USACO training](http://train.usaco.org/usacogate)
