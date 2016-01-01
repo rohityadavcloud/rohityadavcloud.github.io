@@ -33,6 +33,23 @@ title: Kaizen
 - [Book: Analysis of Algorithms](https://www.coursera.org/course/aofa), [An Introduction to the Analysis of Algorithms](http://aofa.cs.princeton.edu/home/)
 - [Introduction to Programming in Java](http://introcs.cs.princeton.edu/java/home/)
 
+### CloudStack
+
+- Cloudmonkey rewrite in Go?
+- QA automation work: nested tests running etc. (LANGUR)
+- Strongswan (test/merge PR)
+- UI for CloudStack
+- Database upgrades
+- Packer to build systemvm images
+- SystemVM systemd changes
+- Debian8/Ubuntu15.05/CentOS7/Fedora22 packaging
+- Embedded jetty or tomcat
+- Better logging and metrics
+- Better distributed systems: cluster mgmt impl, 0-downtime upgrades, better jobs scheduler etc.
+- VNC, get rid of or improve console proxy
+- VR agent, VR rework
+- IPv6/Quagga work
+
 ### Stack
 
 #### Language
