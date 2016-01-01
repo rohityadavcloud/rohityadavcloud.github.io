@@ -188,7 +188,8 @@ title: Kaizen
 ### Stash
 
 - https://github.com/prakhar1989/awesome-courses
-
+- http://techblog.netflix.com/2015/11/linux-performance-analysis-in-60s.html
+- http://techblog.netflix.com/2015/08/netflix-at-velocity-2015-linux.html
 - http://www.postgresguide.com
 - http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf
 - http://www.cs.virginia.edu/~evans/cs216/guides/x86.html
@@ -257,6 +258,8 @@ title: Kaizen
 - [Automata](https://class.coursera.org/automata-002/lecture) by Ullman
 - [Toy compiler](https://github.com/lsegal/my_toy_compiler), [Writing own compiler](http://gnuu.org/2009/09/18/writing-your-own-toy-compiler/)
 - [Build your own Lisp](http://www.buildyourownlisp.com/contents)
+- http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/
+- Interpretor: http://ruslanspivak.com/lsbasi-part1/
 
 ### Read
 
