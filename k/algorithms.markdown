@@ -28,8 +28,84 @@ http://www.comp.nus.edu.sg/~stevenha/visualization/
     Approximate Search
     Ad Hoc Problems
 
+
+### Gym
+
+## Gym 1 (Intro)
+
+- Time Complexity and Big-O
+- Divide & Conquer algorithms:
+    - Matrix multiplication
+    - Closest Pair
+
+## Gym 2 (Basic DS)
+
+- Arrays
+- Stack: Array based
+- Stack: Linkedlist based
+- Queue: Array based
+- Queue: Linkedlist based
+- Bags
+- Lists: Array based
+- Lists: Linked list based
+- Multiset (maps)
+- Quick Find
+- Quick Union
+- Weighted Quick Union
+- Math
+
+## Gym 3 (Sorting)
+
+- Bubble sort
+- Selection sort
+- Insertion sort
+- Merge sort: recursive
+- Merge sort: iterative
+- Shell sort, 3-way sort
+- 3-way quick sort
+- Quick sort
+- Heap sort
+- Bucket sort
+- Counting sort
+- Binary Search
+- Misc: bit manipulation, two pointers, strings
+
+## Gym 4 (Graphs)
+
+- Undirected graphs
+- Breadth First Search
+- Depth First Search
+- Shortest paths
+- Connected components, Kosaraju-Sharir algorithm
+- Cycle in graph
+- Directed graph
+- Digraph search
+- Strong components
+- Topological Sort (Using Indegree array)
+- Topological Sort (Using DFS)
+- Dijkstra's Shortest Path
+
+## Gym 5 (Trees)
+
+- Heaps, Binary heap: Min/max heaps, priority queue
+- Convex Hull (Graham scan)
+- Binary Search Trees
+- Red-black trees
+- Hash tables: separate chaining and linear probing
+- KD-trees
+
+# Gym 6 (Misc)
+
+- Bloom Filters
+- Huffman coding
+- Leftovers
+
+
 ## Basics
 
+# Basic DS
+
+- Arrays
 - Stack: Array based
 - Stack: Linkedlist based
 - Queue: Array based
@@ -67,11 +143,10 @@ http://www.comp.nus.edu.sg/~stevenha/visualization/
 
 ## Sorting
 
-    ✔ Bubble sort
-    ✔ Selection sort
-    ✔ Insertion sort
-    ✔ Merge sort: recursive
-
+- Bubble sort
+- Selection sort
+- Insertion sort
+- Merge sort: recursive
 - Merge sort: iterative
 - Shell sort, 3-way sort
 - Quick sort
