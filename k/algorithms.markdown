@@ -9,6 +9,33 @@ http://macgyverdev.blogspot.se/2014/04/become-better-programmer-with.html
 Algo visualization:
 http://www.comp.nus.edu.sg/~stevenha/visualization/
 
+### Algorithms
+
+- [Stanford Algorithms 1](https://www.coursera.org/course/algo)
+- [Stanford Algorithms 2](https://www.coursera.org/course/algo2)
+- [InterviewBit](http://interviewbit.com/),
+
+### Maths
+
+- http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/MIT6_042JF10_notes.pdf
+- [Maths for computer science](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/)
+
+### Misc
+
+- [List of DS/Algo](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
+- [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
+- [Geeks for geeks](http://www.geeksforgeeks.org/)
+- [Refernce implementations](https://github.com/kennyledet/Algorithm-Implementations)
+- Programming Practice: [USACO training](http://train.usaco.org/usacogate)
+- Programming Practice: [SPOJ top 100](http://www.spoj.com/problems/classical/sort=-6)
+- Programming Practice: [Euler](http://projecteuler.net/),
+- Programming Practice: [HackerRank](https://www.hackerrank.com/)
+- Programming Practice: [Codeforces](http://codeforces.com/)
+- Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
+- [Book: The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
+- [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
+- [Humblefool's CodeSchool](http://mycodeschool.com/problems) [Winter coding @ MyCodeSchool](http://wintercoding.mycodeschool.com/)
+
 ## Problem types
 
     Dynamic Programming
@@ -254,3 +281,5 @@ http://www.comp.nus.edu.sg/~stevenha/visualization/
 - Gaussian elimination
 - Fast Fourier transform
 - Intractibility, P vs NP, NP-completeness
+- Log Structured Merge tree
+- Merkel trees
