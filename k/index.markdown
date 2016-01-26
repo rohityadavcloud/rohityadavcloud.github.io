@@ -49,7 +49,15 @@ title: Kaizen
 
 - Web backend frameworks:
   + Ruby (Rails)
-  + Java (Dropwizard {jackson, guava, guice, jersey, hibernate, gradle, jetty/netty/slf4j}, Vaadin, Grails, Play)
+  + Modern Java (Dropwizard):
+    - Gradle
+    - Jackson
+    - Guava
+    - Guice
+    - Jetty
+    - Jersey
+    - Log4j with SL4j
+    - Testing: JUnit, Mockito, Selenium
   + Go
   + Python (Django)
 
