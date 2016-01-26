@@ -72,6 +72,16 @@ tagline: List kernel, compiler etc.
 - http://research.microsoft.com/en-us/um/people/simonpj/papers/pj-lester-book/
 - Interpretor: http://ruslanspivak.com/lsbasi-part1/
 
+#### Compiler articles
+
+- http://blog.jamesdbloom.com/JVMInternals.html
+- http://blog.altoros.com/golang-internals-part-2-diving-into-the-go-compiler.html
+
+### Networking
+
+- http://beej.us/guide/bgnet/output/html/singlepage/bgnet.html
+- http://intronetworks.cs.luc.edu/
+
 #### Infrastructure workouts
 
 - Design and implement a durable complex event-processing service with exactly-once semantics.

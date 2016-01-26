@@ -35,6 +35,8 @@ http://www.comp.nus.edu.sg/~stevenha/visualization/
 - [Book: The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
 - [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
 - [Humblefool's CodeSchool](http://mycodeschool.com/problems) [Winter coding @ MyCodeSchool](http://wintercoding.mycodeschool.com/)
+- http://xlinux.nist.gov/dads/
+- http://en.wikipedia.org/wiki/List_of_algorithms
 
 ## Problem types
 

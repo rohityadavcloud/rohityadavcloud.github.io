@@ -5,8 +5,13 @@ title: Kaizen
 ---
 
 ### [/awesome](https://github.com/sindresorhus/awesome)
+
 ### [/algorithms](./algorithms.html)
+
+### [/courses](https://github.com/prakhar1989/awesome-courses)
+
 ### [/systems](./systems.html)
+
 ### [/ai](./ai.html)
 
 ### CloudStack
@@ -122,7 +127,7 @@ title: Kaizen
 
 ### Hack
 
-- Accounting/invoicing app (http://webzash.org/image/tid/3, wave?)
+- Accounting app (webzash, wave)
 - CloudStack QA crowdsourcing app
 - CloudStack UI (mostly frontend intensive)
 - MergeShack: Code sharing RBAC shack
@@ -130,20 +135,10 @@ title: Kaizen
 
 ### Stash
 
-- https://github.com/prakhar1989/awesome-courses
-- http://techblog.netflix.com/2015/11/linux-performance-analysis-in-60s.html
-- http://techblog.netflix.com/2015/08/netflix-at-velocity-2015-linux.html
 - http://www.postgresguide.com
 - http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf
-- http://www.cs.virginia.edu/~evans/cs216/guides/x86.html
-- http://blog.jamesdbloom.com/JVMInternals.html
-- http://blog.altoros.com/golang-internals-part-2-diving-into-the-go-compiler.html
-- http://beej.us/guide/bgnet/output/html/singlepage/bgnet.html
+- https://www.cs.virginia.edu/~evans/cs216/guides/x86.html
 - https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1?wed
-- http://intronetworks.cs.luc.edu/
-- http://xlinux.nist.gov/dads/
-- http://en.wikipedia.org/wiki/List_of_algorithms
-- http://danluu.com/new-cpu-features/
 
 ### Closet
 
