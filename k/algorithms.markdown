@@ -13,7 +13,7 @@ http://www.comp.nus.edu.sg/~stevenha/visualization/
 
 - [Stanford Algorithms 1](https://www.coursera.org/course/algo)
 - [Stanford Algorithms 2](https://www.coursera.org/course/algo2)
-- [InterviewBit](http://interviewbit.com/),
+- [InterviewBit](http://interviewbit.com)
 
 ### Maths
 
@@ -37,6 +37,7 @@ http://www.comp.nus.edu.sg/~stevenha/visualization/
 - [Humblefool's CodeSchool](http://mycodeschool.com/problems) [Winter coding @ MyCodeSchool](http://wintercoding.mycodeschool.com/)
 - http://xlinux.nist.gov/dads/
 - http://en.wikipedia.org/wiki/List_of_algorithms
+- [Competitive Programming v1](http://www.comp.nus.edu.sg/~stevenha/myteaching/competitive_programming/cp1.pdf)
 
 ## Problem types
 
