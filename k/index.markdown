@@ -156,6 +156,7 @@ title: Kaizen
 
 #### Deep learning
 
+- [Deep learning course by Google](https://www.udacity.com/course/deep-learning--ud730)
 - [Deep learning list](http://jmozah.github.io/links/)
 - [Machine Learning](https://www.coursera.org/course/ml)
 - [Neural Network](https://www.coursera.org/course/neuralnets)
