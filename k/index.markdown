@@ -148,10 +148,7 @@ title: Kaizen
 
 ### Closet
 
-- [Git clone in Haskell](http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up)
-- [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
 - [Lambda Calculus](https://www.youtube.com/playlist?list=PL4A05CF0478DAD704)
-- [Haskell](http://www.scs.stanford.edu/11au-cs240h/)
 - [Scala Lectures](https://class.coursera.org/progfun-003/lecture) by Martin Odesky
 - [Reactive Programming](https://class.coursera.org/reactive-001/lecture) M. Odesky
 - [SICP Lectures](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/)
@@ -171,3 +168,20 @@ title: Kaizen
 - [Deep Learning Python tutorial](http://deeplearning.net/tutorial/deeplearning.pdf)
 - [Deep Learning MIT book](http://www.iro.umontreal.ca/~bengioy/dlbook/)
 
+## Haskell
+
+- [Real world haskell](http://book.realworldhaskell.org/read/)
+- [Learn you a haskell book](http://learnyouahaskell.com/recursion) | [YouTube](https://www.youtube.com/playlist?list=PLPqPwGvHPSZB-urE6QFjKYt6AGXcZqJUh)
+- [Haskell Stack tool](http://docs.haskellstack.org/en/stable/README.html)
+- [Haskell Stanford course](http://www.scs.stanford.edu/11au-cs240h/notes/)
+- [What I wish I knew when learning Haskell 2.0](http://dev.stephendiehl.com/hask/#cabal)
+
+### Monad
+- https://stackoverflow.com/questions/44965/what-is-a-monad
+- http://ericlippert.com/category/monads/page/2/
+- http://sean.voisen.org/blog/2013/10/intro-monads-maybe/
+
+### Haskell posts
+
+- [Git clone in Haskell](http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up)
+- LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)

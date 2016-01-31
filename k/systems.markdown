@@ -7,7 +7,6 @@ tagline: List kernel, compiler etc.
 ## Hack
 
 - Tantra - DIY x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
-- LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
 - Toy Distributed file system like ceph/gluster
 - Toy Compiler
 - Toy Database
