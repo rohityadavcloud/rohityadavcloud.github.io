@@ -180,8 +180,10 @@ title: Kaizen
 - https://stackoverflow.com/questions/44965/what-is-a-monad
 - http://ericlippert.com/category/monads/page/2/
 - http://sean.voisen.org/blog/2013/10/intro-monads-maybe/
+- http://mightybyte.github.io/monad-challenges/
 
 ### Haskell posts
 
+- https://www.schoolofhaskell.com/school/starting-with-haskell/basics-of-haskell
 - [Git clone in Haskell](http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up)
 - LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
