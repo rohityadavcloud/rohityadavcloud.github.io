@@ -168,7 +168,7 @@ title: Kaizen
 - [Deep Learning Python tutorial](http://deeplearning.net/tutorial/deeplearning.pdf)
 - [Deep Learning MIT book](http://www.iro.umontreal.ca/~bengioy/dlbook/)
 
-## Haskell
+## Haskell λ
 
 - [Real world haskell](http://book.realworldhaskell.org/read/)
 - [Learn you a haskell book](http://learnyouahaskell.com/recursion) | [YouTube](https://www.youtube.com/playlist?list=PLPqPwGvHPSZB-urE6QFjKYt6AGXcZqJUh)
@@ -187,3 +187,9 @@ title: Kaizen
 - https://www.schoolofhaskell.com/school/starting-with-haskell/basics-of-haskell
 - [Git clone in Haskell](http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up)
 - LLVM based toy programming language [LLVM Toy using Haskell](http://www.stephendiehl.com/llvm/)
+
+## W
+
+- DB locking, transactions, 2-phase commits
+- Concurrency patterns, threads, synchronization
+- Claim/ownership
