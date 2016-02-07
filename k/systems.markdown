@@ -6,7 +6,7 @@ tagline: List kernel, compiler etc.
 
 ## Hack
 
-- Tantra - DIY x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
+- x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
 - Toy Distributed file system like ceph/gluster
 - Toy Compiler
 - Toy Database
@@ -21,39 +21,6 @@ tagline: List kernel, compiler etc.
 - Google tech: Borg, Bigtable, Spanner, Mapreduce, Millwheel, LMCTFY
 - [Quorum read/writes](https://en.wikipedia.org/wiki/Quorum_%28distributed_computing%29)
 - [Vector Clocks](https://en.wikipedia.org/wiki/Vector_clock)
-
-
-### Kernel
-
-- Memory allocation and garbage collection
-- [Eudyptula Challenge: Linux programming](http://eudyptula-challenge.org/) | [Linux Kernel Module Programming](http://www.tldp.org/LDP/lkmpg/2.4/html/book1.htm)
-- [Linux Internals](http://0xax.gitbooks.io/linux-insides/content/)
-- http://pages.cs.wisc.edu/~remzi/OSTEP/
-- http://www.cs.cmu.edu/~410/lecture.html
-- http://warsus.github.io/lions-/
-- https://www.devimperium.com/tutorials/start_your_small_operating_system_in_assembly
-- https://github.com/rust-lang/rust/wiki/Operating-system-development
-- http://littleosbook.github.io/
-- https://sortix.org/
-- OS lectures by Mckusic
-- [Bottom Up Learning](http://www.bottomupcs.com/index.html)
-- [xv6 and 6.828](http://pdos.csail.mit.edu/6.828/2014/schedule.html)
-- [Potato teaching OS](https://github.com/dbader/potatoes)
-- [Adelaideos Teaching OS](http://adelaideos.sourceforge.net)
-- [OSDev books](http://wiki.osdev.org/Books)
-- [GDB](http://beej.us/guide/bggdb/)
-- [OSSTEP](http://pages.cs.wisc.edu/~remzi/OSTEP/)
-- [Stackoverflow resource](http://stackoverflow.com/questions/43180/what-are-some-resources-for-getting-started-in-operating-system-development)
-- [How to Make a Computer Operating System](http://samypesse.github.io/How-to-Make-a-Computer-Operating-System/)
-- [OS Study Guide](http://www.sal.ksu.edu/faculty/tim/ossg/index.html)
-- [How to Kernel basics](http://www.osdever.net/bkerndev/Docs/intro.htm)
-- [JoelG's bootloader stuff](http://joelgompert.com/OS/TableOfContents.htm)
-- [Inside Linux boot process](http://www.ibm.com/developerworks/library/l-linuxboot/index.html)
-- [Kernel boot process](http://duartes.org/gustavo/blog/post/kernel-boot-process/)
-- [How computer boots up](http://duartes.org/gustavo/blog/post/how-computers-boot-up/)
-- [Intro to 8086](http://www.csi.ucd.ie/staff/jcarthy/home/alp/alp-05.pdf)
-- [Writing simple OS from Scratch](http://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf)
-- [OS and related links](http://www.superfrink.net/athenaeum)
 
 ### Compilers
 
