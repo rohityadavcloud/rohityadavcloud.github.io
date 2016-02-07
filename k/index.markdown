@@ -8,9 +8,9 @@ title: Kaizen
 
 ### [/courses](https://github.com/prakhar1989/awesome-courses)
 
-### [/algorithms](./algorithms.html)
+### [/algorithms](./algorithms)
 
-### [/systems](./systems.html)
+### [/systems](./systems)
 
 ### CloudStack
 
