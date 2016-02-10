@@ -33,20 +33,10 @@ title: Kaizen
 
 #### Language
 
-- Way forward: Java, Go
-- Nicely done: Python, Ruby
-- Funky: Scala, Clojure, Elixir
-- Powerful evil: C, C++, Rust, Assembly, LLVM
-- Gray beard: Haskell, Lisp, Scheme, Erlang, OCaml
-
-#### Web Development
-
-- Frontend langs: HTML5, CSS3, JavaScipt (ES5/6), TypeScript, CoffeeScript, Less/Saas
-- Browser tech: Websockets, local storage
-- Web dev tools: Grunt, Gulp, Bower, NPM
-- JS Frameworks: Backbone, Angular, React, Meteor
-- UI frontend framework: Bootstrap, Material Design (Google)
-
+- Java
+- Go, Python, Ruby
+- Haskell, Lisp
+- C, C++, Scala
 - Web backend frameworks:
   + Ruby (Rails)
   + Modern Java (Dropwizard):
@@ -60,6 +50,14 @@ title: Kaizen
     - Testing: JUnit, Mockito, Selenium
   + Go
   + Python (Django)
+
+#### Web Development
+
+- Frontend langs: HTML5, CSS3, JavaScipt (ES5/6), TypeScript, CoffeeScript, Less/Saas
+- Browser tech: Websockets, local storage
+- Web dev tools: Grunt, Gulp, Bower, NPM
+- JS Frameworks: Backbone, Angular, React, Meteor
+- UI frontend framework: Bootstrap, Material Design (Google)
 
 - Framework parts:
   + URL router and handlers
@@ -122,6 +120,7 @@ title: Kaizen
 
 - VCS: Git/Github, Mercurial/Bitbucket
 - Automation: Ansible, Chef, Bash
+- Containers: Docker, Kubernetes, CoreOS
 - Build system: Maven, Gradle, CMake, Makefiles
 - CI: Jenkins, Go CD, BuildBot, Strider
 - Logging: Sentry, Graylog, Scribe, Logstash
@@ -129,7 +128,7 @@ title: Kaizen
 - Tracing: Zipkin/Dapper,
 - Platform: Libvirt/qemu, Linux
 - Locking/consensus: Etcd, Zookeeper
-- Experimental: Docker, Weave, Kubernetes, Mesos, Vagrant, Packer, Serf/Consul, Terraform, Vault, Capgemini/Apollo
+- Experimental: Mesos, Vagrant, Packer, Serf/Consul, Terraform, Vault, Capgemini/Apollo
 
 ### Hack
 
