@@ -1,15 +1,7 @@
 ---
 layout: page
 title: Systems
-tagline: List kernel, compiler etc.
 ---
-
-## Hack
-
-- x86 kernel [JS linux](https://github.com/levskaya/jslinux-deobfuscated)
-- Toy Distributed file system like ceph/gluster
-- Toy Compiler
-- Toy Database
 
 ### Distributed Systems
 

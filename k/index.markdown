@@ -12,52 +12,7 @@ title: Kaizen
 
 ### [/systems](./systems)
 
-### CloudStack
-
-- Cloudmonkey tests, rewrite (Python/Go)
-- QA automation work: nested tests running etc. (LANGUR)
-- Strongswan (test/merge PR)
-- UI for CloudStack
-- Database upgrades
-- Packer to build systemvm images
-- SystemVM systemd changes
-- Debian8/Ubuntu15.05/CentOS7/Fedora22 packaging
-- Embedded jetty or tomcat
-- Better logging and metrics
-- Better distributed systems: cluster mgmt impl, 0-downtime upgrades, better jobs scheduler etc.
-- VNC, get rid of or improve console proxy
-- VR agent, VR rework
-- IPv6/Quagga work
-
-### Stack
-
-#### Language
-
-- Java
-- Go, Python, Ruby
-- Haskell, Lisp
-- C, C++, Scala
-- Web backend frameworks:
-  + Ruby (Rails)
-  + Modern Java (Dropwizard):
-    - Gradle
-    - Jackson
-    - Guava
-    - Guice
-    - Jetty
-    - Jersey
-    - Log4j with SL4j
-    - Testing: JUnit, Mockito, Selenium
-  + Go
-  + Python (Django)
-
-#### Web Development
-
-- Frontend langs: HTML5, CSS3, JavaScipt (ES5/6), TypeScript, CoffeeScript, Less/Saas
-- Browser tech: Websockets, local storage
-- Web dev tools: Grunt, Gulp, Bower, NPM
-- JS Frameworks: Backbone, Angular, React, Meteor
-- UI frontend framework: Bootstrap, Material Design (Google)
+## Web Development
 
 - Framework parts:
   + URL router and handlers
@@ -129,14 +84,6 @@ title: Kaizen
 - Platform: Libvirt/qemu, Linux
 - Locking/consensus: Etcd, Zookeeper
 - Experimental: Mesos, Vagrant, Packer, Serf/Consul, Terraform, Vault, Capgemini/Apollo
-
-### Hack
-
-- Accounting app (webzash, wave)
-- CloudStack QA crowdsourcing app
-- CloudStack UI (mostly frontend intensive)
-- MergeShack: Code sharing RBAC shack
-- Offline buffer-app like mobile app
 
 ### Stash
 
