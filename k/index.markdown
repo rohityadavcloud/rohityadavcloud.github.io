@@ -57,34 +57,6 @@ title: Kaizen
     * cors
     * acceptlang, acceptflags (headers)
 
-#### APIs
-
-- http://swagger.io/
-- https://apiary.io/
-- https://apiblueprint.org/#get-started
-
-#### Persistence and Processing
-
-- DB: MySQL, PostgreSQL, SQLite, ElasticSearch, Redis, Memcache
-- DB ORMs/frameworks: SQLAlchemy, Liquibase, Jooq, Flyway
-- Queue: Kafka, RabbitMQ
-- Task queue: Celery, Gearman
-- RPC: Protocol Buffers, Thrift, Cap n Proto
-
-#### Devops and Infra
-
-- VCS: Git/Github, Mercurial/Bitbucket
-- Automation: Ansible, Chef, Bash
-- Containers: Docker, Kubernetes, CoreOS
-- Build system: Maven, Gradle, CMake, Makefiles
-- CI: Jenkins, Go CD, BuildBot, Strider
-- Logging: Sentry, Graylog, Scribe, Logstash
-- Monitoring: Graphite, Promethius, Sensu, Munin, Nagios
-- Tracing: Zipkin/Dapper,
-- Platform: Libvirt/qemu, Linux
-- Locking/consensus: Etcd, Zookeeper
-- Experimental: Mesos, Vagrant, Packer, Serf/Consul, Terraform, Vault, Capgemini/Apollo
-
 ### Stash
 
 - http://www.postgresguide.com
