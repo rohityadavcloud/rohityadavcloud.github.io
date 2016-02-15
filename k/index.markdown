@@ -59,6 +59,7 @@ title: Kaizen
 
 ### Stash
 
+- http://lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf
 - http://www.postgresguide.com
 - http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf
 - https://www.cs.virginia.edu/~evans/cs216/guides/x86.html
