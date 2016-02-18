@@ -21,7 +21,7 @@ with my [LinkedIn](https://linkedin.com/in/yadavcloud),
 assignments, [drop a line](mailto:rohit@yadav.cloud).
 
 I started as a hobbyist contributing to few opensource projects such as
-[VLC/VLC-android](http://git.videolan.org/?p=vlc-ports/android.git;a=search;h=HEAD;s=Rohit+Yadav;st=author),
+[VLC/VLC-android](http://git.videolan.org/?p=vlc%2Fvlc-android.git&a=search&h=HEAD&st=author&s=Rohit+Yadav),
 [VLMC](http://trac.videolan.org/vlmc) and a
 [few](http://cgit.haiku-os.org/haiku/commit/?id=hrev39379)
 [patches](http://cgit.haiku-os.org/haiku/commit/?id=hrev39378) to HaikuOS. My
