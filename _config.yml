@@ -4,7 +4,7 @@ email: rohit@yadav.cloud
 description: >
   Writings, essays, blog posts and talks by Rohit Yadav.
 baseurl: ""
-url: http://bhaisaab.org
+url: http://yadav.cloud
 
 markdown: kramdown
 timezone: Asia/Kolkata

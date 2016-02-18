@@ -11,7 +11,7 @@ to MySQL to NFS, all in one box. My motivation was to create a VM with which I
 can build, test Apache CloudStack (ACS) locally and show that one can do it in
 less than 30 minutes given ample bandwidth.
 
-Note: this should work for ACS 4.3.0 and above. This how-to post may get
+Note: this should work for ACS 4.5.0 and above. This how-to post may get
 outdated in future, so please
 [read the latest docs](http://docs.cloudstack.apache.org/projects/cloudstack-installation/en/latest/)
 and/or [read the latest docs on KVM host installation](http://cloudstack-installation.readthedocs.org/en/latest/hypervisor/kvm.html).
@@ -110,7 +110,7 @@ well. One can also build from source and [host their own repositories](http://cl
 We need to install the CloudStack management server, MySQL server and setup
 the management server database:
 
-    echo deb http://packages.bhaisaab.org/cloudstack/upstream/debian/4.3 ./ >> /etc/apt/sources.list.d/acs.list
+    echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.5 ./ >> /etc/apt/sources.list.d/acs.list
     apt-get update -y
     apt-get install cloudstack-management cloudstack-common mysql-server
     # pick any suitable root password for MySQL server
@@ -153,9 +153,9 @@ We'll setup NFS and preseed systemvm.
 
 I prefer to download the systemvm first and then preseed it:
 
-    wget http://packages.shapeblue.com/systemvmtemplate/4.3/systemvm64template-4.3-kvm.qcow2.bz2
+    wget http://packages.shapeblue.com/systemvmtemplate/4.5/4.5.2/systemvm64template-4.5-kvm.qcow2.bz2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvm64template-2014-09-11-4.3-kvm.qcow2.bz2 -h kvm \
+              -m /export/secondary -f systemvm64template-4.5-kvm.qcow2.bz2 -h kvm \
               -o localhost -r cloud -d cloudpassword
 
 ## KVM and agent setup
