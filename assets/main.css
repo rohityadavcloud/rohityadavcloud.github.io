@@ -10,6 +10,11 @@ body {
   font-size: 21px;
 }
 
+.page-header nav a {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .container {
   max-width: 800px;
 }
