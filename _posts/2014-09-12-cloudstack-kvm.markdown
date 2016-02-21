@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to install CloudStack with KVM host
+title: How to setup CloudStack with KVM host
 ---
 
 This is a how-to guide on setting up CloudStack on Ubuntu and with KVM host in
