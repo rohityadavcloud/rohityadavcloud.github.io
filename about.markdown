@@ -17,7 +17,7 @@ also the author and primary maintainer of Apache CloudStack
 [CloudMonkey](http://github.com/apache/cloudstack-cloudmonkey). Help yourself
 with my [LinkedIn](https://linkedin.com/in/bhaisaab),
 [Github](https://github.com/bhaisaab) and
-[Twitter](https://twitter.com/rohityadavz). For consulting and short-term
+[Twitter](https://twitter.com/_bhaisaab). For consulting and short-term
 assignments, [drop a line](mailto:rohit@scaleninja.com).
 
 I started as a hobbyist contributing to few opensource projects such as
