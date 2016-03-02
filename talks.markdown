@@ -5,6 +5,8 @@ tagline:
 permalink: /talks/
 ---
 
+[Improving CloudStack for Operators](/files/talks/london-meetup-cloudstack-operators.pdf), CloudStack EU User Group Meetup, London, 3 March 2016
+
 [Getting Started as a CloudStack Developer](/files/talks/ccceu15-intro-for-developers.pdf) [(Video)](https://www.youtube.com/watch?v=0mEtPxWBr2c), CCCEU Dublin, 9 October 2015
 
 [Integrating CloudStack in your Organization using Single Sign On](/files/talks/ccceu15-samlsso.pdf) [(Video)](https://www.youtube.com/watch?v=QLTIZQRNhWA), CCCEU Dublin, 8 October 2015
