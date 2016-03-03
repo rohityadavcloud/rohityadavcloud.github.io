@@ -7,7 +7,8 @@ title: Systems
 
 - [Distributed system lectures/talks](http://research.microsoft.com/apps/catalog/default.aspx?p=1&sb=no&ps=25&t=videos&sf=&s=&r=&vr=166581&ra=)
 - [Distributed Systems principles course](http://dcg.ethz.ch/lectures/podc_allstars/)
-- [Distribute systems course in Go](http://www.cs.cmu.edu/~dga/15-440/F12/syllabus.html)
+- [Distribute systems course in Go](http://www.cs.cmu.edu/~dga/15-440/S14/syllabus.html)
+- [Advanced and Distributed Operating Systems](http://www.cs.cmu.edu/~dga/15-712/F14/syllabus.html)
 - Raft
 - Consistent hashing
 - Google tech: Borg, Bigtable, Spanner, Mapreduce, Millwheel, LMCTFY
