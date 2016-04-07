@@ -59,6 +59,7 @@ title: Kaizen
 
 ### Stash
 
+- http://www.deeplearningbook.org/
 - http://www.programming-idioms.org/
 - http://www.codekatas.org/
 - http://c2.com/cgi/wiki?JavaIdioms
