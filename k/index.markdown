@@ -62,8 +62,8 @@ title: Kaizen
 - http://www.deeplearningbook.org/
 - http://www.programming-idioms.org/
 - http://www.codekatas.org/
-- http://c2.com/cgi/wiki?JavaIdioms
 - codekata.com
+- http://c2.com/cgi/wiki?JavaIdioms
 - http://lars-lab.jpl.nasa.gov/JPL_Coding_Standard_C.pdf
 - http://www.postgresguide.com
 - http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf
