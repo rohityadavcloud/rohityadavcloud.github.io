@@ -4,7 +4,7 @@ email: rohit@scaleninja.com
 description: >
   Writings, essays, blog posts and talks by Rohit Yadav.
 baseurl: ""
-url: http://bhaisaab.org
+url: http://rohit.yadav.xyz
 
 markdown: kramdown
 timezone: Asia/Kolkata

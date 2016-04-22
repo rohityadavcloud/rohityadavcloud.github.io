@@ -21,7 +21,7 @@ Enable nested virtualization on KVM host:
 
 Next, we will need to patch and build our own qemu-system package. To do that,
 either build qemu with the following patch or get the [source qemu package from Ubuntu](http://packages.ubuntu.com/trusty-updates/qemu)
-and build your own. I've some prebuilt packages [here](http://people.apache.org/~bhaisaab/qemu).
+and build your own. I've some prebuilt packages [here](http://home.apache.org/~bhaisaab/qemu).
 
 As an example, the following worked for me on Ubuntu 14.04.2:
 

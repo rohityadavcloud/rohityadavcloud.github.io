@@ -84,7 +84,7 @@ simplicity of the distribution.
 
 Finally, I hit the jackpot with Debian! Debian Wheezy just worked, took me some
 time to create it from scratch (more than ten times) and figure out the correct
-configurations. The new appliance is available for download, [get DevCloud 2.0](http://people.apache.org/~bhaisaab/cloudstack/devcloud/devcloud2.ova)
+configurations. The new appliance is available for download, [get DevCloud 2.0](http://home.apache.org/~bhaisaab/cloudstack/devcloud/devcloud2.ova)
 (867MB, md5checksum: 144b41193229ead4c9b3213c1c40f005).
 
 Install VirtualBox and import the new DevCloud2 appliance and start it. In
@@ -129,7 +129,7 @@ iso. Create a new VM in VirtualBox with Debian/Linux as the distro, 2G RAM, 20G
 or more disk and two nics: host-only with promiscuous mode "allow-all" and a NAT
 adapter. Next, install a base Debian system with linux-kernel-pae (generic),
 and openssh-server. You may download my [base system from
-here](http://people.apache.org/~bhaisaab/vms/debian-wheezy-basex86.ova).
+here](http://home.apache.org/~bhaisaab/vms/debian-wheezy-basex86.ova).
 
 Install required tools and Xen-i386:
 

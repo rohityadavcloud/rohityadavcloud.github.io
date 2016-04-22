@@ -15,9 +15,9 @@ committer](https://github.com/apache/cloudstack/graphs/contributors) and a PMC
 member of the [Apache CloudStack](http://cloudstack.apache.org) project.  I'm
 also the author and primary maintainer of Apache CloudStack
 [CloudMonkey](http://github.com/apache/cloudstack-cloudmonkey). Help yourself
-with my [LinkedIn](https://linkedin.com/in/bhaisaab),
-[Github](https://github.com/bhaisaab) and
-[Twitter](https://twitter.com/_bhaisaab). For consulting and short-term
+with my [LinkedIn](https://www.linkedin.com/in/rohit-yadav-59749196),
+[Github](https://github.com/rhtyd) and
+[Twitter](https://twitter.com/rhtyd). For consulting and short-term
 assignments, [drop a line](mailto:rohit@scaleninja.com).
 
 I started as a hobbyist contributing to few opensource projects such as
