@@ -5,6 +5,8 @@ title: Systems
 
 ### Distributed Systems
 
+- [Intro to distributed systems - mixu](http://book.mixu.net/distsys/single-page.html)
+- [Intro to distributed systems by Aphyr](https://github.com/aphyr/distsys-class)
 - [Distributed system lectures/talks](http://research.microsoft.com/apps/catalog/default.aspx?p=1&sb=no&ps=25&t=videos&sf=&s=&r=&vr=166581&ra=)
 - [Distributed Systems principles course](http://dcg.ethz.ch/lectures/podc_allstars/)
 - [Distribute systems course in Go](http://www.cs.cmu.edu/~dga/15-440/S14/syllabus.html)
@@ -14,6 +16,8 @@ title: Systems
 - Google tech: Borg, Bigtable, Spanner, Mapreduce, Millwheel, LMCTFY
 - [Quorum read/writes](https://en.wikipedia.org/wiki/Quorum_%28distributed_computing%29)
 - [Vector Clocks](https://en.wikipedia.org/wiki/Vector_clock)
+- [What distributed systems engg should know](http://the-paper-trail.org/blog/distributed-systems-theory-for-the-distributed-systems-engineer/)
+- [Yet another reading list](http://dancres.github.io/Pages/)
 
 ### Compilers
 
