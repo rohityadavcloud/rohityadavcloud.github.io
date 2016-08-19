@@ -9,6 +9,10 @@ http://macgyverdev.blogspot.se/2014/04/become-better-programmer-with.html
 Algo visualization:
 http://www.comp.nus.edu.sg/~stevenha/visualization/
 
+Lang: C99, C++14, Java8, Go, Python3
+
+Learn: Haskell, Elixir/Erlang, Scala
+
 ### OJ and competition
 
 - [SPOJ](http://www.spoj.com/problems/classical/sort=-6)
