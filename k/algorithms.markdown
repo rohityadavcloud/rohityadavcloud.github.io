@@ -9,6 +9,23 @@ http://macgyverdev.blogspot.se/2014/04/become-better-programmer-with.html
 Algo visualization:
 http://www.comp.nus.edu.sg/~stevenha/visualization/
 
+### OJ and competition
+
+- [SPOJ](http://www.spoj.com/problems/classical/sort=-6)
+- [TopCoder](https://www.topcoder.com/)
+- [CodeChef](https://www.codechef.com/)
+- [Codeforces](http://codeforces.com/)
+- [CodeJam](https://code.google.com/codejam)
+- [Project Euler](http://projecteuler.net/)
+- [USACO training](http://train.usaco.org/usacogate)
+- [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
+
+### OJ Preps and Jobs
+
+- [InterviewBit](https://www.interviewbit.com/)
+- [HackerEarth](https://www.hackerearth.com/)
+- [HackerRank](https://www.hackerrank.com/)
+
 ### Algorithms
 
 - [Stanford Algorithms 1](https://www.coursera.org/course/algo)
@@ -22,16 +39,10 @@ http://www.comp.nus.edu.sg/~stevenha/visualization/
 
 ### Misc
 
+- [Topcoder Algo tutorials](https://www.topcoder.com/community/data-science/data-science-tutorials/)
 - [List of DS/Algo](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
-- [Topcoder Algo tutorials](http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index)
 - [Geeks for geeks](http://www.geeksforgeeks.org/)
 - [Refernce implementations](https://github.com/kennyledet/Algorithm-Implementations)
-- Programming Practice: [USACO training](http://train.usaco.org/usacogate)
-- Programming Practice: [SPOJ top 100](http://www.spoj.com/problems/classical/sort=-6)
-- Programming Practice: [Euler](http://projecteuler.net/),
-- Programming Practice: [HackerRank](https://www.hackerrank.com/)
-- Programming Practice: [Codeforces](http://codeforces.com/)
-- Programming Practice: [UVa](http://uva.onlinejudge.org), [UVa Tool](http://uhunt.felix-halim.net/id/0)
 - [Book: The Algo book by Robert Sedgewick](http://algs4.cs.princeton.edu/home/)
 - [Algorithms camp](http://www.youtube.com/watch?v=vZ2Wn6Ly8Ok&playnext=1&list=PL713C10F05D6BB7BF)
 - [Humblefool's CodeSchool](http://mycodeschool.com/problems) [Winter coding @ MyCodeSchool](http://wintercoding.mycodeschool.com/)
