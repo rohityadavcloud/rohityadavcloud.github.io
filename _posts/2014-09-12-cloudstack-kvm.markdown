@@ -110,7 +110,7 @@ well. One can also build from source and [host their own repositories](http://cl
 We need to install the CloudStack management server, MySQL server and setup
 the management server database:
 
-    echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.5 ./ >> /etc/apt/sources.list.d/acs.list
+    echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.5 / >> /etc/apt/sources.list.d/acs.list
     apt-get update -y
     apt-get install cloudstack-management cloudstack-common mysql-server
     # pick any suitable root password for MySQL server
