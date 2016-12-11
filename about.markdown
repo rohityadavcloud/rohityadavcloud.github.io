@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="/assets/avatar-large.jpg" class="pull-left" style="margin-top: 5px; margin-right:10px"/>
+<img src="/assets/avatar-large.jpg" class="pull-left" style="margin-top: 5px; margin-right:10px" width="100"/>
 
 [Namaste](http://en.wikipedia.org/wiki/Namaste)! I'm Rohit Yadav, founder of
 [ScaleNinja](http://www.scaleninja.com) and a software architect at
