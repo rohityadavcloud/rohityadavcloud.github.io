@@ -7,6 +7,7 @@ title: Systems
 
 - [Intro to distributed systems - mixu](http://book.mixu.net/distsys/single-page.html)
 - [Intro to distributed systems by Aphyr](https://github.com/aphyr/distsys-class)
+- [System Design Primer](https://github.com/donnemartin/system-design-primer)
 - [Distributed system lectures/talks](http://research.microsoft.com/apps/catalog/default.aspx?p=1&sb=no&ps=25&t=videos&sf=&s=&r=&vr=166581&ra=)
 - [Distributed Systems principles course](http://dcg.ethz.ch/lectures/podc_allstars/)
 - [Distribute systems course in Go](http://www.cs.cmu.edu/~dga/15-440/S14/syllabus.html)
