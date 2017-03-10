@@ -1,6 +1,6 @@
 title: रोहित यादव
 author: Rohit Yadav
-email: rohit@scaleninja.com
+email: rohit@yadav.xyz
 description: >
   Writings, essays, blog posts and talks by Rohit Yadav.
 baseurl: ""
@@ -14,6 +14,11 @@ lsi: false
 exclude: ['README.markdown']
 highlighter: rouge
 permalink: logs/:title/
+
+collections:
+  algorithms:
+    output: true
+    permalink: /algorithms/:path
 
 gems:
 - jekyll-mentions
