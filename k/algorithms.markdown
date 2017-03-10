@@ -32,8 +32,11 @@ Learn: Haskell, Elixir/Erlang, Scala
 
 ### Algorithms
 
-- [Stanford Algorithms 1](https://www.coursera.org/course/algo)
-- [Stanford Algorithms 2](https://www.coursera.org/course/algo2)
+- [Algo1](https://www.coursera.org/learn/algorithms-divide-conquer/home/week/1)
+- [Algo2](https://www.coursera.org/learn/algorithms-graphs-data-structures/home/welcome)
+- [Algo3](https://www.coursera.org/learn/algorithms-greedy/home/welcome)
+- [Algo4](https://www.coursera.org/learn/algorithms-npcomplete/home/welcome)
+
 - [InterviewBit](http://interviewbit.com)
 
 ### Maths
