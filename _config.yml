@@ -4,7 +4,8 @@ email: rohit@scaleninja.com
 description: >
   Blog posts and talks by Rohit Yadav.
 baseurl: ""
-url: http://rhtyd.in
+url: https://rhtyd.in
+enforce_ssl: rhtyd.in
 
 markdown: kramdown
 timezone: Asia/Kolkata
