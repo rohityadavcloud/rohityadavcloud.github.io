@@ -1,10 +1,10 @@
 title: रोहित यादव
 author: Rohit Yadav
-email: rohit@yadav.xyz
+email: rohit@scaleninja.com
 description: >
-  Writings, essays, blog posts and talks by Rohit Yadav.
+  Blog posts and talks by Rohit Yadav.
 baseurl: ""
-url: http://rohit.yadav.xyz
+url: http://rhtyd.in
 
 markdown: kramdown
 timezone: Asia/Kolkata
