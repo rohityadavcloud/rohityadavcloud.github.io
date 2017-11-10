@@ -1,5 +1,7 @@
 ---
 layout: post
+category: cloudstack
+highlight: primary
 title: How to setup CloudStack with KVM host
 ---
 

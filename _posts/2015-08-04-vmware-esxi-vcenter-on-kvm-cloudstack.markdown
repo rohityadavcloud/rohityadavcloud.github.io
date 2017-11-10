@@ -1,5 +1,7 @@
 ---
 layout: post
+category: cloudstack
+highlight: primary
 title: VMware ESXi and vCenter on KVM with CloudStack
 ---
 

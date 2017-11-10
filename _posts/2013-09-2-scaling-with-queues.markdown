@@ -1,5 +1,7 @@
 ---
 layout: post
+category: systems
+highlight: success
 title: Scaling with Queues
 ---
 

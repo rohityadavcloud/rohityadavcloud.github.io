@@ -1,5 +1,7 @@
 ---
 layout: post
+category: cloudstack
+highlight: primary
 title: Building CloudStack SystemVMs
 ---
 

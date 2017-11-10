@@ -1,5 +1,7 @@
 ---
 layout: post
+category: linux
+highlight: danger
 title: Moving to a Bigger Disk
 ---
 

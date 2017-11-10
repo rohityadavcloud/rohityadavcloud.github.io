@@ -1,5 +1,7 @@
 ---
 layout: post
+category: systems
+highlight: success
 title: Fast Storage with RocksDB
 ---
 

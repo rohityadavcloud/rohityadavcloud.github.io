@@ -47,8 +47,9 @@ body {
 }
 
 .page-content {
-  padding: 10px;
-  min-height: 540px;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 420px;
 }
 
 .post-meta {
