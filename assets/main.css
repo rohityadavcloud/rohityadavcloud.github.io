@@ -18,8 +18,6 @@ body {
 }
 
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
   max-width: 900px;
   background-color: #fff;
 }
