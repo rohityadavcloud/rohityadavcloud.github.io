@@ -10,9 +10,9 @@ permalink: /about/
 [ScaleNinja](http://www.scaleninja.com) and a software architect at
 [ShapeBlue](http://shapeblue.com).
 
-I'm an [active
-committer](https://github.com/apache/cloudstack/graphs/contributors) and a PMC
-member of the [Apache CloudStack](http://cloudstack.apache.org) project.  I'm
+I'm a [PMC](http://www.apache.org/foundation/governance/pmcs.html) member and the
+[#1 committer](https://github.com/apache/cloudstack/graphs/contributors)
+of the [Apache CloudStack](http://cloudstack.apache.org) project. I'm
 also the author and primary maintainer of Apache CloudStack
 [CloudMonkey](http://github.com/apache/cloudstack-cloudmonkey). Help yourself
 with my [LinkedIn](https://www.linkedin.com/in/rohit-yadav-59749196),
@@ -20,10 +20,8 @@ with my [LinkedIn](https://www.linkedin.com/in/rohit-yadav-59749196),
 [Twitter](https://twitter.com/rhtyd). For consulting and short-term
 assignments, [drop a line](mailto:rohit@scaleninja.com).
 
-I started as a hobbyist contributing to few opensource projects such as
+In the past, I've contributed to other opensource projects such as
 [VLC/VLC-android](http://git.videolan.org/?p=vlc%2Fvlc-android.git&a=search&h=HEAD&st=author&s=Rohit+Yadav),
 [VLMC](http://trac.videolan.org/vlmc) and a
 [few](http://cgit.haiku-os.org/haiku/commit/?id=hrev39379)
-[patches](http://cgit.haiku-os.org/haiku/commit/?id=hrev39378) to HaikuOS. My
-hobbies in the physical world includes playing [bansuri](https://en.wikipedia.org/wiki/Bansuri),
-beatboxing, swimming and working out in the gym.
+[patches](http://cgit.haiku-os.org/haiku/commit/?id=hrev39378) to HaikuOS.
