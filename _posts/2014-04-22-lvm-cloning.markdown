@@ -3,7 +3,7 @@ layout: post
 category: linux
 highlight: danger
 title: Moving to a Bigger Disk
-redirect_from: "/logs/lvm-cloning"
+redirect_from: "/logs/lvm-cloning/"
 ---
 
 This post would describe a painless disk migration strategy when moving your

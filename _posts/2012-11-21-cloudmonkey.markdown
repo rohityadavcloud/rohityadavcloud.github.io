@@ -3,7 +3,7 @@ layout: post
 category: cloudstack
 highlight: primary
 title: CloudStack CloudMonkey
-redirect_from: "/logs/cloudmonkey"
+redirect_from: "/logs/cloudmonkey/"
 ---
 
 About 2-3 weeks ago I started writing a CLI (command line interface) for [Apache CloudStack](http://cloudstack.apache.org). I researched some options and finally chose Python and cmd. Python comes preinstalled on almost all Linux distros and Mac, and cmd is a standard package in Python with which one can write a tool which can work as a command line tool and as an interactive shell interpretor. I named it `cloudmonkey` after the project's mascot.

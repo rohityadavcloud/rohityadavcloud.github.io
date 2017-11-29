@@ -3,7 +3,7 @@ layout: post
 category: systems
 highlight: success
 title: Scaling with Queues
-redirect_from: "/logs/scaling-with-queues"
+redirect_from: "/logs/scaling-with-queues/"
 ---
 
 <div class="post-image">

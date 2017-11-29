@@ -3,7 +3,7 @@ layout: post
 category: cloudstack
 highlight: primary
 title: VMware ESXi and vCenter on KVM with CloudStack
-redirect_from: "/logs/vmware-esxi-vcenter-on-kvm-cloudstack"
+redirect_from: "/logs/vmware-esxi-vcenter-on-kvm-cloudstack/"
 ---
 
 I've two KVM hosts based on Ubuntu 14.04 and 15.04 that I use for CloudStack
