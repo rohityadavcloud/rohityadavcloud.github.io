@@ -1,19 +1,17 @@
-title: रohit Yadav
+title: Rohit Yadav
 author: Rohit Yadav
-email: rohit@scaleninja.com
+email: rohit@yadav.cloud
 description: >
   Blog posts and talks by Rohit Yadav.
+
 baseurl: ""
 url: https://rhtyd.in
 enforce_ssl: rhtyd.in
 
-markdown: kramdown
 timezone: Asia/Kolkata
 encoding: "utf-8"
-future: true
-lsi: false
 exclude: ['README.markdown']
-highlighter: rouge
+
 permalink: logs/:title/
 
 collections:

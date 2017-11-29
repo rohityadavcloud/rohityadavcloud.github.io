@@ -38,7 +38,9 @@ Next, we need to do bunch of things:
 Let's start by installing some basic packages, assuming you're root or have `sudo`
 powers:
 
+```bash
     apt-get install openntpd openssh-server sudo vim htop tar build-essential
+```
 
 Make sure root is able to ssh using password, fix in /etc/ssh/sshd_config.
 
