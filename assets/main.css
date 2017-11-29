@@ -40,6 +40,14 @@ body {
   background-image: url("/assets/linkedin.png");
 }
 
+.acs {
+  background-image: url("/assets/acs.png");
+}
+
+.apache {
+  background-image: url("/assets/apache.png");
+}
+
 .topright {
   float: right;
   display: block;
@@ -57,9 +65,8 @@ and (max-width : 750px) {
   span.pagetop b { display: block; }
 }
 
-
 .page-header {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .page-header nav {
@@ -104,7 +111,7 @@ and (max-width : 750px) {
 .page-content {
   padding-left: 10px;
   padding-right: 10px;
-  min-height: 550px;
+  min-height: 500px;
 }
 
 .post-meta {
