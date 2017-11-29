@@ -3,6 +3,61 @@ body {
   background-color: #eee;
 }
 
+.logo {
+  background-position: .1em;
+  background-repeat: no-repeat;
+  background-size: 1.25em 1.25em;
+  letter-spacing: 1.1em;
+  line-height: 1.25em;
+  padding-top: .15em;
+}
+
+.monkey {
+  background-image: url("/assets/m.png");
+}
+
+.gilheri {
+  background-image: url("/assets/g.png");
+}
+
+.heart {
+  background-image: url("/assets/heart.png");
+}
+
+.email {
+  background-image: url("/assets/email.png");
+}
+
+.github {
+  background-image: url("/assets/github.png");
+}
+
+.twitter {
+  background-image: url("/assets/twitter.png");
+}
+
+.linkedin {
+  background-image: url("/assets/linkedin.png");
+}
+
+.topright {
+  float: right;
+  display: block;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+@media only screen
+and (min-width : 300px)
+and (max-width : 750px) {
+  #rmain { width: 100%; }
+  span.pagetop { display: block; }
+  span.pagetop b { display: block; }
+}
+
+
 .page-header {
   margin-top: 10px;
 }
@@ -18,7 +73,7 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   background-color: #fff;
 }
 

@@ -3,6 +3,7 @@ layout: post
 category: systems
 highlight: default
 title: CADE9
+redirect_from: "/logs/cade9"
 ---
 
 CADE9 is my small embedded project consisting of ATmega32 microcontroller with custom hardware which I hand soldered on a matrix board. It uses the open source [cocoOS](http://www.cocoos.net) as scheduler. On top of CADE9 one can implement classic arcade games like snakes, pong, bricks, breakout etc. (arCADE games with max. displayable score limit of 9, so CADE9 :)

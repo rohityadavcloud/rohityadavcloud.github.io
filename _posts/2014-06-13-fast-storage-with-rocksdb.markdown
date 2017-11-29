@@ -3,6 +3,7 @@ layout: post
 category: systems
 highlight: success
 title: Fast Storage with RocksDB
+redirect_from: "/logs/fast-storage-with-rocksdb"
 ---
 
 <div class="post-image">

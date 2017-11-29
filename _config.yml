@@ -5,14 +5,14 @@ description: >
   Blog posts and talks by Rohit Yadav.
 
 baseurl: ""
-url: https://rhtyd.in
-enforce_ssl: rhtyd.in
+url: http://rohityadav.cloud
+#enforce_ssl: rohityadav.cloud
 
 timezone: Asia/Kolkata
 encoding: "utf-8"
 exclude: ['README.markdown']
 
-permalink: logs/:title/
+permalink: blog/:title/
 
 collections:
   algorithms:
