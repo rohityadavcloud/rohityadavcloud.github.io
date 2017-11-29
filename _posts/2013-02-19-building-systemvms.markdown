@@ -3,7 +3,7 @@ layout: post
 category: cloudstack
 highlight: primary
 title: Building CloudStack SystemVMs
-redirect_from: "/logs/buildling-systemvms/"
+redirect_from: "/logs/building-systemvms/"
 ---
 
 CloudStack uses virtual appliances as part of its orchestration. For example, it
