@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /404.html
+title: Projects
 ---
 
 <div style="text-align: center">
-<h2>Page not Found!</h2>
+<h2>Under construction!</h2>
 </div>

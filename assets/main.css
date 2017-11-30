@@ -89,7 +89,6 @@ and (max-width : 750px) {
   color: #777;
   border-top: 1px solid #e5e5e5;
   font-size: 15px;
-  text-align: center;
 }
 
 .recent-posts {
@@ -109,8 +108,6 @@ and (max-width : 750px) {
 }
 
 .page-content {
-  padding-left: 10px;
-  padding-right: 10px;
   min-height: 500px;
 }
 
