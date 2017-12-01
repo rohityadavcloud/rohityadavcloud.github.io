@@ -102,7 +102,7 @@ and (max-width : 750px) {
 }
 
 .recent-posts li .date {
-  float: right;
+
   color: #aaa;
 
 }
