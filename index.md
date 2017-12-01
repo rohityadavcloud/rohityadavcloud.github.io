@@ -3,7 +3,7 @@ layout: page
 title:
 redirect_from: "/about/"
 ---
-<img align="left" src="/assets/pic.jpg"/>
+<a href="/assets/pic.jpg"><img align="left" src="/assets/pic.jpg" style="max-width:360px"/></a>
 [Namaste](http://en.wikipedia.org/wiki/Namaste)! I'm Rohit Yadav, a
 <span class="logo apache">&nbsp;</span>
 [PMC](http://www.apache.org/foundation/governance/pmcs.html)
