@@ -6,14 +6,7 @@ layout: default
 
   <header class="post-header">
     <h2 class="post-title">{{ page.title }}</h2>
-    <div>
-      <p class="post-meta" style="margin-top: -15px">
-        <img src="/assets/avatar.jpg" style="margin-right: 10px; margin-top: 15px"/>
-        <span style="display: inline-table;">
-          <a href="/about">Rohit Yadav</a><br>{{ page.date | date: "%b %-d, %Y" }}
-        </span>
-      </p>
-    </div>
+    <span>{{ page.date | date: "%b %-d, %Y" }}</span>
   </header>
 
   <article class="post-content">
