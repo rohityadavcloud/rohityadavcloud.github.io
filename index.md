@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Homepage
+title: About
 redirect_from: "/about/"
 ---
 <a href="/assets/pic.jpg"><img align="left" src="/assets/pic.jpg" style="max-width:200px; margin-right:20px"/></a>

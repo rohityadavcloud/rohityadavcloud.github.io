@@ -101,10 +101,8 @@ and (max-width : 750px) {
   font-size: large;
 }
 
-.recent-posts li .date {
-
+.light {
   color: #aaa;
-
 }
 
 .page-content {
