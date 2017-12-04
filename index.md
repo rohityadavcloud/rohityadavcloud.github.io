@@ -1,6 +1,6 @@
 ---
 layout: page
-title:
+title: Homepage
 redirect_from: "/about/"
 ---
 <a href="/assets/pic.jpg"><img align="left" src="/assets/pic.jpg" style="max-width:200px; margin-right:20px"/></a>
@@ -29,14 +29,6 @@ several features including their bugs and fixes :wink:; and have been the
 maintainer and [release manager](https://github.com/apache/cloudstack/tags)
 for maintenance releases of CloudStack 4.3, 4.5
 and recently 4.9/LTS. Some of the recent notable features I've
-authored/co-authored and contributed are; the [CA framework](https://cwiki.apache.org/confluence/display/CLOUDSTACK/Secure+Agent+Communications),
+authored/co-authored and contributed are – the [CA framework](https://cwiki.apache.org/confluence/display/CLOUDSTACK/Secure+Agent+Communications),
 the [host-ha framework](https://cwiki.apache.org/confluence/display/CLOUDSTACK/Host+HA) and
 [dynamic roles](https://cwiki.apache.org/confluence/display/CLOUDSTACK/Dynamic+Role+Based+API+Access+Checker+for+CloudStack).
-
-<!--
-In the past, I've contributed to other opensource projects such as
-[VLC/VLC-android](http://git.videolan.org/?p=vlc%2Fvlc-android.git&a=search&h=HEAD&st=author&s=Rohit+Yadav),
-[VLMC](http://trac.videolan.org/vlmc) and a
-[few](http://cgit.haiku-os.org/haiku/commit/?id=hrev39379)
-[patches](http://cgit.haiku-os.org/haiku/commit/?id=hrev39378) to HaikuOS.
--->

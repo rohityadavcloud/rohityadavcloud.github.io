@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Blog
 ---
 
 <ul class="recent-posts">
