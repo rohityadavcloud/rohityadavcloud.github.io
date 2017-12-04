@@ -28,6 +28,10 @@ body {
   background-image: url("/assets/email.png");
 }
 
+.gpg {
+  background-image: url("/assets/gpg.png");
+}
+
 .github {
   background-image: url("/assets/github.png");
 }
