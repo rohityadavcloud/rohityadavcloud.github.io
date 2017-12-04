@@ -17,8 +17,7 @@ I work at [ShapeBlue](http://shapeblue.com), the CloudStack company, as a softwa
 architect.
 
 My <span class="logo gpg">&nbsp;</span>
-[PGP key](/gpg.pub) is [0x0EE3D884](https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&exact=on&search=0x5ED1E1122DC5E8A4A45112C2484248210EE3D884),
-fingerprint: `5ED1 E112 2DC5 E8A4 A451 12C2 4842 4821 0EE3 D884`.
+[PGP key](/gpg.pub) is [0x0EE3D884](https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&exact=on&search=0x5ED1E1122DC5E8A4A45112C2484248210EE3D884), `5ED1 E112 2DC5 E8A4 A451 12C2 4842 4821 0EE3 D884`.
 This is used to sign Apache CloudStack [releases](https://www.apache.org/dist/cloudstack/releases/)
 and other artifacts.
 
