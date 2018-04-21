@@ -21,4 +21,27 @@ among other artifacts.
 
 I'm a software architect at [ShapeBlue](http://shapeblue.com).
 
+During my univesity days at IIT (2007-2012), I was introduced to Linux by
+[Himadri](https://in.linkedin.com/in/himadrisarkar). JR Harshath introduced me
+to vim and touch typing. Abhishek and I worked on several C++/Qt projects.
+Pankaj "pk" Yadav and I worked on some interesting network stuff including setting up
+a campus-wide VPN and played with some of the 200 physical 2U servers. For a
+brief period, I got into robotics, electronic and even made my own atmega based
+arcade game. I support software freedom and [Stallman's four
+freedoms](https://www.gnu.org/philosophy/free-sw.en.html). For a brief
+period I worked with VideoLAN community on VLC, VLC-android and did a GSoC
+project around VLMC, all of which encouraged me to find a career in and around
+opensource.
+
+I also worked as a volunteer summer student at CERN in 2010 under my mentor Dr.
+[Ben Segal](http://ben.web.cern.ch/ben/) (also the mentor of Sir Tim-Berners
+Lee). I got introduced to virtualization at CERN and started programming in
+Python with great guidance from [David Quintas](https://www.linkedin.com/in/davidgarciaquintas)
+whom I consider one of the greatest programmers I've personally worked with™.
+My B.Tech thesis extended David's initial work on [VMController](https://github.com/rhtyd/old/tree/master/vmcontroller)
+which was a limited IaaS platform for managing single-virtualbox hosts and had
+some design related similarities with CloudStack. Fast forward now, I work on
+Apache CloudStack that intersects several domains of my interest such as
+virtualization, networking, storage, distributed systems, resource management
+and scheduling, infrastructure and devops.
 
