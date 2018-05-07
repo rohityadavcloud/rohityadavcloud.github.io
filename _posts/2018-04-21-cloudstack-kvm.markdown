@@ -7,9 +7,9 @@ redirect_from: "/logs/cloudstack-kvm/"
 ---
 
 This is a how-to install guide on setting up Apache CloudStack all in a single
-Ubuntu host that is also used as a KVM host.
+Ubuntu 18.04 host that is also used as a KVM host.
 
-Note: this should work for ACS 4.11.0 and above. This how-to post may get
+Note: this should work for ACS 4.11.1 and above. This how-to post may get
 outdated in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/projects/cloudstack-installation/en/latest/)
 and/or [read the latest docs on KVM host installation](http://cloudstack-installation.readthedocs.org/en/latest/hypervisor/kvm.html).
 
@@ -22,6 +22,10 @@ Install basic packages:
 
     apt-get install openntpd openssh-server sudo vim htop tar
 
+Optionally, if you've Intel based system install/update CPU microcode:
+
+    apt-get install microcode.ctl intel-microcode
+
 Allow the root user for ssh access using password, fix `/etc/ssh/sshd_config`.
 Change and remember the `root` password:
 
@@ -30,8 +34,8 @@ Change and remember the `root` password:
 # Setup Networking
 
 Setup Linux bridges that will handle CloudStack's public, guest, management
-and storage traffic. For simplicity, all of these networks will use a single
-bridge `cloudbr0`. Install bridge utilities:
+and storage traffic. For simplicity, we will use a single bridge `cloudbr0` to
+be used for all these networks. Install bridge utilities:
 
     apt-get install bridge-utils
 
@@ -60,11 +64,10 @@ Restart networking or reboot the host to enforce network settings.
 
 ### Ubuntu 18.04
 
-This section is WIP.
-
-Recent Ubuntu versions such as 18.04 use a new tool called `netplan` to manage
-network configuration. Use following netplan config to create bridge,
-`/etc/netplan/01-netcfg.yaml`:
+Starting Ubuntu bionic, admins can use `netplan` to configure networking. The
+default installation creates a file at `/etc/netplan/50-cloud-init.yaml` which
+you can comment, and create a file at `/etc/netplan/01-netcfg.yaml` applying
+your network specific changes:
 
      network:
        version: 2
@@ -87,6 +90,12 @@ network configuration. Use following netplan config to create bridge,
              stp: false
              forward-delay: 0
 
+Save the file and apply network config, finally reboot:
+
+    netplan generate
+    netplan apply
+    reboot
+
 # Setup Management Server
 
 Install CloudStack management server and MySQL server: (run as root)
@@ -104,7 +113,7 @@ in mysql server's `/etc/mysql/mysql.conf.d/mysqld.cnf`:
     server_id = 1
     innodb_rollback_on_timeout=1
     innodb_lock_wait_timeout=600
-    max_connections=350
+    max_connections=1000
     log-bin=mysql-bin
     binlog-format = 'ROW'
 
@@ -115,21 +124,27 @@ Restart MySQL server and setup database:
 
 # Setup Storage
 
-Setup NFS server and create exports:
+Install NFS server:
 
-    mkdir -p /export/primary /export/secondary
     apt-get install nfs-kernel-server quota
-    echo /export  *(rw,async,no_root_squash,no_subtree_check) > /etc/exports
+
+Create exports:
+
+    echo "/export  *(rw,async,no_root_squash,no_subtree_check)" > /etc/exports
+    mkdir -p /export/primary /export/secondary
     exportfs -a
+
+Configure and restart NFS server:
+
     sed -i -e 's/^RPCMOUNTDOPTS="--manage-gids"$/RPCMOUNTDOPTS="-p 892 --manage-gids"/g' /etc/default/nfs-kernel-server
-    sed -i -e 's/^NEED_STATD=$/NEED_STATD=yes/g' /etc/default/nfs-common
     sed -i -e 's/^STATDOPTS=$/STATDOPTS="--port 662 --outgoing-port 2020"/g' /etc/default/nfs-common
+    echo "NEED_STATD=yes" >> /etc/default/nfs-common
     sed -i -e 's/^RPCRQUOTADOPTS=$/RPCRQUOTADOPTS="-p 875"/g' /etc/default/quota
     service nfs-kernel-server restart
 
 Seed systemvm template:
 
-    wget http://packages.shapeblue.com/systemvmtemplate/4.11/systemvmtemplate-4.11.0-kvm.qcow2.bz2
+    wget http://packages.shapeblue.com/systemvmtemplate/4.11/systemvmtemplate-4.11.1-kvm.qcow2.bz2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
               -m /export/secondary -f systemvmtemplate-4.11.0-kvm.qcow2.bz2 -h kvm \
               -o localhost -r cloud -d cloud
@@ -139,14 +154,35 @@ Seed systemvm template:
 Install KVM and CloudStack agent, configure libvirt:
 
     apt-get install qemu-kvm cloudstack-agent
-    sed -i -e 's/listen_tls = 1/listen_tls = 0/g' /etc/libvirt/libvirtd.conf
+
+Enable VNC for console proxy:
+
+    sed -i -e 's/\#vnc_listen.*$/vnc_listen = "0.0.0.0"/g' /etc/libvirt/qemu.conf
+
+Enable libvirtd in listen mode:
+
+    sed -i -e 's/.*libvirtd_opts.*/libvirtd_opts="-l"/' /etc/default/libvirtd
+
+Configure default libvirtd config:
+
+    echo 'listen_tls=0' >> /etc/libvirt/libvirtd.conf
     echo 'listen_tcp=1' >> /etc/libvirt/libvirtd.conf
     echo 'tcp_port = "16509"' >> /etc/libvirt/libvirtd.conf
     echo 'mdns_adv = 0' >> /etc/libvirt/libvirtd.conf
     echo 'auth_tcp = "none"' >> /etc/libvirt/libvirtd.conf
-    sed -i -e 's/\# vnc_listen.*$/vnc_listen = "0.0.0.0"/g' /etc/libvirt/qemu.conf
-    sed -i -e 's/libvirtd_opts.*/libvirtd_opts="-l"/' /etc/default/libvirt-bin
     systemctl restart libvirtd
+
+Optional: If you've a crappy server vendor, they may fail to make each server
+unique and libvirtd can complain that servers are not unique. To make them
+unique setup host specific UUID in libvirtd config:
+
+    apt-get install uuid
+    UUID=$(uuid)
+    echo host_uuid = \"$UUID\" >> /etc/libvirt/libvirtd.conf
+    systemctl restart libvirtd
+
+Note: In Ubuntu 18.04, the libvirt daemon process has been named libvirtd but
+libvirt-bin alias is also available.
 
 # Configure Firewall
 
@@ -171,7 +207,8 @@ Configure firewall:
     apparmor_parser -R /etc/apparmor.d/usr.sbin.libvirtd
     apparmor_parser -R /etc/apparmor.d/usr.lib.libvirt.virt-aa-helper
 
-    # Silly ufw
+Enable using `ufw` if that is enabled and what you're using:
+
     ufw allow mysql
     ufw allow proto tcp from any to any port 22
     ufw allow proto tcp from any to any port 1798
@@ -192,11 +229,4 @@ After management server is UP, proceed to http://`cloudbr0-IP`:8080/client
 and log in using the default credentials - username `admin` and password
 `password`.
 
-### Deploy Zone
-
-Create a zone... WIP section
-
-Keep an eye on your `/var/log/cloudstack/management/management-server.log` and
-`/var/log/cloudstack/agent/agent.log` for possible issues. [Read the admin
-docs](http://cloudstack-administration.readthedocs.org/en/latest/index.html)
-for more cloudy admin tasks. Have fun hacking your CloudStack cloud.
+Now, deploy your zone!
