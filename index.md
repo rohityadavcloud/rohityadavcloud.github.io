@@ -8,17 +8,25 @@ redirect_from: "/about/"
 [PMC member](http://people.apache.org/committer-index.html#rohit)
 and one of the top [committers](https://github.com/apache/cloudstack/graphs/contributors)
 at the <span class="logo acs">&nbsp;</span> [Apache CloudStack](http://cloudstack.apache.org).
-I've also served as a [release
+Apache CloudStack is open source software  designed to deploy and manage large
+networks of virtual machines, as a highly available, highly scalable
+Infrastructure as a Service (IaaS) cloud computing platform.
+
+I work at [ShapeBlue](http://shapeblue.com) as a software architect.
+
+I've also served as the [release
 manager](https://checker.apache.org/keys/484248210ee3d884) for several
 CloudStack releases including the recent 4.11/LTS release and several security
 releases. I'm also the author and maintainer of Apache CloudStack
 [CloudMonkey](http://github.com/apache/cloudstack-cloudmonkey) :monkey_face:.
 
-I work at [ShapeBlue](http://shapeblue.com) as a software architect.
-
 My [GPG key](/gpg.pub) is [0x0EE3D884](https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&exact=on&search=0x5ED1E1122DC5E8A4A45112C2484248210EE3D884), full fingerprint of my key is: `5ED1 E112 2DC5 E8A4 A451 12C2 4842 4821 0EE3 D884`.
 I also use this key to sign Apache CloudStack [releases](https://checker.apache.org/keys/484248210ee3d884)
 among other artifacts.
+
+I'm an animal lover, like cats, red pandas and dogs. I curate and maintain
+[Happy Kitten](https://happykitten.in), and consider myself an amateur cat
+behaviourist.
 
 During my univesity days at IIT (2007-2012), I was introduced to Linux by
 [Himadri](https://in.linkedin.com/in/himadrisarkar).

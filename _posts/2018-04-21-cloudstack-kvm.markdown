@@ -2,12 +2,12 @@
 layout: post
 category: cloudstack
 highlight: primary
-title: Install CloudStack 4.11 with KVM Ubuntu
+title: Build your own cloud with Apache CloudStack 4.11 with KVM and Ubuntu 18.04LTS
 redirect_from: "/logs/cloudstack-kvm/"
 ---
 
-This is a how-to install guide on setting up Apache CloudStack all in a single
-Ubuntu 18.04 host that is also used as a KVM host.
+This is a how-to install guide on setting up a Apache CloudStack based cloud all
+in a single Ubuntu 18.04 host that is also used as a KVM host.
 
 Note: this should work for ACS 4.11.1 and above. This how-to post may get
 outdated in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/projects/cloudstack-installation/en/latest/)
