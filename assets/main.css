@@ -67,6 +67,7 @@ and (max-width : 750px) {
   #rmain { width: 100%; }
   span.pagetop { display: block; }
   span.pagetop b { display: block; }
+  span.topright { display: block; float: none; }
 }
 
 .page-header {
