@@ -5,6 +5,8 @@ tagline:
 permalink: /talks/
 ---
 
+[CloudStack Virtual Router: Past, Present, Future](/files/talks/cccna18-cloudstack-vr.pdf), CCCNA Montreal, 24 September 2018
+
 [Reliable Host Fencing](/files/talks/cccna17-reliable-host-fencing.pdf), CCCNA Miami, 18 May 2017
 
 [Improving CloudStack for Operators](/files/talks/london-meetup-cloudstack-operators.pdf), CloudStack EU User Group Meetup, London, 3 March 2016
