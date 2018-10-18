@@ -2,7 +2,7 @@
 layout: post
 category: cloudstack
 highlight: primary
-title: Build your own cloud with Apache CloudStack 4.11 with KVM and Ubuntu 18.04LTS
+title: Build your own IaaS cloud with Apache CloudStack 4.11 and KVM on Ubuntu 18.04LTS
 redirect_from: "/logs/cloudstack-kvm/"
 ---
 
@@ -16,7 +16,8 @@ and/or [read the latest docs on KVM host installation](http://cloudstack-install
 # Initial Setup
 
 First install Ubuntu 16.04/18.04 LTS on your x86_64 system that has at least
-4GB RAM (prerably more) with Intel VT-X or AMD-V enabled.
+4GB RAM (prerably more) with Intel VT-X or AMD-V enabled. Ensure that the
+`universe` repository is enabled in `/etc/apt/sources.list`.
 
 Install basic packages:
 
@@ -38,6 +39,9 @@ and storage traffic. For simplicity, we will use a single bridge `cloudbr0` to
 be used for all these networks. Install bridge utilities:
 
     apt-get install bridge-utils
+
+This guide assumes that you're in a 192.168.1.0/24 network which is a typical
+RFC1918 private network.
 
 ### Ubuntu 16.04
 
@@ -73,7 +77,7 @@ your network specific changes:
        version: 2
        renderer: networkd
        ethernets:
-         enp2s0:
+         ens3:
            dhcp4: false
            dhcp6: false
            optional: true
@@ -83,7 +87,7 @@ your network specific changes:
            gateway4: 192.168.1.1
            nameservers:
              addresses: [1.1.1.1,8.8.8.8]
-           interfaces: [enp2s0]
+           interfaces: [ens3]
            dhcp4: false
            dhcp6: false
            parameters:
@@ -96,14 +100,14 @@ Save the file and apply network config, finally reboot:
     netplan apply
     reboot
 
-# Setup Management Server
+# CloudStack Management Server Setup
 
 Install CloudStack management server and MySQL server: (run as root)
 
     apt-key adv --keyserver keys.gnupg.net --recv-keys 584DF93F
     echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.11 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update -y
-    apt-get install cloudstack-management mysql-server
+    apt-get install cloudstack-management cloudstack-usage mysql-server
 
 Make a note of the MySQL server's root user password. Configure InnoDB settings
 in mysql server's `/etc/mysql/mysql.conf.d/mysqld.cnf`:
@@ -111,6 +115,7 @@ in mysql server's `/etc/mysql/mysql.conf.d/mysqld.cnf`:
     [mysqld]
 
     server_id = 1
+    sql-mode="STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION,ERROR_FOR_DIVISION_BY_ZERO,NO_ZERO_DATE,NO_ZERO_IN_DATE,NO_ENGINE_SUBSTITUTION"
     innodb_rollback_on_timeout=1
     innodb_lock_wait_timeout=600
     max_connections=1000
@@ -120,9 +125,9 @@ in mysql server's `/etc/mysql/mysql.conf.d/mysqld.cnf`:
 Restart MySQL server and setup database:
 
     systemctl restart mysql
-    cloudstack-setup-databases cloud:cloud@localhost --deploy-as=root:<root-user-password> -i <cloudbr0 IP here>
+    cloudstack-setup-databases cloud:cloud@localhost --deploy-as=root:<root password, default blank> -i <cloudbr0 IP here>
 
-# Setup Storage
+# Storage Setup
 
 Install NFS server:
 
@@ -146,7 +151,7 @@ Seed systemvm template:
 
     wget http://packages.shapeblue.com/systemvmtemplate/4.11/systemvmtemplate-4.11.1-kvm.qcow2.bz2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.11.0-kvm.qcow2.bz2 -h kvm \
+              -m /export/secondary -f systemvmtemplate-4.11.1-kvm.qcow2.bz2 -h kvm \
               -o localhost -r cloud -d cloud
 
 # Setup KVM host
@@ -207,7 +212,8 @@ Configure firewall:
     apparmor_parser -R /etc/apparmor.d/usr.sbin.libvirtd
     apparmor_parser -R /etc/apparmor.d/usr.lib.libvirt.virt-aa-helper
 
-Enable using `ufw` if that is enabled and what you're using:
+If your system uses `ufw` instead (you can check using `ufw status`), run the
+following:
 
     ufw allow mysql
     ufw allow proto tcp from any to any port 22
@@ -225,8 +231,95 @@ Start your cloud:
     systemctl status cloudstack-management
     tail -f /var/log/cloudstack/management/management-server.log
 
-After management server is UP, proceed to http://`cloudbr0-IP`:8080/client
+After management server is UP, proceed to http://`192.168.1.10(cloudbr0-IP)`:8080/client
 and log in using the default credentials - username `admin` and password
 `password`.
 
-Now, deploy your zone!
+# Deploying Basic Zone
+
+`TODO`
+
+# Deploying Advanced Zone
+
+The following is an example of how you can setup an advanced zone in the
+192.168.1.0/24 network.
+
+### Setup Zone
+
+Go to Infrastructure > Zone and click on add zone button, select advanced zone and
+provide following configuration:
+
+    Name - any name
+    Public DNS 1 - 8.8.8.8
+    Internal DNS1 - 192.168.1.1
+    Hypervisor - KVM
+
+### Setup Network
+
+Use the default, which is `VLAN` isolation method on a single physical nic (on
+the host) that will carry all traffic types (management, public, guest etc).
+
+Public traffic configuration:
+
+    Gateway - 192.168.1.1
+    Netmask - 255.255.255.0
+    VLAN/VNI - (leave blank)
+    Start IP - 192.168.1.11
+    End IP - 192.168.122.30
+
+Pod Configuration:
+
+    Name - any name
+    Gateway - 192.168.1.1
+    Start/end reserved system IPs - 192.168.1.31 - 192.168.1.50
+
+Guest traffic:
+
+    VLAN range: 100-400
+
+### Add Resources
+
+Create a cluster with following:
+
+    Name - any name
+    Hypervisor - Choose KVM
+
+Add your default/first host:
+
+    Hostname - 192.168.1.10
+    Username - root
+    Password - <password for root user>
+
+Add primary storage:
+
+    Name - any name
+    Scope - zone-wide
+    Protocol - NFS
+    Server - 192.168.1.10
+    Path - /export/primary
+
+Add secondary storage:
+
+    Provider - NFS
+    Name - any name
+    Server - 192.168.1.10
+    Path - /export/secondary
+
+Next, click `Launch Zone` which will perform following actions:
+
+    Create Zone
+    Create Physical networks:
+      - Add various traffic types to the physical network
+      - Update and enable the physical network
+      - Configure, enable and update various network provider and elements such as the virtual network element
+    Create Pod
+    Configure public traffic
+    Configure guest traffic (vlan range for physical network)
+    Create Cluster
+    Add host
+    Create primary storage (also mounts it on the KVM host)
+    Create secondary storage
+    Complete zone creation
+
+Finally, confirm and enable the zone. Wait for the system VMs to come up, then
+you can proceed with your IaaS usage. Happy hacking!
