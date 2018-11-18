@@ -5,7 +5,7 @@ tagline:
 permalink: /talks/
 ---
 
-[CloudStack Virtual Router: Past, Present, Future](/files/talks/cccna18-cloudstack-vr.pdf), CCCNA Montreal, 24 September 2018
+[CloudStack Virtual Router: Past, Present, Future](/files/talks/cccna18-cloudstack-vr.pdf) [(Video)](https://s3.eu-west-2.amazonaws.com/shapeblue-videos/CCC18-RohitYadav-ACSVR.mp4), CCCNA Montreal, 24 September 2018
 
 [Reliable Host Fencing](/files/talks/cccna17-reliable-host-fencing.pdf), CCCNA Miami, 18 May 2017
 

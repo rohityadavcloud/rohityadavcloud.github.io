@@ -25,7 +25,7 @@ Install basic packages:
 
 Optionally, if you've Intel based system install/update CPU microcode:
 
-    apt-get install microcode.ctl intel-microcode
+    apt-get install intel-microcode
 
 Allow the root user for ssh access using password, fix `/etc/ssh/sshd_config`.
 Change and remember the `root` password:
