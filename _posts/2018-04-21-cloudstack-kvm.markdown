@@ -94,6 +94,20 @@ your network specific changes:
              stp: false
              forward-delay: 0
 
+Tip: If you want to use VXLAN based traffic isolation, make sure to increase the MTU setting of the physical nics by `50 bytes` (because VXLAN header size is 50 bytes). For example:
+
+```
+  ethernets:
+    enp2s0:
+      match:
+        macaddress: 00:01:2e:4f:f7:d0
+      mtu: 1550
+      dhcp4: false
+      dhcp6: false
+    enp3s0:
+      mtu: 1550
+```
+
 Save the file and apply network config, finally reboot:
 
     netplan generate
@@ -203,6 +217,8 @@ Configure firewall:
     iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 892 -j ACCEPT
     iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 875 -j ACCEPT
     iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 662 -j ACCEPT
+    iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 8080 -j ACCEPT
+    iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 16514 -j ACCEPT
 
     apt-get install iptables-persistent
 
@@ -259,23 +275,25 @@ provide following configuration:
 Use the default, which is `VLAN` isolation method on a single physical nic (on
 the host) that will carry all traffic types (management, public, guest etc).
 
+Note: If you've `iproute2` installed and host's physical NIC MTUs configured, you can used `VXLAN` as well.
+
 Public traffic configuration:
 
     Gateway - 192.168.1.1
     Netmask - 255.255.255.0
-    VLAN/VNI - (leave blank)
-    Start IP - 192.168.1.11
-    End IP - 192.168.122.30
+    VLAN/VNI - (leave blank for vlan://untagged or in case of VXLAN use vxlan://untagged)
+    Start IP - 192.168.1.20
+    End IP - 192.168.1.50
 
 Pod Configuration:
 
     Name - any name
     Gateway - 192.168.1.1
-    Start/end reserved system IPs - 192.168.1.31 - 192.168.1.50
+    Start/end reserved system IPs - 192.168.1.51 - 192.168.1.80
 
 Guest traffic:
 
-    VLAN range: 100-400
+    VLAN/VNI range: 700-900
 
 ### Add Resources
 
