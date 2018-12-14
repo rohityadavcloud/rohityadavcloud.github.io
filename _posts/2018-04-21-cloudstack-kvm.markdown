@@ -9,7 +9,7 @@ redirect_from: "/logs/cloudstack-kvm/"
 This is a how-to install guide on setting up a Apache CloudStack based cloud all
 in a single Ubuntu 18.04 host that is also used as a KVM host.
 
-Note: this should work for ACS 4.11.1 and above. This how-to post may get
+Note: this should work for ACS 4.11.2 and above. This how-to post may get
 outdated in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/projects/cloudstack-installation/en/latest/)
 and/or [read the latest docs on KVM host installation](http://cloudstack-installation.readthedocs.org/en/latest/hypervisor/kvm.html).
 
@@ -149,9 +149,9 @@ Configure and restart NFS server:
 
 Seed systemvm template:
 
-    wget http://packages.shapeblue.com/systemvmtemplate/4.11/systemvmtemplate-4.11.1-kvm.qcow2.bz2
+    wget http://packages.shapeblue.com/systemvmtemplate/4.11/systemvmtemplate-4.11.2-kvm.qcow2.bz2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.11.1-kvm.qcow2.bz2 -h kvm \
+              -m /export/secondary -f systemvmtemplate-4.11.2-kvm.qcow2.bz2 -h kvm \
               -o localhost -r cloud -d cloud
 
 # Setup KVM host
@@ -288,7 +288,9 @@ Add your default/first host:
 
     Hostname - 192.168.1.10
     Username - root
-    Password - <password for root user>
+    Password - <password for root user, please enable root user ssh-access by password on the KVM host>
+
+Note: `root` user ssh-access is disabled by default, [please enable it](https://askubuntu.com/questions/469143/how-to-enable-ssh-root-access-on-ubuntu-14-04).
 
 Add primary storage:
 
