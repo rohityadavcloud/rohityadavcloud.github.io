@@ -10,8 +10,8 @@ This is a how-to install guide on setting up a Apache CloudStack based cloud all
 in a single Ubuntu 18.04 host that is also used as a KVM host.
 
 Note: this should work for ACS 4.11.2 and above. This how-to post may get
-outdated in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/projects/cloudstack-installation/en/latest/)
-and/or [read the latest docs on KVM host installation](http://cloudstack-installation.readthedocs.org/en/latest/hypervisor/kvm.html).
+outdated in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/en/4.11.2.0/installguide)
+and/or [read the latest docs on KVM host installation](http://docs.cloudstack.apache.org/en/4.11.2.0/installguide/hypervisor/kvm.html).
 
 # Initial Setup
 
@@ -217,7 +217,9 @@ Configure firewall:
     iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 892 -j ACCEPT
     iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 875 -j ACCEPT
     iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 662 -j ACCEPT
+    iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 8250 -j ACCEPT
     iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 8080 -j ACCEPT
+    iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 9090 -j ACCEPT
     iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 16514 -j ACCEPT
 
     apt-get install iptables-persistent
