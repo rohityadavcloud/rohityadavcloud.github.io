@@ -118,7 +118,7 @@ Save the file and apply network config, finally reboot:
 
 Install CloudStack management server and MySQL server: (run as root)
 
-    apt-key adv --keyserver keys.gnupg.net --recv-keys 584DF93F
+    apt-key adv --keyserver keys.gnupg.net --recv-keys BDF0E176584DF93F
     echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.11 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update -y
     apt-get install cloudstack-management cloudstack-usage mysql-server
