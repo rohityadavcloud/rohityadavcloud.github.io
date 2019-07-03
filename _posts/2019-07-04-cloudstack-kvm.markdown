@@ -2,12 +2,12 @@
 layout: post
 category: cloudstack
 highlight: primary
-title: Build your own IaaS cloud with Apache CloudStack 4.11 and KVM on Ubuntu 18.04LTS
+title: DIY IaaS Cloud with Apache CloudStack and KVM on Ubuntu
 redirect_from: "/logs/cloudstack-kvm/"
 ---
 
-This is a how-to install guide on setting up a Apache CloudStack based cloud all
-in a single Ubuntu 18.04 host that is also used as a KVM host.
+This is a build your own IaaS cloud guide on setting up a Apache CloudStack
+based cloud on a single Ubuntu 18.04 (LTS) host that is also used as a KVM host.
 
 Note: this should work for ACS 4.11.3 and above. This how-to post may get
 outdated in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/en/4.11.3.0/installguide)
