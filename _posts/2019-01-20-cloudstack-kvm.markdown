@@ -9,9 +9,9 @@ redirect_from: "/logs/cloudstack-kvm/"
 This is a how-to install guide on setting up a Apache CloudStack based cloud all
 in a single Ubuntu 18.04 host that is also used as a KVM host.
 
-Note: this should work for ACS 4.11.2 and above. This how-to post may get
-outdated in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/en/4.11.2.0/installguide)
-and/or [read the latest docs on KVM host installation](http://docs.cloudstack.apache.org/en/4.11.2.0/installguide/hypervisor/kvm.html).
+Note: this should work for ACS 4.11.3 and above. This how-to post may get
+outdated in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/en/4.11.3.0/installguide)
+and/or [read the latest docs on KVM host installation](http://docs.cloudstack.apache.org/en/4.11.3.0/installguide/hypervisor/kvm.html).
 
 # Initial Setup
 
@@ -163,9 +163,9 @@ Configure and restart NFS server:
 
 Seed systemvm template:
 
-    wget http://packages.shapeblue.com/systemvmtemplate/4.11/systemvmtemplate-4.11.2-kvm.qcow2.bz2
+    wget http://packages.shapeblue.com/systemvmtemplate/4.11/systemvmtemplate-4.11.3-kvm.qcow2.bz2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.11.2-kvm.qcow2.bz2 -h kvm \
+              -m /export/secondary -f systemvmtemplate-4.11.3-kvm.qcow2.bz2 -h kvm \
               -o localhost -r cloud -d cloud
 
 # Setup KVM host
@@ -252,10 +252,6 @@ Start your cloud:
 After management server is UP, proceed to http://`192.168.1.10(cloudbr0-IP)`:8080/client
 and log in using the default credentials - username `admin` and password
 `password`.
-
-# Deploying Basic Zone
-
-`TODO`
 
 # Deploying Advanced Zone
 
