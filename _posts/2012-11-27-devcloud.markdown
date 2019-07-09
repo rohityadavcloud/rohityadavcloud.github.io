@@ -6,6 +6,9 @@ title: DevCloud for CloudStack Development
 redirect_from: "/logs/devcloud/"
 ---
 
+Update: Newer way of appliance based CloudStack development is encouraged with
+[MonkeyBox](https://github.com/rhtyd/monkeybox).
+
 [Apache CloudStack](http://incubator.apache.org/cloudstack) development is
 not an easy task, for the simplest of deployments one requires a server where
 the management server, mysql server and NFS server would run, at least
