@@ -5,6 +5,10 @@ tagline:
 permalink: /talks/
 ---
 
+[Modern UI for CloudStack](/files/talks/cccna19-primate.pdf), CCCNA Las Vegas, 9 September 2019
+
+[The Future of CloudStack Virtual Router](/files/talks/cccna19-cloudstack-vr.pdf), CCCNA Las Vegas, 10 September 2019
+
 [CloudStack Virtual Router: Past, Present, Future](/files/talks/cccna18-cloudstack-vr.pdf) [(Video)](https://s3.eu-west-2.amazonaws.com/shapeblue-videos/CCC18-RohitYadav-ACSVR.mp4), CCCNA Montreal, 24 September 2018
 
 [Reliable Host Fencing](/files/talks/cccna17-reliable-host-fencing.pdf), CCCNA Miami, 18 May 2017
