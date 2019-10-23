@@ -232,6 +232,12 @@ Configure default libvirtd config:
     echo 'auth_tcp = "none"' >> /etc/libvirt/libvirtd.conf
     systemctl restart libvirtd
 
+Ensure the following options in the `/etc/cloudstack/agent/agent.properties`:
+
+    guest.cpu.arch=aarch64
+    guest.cpu.mode=host-passthrough
+    host.reserved.mem.mb=256
+
 Optional: If you've a crappy server vendor, they may fail to make each server
 unique and libvirtd can complain that servers are not unique. To make them
 unique setup host specific UUID in libvirtd config:
