@@ -11,6 +11,11 @@ setup. Newer ARM64 boards such as Raspberry Pi 4 (with armv8, cortex-72
 quad-core processor @ 1.5Ghz, with upto 4GB RAM) can run Linux kernel with
 [KVM](https://www.linux-kvm.org/page/Processor_support#ARM:).
 
+By default, KVM is not enabled in the arm64 pre-built images. I've raised my
+findings and request to have
+[KVM enabled](https://bugs.launchpad.net/ubuntu/+source/linux-raspi2/+bug/1783961)
+by default with the Ubuntu kernel team.
+
 First install Ubuntu 19.10 [ARM64
 image](http://cdimage.ubuntu.com/ubuntu/releases/19.10/release/) for Raspberry
 Pi 4 (preferably 4GB RAM model) on a decent class 10, u3/v30 sdcard. I used
