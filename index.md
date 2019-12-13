@@ -3,7 +3,7 @@ layout: page
 title: Homepage
 redirect_from: "/about/"
 ---
-<a href="/assets/pic.jpg"><img align="left" src="/assets/pic.jpg" style="max-width:200px; margin-right:20px"/></a>
+<a href="/assets/pic.jpg"><img align="left" src="/assets/pic.jpg" style="max-width:320px; margin-right:20px"/></a>
 [Namaste](http://en.wikipedia.org/wiki/Namaste)! I'm Rohit Yadav, a
 [PMC member](http://people.apache.org/committer-index.html#rohit)
 and one of the top [committers](https://github.com/apache/cloudstack/graphs/contributors)
