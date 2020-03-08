@@ -182,7 +182,7 @@ DHBVN scheme (Re.1/kWh) = Rs. 10101
 Amount saved = 10101 x (8+1) =  Rs.90,909.0
 Amount outstanding = 116,800.0 - 90,909.0 = Rs. 25,891
 
-More panels needed for zero bill = (25,891 * 1000) / (9 * 365 * 4.5 * 410 * 0.8) = ~6 panels
+Min. additional panels for zero bill = (25,891 * 1000) / (9 * 365 * 4.5 * 410 * 0.8) = ~6 panels
 ```
 
 Assumptions:
@@ -190,7 +190,8 @@ Assumptions:
 - 4.5kWh generation per solar DC kW
 - DHBVN scheme of Re.1 per 1kWh solar produced unit
 - Rs.8/kWh electricity cost
-- No assumptions around inflation, minimum monthly electricity bill
+- ~5 years RoI
+- No assumptions around inflation, minimum monthly cost
 
 ### Timeline
 
