@@ -30,7 +30,9 @@ my own. Most Indian power generation plants are coal-based, the growing trend
 and adoption of renewable energy, EVs got me excited about rooftop-solar plant.
 - A rooftop solar plant is expected to last 20-25 years and could pay itself in
 4-10 years depending on cost, incentives, design and implementation, and other
-factors. This looked like a good investment.
+factors.
+- Overall it looked like a good investment and gave incentive to reduce carbon
+emission.
 
 ### Scope and Requirements
 
@@ -103,6 +105,14 @@ considering equity taxation @10%, fixed deposit taxation @30%).
 Based on the trends above, I concluded that investment in solar rooftop PV is
 better than fixed deposits (assuming no major maintenance costs throughout the
 lifetime of the solar plant).
+
+Some environmental [stats](https://solarrooftop.gov.in/rooftop_calculator) for
+the 6.15kW solar plant:
+
+```
+  Carbon dioxide emissions mitigated is: 170 tonnes
+  Equivalent to planting: 272 Teak trees over the life time (data from IISc)
+```
 
 ### Design
 
@@ -277,7 +287,10 @@ TODO: document further changes/experiences over months here
 
 - [Enphase](https://enphase.com/en-in/contact-us-india) (Sales: Rohit)
 - [Sunson Energy](https://www.instagram.com/sunsonenergy/) (Arshi and team - Fateh, Feroz, Mahendar)
-- Thanks to [Pushkal](https://www.linkedin.com/in/pushkals/), [Abhishek](https://www.linkedin.com/in/shwstppr/), [Amar](https://www.linkedin.com/in/amar-parkash-71930329/) and [Himadri](https://www.linkedin.com/in/himadrisarkar/) for reviewing this post.
+- Thanks to [Pushkal](https://www.linkedin.com/in/pushkals/),
+[Amar](https://www.linkedin.com/in/amar-parkash-71930329/),
+[Abhishek](https://www.linkedin.com/in/shwstppr/), and
+[Himadri](https://www.linkedin.com/in/himadrisarkar/) for reviewing this post.
 
 <div class="post-image">
     <img src="/images/solar/gracie.jpg">
