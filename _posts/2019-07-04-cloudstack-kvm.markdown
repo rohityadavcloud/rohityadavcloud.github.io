@@ -2,7 +2,7 @@
 layout: post
 category: cloudstack
 highlight: primary
-title: DIY IaaS Cloud with Apache CloudStack and KVM on Ubuntu
+title: Apache CloudStack on Ubuntu with KVM
 redirect_from: "/logs/cloudstack-kvm/"
 ---
 
