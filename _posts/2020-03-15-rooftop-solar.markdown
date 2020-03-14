@@ -237,7 +237,7 @@ Enlighten](https://enlighten.enphaseenergy.com/):
 
 <div class="post-image">
   <img src="/images/solar/production.jpg">
-  <p>Enlighten App: Generation of clear sunny day</p>
+  <p>Generation on a clear sunny day</p>
 </div>
 
 Observing last 30 days (Feb-March), the average power production was at least
