@@ -36,7 +36,7 @@ emission.
 
 ### Scope and Requirements
 
-- The solar plant should be not have any single point of failure, it should be
+- The solar plant should not have any single point of failure and it should be
 easy to extend, service, maintain, monitor and certainly last for a very long
 time (20-25 years).
 - Based on electricity bills trends from last 3 years, I calculated my per day
