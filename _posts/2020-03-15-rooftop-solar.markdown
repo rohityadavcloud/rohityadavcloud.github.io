@@ -61,50 +61,47 @@ plant size and number of panels as follows:
 ```
 
 - Considering my available rooftop area and other factors I decided to start
-with a 6.15kW solar PV system with 15x410Wp panels.
+with a 6.15kW solar PV system with 15x410Wp panels that may be expanded in
+future depending on production and consumption.
 
 ### Economics
 
-Cost calculations assuming [4.5kWh generation per 1kW system per day](https://solarrooftop.gov.in/rooftop_calculator):
+Cost calculations assuming [4.5kWh generation per 1kW system per day](https://solarrooftop.gov.in/rooftop_calculator): (not considering inflation or any incentive)
 
 ```
-  Avg. Electricity Rate = INR 7.8/kWh
-  DHBVN Incentive = INR 1/kWh (bill discount for every solar produced kWh unit)
+  Avg. Electricity Rate = INR 8/kWh
   PV Plant Size = 410Wp * 15panels = 6.15kW
   Annual Power Production = 6.15 x 4.5 x 365 = 10101 kWh
-  Total Electricity Bill Savings = INR (7.8+1)/kWh * 10101 kWh = ~INR88k
+  Total Electricity Bill Savings = INR 8/kWh * 10101 kWh = ~INR80k
 ```
 
-Future system expansion calculations for zero electricity bill:
-
-```
-  Total Electricity Bill Outstanding = INR 120k-88k = INR 32k
-  Est. System Expansion for zero bill = INR 32k / (INR (7.8+1)kWh * 4.5kWh * 365) = ~2.2kW
-  Est. Additional 410Wp Panels needed for zero bill = 2200 / 410 = ~6
-```
-
-RoI calculations: (not considering inflation or minimum monthly costs)
+The Solar PV Plant cost is subjective to market conditions, parts, installer
+etc. Here are my RoI calculations:
 
 ```
   Time to complete RoI = ${ Total System Cost } / ${ Total Bill Savings }
-  Total System Cost after subsidy/depreciation = 6.15kW * ~INR77500/kW * 70%
+
+  Total System Cost = 4.75L
   Time to complete RoI without subsidy/depreciation = ~6years
+
+  Total System Cost after subsidy/depreciation = 70% x 4.75L = 3.33L
   Time to complete RoI with subsidy/depreciation = ~4years
 ```
 
 For return on investment (RoI) comparison across assests, I compared the
-electricity bill savings (without considering rate inflation) by a solar PV plant
-that would have cost 5L to setup against different assets with an initial
-investment of 5L; calculated for assets post-tax returns (corpus+gain-tax,
-considering equity taxation @10%, fixed deposit taxation @30%).
+electricity bill savings (considering no electricity kWh rate inflation) that
+my solar PV plant would generate over a period of 25 years against different
+assets with an initial investment of 4.75L calculated against the same period
+but their post-tax returns (i.e. investment+gain-tax, considering equity
+taxation @10%, fixed deposit taxation @30%).
 
 <div class="post-image">
   <img src="/images/solar/roi.png">
 </div>
 
-Based on the trends above, I concluded that investment in solar rooftop PV is
-better than fixed deposits (assuming no major maintenance costs throughout the
-lifetime of the solar plant).
+Based on the graph above, investment in solar rooftop PV is clearly better than
+fixed deposits (assuming no major maintenance costs throughout the lifetime of
+the solar plant).
 
 Some environmental [stats](https://solarrooftop.gov.in/rooftop_calculator) for
 the 6.15kW solar plant:
@@ -112,6 +109,15 @@ the 6.15kW solar plant:
 ```
   Carbon dioxide emissions mitigated is: 170 tonnes
   Equivalent to planting: 272 Teak trees over the life time (data from IISc)
+```
+
+Future system expansion calculations for zero electricity bill: (not considering
+inflation, panel degradation)
+
+```
+  Total Electricity Bill Outstanding = INR 120k-88k = INR 32k
+  Est. System Expansion for zero bill = INR 32k / (INR 8kWh * 4.5kWh * 365) = ~2.4kW
+  Est. Additional 410Wp Panels needed for zero bill = 2400 / 410 = ~6
 ```
 
 ### Design
@@ -217,16 +223,6 @@ MCBs etc).
 This central busbar junction box will allow extending the system in future
 without requiring any changes to the balance-of-system.
 
-### Safety
-
-- Microinverters connected in parallel ensure that voltages are limited.
-- Circuit breakers, surge protectors and MCCB ensure all parts of the systems
-can be isolated, shutdown or be tripped in case of a fault.
-- The system has three separate ground wires (1) for the structure, (2) for the
-components (panels and microinverters) and (3) for a lightning conductor.
-- The heavy ground-mounts (footings) and wind-gaps ensure stability to the
-structure.
-
 ### Production and Monitoring
 
 The brain of the system is a gateway Linux-based IoT device called [Enphase
@@ -253,6 +249,17 @@ Enlighten](https://enlighten.enphaseenergy.com/):
 Observing last 30 days (Feb-March), the average power production was at least
 ~4.5kWh per DC-kW (range of 3kWh to 5.6kWh per DC-kW depending on weather
 conditions).
+
+### Safety
+
+- Microinverters connected in parallel ensure that voltages are limited
+(240VAC).
+- Circuit breakers, surge protectors and MCCB ensure all parts of the systems
+can be isolated, shutdown or be tripped in case of a fault.
+- The system has three separate ground wires (1) for the structure, (2) for the
+components (panels and microinverters) and (3) for a lightning conductor.
+- The heavy ground-mounts (footings) and wind-gaps ensure stability to the
+structure.
 
 ### Maintenance
 
