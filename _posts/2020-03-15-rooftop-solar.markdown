@@ -101,7 +101,10 @@ taxation @10%, fixed deposit taxation @30%).
 
 Based on the graph above, investment in solar rooftop PV is clearly better than
 fixed deposits (assuming no major maintenance costs throughout the lifetime of
-the solar plant).
+the solar plant). With declining solar installation cost, this certainly
+becomes an attractive investment. My total system cost was bit higher due to a
+custom-built GI super-structure, therefore the RoI would greatly improve for
+deployments with a basic rooftop structure.
 
 Some environmental [stats](https://solarrooftop.gov.in/rooftop_calculator) for
 the 6.15kW solar plant:
@@ -301,6 +304,17 @@ Early 2019: Research and Survey
 
 TODO: document further changes/experiences over months here
 ```
+
+### Conclusion
+
+After deploying the system and observing it since January I'm satisfied with the
+results so far. The daily production and RoI analysis show that the solar
+rooftop investment would beat fixed deposits (post-taxes), save electricity
+bills and promotes clean energy that would benefit the environment in the long
+run.
+
+Hope this post will encourage others to consider solar rooftop for their needs
+and promote clean renewable energy.
 
 ### Acknowledgements
 
