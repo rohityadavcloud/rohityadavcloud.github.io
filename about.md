@@ -8,8 +8,8 @@ title: About
 and one of the top [committers](https://github.com/apache/cloudstack/graphs/contributors)
 at the <span class="logo acs">&nbsp;</span> [Apache
 CloudStack](http://cloudstack.apache.org) project.
-Apache CloudStack is open source software  designed to deploy and manage large
-networks of virtual machines, as a highly available, highly scalable
+Apache CloudStack is an open source software  designed to deploy and manage
+large networks of virtual machines, as a highly available, highly scalable
 Infrastructure as a Service (IaaS) cloud computing platform.
 
 I work at [ShapeBlue](http://shapeblue.com) as a software architect.
@@ -54,7 +54,6 @@ which was a limited IaaS platform for managing single-virtualbox hosts and had
 some design related similarities with CloudStack.
 
 Fast forward to present for more than half-a-decade I've been working on Apache
-CloudStack where several of the domains of my interest intersect such as
+CloudStack where several domains of my interest intersect such as
 virtualization, networking, storage, distributed systems, resource management
 and scheduling, infrastructure and devops.
-
