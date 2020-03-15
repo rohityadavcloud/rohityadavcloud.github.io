@@ -246,13 +246,19 @@ Enlighten](https://enlighten.enphaseenergy.com/):
   <p>Generation on a clear sunny day</p>
 </div>
 
-The Enphase system also provides users a software based kill-switch to stop
-production that can be done remotely via the app as well as power profiles to
-say (a) not export to the grid, (b) export to the grid.
-
 Observing last 30 days (Feb-March), the average power production was at least
 ~4.5kWh per DC-kW (range of 3kWh to 5.6kWh per DC-kW depending on weather
 conditions).
+
+The Enphase system also provides a software based kill-switch to stop production
+that can be done via the local Envoy connection or by the installer. It also
+allows to configure custom power profiles to say (a) not export to the grid, (b)
+export to the grid.
+
+<div class="post-image">
+  <img src="/images/solar/envoy-local.jpg">
+  <p>Envoy Installer Page</p>
+</div>
 
 ### Safety
 
