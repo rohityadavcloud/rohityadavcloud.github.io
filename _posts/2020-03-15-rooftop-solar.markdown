@@ -23,7 +23,7 @@ ensures a lot of sunny days throughout the year, therefore there is potential of
 rooftop solar to save the planet and electricity bills.
 - [ISRO INSAT-3D
 data](https://www.isro.gov.in/isro-develops-solar-calculator-android-app) for my
-location predicts 10 hours+ of sunshine in a year every day and a rooftop area
+location (Gurgaon) predicts 10 hours+ of sunshine in a year every day and a rooftop area
 of 10mx5m or 50m^2 can generate about 40-50 kWh (units) a day.
 - Pollution is a major problem and health hazard in most Indian cities including
 my own. Most Indian power generation plants are coal-based, the growing trend
@@ -72,23 +72,23 @@ Cost calculations assuming [4.5kWh generation per 1kW system per day](https://so
   Avg. Electricity Rate = INR 8/kWh
   PV Plant Size = 410Wp * 15panels = 6.15kW
   Annual Power Production = 6.15 x 4.5 x 365 = 10101 kWh
-  Total Electricity Bill Savings = INR 8/kWh * 10101 kWh = ~INR80k
+  Annual Electricity Bill Savings = INR 8/kWh * 10101 kWh = ~INR80k
 ```
 
 The Solar PV Plant cost is subjective to market conditions, parts, installer
-etc. Here are my RoI calculations:
+etc. Here are my ROI calculations:
 
 ```
-  Time to complete RoI = ${ Total System Cost } / ${ Total Bill Savings }
+  Time to complete ROI = ${ Total System Cost } / ${ Total Bill Savings }
 
   Total System Cost = 4.75L
-  Time to complete RoI without subsidy/depreciation = ~6years
+  Time to complete ROI without subsidy/depreciation = ~6years
 
   Total System Cost after subsidy/depreciation = 70% x 4.75L = 3.33L
-  Time to complete RoI with subsidy/depreciation = ~4years
+  Time to complete ROI with subsidy/depreciation = ~4years
 ```
 
-For return on investment (RoI) comparison across assests, I compared the
+For return on investment (ROI) comparison across assests, I compared the
 electricity bill savings (considering no electricity kWh rate inflation) that
 my solar PV plant would generate over a period of 25 years against different
 assets with an initial investment of 4.75L calculated against the same period
@@ -103,7 +103,7 @@ Based on the graph above, investment in solar rooftop PV is clearly better than
 fixed deposits (assuming no major maintenance costs throughout the lifetime of
 the solar plant). With declining solar installation cost, this certainly
 becomes an attractive investment. My total system cost was bit higher due to a
-custom-built GI super-structure, therefore the RoI would greatly improve for
+custom-built GI super-structure, therefore the ROI would greatly improve for
 deployments with a basic rooftop structure.
 
 Some environmental [stats](https://solarrooftop.gov.in/rooftop_calculator) for
@@ -128,7 +128,7 @@ inflation, panel degradation)
 - An off-grid setup was found to be expensive due to high-cost Li-batteries.
 - An on-grid system with
 [net-metering](https://en.wikipedia.org/wiki/Net_metering) was found to be most
-feasible in terms of RoI especially for urban deployments where powercuts are
+feasible in terms of ROI especially for urban deployments where powercuts are
 rare or infrequent.
 - For on-grid systems, most discoms (power distributing companies) including
 [DHBVN](https://esolarconn.dhbvn.org.in/) would install a net-meter that can
@@ -308,10 +308,21 @@ TODO: document further changes/experiences over months here
 ### Conclusion
 
 After deploying the system and observing it since January I'm satisfied with the
-results so far. The daily production and RoI analysis show that the solar
+results so far. The daily production and ROI analysis show that the solar
 rooftop investment would beat fixed deposits (post-taxes), save electricity
 bills and promotes clean energy that would benefit the environment in the long
 run.
+
+If you're interested in deploying a rooftop solar plant for your home and
+commercial property you can contact a local solar installer who would be able to
+answer region specific questions and processes (as every power distribution
+company have their own policies).
+
+If you want to explore microinverter based rooftop solar plant similar to my own
+deployment, you may contact:
+- Enphase India by phone or email: [https://enphase.com/en-in/contact-us-india](https://enphase.com/en-in/contact-us-india)
+- Find an Enphase Partner Installer: [https://enphase.com/en-in/find-an-installer](https://enphase.com/en-in/find-an-installer)
+- SunSon Energy for Delhi/NCR region: [https://go.enphase.com/installer/sunson](https://go.enphase.com/installer/sunson), [gosolar@sunsonenergy.com](mailto:gosolar@sunsonenergy.com)
 
 Hope this post will encourage others to consider solar rooftop for their needs
 and promote clean renewable energy.
@@ -319,7 +330,7 @@ and promote clean renewable energy.
 ### Acknowledgements
 
 - [Enphase](https://enphase.com/en-in/contact-us-india) (Sales: Rohit)
-- [Sunson Energy](https://www.instagram.com/sunsonenergy/) (<a href="mailto:gosolar@sunsonenergy.com">Arshi</a> and team - Feroz, Fateh, Mahendar)
+- [Sunson Energy](https://www.instagram.com/sunsonenergy/) ([Arshi](mailto:gosolar@sunsonenergy.com) and team - Feroz, Fateh, Mahendar)
 - Thanks to [Pushkal](https://www.linkedin.com/in/pushkals/),
 [Amar](https://www.linkedin.com/in/amar-parkash-71930329/),
 [Abhishek](https://www.linkedin.com/in/shwstppr/), and
