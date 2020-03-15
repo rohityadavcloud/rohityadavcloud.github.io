@@ -246,12 +246,18 @@ Enlighten](https://enlighten.enphaseenergy.com/):
   <p>Generation on a clear sunny day</p>
 </div>
 
+The Enphase system also provides users a software based kill-switch to stop
+production that can be done remotely via the app as well as power profiles to
+say (a) not export to the grid, (b) export to the grid.
+
 Observing last 30 days (Feb-March), the average power production was at least
 ~4.5kWh per DC-kW (range of 3kWh to 5.6kWh per DC-kW depending on weather
 conditions).
 
 ### Safety
 
+- During a grid-powercut, the Enphase system will stop production and not export
+any electricity to the grid.
 - Microinverters connected in parallel ensure that voltages are limited
 (240VAC).
 - Circuit breakers, surge protectors and MCCB ensure all parts of the systems
@@ -293,7 +299,7 @@ TODO: document further changes/experiences over months here
 ### Acknowledgements
 
 - [Enphase](https://enphase.com/en-in/contact-us-india) (Sales: Rohit)
-- [Sunson Energy](https://www.instagram.com/sunsonenergy/) (Arshi and team - Fateh, Feroz, Mahendar)
+- [Sunson Energy](https://www.instagram.com/sunsonenergy/) (<a href="mailto:gosolar@sunsonenergy.com">Arshi</a> and team - Feroz, Fateh, Mahendar)
 - Thanks to [Pushkal](https://www.linkedin.com/in/pushkals/),
 [Amar](https://www.linkedin.com/in/amar-parkash-71930329/),
 [Abhishek](https://www.linkedin.com/in/shwstppr/), and
