@@ -16,15 +16,16 @@ this post I discuss and share my experience of deploying a microinverter based
   <p>My 6kW Solar PV Rooftop Plant</p>
 </div>
 
-### Motivation
+### Motivation and Concerns
 
 - Sub-tropical [Indian climate](https://en.wikipedia.org/wiki/Climate_of_India)
 ensures a lot of sunny days throughout the year, therefore there is potential of
 rooftop solar to save the planet and electricity bills.
-- [ISRO INSAT-3D
-data](https://www.isro.gov.in/isro-develops-solar-calculator-android-app) for my
-location (Gurgaon) predicts 10 hours+ of sunshine in a year every day and a rooftop area
-of 10mx5m or 50m^2 can generate about 40-50 kWh (units) a day.
+- [ISRO's solar calculator app that uses INSAT-3D
+data](https://www.isro.gov.in/isro-develops-solar-calculator-android-app)
+predicted that my location (Gurgaon) would get 8-10 hours+ of daily average
+sunshine in a year and a rooftop area of 10mx5m or 50m^2 could generate about
+40-50 kWh (units) a day.
 - Pollution is a major problem and health hazard in most Indian cities including
 my own. Most Indian power generation plants are coal-based, the growing trend
 and adoption of renewable energy, EVs got me excited about rooftop-solar plant.
@@ -44,8 +45,8 @@ consumption and used that to calculate the size of the plant I would require
 ideally to have net zero electricity bill in a year.
 - Per ISRO's app and other sources, I found that we can assume an average of 5
 hours of sunshine per day in a year considering cloudy days, winter etc.
-- I prefer to go with high rated panels (400W+) so they would take less space on
-roof.
+- I prefer to go with panels that can produce high (peak) power (400W+) so the
+system would take less space on the rooftop.
 - With the requirements, scope and limitations I could calculate the ideal solar
 plant size and number of panels as follows:
 
@@ -66,7 +67,9 @@ future depending on production and consumption.
 
 ### Economics
 
-Cost calculations assuming [4.5kWh generation per 1kW system per day](https://solarrooftop.gov.in/rooftop_calculator): (not considering inflation or any incentive)
+For cost calculations, I'm considering that the plant will generate [4.5kWh per
+system kilo-watt](https://solarrooftop.gov.in/rooftop_calculator) (or 4.5x6.15 =
+~27kWh) per day: (inflation or any incentive are not considered)
 
 ```
   Avg. Electricity Rate = INR 8/kWh
@@ -124,7 +127,7 @@ a basic rooftop structure, and with subsidy or
 [depreciation](https://www.solarmaxx.co.in/accelerated-depreciation-tax-benefits-with-solar-explained/).
 
 Some environmental [stats](https://solarrooftop.gov.in/rooftop_calculator) for
-the 6.15kW solar plant:
+the 6.15kW solar plant (source: https://solarrooftop.gov.in/rooftop_calculator):
 
 ```
   Carbon dioxide emissions mitigated is: 170 tonnes
@@ -142,7 +145,9 @@ inflation, panel degradation)
 
 ### Design
 
-- An off-grid setup was found to be expensive due to high-cost Li-batteries.
+- An off-grid setup was found to be expensive due to high cost of (Lithum)
+batteries and would require more maintenance and could create concerns round
+running high-load requiring appliances such as ACs, geysers or water pumps.
 - An on-grid system with
 [net-metering](https://en.wikipedia.org/wiki/Net_metering) was found to be most
 feasible in terms of ROI especially for urban deployments where powercuts are
@@ -164,6 +169,19 @@ operate as an individual solar PV plant and therefore maximise generation.
 
 ### Parts and Components
 
+A typical rooftop solar plant essentially consists of:
+- solar panel(s): device that converts sunlight to DC power.
+- invertor(s): device that converts DC power from solar panels to AC.
+- balance of system: consists of wiring, ACDB (AC power distribution box that
+can connect to the grid), circuit breakers (MCB, MCCBs), thimble/connectors, etc.
+- batteries: (optional) to store excess generation, could be considered if
+netmeters and on-grid connection is not possible.
+
+<div class="post-image">
+  <img src="/images/solar/design.jpg">
+  <p>Typical Enphase based Rooftop Solar Plant layout (<a href="https://enphase.com/sites/default/files/downloads/support/IQ-7-7PLUS-micro-wiring.pdf">source</a>)</p>
+</div>
+
 #1 Micro-Inverters
 
 Traditional solar inverters are string based where solar panels are connected in
@@ -180,7 +198,7 @@ monitoring, and optimise power output on per-panel basis.
 - They are more reliable (upto 25yrs warranty) and remove a
 [SPOF](https://en.wikipedia.org/wiki/Single_point_of_failure) and provide
 ability to maintain/service/replace on per-panel basis.
-- More safer, connected in parallel and reduces DC losses.
+- More safe, connected in parallel and reduces DC losses.
 - A microinverter-based solar plant system would also allow mixing panels of
 different wattages as each panel-microinverter operates as an individual power
 plant.
@@ -223,14 +241,17 @@ official [channel partners](https://enphase.com/en-in/find-an-installer):
 
 ### Implementation
 
-Sunson installed a custom GI raised-superstructure on my roof with concrete
-footing on which 15 Canadian Solar Hiku 410Wp solar panels and 15 Enphase IQ7+
-microinverters were installed grouped in three strings of 5 panel-microinverter
-units each as my house has a 3-phase AC grid-connection.
+Sunson installed a raised GI (galvanized-iron, so structure does not rust)
+structure on my roof with concrete based footing. On this GI structure (as seen
+in the photograph below) 15 Canadian Solar Hiku 410Wp panels were mounted and 15
+Enphase IQ7+ microinverters were installed. The 15 panel-microinverter units
+were wired into three AC strings having 5 units of panel-microinverter each.
+Each panel-microinverter unit works as an independent solar plant and on each
+unit itself the microinverter converts DC power from solar panels to AC.
 
 <div class="post-image"> <img src="/images/solar/structure.jpg"> </div>
 
-Each of the three AC-strings from the panels were connected to a [busbar junction
+Each of the three AC-strings from the units were connected to a [busbar junction
 box](https://en.wikipedia.org/wiki/Busbar) and then the solar-AC cables were fed
 to the three AC cables from the grid (with all the surge protection devices,
 MCBs etc).
@@ -350,8 +371,9 @@ and promote clean renewable energy.
 - [Sunson Energy](https://www.instagram.com/sunsonenergy/) ([Arshi](mailto:gosolar@sunsonenergy.com) and team - Feroz, Fateh, Mahendar)
 - Thanks to [Pushkal](https://www.linkedin.com/in/pushkals/),
 [Amar](https://www.linkedin.com/in/amar-parkash-71930329/),
-[Abhishek](https://www.linkedin.com/in/shwstppr/), and
-[Himadri](https://www.linkedin.com/in/himadrisarkar/) for reviewing this post.
+[Abhishek](https://www.linkedin.com/in/shwstppr/),
+[Himadri](https://www.linkedin.com/in/himadrisarkar/), and
+[Paras](https://twitter.com/paraschopra) for reviewing this post.
 
 <div class="post-image">
     <img src="/images/solar/gracie.jpg">
