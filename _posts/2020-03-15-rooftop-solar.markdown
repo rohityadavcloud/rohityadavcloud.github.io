@@ -91,20 +91,37 @@ etc. Here are my ROI calculations:
 For return on investment (ROI) comparison across assests, I compared the
 electricity bill savings (considering no electricity kWh rate inflation) that
 my solar PV plant would generate over a period of 25 years against different
-assets with an initial investment of 4.75L calculated against the same period
-but their post-tax returns (i.e. investment+gain-tax, considering equity
-taxation @10%, fixed deposit taxation @30%).
+assets:
+
+- With an initial investment of 4.75L (same as cost of solar plant without
+subsidy/depreciation) calculated against the same period but their post-tax
+returns (i.e. investment+gain-tax, considering equity taxation @10%, fixed
+deposit taxation @30%).
 
 <div class="post-image">
   <img src="/images/solar/roi.png">
 </div>
 
-Based on the graph above, investment in solar rooftop PV is clearly better than
-fixed deposits (assuming no major maintenance costs throughout the lifetime of
-the solar plant). With declining solar installation cost, this certainly
-becomes an attractive investment. My total system cost was bit higher due to a
-custom-built GI super-structure, therefore the ROI would greatly improve for
-deployments with a basic rooftop structure.
+- With an initial investment of 3.33L (same as effective cost of solar plant
+with depreciation, for FY21/22 of
+[40% for renewable energy devices](https://www.incometaxindia.gov.in/charts%20%20tables/depreciation%20rates.htm))
+calculated against the same period but their post-tax
+returns (i.e. investment+gain-tax, considering equity taxation @10%, fixed
+deposit taxation @30%).
+
+<div class="post-image">
+  <img src="/images/solar/roi-depreciation.png">
+</div>
+
+Based on the graph above and assuming no major maintenance costs throughout the
+lifetime of the rooftop solar plant investment in solar rooftop PV is clearly
+better than fixed deposits and even equity if subsidy/depreciation is available.
+
+With the declining solar installation costs, this certainly becomes an
+attractive investment. My total system cost was bit higher due to a custom-built
+GI super-structure, therefore the ROI would greatly improve for deployments with
+a basic rooftop structure, and with subsidy or
+[depreciation](https://www.solarmaxx.co.in/accelerated-depreciation-tax-benefits-with-solar-explained/).
 
 Some environmental [stats](https://solarrooftop.gov.in/rooftop_calculator) for
 the 6.15kW solar plant:
@@ -213,7 +230,7 @@ units each as my house has a 3-phase AC grid-connection.
 
 <div class="post-image"> <img src="/images/solar/structure.jpg"> </div>
 
-Each of the three AC-string from the panels was connected to a [busbar junction
+Each of the three AC-strings from the panels were connected to a [busbar junction
 box](https://en.wikipedia.org/wiki/Busbar) and then the solar-AC cables were fed
 to the three AC cables from the grid (with all the surge protection devices,
 MCBs etc).
