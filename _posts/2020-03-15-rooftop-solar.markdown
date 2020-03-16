@@ -178,7 +178,7 @@ can connect to the grid), circuit breakers (MCB, MCCBs), thimble/connectors, etc
 netmeters and on-grid connection is not possible.
 
 <div class="post-image">
-  <img src="/images/solar/design.jpg">
+  <img src="/images/solar/design.png">
   <p>Typical Enphase based Rooftop Solar Plant layout (<a href="https://enphase.com/sites/default/files/downloads/support/IQ-7-7PLUS-micro-wiring.pdf">source</a>)</p>
 </div>
 
