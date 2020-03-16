@@ -182,7 +182,28 @@ netmeters and on-grid connection is not possible.
   <p>Typical Enphase based Rooftop Solar Plant layout (<a href="https://enphase.com/sites/default/files/downloads/support/IQ-7-7PLUS-micro-wiring.pdf">source</a>)</p>
 </div>
 
-#1 Micro-Inverters
+#1 Solar Panels
+
+Solar panels generally degrade over time, most manufactures guarantee 80% rated
+wattage over 25years. That means, a 100W panel is rated to output 80W in 25years
+time. IQ7+ peak output (AC) is documented as 295VA or 295W (at 1.0 power
+factor). An Enphase whitepaper recommended DC-AC ratio of 1.1-1.2, therefore the
+system requires a panel with at least 350W peak power rating.
+
+After survey and consultation with Enphase sales team, [Canadian Solar
+Hiku-410Wp](https://www.canadiansolar.com/hiku/) solar PV panels were chosen.
+These panels have 10-12years warranty and 80% power performance warranty for
+25years, and unlike traditional solar panels they have [half-cut
+cells](https://news.energysage.com/half-cut-solar-cells-overview/) that reduces
+resistive power-losses and have higher shade tolerance. I found the industry trend
+towards quarter-cut cells that may further reduce resistive losses.
+
+<div class="post-image">
+  <img src="/images/solar/panel.jpg"><br/>
+  <p>Canadian Solar Hiku 410Wp Panel</p>
+</div>
+
+#2 Micro-Inverters
 
 Traditional solar inverters are string based where solar panels are connected in
 series (they add voltages) and come with their [own bag of
@@ -206,27 +227,6 @@ plant.
 <div class="post-image">
   <img src="/images/solar/iq7plus.jpg">
   <p>Enphase IQ7+ Microinverter</p>
-</div>
-
-#2 Solar Panels
-
-Solar panels generally degrade over time, most manufactures guarantee 80% rated
-wattage over 25years. That means, a 100W panel is rated to output 80W in 25years
-time. IQ7+ peak output (AC) is documented as 295VA or 295W (at 1.0 power
-factor). An Enphase whitepaper recommended DC-AC ratio of 1.1-1.2, therefore the
-system requires a panel with at least 350W peak power rating.
-
-After survey and consultation with Enphase sales team, [Canadian Solar
-Hiku-410Wp](https://www.canadiansolar.com/hiku/) solar PV panels were chosen.
-These panels have 10-12years warranty and 80% power performance warranty for
-25years, and unlike traditional solar panels they have [half-cut
-cells](https://news.energysage.com/half-cut-solar-cells-overview/) that reduces
-resistive power-losses and have higher shade tolerance. I found the industry trend
-towards quarter-cut cells that may further reduce resistive losses.
-
-<div class="post-image">
-  <img src="/images/solar/panel.jpg"><br/>
-  <p>Canadian Solar Hiku 410Wp Panel</p>
 </div>
 
 ### Installer
