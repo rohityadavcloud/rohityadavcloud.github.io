@@ -5,6 +5,8 @@ highlight: primary
 title: Apache CloudStack on RaspberryPi4 with Ubuntu 20.04 and KVM
 ---
 
+Note: WIP wrt Ubuntu 20.04
+
 [IoTs](https://en.wikipedia.org/wiki/Internet_of_things) have gained interest
 over recent times. In this post I explore and share my personal experience of
 setting up an Apache CloudStack based IaaS cloud on
@@ -202,8 +204,6 @@ Restart database:
 Installing management server may give dependency errors, so download and manually install:
 
     apt-get install cloudstack-common libslf4j-java
-    wget http://mirrors.kernel.org/ubuntu/pool/universe/m/mysql-connector-java/libmysql-java_5.1.45-1_all.deb
-    dpkg -i libmysql-java_5.1.45-1_all.deb
     apt-get download cloudstack-management
     dpkg -i cloudstack-management*.deb
     # edit /var/lib/dpkg/status and remove `mysql-client` from cloudstack-management section/dependencies
@@ -248,7 +248,7 @@ Configure and restart NFS server:
 
 Seed systemvm template:
 
-    wget http://dl.rohityadav.cloud/cloudstack-rpi/systemvmtemplate/systemvmtemplate-4.13.0.0-kvm-arm64.qcow2
+    wget http://dl.rohityadav.cloud/cloudstack-rpi/systemvmtemplate/systemvmtemplate-4.14.0.0-kvm-arm64.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
               -m /export/secondary -f systemvmtemplate-4.13.0.0-kvm-arm64.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
