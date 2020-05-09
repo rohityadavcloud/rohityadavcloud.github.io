@@ -2,7 +2,7 @@
 layout: post
 category: cloudstack
 highlight: primary
-title: Apache CloudStack on RaspberryPi4 with KVM
+title: Apache CloudStack on RaspberryPi4 with Ubuntu 20.04 and KVM
 ---
 
 [IoTs](https://en.wikipedia.org/wiki/Internet_of_things) have gained interest
@@ -18,60 +18,93 @@ during my research where I built Linux kernel with KVM enabled on the ARM64 RPi4
 board and shared my findings with the Ubuntu kernel team and influence the build
 team [to have KVM enabled by
 default](https://bugs.launchpad.net/ubuntu/+source/linux-raspi2/+bug/1783961).
-With the changes, now Ubuntu 19.10 ARM64 builds have KVM enabled.
+With the changes, now Ubuntu 19.10+ ARM64 builds have KVM enabled.
 
 To [get started](https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started) I had the following:
 - RPi4 board with cortex-72 quad-core 1.5Ghz processor and 4GB RAM.
-- Ubuntu 19.10 [arm64
-image](http://cdimage.ubuntu.com/ubuntu/releases/19.10/release/) installed on a
+- Ubuntu 20.04 [arm64
+image](http://cdimage.ubuntu.com/ubuntu/releases/20.04/release/) installed on a
 Samsung EVO+ 128GB micro sd card (any 4GB+ class 10 u3/v30 sdcard will do).
 - An external USB-based SSD storage with high iops to be used as a
 primary/secondary storage.
 
-The latest Ubutnu 19.10+ image with the latest linux kernel should have KVM
-enabled, if not the following arm64 kernel builds may be used:
+Flash the image to your microSD card:
 
-    https://people.canonical.com/~hwang4/pi4kvm/arm64/ (newer build, fixed USB issue)
-    http://dl.rohityadav.cloud/cloudstack-rpi/kernel-19.10/
+    $ xzcat ubuntu-20.04-preinstalled-server-arm64+raspi.img.xz| sudo dd bs=4M of=/dev/mmcblk0
+    0+367100 records in
+    0+367100 records out
+    3202802688 bytes (3.2 GB, 3.0 GiB) copied, 138.233 s, 23.2 MB/s
 
-After basic installation, check and ensure that 64-bit mode is enabled:
+Eject and insert the microSD card again to initiate volume mounts, then create
+an empty `/boot/ssh` file to enable headless ssh:
 
-    # Edit mount-img/boot/firmware/config.txt and check/add:
-    armstub=armstub8-gic.bin
+    # find the mount point
+    mount -l | grep /dev/mmcblk0
+    # cd to the writable mount point, for example:
+    cd /media/rohit/writable
+    # create an empty ssh file
+    sudo touch boot/ssh
+
+Next, check and ensure that 64-bit mode is enabled:
+
+    cd /media/rohit/system-boot
+
+    # Edit config.txt to have this:
+    [all]
+    arm_64bit=1
+    device_tree_address=0x03000000
+    dtoverlay=vc4-fkms-v3d
     enable_gic=1
-    arm_64bit=1`
-    # Save file and reboot RPi4
 
-Ensure that KVM is available at `/dev/kvm` or by running `kvm-ok`.
+    # Save file and unmount to safely eject the microSD card
+    sync
+    sudo umount /dev/mmcblk0p1
+    sudo umount /dev/mmcblk0p2
 
-Next, install basic packages and setup time:
+Next, eject and insert the microSD card in your Raspberry Pi4 and power on. Find
+the device via your router dhcp clients list and ssh into it using username
+`ubuntu` and password `ubuntu`.
 
-    apt-get install ntpdate openssh-server sudo vim htop tar iotop
-    ntpdate time.nist.gov # update time
-    hostnamectl set-hostname cloudstack-mgmt
+    ssh ubuntu@<ip>
 
-Disable automatic upgrades and unnecessary packages:
-
-    apt-get remove --purge unattended-upgrades snapd cloud-init
-    # Edit the file: /etc/apt/apt.conf.d/20auto-upgrades to the following
-    APT::Periodic::Update-Package-Lists "0";
-    APT::Periodic::Unattended-Upgrade "1";
-
-Allow the root user for ssh access using password, fix `/etc/ssh/sshd_config`.
+Allow the root user for ssh access using password, fix `/etc/ssh/sshd_config`
+and set `PermitRootLogin yes` and restart ssh using `systemctl restart ssh`.
 Change and remember the `root` password:
 
     passwd root
 
-To reduce load on RaspberryPi4 sdcard by changing how soon changes are committed
-to the disk, for example in `/etc/fstab`:
+Next, install basic packages and setup time as the root user:
+
+    apt-get update
+    apt-get install ntpdate openssh-server sudo vim htop tar iotop
+    ntpdate time.nist.gov # update time
+    hostnamectl set-hostname cloudstack-mgmt
+
+Ensure that KVM is available at `/dev/kvm` or by running `kvm-ok`:
+
+    # apt install cpu-checker
+
+    # kvm-ok
+    INFO: /dev/kvm exists
+    KVM acceleration can be used
+
+Disable automatic upgrades and unnecessary packages:
+
+    apt-get remove --purge unattended-upgrades snapd cloud-init
+    # Edit the files at /etc/apt/apt.conf.d/* with following
+    APT::Periodic::Update-Package-Lists "0";
+    APT::Periodic::Unattended-Upgrade "1";
+
+In case you suspect IO load, to reduce load on RaspberryPi4 micrSD card change
+the fs commit duration, for example in `/etc/fstab`:
 
     LABEL=writable  /        ext4   defaults,commit=60      0 0
     LABEL=system-boot       /boot/firmware  vfat    defaults        0       1
 
 ## CloudStack Support
 
-CloudStack by default does not work with ARM64, this guide was based on a custom
-4.13.0.0 build that used this patch/pull-request:
+CloudStack support for ARM64/RaspberryPi4 is available from version 4.13.1.0+
+with the following pull-request:
 
     https://github.com/apache/cloudstack/pull/3644
 
@@ -90,11 +123,11 @@ physical network. Install bridge utilities:
 Note: This guide assumes that you're in a 192.168.1.0/24 network which is a
 typical RFC1918 private network.
 
-### Ubuntu 19.10
+### Ubuntu 19.10/20.04
 
-Starting Ubuntu bionic, admins can use `netplan` to configure networking. The
-default installation creates a file at `/etc/netplan/50-cloud-init.yaml` which
-you can comment, and create a file at `/etc/netplan/01-netcfg.yaml` applying
+Admins can now use `netplan` to configure networking. The default installation
+creates a file at `/etc/netplan/50-cloud-init.yaml` which you can comment, and
+create a file at `/etc/netplan/01-netcfg.yaml` applying
 your network specific changes:
 
      network:
