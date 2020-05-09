@@ -178,10 +178,10 @@ Install CloudStack management server and MySQL server: (run as root)
     apt-key adv --keyserver keys.gnupg.net --recv-keys BDF0E176584DF93F
     echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.13 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update
-    apt-get install mariadb-server
+    apt-get install mysql-server
 
 Make a note of the MySQL server's root user password. Configure InnoDB settings
-in `/etc/mysql/mariadb.conf.d/50-server.cnf`:
+in `/etc/mysql/mysql.conf.d/mysqld.cnf`:
 
     [mysqld]
 
@@ -193,9 +193,11 @@ in `/etc/mysql/mariadb.conf.d/50-server.cnf`:
     log-bin=mysql-bin
     binlog-format = 'ROW'
 
+    default-authentication-plugin=mysql_native_password
+
 Restart database:
 
-    systemctl restart mariadb
+    systemctl restart mysql
 
 Installing management server may give dependency errors, so download and manually install:
 
@@ -289,6 +291,11 @@ Configure default libvirtd config:
     echo 'tcp_port = "16509"' >> /etc/libvirt/libvirtd.conf
     echo 'mdns_adv = 0' >> /etc/libvirt/libvirtd.conf
     echo 'auth_tcp = "none"' >> /etc/libvirt/libvirtd.conf
+
+The traditional socket/listen based configuration may not be supported, we can
+get the old behaviour as follows:
+
+    systemctl mask libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket libvirtd-tls.socket libvirtd-tcp.socket
     systemctl restart libvirtd
 
 Ensure the following options in the `/etc/cloudstack/agent/agent.properties`:
