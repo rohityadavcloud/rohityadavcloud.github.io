@@ -256,7 +256,7 @@ Seed systemvm template from the management server:
 
     wget http://dl.rohityadav.cloud/cloudstack-rpi/systemvmtemplate/systemvmtemplate-4.14.0.0-kvm-arm64.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.13.0.0-kvm-arm64.qcow2 -h kvm \
+              -m /export/secondary -f systemvmtemplate-4.14.0.0-kvm-arm64.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
 
 ## Setup KVM host
@@ -282,6 +282,10 @@ And remove the following (if applicable):
 Enable VNC for console proxy:
 
     sed -i -e 's/\#vnc_listen.*$/vnc_listen = "0.0.0.0"/g' /etc/libvirt/qemu.conf
+
+Fix security driver issue:
+
+    echo 'security_driver = "none"' >> /etc/libvirt/qemu.conf
 
 Enable libvirtd in listen mode:
 
