@@ -311,6 +311,15 @@ Ensure the following options in the `/etc/cloudstack/agent/agent.properties`:
     guest.cpu.mode=host-passthrough
     host.reserved.mem.mb=512
 
+Note: while adding KVM host (default, via ssh) it may fail on newer distros
+which has OpenSSH version 7+ which has deprecated some legacy algorithms. To fix
+that the `sshd_config` on the KVM host may temporarily be changed to following
+before adding the KVM host in CloudStack:
+
+  PubkeyAcceptedKeyTypes=+ssh-dss
+  HostKeyAlgorithms=+ssh-dss
+  KexAlgorithms=+diffie-hellman-group1-sha1
+
 ## Configure Firewall
 
 Configure firewall:
