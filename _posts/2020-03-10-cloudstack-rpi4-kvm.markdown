@@ -5,7 +5,7 @@ highlight: primary
 title: Apache CloudStack on RaspberryPi4 with Ubuntu 20.04 and KVM
 ---
 
-Note: WIP wrt Ubuntu 20.04
+    Originally posted on with Ubuntu 19.10: [](https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm/)
 
 [IoTs](https://en.wikipedia.org/wiki/Internet_of_things) have gained interest
 over recent times. In this post I explore and share my personal experience of
@@ -97,8 +97,9 @@ Disable automatic upgrades and unnecessary packages:
     APT::Periodic::Update-Package-Lists "0";
     APT::Periodic::Unattended-Upgrade "1";
 
-In case you suspect IO load, to reduce load on RaspberryPi4 micrSD card change
-the fs commit duration, for example in `/etc/fstab`:
+Tip: In case you suspect IO load, to reduce load on RaspberryPi4 micrSD card
+change the fs commit duration, for example in `/etc/fstab`: (however this adds
+risk of potential data loss)
 
     LABEL=writable  /        ext4   defaults,commit=60      0 0
     LABEL=system-boot       /boot/firmware  vfat    defaults        0       1
@@ -111,7 +112,9 @@ with the following pull-request:
     https://github.com/apache/cloudstack/pull/3644
 
 Note: The PR has been merged CloudStack 4.13.1.0/4.14.0.0 will support
-ARM64/RPi4 to be added as KVM host.
+ARM64/RPi4 to be added as KVM host. For this guide, a custom 4.14 repo was
+created with some jars specific to aarch64 bundled into cloudstack-agent
+package.
 
 ## Setup Networking
 
@@ -175,11 +178,8 @@ Save the file and apply network config, finally reboot:
 
 ## CloudStack Management Server Setup
 
-Install CloudStack management server and MySQL server: (run as root)
+Install MySQL server: (run as root)
 
-    apt-key adv --keyserver keys.gnupg.net --recv-keys BDF0E176584DF93F
-    echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.13 / > /etc/apt/sources.list.d/cloudstack.list
-    apt-get update
     apt-get install mysql-server
 
 Make a note of the MySQL server's root user password. Configure InnoDB settings
@@ -201,14 +201,20 @@ Restart database:
 
     systemctl restart mysql
 
-Installing management server may give dependency errors, so download and manually install:
+Installing management server may give dependency errors, so download and
+manually install few packages as follows:
 
-    apt-get install cloudstack-common libslf4j-java
-    apt-get download cloudstack-management
-    dpkg -i cloudstack-management*.deb
-    # edit /var/lib/dpkg/status and remove `mysql-client` from cloudstack-management section/dependencies
-    apt-get install -f
-    systemctl stop cloudstack-management # stop the automatic start after install
+    apt-get install python2
+    wget http://mirrors.kernel.org/ubuntu/pool/universe/m/mysql-connector-python/python-mysql.connector_2.1.6-1_all.deb
+    dpkg -i python-mysql.connector_2.1.6-1_all.deb
+
+    # Install management server
+    echo deb [trusted=yes] http://dl.rohityadav.cloud/cloudstack-rpi/4.14 / > /etc/apt/sources.list.d/cloudstack.list
+    apt-get update
+    apt-get install cloudstack-management cloudstack-usage
+
+    # Stop the automatic start after install
+    systemctl stop cloudstack-management cloudstack-usage
 
 Setup database:
 
@@ -246,7 +252,7 @@ Configure and restart NFS server:
     sed -i -e 's/^RPCRQUOTADOPTS=$/RPCRQUOTADOPTS="-p 875"/g' /etc/default/quota
     service nfs-kernel-server restart
 
-Seed systemvm template:
+Seed systemvm template from the management server:
 
     wget http://dl.rohityadav.cloud/cloudstack-rpi/systemvmtemplate/systemvmtemplate-4.14.0.0-kvm-arm64.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
@@ -258,23 +264,20 @@ Seed systemvm template:
 Install KVM and CloudStack agent, configure libvirt:
 
     apt-get install qemu-kvm cloudstack-agent
+    systemctl stop cloudstack-agent
 
-By default due to platform/version issue cloudstack-agent will fail to start,
-please copy the following jars from the [upstream
-project](https://github.com/java-native-access/jna/tree/master/dist) to
+By default due to platform/version issue cloudstack-agent will fail to start if
+the custom repo is not used (as advised above). Please copy the following jars
+from the [upstream project](https://github.com/java-native-access/jna/tree/master/dist) to
 `/usr/share/cloudstack-agent/lib`:
 
     jna-5.4.0.jar
     jna-platform.jar
     linux-aarch64.jar
 
-And remove the following:
+And remove the following (if applicable):
 
     rm -f /usr/share/cloudstack-agent/lib/jna-4.0.0.jar
-
-Fix the following in `/etc/cloudstack/agent/agent.properties`:
-
-    guest.cpu.arch=aarch64
 
 Enable VNC for console proxy:
 
