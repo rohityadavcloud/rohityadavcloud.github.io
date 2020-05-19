@@ -2,16 +2,16 @@
 layout: post
 category: cloudstack
 highlight: primary
-title: Apache CloudStack on Ubuntu with KVM
+title: Apache CloudStack on Ubuntu with x86_64 KVM
 redirect_from: "/logs/cloudstack-kvm/"
 ---
 
 This is a build your own IaaS cloud guide on setting up a Apache CloudStack
 based cloud on a single Ubuntu 18.04 (LTS) host that is also used as a KVM host.
 
-Note: this should work for ACS 4.11.3 and above. This how-to post may get
-outdated in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/en/4.11.3.0/installguide)
-and/or [read the latest docs on KVM host installation](http://docs.cloudstack.apache.org/en/4.11.3.0/installguide/hypervisor/kvm.html).
+Note: this should work for ACS 4.13.1 and above. This how-to post may get
+outdated in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/en/4.13.1.0/installguide)
+and/or [read the latest docs on KVM host installation](http://docs.cloudstack.apache.org/en/4.13.1.0/installguide/hypervisor/kvm.html).
 
 # Initial Setup
 
@@ -119,7 +119,7 @@ Save the file and apply network config, finally reboot:
 Install CloudStack management server and MySQL server: (run as root)
 
     apt-key adv --keyserver keys.gnupg.net --recv-keys BDF0E176584DF93F
-    echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.11 / > /etc/apt/sources.list.d/cloudstack.list
+    echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.13 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update -y
     apt-get install cloudstack-management cloudstack-usage mysql-server
 
