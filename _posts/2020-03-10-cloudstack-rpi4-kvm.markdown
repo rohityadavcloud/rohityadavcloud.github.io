@@ -316,9 +316,9 @@ which has OpenSSH version 7+ which has deprecated some legacy algorithms. To fix
 that the `sshd_config` on the KVM host may temporarily be changed to following
 before adding the KVM host in CloudStack:
 
-  PubkeyAcceptedKeyTypes=+ssh-dss
-  HostKeyAlgorithms=+ssh-dss
-  KexAlgorithms=+diffie-hellman-group1-sha1
+    PubkeyAcceptedKeyTypes=+ssh-dss
+    HostKeyAlgorithms=+ssh-dss
+    KexAlgorithms=+diffie-hellman-group1-sha1
 
 ## Configure Firewall
 
@@ -358,6 +358,12 @@ Start your cloud:
 After management server is UP, proceed to http://`192.168.1.10(cloudbr0-IP)`:8080/client
 and log in using the default credentials - username `admin` and password
 `password`.
+
+NOTE: I found some DB issue while deploying a zone, please check/run the
+following until the bug is fixed upstream, using mysql client:
+
+    use cloud;
+    ALTER TABLE nics MODIFY COLUMN update_time timestamp NULL;
 
 ## Example: Advanced Zone Deployment
 
