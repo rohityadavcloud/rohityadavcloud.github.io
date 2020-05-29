@@ -15,6 +15,29 @@ popular single-board [ARM64](https://en.wikipedia.org/wiki/ARM_architecture) IoT
 computer that can run GNU/Linux kernel with
 [KVM](https://www.linux-kvm.org/page/Processor_support#ARM:).
 
+CloudStack support for ARM64/RaspberryPi4 is available from version
+[4.13.1.0+](https://github.com/apache/cloudstack/pull/3644). This guide uses a
+[custom repository](https://dl.rohityadav.cloud/cloudstack-rpi/4.14/) that was
+created and tested specifically against the new RaspberryPi4 and Ubuntu 20.04
+arm64 to setup an IAAS cloud computing platform.
+
+<div class="post-image">
+  <img src="/images/rpi4/dashboard.png">
+</div>
+
+# Contents
+
+- [Getting Started](#getting-started)
+- [Network Setup](#network-setup)
+- [Management Server Setup](#management-server-setup)
+- [Storage Setup](#storage-setup)
+- [KVM Host Setup](#kvm-host-setup)
+- [Configure Firewall](#configure-firewall)
+- [Launch Cloud](#launch-cloud)
+- [Example Setup](#example-setup)
+
+## Getting Started
+
 By default, KVM is not enabled in the arm64 pre-built images. I found this
 during my research where I built Linux kernel with KVM enabled on the ARM64 RPi4
 board and shared my findings with the Ubuntu kernel team and influence the build
@@ -27,7 +50,7 @@ To [get started](https://projects.raspberrypi.org/en/projects/raspberry-pi-getti
 - Ubuntu 20.04 [arm64
 image](http://cdimage.ubuntu.com/ubuntu/releases/20.04/release/) installed on a
 Samsung EVO+ 128GB micro sd card (any 4GB+ class 10 u3/v30 sdcard will do).
-- An external USB-based SSD storage with high iops for storage
+- (Optional) An external USB-based SSD storage with high iops for storage
 
 Flash the image to your microSD card:
 
@@ -103,36 +126,21 @@ risk of potential data loss)
     LABEL=writable  /        ext4   defaults,commit=60      0 0
     LABEL=system-boot       /boot/firmware  vfat    defaults        0       1
 
-## CloudStack Support
+## Network Setup
 
-CloudStack support for ARM64/RaspberryPi4 is available from version 4.13.1.0+
-with the following pull-request:
-
-    https://github.com/apache/cloudstack/pull/3644
-
-Note:
-- The PR has been merged CloudStack 4.13.1.0/4.14.0.0 will support
-ARM64/RPi4 to be added as KVM host.
-- This guide uses a custom 4.14 repo that was created and tested specfically
-against RaspberryPi 4 with Ubuntu 20.04 aarch64.
-
-## Setup Networking
-
-Next, we need to setup host networking using Linux bridges that can handle
-CloudStack's public, guest, management and storage traffic. For simplicity, we
-will use a single bridge `cloudbr0` to be used for all traffic types on the same
-physical network. Install bridge utilities:
+Next, setup host networking using Linux bridges that can handle CloudStack's
+public, guest, management and storage traffic. For simplicity, a single bridge
+`cloudbr0` to be used for all traffic types on the same physical network.
+Install bridge utilities:
 
     apt-get install bridge-utils
 
-Note: This guide assumes that you're in a 192.168.1.0/24 network which is a
+Note: This part assumes that you're in a 192.168.1.0/24 home network which is a
 typical RFC1918 private network.
 
-### Ubuntu 19.10/20.04
-
-Admins can now use `netplan` to configure networking. The default installation
-creates a file at `/etc/netplan/50-cloud-init.yaml` which you can comment, and
-create a file at `/etc/netplan/01-netcfg.yaml` applying
+Admins can now use `netplan` to configure networking with Ubuntu 20.04. The
+default installation creates a file at `/etc/netplan/50-cloud-init.yaml` which
+you can comment, and create a file at `/etc/netplan/01-netcfg.yaml` applying
 your network specific changes:
 
      network:
@@ -176,7 +184,7 @@ Save the file and apply network config, finally reboot:
     netplan apply
     reboot
 
-## CloudStack Management Server Setup
+## Management Server Setup
 
 Install MySQL server: (run as root)
 
@@ -220,6 +228,14 @@ Setup database:
 
     cloudstack-setup-databases cloud:cloud@localhost --deploy-as=root: -i 192.168.1.10
 
+Install [Primate](http://docs.cloudstack.apache.org/en/4.14.0.0/installguide/primate.html),
+the modern CloudStack UI tech preview:
+
+    apt-key adv --keyserver keys.gnupg.net --recv-keys BDF0E176584DF93F
+    echo deb https://download.cloudstack.org/primate/testing/preview/debian / > /etc/apt/sources.list.d/cloudstack-primate-preview.list
+    apt-get update
+    apt-get install cloudstack-primate
+
 ## Storage Setup
 
 In my setup, I'm using an external USB SSD for storage. I plug in the USB SSD
@@ -259,7 +275,7 @@ Seed systemvm template from the management server:
               -m /export/secondary -f systemvmtemplate-4.14.0.0-kvm-arm64.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
 
-## Setup KVM host
+## KVM Host Setup
 
 Install KVM and CloudStack agent, configure libvirt:
 
@@ -348,7 +364,7 @@ Configure firewall:
     apparmor_parser -R /etc/apparmor.d/usr.sbin.libvirtd
     apparmor_parser -R /etc/apparmor.d/usr.lib.libvirt.virt-aa-helper
 
-## Launch Management Server
+## Launch Cloud
 
 Start your cloud:
 
@@ -356,9 +372,14 @@ Start your cloud:
     systemctl status cloudstack-management
     tail -f /var/log/cloudstack/management/management-server.log
 
-After management server is UP, proceed to http://`192.168.1.10(cloudbr0-IP)`:8080/client
+After management server is UP, proceed to
+`http://192.168.1.10:8080/client/primate` (change the IP suitably)
 and log in using the default credentials - username `admin` and password
 `password`.
+
+<div class="post-image">
+  <img src="/images/rpi4/login.png">
+</div>
 
 NOTE: I found some DB issue while deploying a zone, please check/run the
 following until the bug is fixed upstream, using mysql client:
@@ -366,7 +387,7 @@ following until the bug is fixed upstream, using mysql client:
     use cloud;
     ALTER TABLE nics MODIFY COLUMN update_time timestamp NULL;
 
-## Example: Advanced Zone Deployment
+## Example Setup
 
 The following is an example of how you can setup an advanced zone in the
 192.168.1.0/24 network.
@@ -380,6 +401,10 @@ provide following configuration:
     Public DNS 1 - 8.8.8.8
     Internal DNS1 - 192.168.1.1
     Hypervisor - KVM
+
+<div class="post-image">
+  <img src="/images/rpi4/addzone.png">
+</div>
 
 ### Setup Network
 
@@ -455,12 +480,5 @@ Next, click `Launch Zone` which will perform following actions:
 Finally, confirm and enable the zone. Wait for the system VMs to come up, then
 you can proceed with your IaaS usage.
 
-You can build your own arm64 guest templates or test the guest templates at:
-[dl.rohityadav.cloud/cloudstack-rpi/template](https://dl.rohityadav.cloud/cloudstack-rpi/template)
-
-## Conclusion
-
-In conclusion, this demonstrates that Raspberry Pi4 and other newer ARM64 boards
-can in fact run Apache CloudStack and serve as KVM hosts and allow deploying an
-ARM64 based IaaS cloud for CloudStack and arm64-apps dev-testing, IoT,
-edge-computing and niche use-cases.
+You can build your own arm64 guest templates or deploy VMs using these guest
+templates at: [dl.rohityadav.cloud/cloudstack-rpi/template](https://dl.rohityadav.cloud/cloudstack-rpi/template)
