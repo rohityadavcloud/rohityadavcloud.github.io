@@ -22,13 +22,12 @@ team [to have KVM enabled by
 default](https://bugs.launchpad.net/ubuntu/+source/linux-raspi2/+bug/1783961).
 With the changes, now Ubuntu 19.10+ ARM64 builds have KVM enabled.
 
-To [get started](https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started) I had the following:
-- RPi4 board with cortex-72 quad-core 1.5Ghz processor and 4GB RAM.
+To [get started](https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started) you need the following:
+- RPi4 board (cortex-72 quad-core 1.5Ghz processor) 4GB/8GB RAM model
 - Ubuntu 20.04 [arm64
 image](http://cdimage.ubuntu.com/ubuntu/releases/20.04/release/) installed on a
 Samsung EVO+ 128GB micro sd card (any 4GB+ class 10 u3/v30 sdcard will do).
-- An external USB-based SSD storage with high iops to be used as a
-primary/secondary storage.
+- An external USB-based SSD storage with high iops for storage
 
 Flash the image to your microSD card:
 
@@ -454,12 +453,14 @@ Next, click `Launch Zone` which will perform following actions:
     Complete zone creation
 
 Finally, confirm and enable the zone. Wait for the system VMs to come up, then
-you can proceed with your IaaS usage. You can build your own template or test
-the guest templates at: http://dl.rohityadav.cloud/cloudstack-rpi/template
+you can proceed with your IaaS usage.
+
+You can build your own arm64 guest templates or test the guest templates at:
+[dl.rohityadav.cloud/cloudstack-rpi/template](https://dl.rohityadav.cloud/cloudstack-rpi/template)
 
 ## Conclusion
 
-In conclusion, this demonstrates that Raspberry Pi4 and other newer ARM64 IoT
-boards can in fact run Apache CloudStack and serve as KVM hosts and allow
-deploying an ARM64 based IaaS cloud for CloudStack and arm64-apps dev-testing,
-IoT, edge-computing and niche use-cases.
+In conclusion, this demonstrates that Raspberry Pi4 and other newer ARM64 boards
+can in fact run Apache CloudStack and serve as KVM hosts and allow deploying an
+ARM64 based IaaS cloud for CloudStack and arm64-apps dev-testing, IoT,
+edge-computing and niche use-cases.
