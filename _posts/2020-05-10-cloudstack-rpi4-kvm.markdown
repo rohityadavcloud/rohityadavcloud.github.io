@@ -111,10 +111,11 @@ with the following pull-request:
 
     https://github.com/apache/cloudstack/pull/3644
 
-Note: The PR has been merged CloudStack 4.13.1.0/4.14.0.0 will support
-ARM64/RPi4 to be added as KVM host. For this guide, a custom 4.14 repo was
-created with some jars specific to aarch64 bundled into cloudstack-agent
-package.
+Note:
+- The PR has been merged CloudStack 4.13.1.0/4.14.0.0 will support
+ARM64/RPi4 to be added as KVM host.
+- This guide uses a custom 4.14 repo that was created and tested specfically
+against RaspberryPi 4 with Ubuntu 20.04 aarch64.
 
 ## Setup Networking
 
@@ -209,7 +210,7 @@ manually install few packages as follows:
     dpkg -i python-mysql.connector_2.1.6-1_all.deb
 
     # Install management server
-    echo deb [trusted=yes] http://dl.rohityadav.cloud/cloudstack-rpi/4.14 / > /etc/apt/sources.list.d/cloudstack.list
+    echo deb [trusted=yes] https://dl.rohityadav.cloud/cloudstack-rpi/4.14 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update
     apt-get install cloudstack-management cloudstack-usage
 
@@ -254,7 +255,7 @@ Configure and restart NFS server:
 
 Seed systemvm template from the management server:
 
-    wget http://dl.rohityadav.cloud/cloudstack-rpi/systemvmtemplate/systemvmtemplate-4.14.0.0-kvm-arm64.qcow2
+    wget https://dl.rohityadav.cloud/cloudstack-rpi/systemvmtemplate/systemvmtemplate-4.14.0.0-kvm-arm64.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
               -m /export/secondary -f systemvmtemplate-4.14.0.0-kvm-arm64.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
@@ -266,10 +267,11 @@ Install KVM and CloudStack agent, configure libvirt:
     apt-get install qemu-kvm cloudstack-agent
     systemctl stop cloudstack-agent
 
-By default due to platform/version issue cloudstack-agent will fail to start if
-the custom repo is not used (as advised above). Please copy the following jars
-from the [upstream project](https://github.com/java-native-access/jna/tree/master/dist) to
-`/usr/share/cloudstack-agent/lib`:
+The custom rpi4 debian repository bundles dependencies in cloudstack-agent that
+allows it to run and work with libvirt on aarch64. If the custom repository is
+not used the following jars from the [jna
+project](https://github.com/java-native-access/jna/tree/master/dist) must be
+installed at `/usr/share/cloudstack-agent/lib`:
 
     jna-5.4.0.jar
     jna-platform.jar
