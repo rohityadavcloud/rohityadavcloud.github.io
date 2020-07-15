@@ -339,9 +339,10 @@ Early 2019: Research and Survey
 28 Jan 2020: BoS installed, system (no-export) tested
 20 Feb 2020: Net meter installed, system export on
 08 Mar 2020: High record - 5.5kWh per system/DC kW tested
-
-TODO: document further changes/experiences over months here
+30 Jun 2020: Between March-June 2020, it produced 3.4MWh or ~4.58kWh per system kW per day
 ```
+
+[Public Dashboard](https://enlighten.enphaseenergy.com/pv/public_systems/9NBa1754143/overview)
 
 ### Conclusion
 
