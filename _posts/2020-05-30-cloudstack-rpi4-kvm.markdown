@@ -17,9 +17,9 @@ computer that can run GNU/Linux kernel with
 
 CloudStack support for ARM64/RaspberryPi4 is available from version
 [4.13.1.0+](https://github.com/apache/cloudstack/pull/3644). This guide uses a
-[custom repository](https://dl.rohityadav.cloud/cloudstack-rpi/4.14/) that was
-created and tested specifically against the new RaspberryPi4 and Ubuntu 20.04
-arm64 to setup an IAAS cloud computing platform.
+[custom CloudStack 4.15 repository](https://dl.rohityadav.cloud/cloudstack-rpi/4.15/)
+that was created and tested specifically against the new RaspberryPi4 and Ubuntu
+20.04 arm64 to setup an IAAS cloud computing platform.
 
 <div class="post-image">
   <img src="/images/rpi4/dashboard.png">
@@ -217,7 +217,7 @@ manually install few packages as follows:
     dpkg -i python-mysql.connector_2.1.6-1_all.deb
 
     # Install management server
-    echo deb [trusted=yes] https://dl.rohityadav.cloud/cloudstack-rpi/4.14 / > /etc/apt/sources.list.d/cloudstack.list
+    echo deb [trusted=yes] https://dl.rohityadav.cloud/cloudstack-rpi/4.15 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update
     apt-get install cloudstack-management cloudstack-usage
 
@@ -227,14 +227,6 @@ manually install few packages as follows:
 Setup database:
 
     cloudstack-setup-databases cloud:cloud@localhost --deploy-as=root: -i 192.168.1.10
-
-Install [Primate](http://docs.cloudstack.apache.org/en/4.14.0.0/installguide/primate.html),
-the modern CloudStack UI tech preview:
-
-    apt-key adv --keyserver keys.gnupg.net --recv-keys BDF0E176584DF93F
-    echo deb https://download.cloudstack.org/primate/testing/preview/debian / > /etc/apt/sources.list.d/cloudstack-primate-preview.list
-    apt-get update
-    apt-get install cloudstack-primate
 
 ## Storage Setup
 
@@ -270,9 +262,9 @@ Configure and restart NFS server:
 
 Seed systemvm template from the management server:
 
-    wget https://dl.rohityadav.cloud/cloudstack-rpi/systemvmtemplate/systemvmtemplate-4.14.0.0-kvm-arm64.qcow2
+    wget https://dl.rohityadav.cloud/cloudstack-rpi/systemvmtemplate/systemvmtemplate-4.15.0.0-kvm-arm64.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.14.0.0-kvm-arm64.qcow2 -h kvm \
+              -m /export/secondary -f systemvmtemplate-4.15.0.0-kvm-arm64.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
 
 ## KVM Host Setup
