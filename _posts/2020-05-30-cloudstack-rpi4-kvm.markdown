@@ -262,7 +262,7 @@ Configure and restart NFS server:
 
 Seed systemvm template from the management server:
 
-    wget http://download.cloudstack.org/rpi4/4.15/systemvmtemplate/systemvmtemplate-4.15.0.0-kvm-arm64.qcow2
+    wget https://download.cloudstack.org/rpi4/systemvmtemplate/systemvmtemplate-4.15.0.0-kvm-arm64.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
               -m /export/secondary -f systemvmtemplate-4.15.0.0-kvm-arm64.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
