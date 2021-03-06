@@ -9,9 +9,9 @@ redirect_from: "/logs/cloudstack-kvm/"
 This is a build your own IaaS cloud guide on setting up a Apache CloudStack
 based cloud on a single Ubuntu 18.04 (LTS) host that is also used as a KVM host.
 
-Note: this should work for ACS 4.13.1 and above. This how-to post may get
-outdated in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/en/4.13.1.0/installguide)
-and/or [read the latest docs on KVM host installation](http://docs.cloudstack.apache.org/en/4.13.1.0/installguide/hypervisor/kvm.html).
+Note: this should work for ACS 4.14.1 and above. This how-to post may get
+outdated in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/en/4.14.1.0/installguide)
+and/or [read the latest docs on KVM host installation](http://docs.cloudstack.apache.org/en/4.14.1.0/installguide/hypervisor/kvm.html).
 
 # Initial Setup
 
@@ -119,7 +119,7 @@ Save the file and apply network config, finally reboot:
 Install CloudStack management server and MySQL server: (run as root)
 
     apt-key adv --keyserver keys.gnupg.net --recv-keys BDF0E176584DF93F
-    echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.13 / > /etc/apt/sources.list.d/cloudstack.list
+    echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.14 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update -y
     apt-get install cloudstack-management cloudstack-usage mysql-server
 
@@ -163,9 +163,9 @@ Configure and restart NFS server:
 
 Seed systemvm template:
 
-    wget http://packages.shapeblue.com/systemvmtemplate/4.11/systemvmtemplate-4.11.3-kvm.qcow2.bz2
+    wget http://packages.shapeblue.com/systemvmtemplate/4.14/systemvmtemplate-4.14.0-kvm.qcow2.bz2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.11.3-kvm.qcow2.bz2 -h kvm \
+              -m /export/secondary -f systemvmtemplate-4.14.0-kvm.qcow2.bz2 -h kvm \
               -o localhost -r cloud -d cloud
 
 # Setup KVM host

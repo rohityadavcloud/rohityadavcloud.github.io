@@ -17,7 +17,7 @@ computer that can run GNU/Linux kernel with
 
 CloudStack support for ARM64/RaspberryPi4 is available from version
 [4.13.1.0+](https://github.com/apache/cloudstack/pull/3644). This guide uses a
-[custom CloudStack 4.15 repository](https://dl.rohityadav.cloud/cloudstack-rpi/4.15/)
+[custom CloudStack 4.15 repository](http://download.cloudstack.org/rpi4/4.15/)
 that was created and tested specifically against the new RaspberryPi4 and Ubuntu
 20.04 arm64 to setup an IAAS cloud computing platform.
 
@@ -217,7 +217,7 @@ manually install few packages as follows:
     dpkg -i python-mysql.connector_2.1.6-1_all.deb
 
     # Install management server
-    echo deb [trusted=yes] https://dl.rohityadav.cloud/cloudstack-rpi/4.15 / > /etc/apt/sources.list.d/cloudstack.list
+    echo deb [trusted=yes] http://download.cloudstack.org/rpi4/4.15 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update
     apt-get install cloudstack-management cloudstack-usage
 
@@ -262,7 +262,7 @@ Configure and restart NFS server:
 
 Seed systemvm template from the management server:
 
-    wget https://dl.rohityadav.cloud/cloudstack-rpi/systemvmtemplate/systemvmtemplate-4.15.0.0-kvm-arm64.qcow2
+    wget http://download.cloudstack.org/rpi4/4.15/systemvmtemplate/systemvmtemplate-4.15.0.0-kvm-arm64.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
               -m /export/secondary -f systemvmtemplate-4.15.0.0-kvm-arm64.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
@@ -473,4 +473,4 @@ Finally, confirm and enable the zone. Wait for the system VMs to come up, then
 you can proceed with your IaaS usage.
 
 You can build your own arm64 guest templates or deploy VMs using these guest
-templates at: [dl.rohityadav.cloud/cloudstack-rpi/template](https://dl.rohityadav.cloud/cloudstack-rpi/template)
+templates at: [http://download.cloudstack.org/rpi4/4.15/template](http://download.cloudstack.org/rpi4/4.15/template)
