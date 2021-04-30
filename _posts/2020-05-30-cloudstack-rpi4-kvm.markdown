@@ -47,17 +47,17 @@ With the changes, now Ubuntu 19.10+ ARM64 builds have KVM enabled.
 
 To [get started](https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started) you need the following:
 - RPi4 board (cortex-72 quad-core 1.5Ghz processor) 4GB/8GB RAM model
-- Ubuntu 20.04 [arm64
+- Ubuntu 20.04.2 [arm64
 image](http://cdimage.ubuntu.com/ubuntu/releases/20.04/release/) installed on a
 Samsung EVO+ 128GB micro sd card (any 4GB+ class 10 u3/v30 sdcard will do).
 - (Optional) An external USB-based SSD storage with high iops for storage
 
 Flash the image to your microSD card:
 
-    $ xzcat ubuntu-20.04-preinstalled-server-arm64+raspi.img.xz| sudo dd bs=4M of=/dev/mmcblk0
-    0+367100 records in
-    0+367100 records out
-    3202802688 bytes (3.2 GB, 3.0 GiB) copied, 138.233 s, 23.2 MB/s
+    $ xzcat ubuntu-20.04.2-preinstalled-server-arm64+raspi.img.xz | sudo dd bs=4M of=/dev/mmcblk0
+    0+381791 records in
+    0+381791 records out
+    3259499520 bytes (3.3 GB, 3.0 GiB) copied, 131.749 s, 24.7 MB/s
 
 Eject and insert the microSD card again to initiate volume mounts, then create
 an empty `/boot/ssh` file to enable headless ssh:
