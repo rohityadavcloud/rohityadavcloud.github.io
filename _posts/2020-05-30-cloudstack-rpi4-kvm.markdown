@@ -5,7 +5,7 @@ highlight: primary
 title: Apache CloudStack on RaspberryPi4 with Ubuntu 20.04 and KVM
 ---
 
-    Originally posted (for Ubuntu 19.10) on https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm
+    Originally posted here: https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm/
 
 [IoTs](https://en.wikipedia.org/wiki/Internet_of_things) have gained interest
 over recent times. In this post I explore and share my personal experience of
