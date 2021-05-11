@@ -15,6 +15,10 @@ popular single-board [ARM64](https://en.wikipedia.org/wiki/ARM_architecture) IoT
 computer that can run GNU/Linux kernel with
 [KVM](https://www.linux-kvm.org/page/Processor_support#ARM:).
 
+<div class="post-image">
+  <img src="/images/rpi4/board.jpg">
+</div>
+
 CloudStack support for ARM64/RaspberryPi4 is available from version
 [4.13.1.0+](https://github.com/apache/cloudstack/pull/3644). This guide uses a
 [custom CloudStack 4.15 repository](http://download.cloudstack.org/rpi4/4.15/)
