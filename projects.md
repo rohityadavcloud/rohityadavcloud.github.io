@@ -4,21 +4,27 @@ title: Projects
 ---
 
 
+### Personal Toys
+
+- [dotfiles](https://github.com/rhtyd/dotfiles)
+- [homelab](https://yadav.cloud/)
+- [tantra](https://github.com/rhtyd/tantra) (toy x86 kernel)
+- [hacklab](https://github.com/rhtyd/hacklab) (random experiments)
+
 ### Apache CloudStack <small><span class="light">2012-Present</span></small>
 
 - [Project Website](https://cloudstack.apache.org/who.html)
 - [CloudStack](https://github.com/apache/cloudstack/graphs/contributors) <small><span class="light">2012-Present</span></small>
 - [CloudMonkey](https://github.com/apache/cloudstack-cloudmonkey/graphs/contributors) <small><span class="light">2012-Present</span></small>
-- [Primate](https://github.com/apache/cloudstack-primate/graphs/contributors) <small><span class="light">2019-Present</span></small>
+- ~~[Primate](https://github.com/apache/cloudstack-primate/graphs/contributors)~~ (merged as default UI since ACS v4.15) <small><span class="light">2019-2020</span></small>
 - ShapeBlue <small><span class="light">2014-Present</span></small>
+  - [Hackerbook](https://github.com/shapeblue/hackerbook)
+  - [mbx](https://github.com/shapeblue/mbx)
+  - ~~[MonkeyBox](https://github.com/rhtyd/monkeybox)~~ (deprecated see `mbx`)
   - [Trillian](https://github.com/shapeblue/Trillian)
+  - [CloudStack non-oss](https://github.com/shapeblue/cloudstack-nonoss)
   - [CloudStack Container Service](https://github.com/shapeblue/ccs)
-- Development and Building:
-  - [MonkeyBox](https://github.com/rhtyd/monkeybox) <small><span class="light">2017-Present</span></small>
-  - [Docker Packaging Images](https://hub.docker.com/u/bhaisaab/) <small><span class="light">2014-Present</span></small>
-  - [Noredist contribs](https://github.com/rhtyd/cloudstack-nonoss) <small><span class="light">2014-Present</span></small>
 - Misc:
-  - [Marvin-cfgs](https://github.com/rhtyd/marvin-cfgs)
   - [ipmisim](https://github.com/rhtyd/ipmisim): `pip install ipmisim`
   - [TinyLinux](https://github.com/rhtyd/tinylinux)
 
@@ -49,9 +55,7 @@ title: Projects
 
 ### Misc and Old Projects
 
-- [dotfiles](https://github.com/rhtyd/dotfiles)
-- [hacklab](https://github.com/rhtyd/hacklab)
-- [Tantra - toy kernel](https://github.com/rhtyd/tantra)
+- [Peppercorn](https://github.com/rhtyd/peppercorn) (old Ansible powered ACS CI/CD)
 - [CMakeQt - build system template](https://github.com/rhtyd/cmakeqt)
 - [Secure Email](https://github.com/rhtyd/securemail)
 - [Misc Old Projects](https://github.com/rhtyd/old)

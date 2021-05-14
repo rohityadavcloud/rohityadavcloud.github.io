@@ -11,8 +11,8 @@ redirect_from: "/blog/"
   {% for post in site.posts %}
     <tr>
       <td></td>
-      <td class="light">{{ post.date | date: "%b %d, %Y" }} </td>
       <td class="title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></td>
+      <td class="light">{{ post.date | date: "%b %d, %Y" }} </td>
     </tr>
   {% endfor %}
   </tbody>

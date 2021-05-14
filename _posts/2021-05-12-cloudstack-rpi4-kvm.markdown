@@ -477,4 +477,7 @@ Finally, confirm and enable the zone. Wait for the system VMs to come up, then
 you can proceed with your IaaS usage.
 
 You can build your own arm64 guest templates or deploy VMs using these guest
-templates at: [http://download.cloudstack.org/rpi4/templates](http://download.cloudstack.org/rpi4/templates)
+templates at: [http://download.cloudstack.org/rpi4/templates](http://download.cloudstack.org/rpi4/templates).
+To get further help and to ask questions please join the Apache CloudStack users
+mailing list:
+[https://cloudstack.apache.org/mailing-lists.html](https://cloudstack.apache.org/mailing-lists.html)

@@ -7,17 +7,20 @@ redirect_from: "/logs/cloudstack-kvm/"
 ---
 
 This is a build your own IaaS cloud guide on setting up a Apache CloudStack
-based cloud on a single Ubuntu 18.04 (LTS) host that is also used as a KVM host.
+based cloud on a single Ubuntu 18.04/20.04 (LTS) host that is also used as a KVM
+host.
 
-Note: this should work for ACS 4.14.1 and above. This how-to post may get
-outdated in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/en/4.14.1.0/installguide)
-and/or [read the latest docs on KVM host installation](http://docs.cloudstack.apache.org/en/4.14.1.0/installguide/hypervisor/kvm.html).
+Note: this should work for ACS 4.11 and above, has been updated against ACS 4.15
+release. This how-to post may get outdated in future, so please [follow the
+latest docs](http://docs.cloudstack.apache.org/en/4.15.0.0/installguide) and/or
+[read the latest docs on KVM host
+installation](http://docs.cloudstack.apache.org/en/4.15.0.0/installguide/hypervisor/kvm.html).
 
 # Initial Setup
 
-First install Ubuntu 16.04/18.04 LTS on your x86_64 system that has at least
-4GB RAM (prerably more) with Intel VT-X or AMD-V enabled. Ensure that the
-`universe` repository is enabled in `/etc/apt/sources.list`.
+First install Ubuntu 16.04/18.04/20.04 LTS on your x86_64 system that has at
+least 4GB RAM (prerably 8GB or more) with Intel VT-X or AMD-V enabled. Ensure
+that the `universe` repository is enabled in `/etc/apt/sources.list`.
 
 Install basic packages:
 
@@ -66,7 +69,7 @@ To configure bridge on Ubuntu 16.04, make suitable changes to
 
 Restart networking or reboot the host to enforce network settings.
 
-### Ubuntu 18.04
+### Ubuntu 18.04/20.04
 
 Starting Ubuntu bionic, admins can use `netplan` to configure networking. The
 default installation creates a file at `/etc/netplan/50-cloud-init.yaml` which
@@ -94,7 +97,7 @@ your network specific changes:
              stp: false
              forward-delay: 0
 
-Tip: If you want to use VXLAN based traffic isolation, make sure to increase the MTU setting of the physical nics by `50 bytes` (because VXLAN header size is 50 bytes). For example:
+Note: If you want to use VXLAN based traffic isolation, make sure to increase the MTU setting of the physical nics by `50 bytes` (because VXLAN header size is 50 bytes). For example:
 
 ```
   ethernets:
@@ -119,7 +122,7 @@ Save the file and apply network config, finally reboot:
 Install CloudStack management server and MySQL server: (run as root)
 
     apt-key adv --keyserver keys.gnupg.net --recv-keys BDF0E176584DF93F
-    echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.14 / > /etc/apt/sources.list.d/cloudstack.list
+    echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.15 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update -y
     apt-get install cloudstack-management cloudstack-usage mysql-server
 
@@ -163,9 +166,9 @@ Configure and restart NFS server:
 
 Seed systemvm template:
 
-    wget http://packages.shapeblue.com/systemvmtemplate/4.14/systemvmtemplate-4.14.0-kvm.qcow2.bz2
+    wget http://packages.shapeblue.com/systemvmtemplate/4.15/systemvmtemplate-4.15.1-kvm.qcow2.bz2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.14.0-kvm.qcow2.bz2 -h kvm \
+              -m /export/secondary -f systemvmtemplate-4.15.1-kvm.qcow2.bz2 -h kvm \
               -o localhost -r cloud -d cloud
 
 # Setup KVM host
@@ -202,6 +205,22 @@ unique setup host specific UUID in libvirtd config:
 
 Note: In Ubuntu 18.04, the libvirt daemon process has been named libvirtd but
 libvirt-bin alias is also available.
+
+For Ubuntu 20.04 and later, the traditional socket/listen based configuration
+may not be supported, we can get the old behaviour as follows:
+
+    systemctl mask libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket libvirtd-tls.socket libvirtd-tcp.socket
+    systemctl restart libvirtd
+
+Note: while adding KVM host (default, via ssh) it may fail on newer distros
+which has OpenSSH version 7+ which has deprecated some legacy algorithms. To fix
+that the `sshd_config` on the KVM host may temporarily be changed to following
+before adding the KVM host in CloudStack: (you may remove this and restart sshd
+after adding the KVM host)
+
+    PubkeyAcceptedKeyTypes=+ssh-dss
+    HostKeyAlgorithms=+ssh-dss
+    KexAlgorithms=+diffie-hellman-group1-sha1
 
 # Configure Firewall
 
