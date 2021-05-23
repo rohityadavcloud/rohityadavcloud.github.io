@@ -1,6 +1,6 @@
 body {
   font-size: 18px;
-  background-color: #eee;
+  background-color: rgb(246, 246, 239);
 }
 
 .logo {
@@ -63,7 +63,7 @@ body {
 
 @media only screen
 and (min-width : 300px)
-and (max-width : 750px) {
+and (max-width : 796px) {
   #rmain { width: 100%; }
   span.pagetop { display: block; }
   span.pagetop b { display: block; }
@@ -86,7 +86,7 @@ and (max-width : 750px) {
 
 .container {
   max-width: 1000px;
-  background-color: #fff;
+  background: rgb(246, 246, 239);
 }
 
 .footer {
@@ -129,15 +129,16 @@ img {
 }
 
 pre {
-  background: none repeat scroll 0 0 #f0f0f0;
+  background: none repeat scroll 0 0 #546673;
   word-wrap: break-word;
   padding: 10px;
   border: none;
+  color: #fefefe;
 }
 
 code {
-  color: #333;
-  background: none repeat scroll 0 0 #EEE;
+  color: #ee0f0f;
+  background-color: #ffe7ea;
   font-size: 0.9em;
   line-height: 1.4em;
   padding: 1px 3px !important;
