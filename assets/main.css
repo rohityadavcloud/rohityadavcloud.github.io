@@ -134,10 +134,11 @@ pre {
   padding: 10px;
   border: none;
   color: #fefefe;
+  font-size: 14px;
 }
 
 code {
-  color: #ee0f0f;
+  color: #c7254e;
   background-color: #ffe7ea;
   font-size: 0.9em;
   line-height: 1.4em;
