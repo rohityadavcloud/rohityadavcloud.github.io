@@ -1,6 +1,6 @@
 body {
   font-size: 18px;
-  background-color: rgb(246, 246, 239);
+  background-color: #fff;
 }
 
 .logo {
@@ -87,7 +87,7 @@ and (max-width : 796px) {
 
 .container {
   max-width: 1000px;
-  background: rgb(246, 246, 239);
+  background: #fff;
 }
 
 .footer {
@@ -132,10 +132,11 @@ img {
 pre {
   background: none repeat scroll 0 0 #546673;
   word-wrap: break-word;
+  margin-top: 10px;
   padding: 10px;
   border: none;
   color: #fefefe;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 code {
