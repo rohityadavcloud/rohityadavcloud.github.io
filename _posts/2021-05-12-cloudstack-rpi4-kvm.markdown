@@ -221,7 +221,7 @@ manually install few packages as follows:
     dpkg -i python-mysql.connector_2.1.6-1_all.deb
 
     # Install management server
-    echo deb [trusted=yes] http://download.cloudstack.org/rpi4/4.15 / > /etc/apt/sources.list.d/cloudstack.list
+    echo deb [trusted=yes] https://download.cloudstack.org/rpi4/4.15 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update
     apt-get install cloudstack-management cloudstack-usage
 
@@ -266,9 +266,9 @@ Configure and restart NFS server:
 
 Seed systemvm template from the management server:
 
-    wget https://download.cloudstack.org/rpi4/systemvmtemplate/systemvmtemplate-4.15.0.0-kvm-arm64.qcow2
+    wget https://download.cloudstack.org/rpi4/systemvmtemplate/systemvmtemplate-4.15.1.0-kvm-arm64.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.15.0.0-kvm-arm64.qcow2 -h kvm \
+              -m /export/secondary -f systemvmtemplate-4.15.1.0-kvm-arm64.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
 
 ## KVM Host Setup
