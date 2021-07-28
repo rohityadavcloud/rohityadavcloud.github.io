@@ -25,7 +25,7 @@ frameworks. I also wrote the CloudStack developer onboarding course
 [hackerbook](https://github.com/shapeblue/hackerbook) and local CloudStack CI/CD
 tool [mbx](https://github.com/shapeblue/mbx).
 
-My [GPG key](/gpg.pub) is [0x0EE3D884](https://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&exact=on&search=0x5ED1E1122DC5E8A4A45112C2484248210EE3D884), full fingerprint of my key is: `5ED1 E112 2DC5 E8A4 A451 12C2 4842 4821 0EE3 D884`.
+My [GPG key](/gpg.pub) is [0x0EE3D884](https://keyserver.ubuntu.com/pks/lookup?search=0x5ED1E1122DC5E8A4A45112C2484248210EE3D884&fingerprint=on&op=index), full fingerprint of my key is: `5ED1 E112 2DC5 E8A4 A451 12C2 4842 4821 0EE3 D884`.
 
 I'm a vegetarian and an animal lover. I like cats, red pandas, dogs and otters
 very much. In my free time, I curate and maintain a cat-care and local
