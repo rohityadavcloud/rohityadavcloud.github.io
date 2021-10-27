@@ -7,6 +7,8 @@ title: Apache CloudStack on RaspberryPi4 with Ubuntu 20.04 and KVM
 
     Originally posted here: https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm/
 
+Last updated: 27 Oct 2021 for ACS 4.16
+
 [IoTs](https://en.wikipedia.org/wiki/Internet_of_things) have gained interest
 over recent times. In this post I explore and share my personal experience of
 setting up an Apache CloudStack based IaaS cloud on
@@ -21,9 +23,9 @@ computer that can run GNU/Linux kernel with
 
 CloudStack support for ARM64/RaspberryPi4 is available from version
 [4.13.1.0+](https://github.com/apache/cloudstack/pull/3644). This guide uses a
-[custom CloudStack 4.15 repository](http://download.cloudstack.org/rpi4/4.15/)
+[custom CloudStack 4.16 repository](https://download.cloudstack.org/rpi4/4.16/)
 that was created and tested specifically against the new RaspberryPi4 and Ubuntu
-20.04 arm64 to setup an IAAS cloud computing platform.
+20.04 aarch64/arm64 to setup an IAAS cloud computing platform.
 
 <div class="post-image">
   <img src="/images/rpi4/dashboard.png">
@@ -221,7 +223,7 @@ manually install few packages as follows:
     dpkg -i python-mysql.connector_2.1.6-1_all.deb
 
     # Install management server
-    echo deb [trusted=yes] https://download.cloudstack.org/rpi4/4.15 / > /etc/apt/sources.list.d/cloudstack.list
+    echo deb [trusted=yes] https://download.cloudstack.org/rpi4/4.16 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update
     apt-get install cloudstack-management cloudstack-usage
 
@@ -266,10 +268,13 @@ Configure and restart NFS server:
 
 Seed systemvm template from the management server:
 
-    wget https://download.cloudstack.org/rpi4/systemvmtemplate/systemvmtemplate-4.15.1.0-kvm-arm64.qcow2
+    wget https://download.cloudstack.org/rpi4/systemvmtemplate/4.16/systemvmtemplate-4.16.0-kvm-arm64.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.15.1.0-kvm-arm64.qcow2 -h kvm \
+              -m /export/secondary -f systemvmtemplate-4.16.0-kvm-arm64.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
+
+Note: with ACS 4.16 onwards, seeding of systemvmtemplates on fresh
+install/upgrade may not be required.
 
 ## KVM Host Setup
 
@@ -277,20 +282,6 @@ Install KVM and CloudStack agent, configure libvirt:
 
     apt-get install qemu-kvm cloudstack-agent
     systemctl stop cloudstack-agent
-
-The custom rpi4 debian repository bundles dependencies in cloudstack-agent that
-allows it to run and work with libvirt on aarch64. If the custom repository is
-not used the following jars from the [jna
-project](https://github.com/java-native-access/jna/tree/master/dist) must be
-installed at `/usr/share/cloudstack-agent/lib`:
-
-    jna-5.4.0.jar
-    jna-platform.jar
-    linux-aarch64.jar
-
-And remove the following (if applicable):
-
-    rm -f /usr/share/cloudstack-agent/lib/jna-4.0.0.jar
 
 Enable VNC for console proxy:
 
@@ -322,16 +313,11 @@ Ensure the following options in the `/etc/cloudstack/agent/agent.properties`:
 
     guest.cpu.arch=aarch64
     guest.cpu.mode=host-passthrough
-    host.reserved.mem.mb=512
 
-Note: while adding KVM host (default, via ssh) it may fail on newer distros
-which has OpenSSH version 7+ which has deprecated some legacy algorithms. To fix
-that the `sshd_config` on the KVM host may temporarily be changed to following
-before adding the KVM host in CloudStack:
+By default 1GB of host memory is reserved for agent/host usage, which you can
+change using the following in the agent.properties file:
 
-    PubkeyAcceptedKeyTypes=+ssh-dss
-    HostKeyAlgorithms=+ssh-dss
-    KexAlgorithms=+diffie-hellman-group1-sha1
+    host.reserved.mem.mb=800
 
 ## Configure Firewall
 
@@ -477,7 +463,7 @@ Finally, confirm and enable the zone. Wait for the system VMs to come up, then
 you can proceed with your IaaS usage.
 
 You can build your own arm64 guest templates or deploy VMs using these guest
-templates at: [http://download.cloudstack.org/rpi4/templates](http://download.cloudstack.org/rpi4/templates).
+templates at: [https://download.cloudstack.org/rpi4/templates](https://download.cloudstack.org/rpi4/templates).
 To get further help and to ask questions please join the Apache CloudStack users
 mailing list:
 [https://cloudstack.apache.org/mailing-lists.html](https://cloudstack.apache.org/mailing-lists.html)
