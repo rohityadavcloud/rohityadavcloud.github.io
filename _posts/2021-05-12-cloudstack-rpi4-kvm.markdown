@@ -224,6 +224,7 @@ manually install few packages as follows:
 
     # Install management server
     echo deb [trusted=yes] https://download.cloudstack.org/rpi4/4.16 / > /etc/apt/sources.list.d/cloudstack.list
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 484248210EE3D884
     apt-get update
     apt-get install cloudstack-management cloudstack-usage
 
