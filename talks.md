@@ -5,6 +5,10 @@ tagline:
 permalink: /talks/
 ---
 
+[Next-Gen Virtual Router](/files/talks/ccc21-vr-agent.pdf) [(Video)](), Virtual CCC 2021, 11 November, 2021
+
+[mbx - Local CI/CD for CloudStack](/files/talks/ccc21-mbx.pdf) [(Video)](), Virtual CCC 2021, 10 November, 2021
+
 [Modern UI for CloudStack](/files/talks/cccna19-primate.pdf) [(Video)](https://www.youtube.com/watch?v=F2KwZhechzs), CCCNA Las Vegas, 9 September 2019
 
 [The Future of CloudStack Virtual Router](/files/talks/cccna19-cloudstack-vr.pdf) [(Video)](https://www.youtube.com/watch?v=C2PYSlFZI3Q), CCCNA Las Vegas, 10 September 2019
