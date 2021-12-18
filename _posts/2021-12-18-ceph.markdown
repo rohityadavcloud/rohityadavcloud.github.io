@@ -1,0 +1,171 @@
+---
+layout: post
+category: cloudstack
+highlight: primary
+title: Ceph Storage with CloudStack on Ubuntu/KVM
+---
+
+In this post, we look at how to deploy a Ceph cluster (v16 +) and then use that
+with Apache CloudStack and KVM on Ubuntu 20.04. Refer to Ceph docs here
+https://docs.ceph.com/en/pacific/install/
+
+If you're new to Ceph, also read:
+
+https://docs.ceph.com/en/pacific/start/intro/
+
+https://docs.ceph.com/en/pacific/architecture/
+
+https://docs.ceph.com/en/pacific/rbd/
+
+https://docs.ceph.com/en/pacific/cephfs/
+
+### Host Configuration
+
+In the this Ceph cluster, we've three hosts/nodes that serve as both `mon` and
+`osd` nodes, and one admin node that is used to server as `mgr` and run the Ceph
+dashboard.
+
+    192.168.1.10 cloudpi   # Admin/mgr and dashboard
+    192.168.1.11 pikvm1    # mon and osd
+    192.168.1.12 pikvm2    # mon and osd
+    192.168.1.13 pikvm3m   # mon and osd
+
+Configure SSH config on admin node:
+
+    tee -a ~/.ssh/config<<EOF
+    Host *
+        UserKnownHostsFile /dev/null
+        StrictHostKeyChecking no
+        IdentitiesOnly yes
+        ConnectTimeout 0
+        ServerAliveInterval 300
+    EOF
+
+### Install `cephadm`
+
+Newer Ceph versions recommend using `cephadm` to install and manage Ceph cluster
+using containers and systemd.
+[Cephadm](https://docs.ceph.com/en/pacific/cephadm) requirements include
+python3, systemd, podman or docker, ntp and lvm2. Let's install them on all
+nodes:
+
+    sudo apt-get install -y python3 ntp lvm2
+
+Install podman:
+
+    source /etc/os-release
+    sudo sh -c "echo 'deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /' > /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list"
+    wget -nv https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable/xUbuntu_${VERSION_ID}/Release.key -O- | sudo apt-key add -
+    sudo apt-get update
+    sudo apt-get -y install podman
+
+Finally, configure the ceph repository (Pacific/v16 in this example) and install
+`cephadm` and `ceph-common` on all the nodes:
+
+    wget -q -O- 'https://download.ceph.com/keys/release.asc' | sudo apt-key add -
+    echo deb https://download.ceph.com/debian-pacific/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/ceph.list
+    apt-get update
+    apt-get install -y cephadm
+    cephadm add-repo --release pacific
+    cephadm install ceph-common
+
+### Bootstrap Cluster
+
+Bootstrap Ceph cluster by running the following only on the admin node
+(192.168.1.10 in the example):
+
+    cephadm bootstrap --mon-ip 192.168.1.10 --initial-dashboard-user admin --initial-dashboard-password Passw0rdHere
+
+On successful run, the above command will bootstrap a Ceph cluster with ceph
+config in `/etc/ceph/ceph.conf` and SSH public key `/etc/ceph/ceph.pub` using
+container images that are orchestrated by podman.
+
+The dashboard will be available on the mon IP https://192.168.1.10:8443/ which
+you can log in using the user `admin` and password as provided in the command
+(`Passw0rdHere` in the example above).
+
+### Add hosts
+
+Copy the ceph admin SSH public key across other nodes (say from your laptop):
+
+    ssh-copy-id -f -i /etc/ceph/ceph.pub root@192.168.1.11
+    ssh-copy-id -f -i /etc/ceph/ceph.pub root@192.168.1.12
+    ssh-copy-id -f -i /etc/ceph/ceph.pub root@192.168.1.13
+
+Disable automatic monitor deployment and add hosts:
+    ceph orch apply mon --unmanaged
+    ceph orch host add pikvm1 192.168.1.11
+    ceph orch host add pikvm2 192.168.1.12
+    ceph orch host add pikvm3 192.168.1.13
+
+### Add Monitors
+
+Read more at https://docs.ceph.com/en/pacific/cephadm/services/mon/
+
+Specify monitor traffic/CIDR:
+
+    ceph config set mon public_network 192.168.1.0/24
+
+Add mons:
+
+    ceph orch daemon add mon pikvm1:192.168.1.11
+    ceph orch daemon add mon pikvm2:192.168.1.12
+    ceph orch daemon add mon pikvm3:192.168.1.13
+
+Now, enable automatic placement of daemons:
+
+    ceph orch apply mon --placement="pikvm1,pikvm2,pikvm3" --dry-run
+    ceph orch apply mon --placement="pikvm1,pikvm2,pikvm3"
+
+### Add OSDs
+
+Read more at https://docs.ceph.com/en/pacific/cephadm/services/osd/
+
+List available physical disks of the added hosts:
+
+    ceph orch device ls
+
+Then, use the syntax to specify the host and device you want to add as OSD:
+
+     ceph orch daemon add osd pikvm1:/dev/sda
+     ceph orch daemon add osd pikvm2:/dev/sda
+     ceph orch daemon add osd pikvm3:/dev/sda
+
+Finally, you may check your osds across hosts with:
+
+    ceph osd tree
+
+### Optional: Additional admin host
+
+Hosts with `_admin` label will have ceph.conf and client.admin keyring copied to
+`/etc/ceph` that allows hosts access the `ceph` CLI. For example, add the label
+as:
+
+    ceph orch host label add pikvm1 _admin
+
+### Optional: Disable SSL on Dashboard
+
+To disable SSL on Ceph Dashboard when, for example, using inside an internal
+network:
+
+  ceph config set mgr mgr/dashboard/ssl false
+  ceph config set mgr mgr/dashboard/server_addr 192.168.1.10
+  ceph config set mgr mgr/dashboard/server_port 8040
+  ceph mgr module disable dashboard
+  ceph mgr module enable dashboard
+
+Now, the dashboard is accessible over http://192.168.1.10:8040/
+
+### Add Ceph Storage to CloudStack
+
+Check Ceph status using the following:
+
+    ceph -s
+
+Or, open the dashboard in browser:
+
+    https://192.168.1.10:8443/
+
+
+TODO: yet to write/test
+
