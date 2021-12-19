@@ -146,10 +146,19 @@ network:
   ceph config set mgr mgr/dashboard/ssl false
   ceph config set mgr mgr/dashboard/server_addr 192.168.1.10
   ceph config set mgr mgr/dashboard/server_port 8040
+  ceph dashboard set-grafana-api-ssl-verify False
   ceph mgr module disable dashboard
   ceph mgr module enable dashboard
 
 Now, the dashboard is accessible over http://192.168.1.10:8040/
+
+### Tuning
+
+Refer https://docs.ceph.com/en/latest/start/hardware-recommendations/#memory
+
+Configure per OSD RAM to 2GB (or as required):
+
+    ceph config set osd osd_memory_target 2G
 
 ### Add Ceph Storage to CloudStack
 
@@ -164,4 +173,6 @@ Or, open the dashboard in browser:
 
 TODO: yet to write/test about CloudStack usage...
 
+Read:
+https://docs.ceph.com/en/pacific/architecture/
 
