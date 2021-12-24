@@ -6,7 +6,7 @@ title: Rooftop Solar PV Plant
 ---
 
 Since last year I've been trying to [research, survey and
-learn](https://twitter.com/rhtyd/status/1126174634540392448) about solar energy
+learn](https://twitter.com/rohityadavcloud/status/1126174634540392448) about solar energy
 with the goal to setup a solar rooftop plant that can harness clean energy. In
 this post I discuss and share my experience of deploying a microinverter based
 6kW solar plant on my rooftop.
