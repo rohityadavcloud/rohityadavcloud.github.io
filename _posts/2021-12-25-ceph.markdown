@@ -10,7 +10,8 @@ with Apache CloudStack and KVM on Ubuntu 20.04.
 
 Refer to [Ceph docs](https://docs.ceph.com/en/pacific/install) as necessary. If
 you're new to Ceph, you can [start
-here](https://docs.ceph.com/en/pacific/start/intro/).
+here](https://docs.ceph.com/en/pacific/start/intro/), or deep dive into the
+[architecture](https://docs.ceph.com/en/pacific/architecture/).
 
 ### Host Configuration
 
@@ -33,6 +34,12 @@ Configure SSH config on admin node:
         ConnectTimeout 0
         ServerAliveInterval 300
     EOF
+
+Copy the ceph admin SSH public key across other nodes (say from your laptop):
+
+    ssh-copy-id -f -i /etc/ceph/ceph.pub root@192.168.1.11
+    ssh-copy-id -f -i /etc/ceph/ceph.pub root@192.168.1.12
+    ssh-copy-id -f -i /etc/ceph/ceph.pub root@192.168.1.13
 
 ### Install `cephadm`
 
@@ -59,6 +66,9 @@ Finally, configure the ceph repository (pacific/v16 in this example) and install
     echo deb https://download.ceph.com/debian-pacific/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/ceph.list
     apt-get update
     apt-get install -y cephadm
+
+If you install `cephadm` using wget, you can add specific release repos using:
+
     cephadm add-repo --release pacific
     cephadm install ceph-common
 
@@ -67,7 +77,9 @@ Finally, configure the ceph repository (pacific/v16 in this example) and install
 Bootstrap Ceph cluster by running the following only on the admin node
 (192.168.1.10 in the example):
 
-    cephadm bootstrap --mon-ip 192.168.1.10 --initial-dashboard-user admin --initial-dashboard-password Passw0rdHere
+    cephadm bootstrap --mon-ip 192.168.1.10 \
+                      --initial-dashboard-user admin \
+                      --initial-dashboard-password Passw0rdHere
 
 On successful run, the above command will bootstrap a Ceph cluster with ceph
 config in `/etc/ceph/ceph.conf` and SSH public key `/etc/ceph/ceph.pub` using
@@ -79,13 +91,7 @@ you can log in using the user `admin` and password as provided in the command
 
 ### Add hosts
 
-Copy the ceph admin SSH public key across other nodes (say from your laptop):
-
-    ssh-copy-id -f -i /etc/ceph/ceph.pub root@192.168.1.11
-    ssh-copy-id -f -i /etc/ceph/ceph.pub root@192.168.1.12
-    ssh-copy-id -f -i /etc/ceph/ceph.pub root@192.168.1.13
-
-Disable automatic monitor deployment and add hosts:
+Add hosts after disabling automatic `mon` deployment:
 
     ceph orch apply mon --unmanaged
     ceph orch host add pikvm1 192.168.1.11
@@ -145,34 +151,84 @@ network:
 
   ceph config set mgr mgr/dashboard/ssl false
   ceph config set mgr mgr/dashboard/server_addr 192.168.1.10
-  ceph config set mgr mgr/dashboard/server_port 8040
+  ceph config set mgr mgr/dashboard/server_port 8000
   ceph dashboard set-grafana-api-ssl-verify False
   ceph mgr module disable dashboard
   ceph mgr module enable dashboard
 
-Now, the dashboard is accessible over http://192.168.1.10:8040/
+Now, the dashboard is accessible over http://192.168.1.10:8000/
 
-### Tuning
+### Optional: Tuning
 
 Refer https://docs.ceph.com/en/latest/start/hardware-recommendations/#memory
 
-Configure per OSD RAM to 2GB (or as required):
+For example, configure per OSD memory limit and MDS cache memory limit to 2GB each (or as required):
 
     ceph config set osd osd_memory_target 2G
+    ceph config set mds mds_cache_memory_limit 2G
+
+You confirm the value using the `ceph config get <key> <config>` command, for example:
+
+    ceph config get osd osd_memory_target
+    ceph config get mds mds_cache_memory_limit
+    ceph config get mon public_network
 
 ### Add Ceph Storage to CloudStack
 
-Check Ceph status using the following:
+Check Ceph status using the following command (or using the Ceph dashboard):
 
     ceph -s
 
-Or, open the dashboard in browser:
+<img src="/images/cloudstack/ceph-dashboard.png"><br>
 
-    https://192.168.1.10:8443/
+Once you've ensure your Ceph cluster is up and healthy, let's create a new Ceph
+pool and add to CloudStack:
+
+    ceph osd pool create meowceph 64 replicated
+    ceph osd pool set meowceph size 3
+    rbd pool init meowceph
+
+Next, create a dedicated auth key for this pool:
+
+    ceph auth get-or-create client.cloudstack mon 'profile rbd' osd 'profile rbd pool=meowceph'
+
+Finally, you can add this pool as a CloudStack zone-wide Ceph primary storage
+using the above credential as RADOS secret for the user `cloudstack` as well
+specify the monitor domain or IP with a storage tag. For example:
+
+<img src="/images/cloudstack/ceph.png"><br>
+
+Next, you can create specific compute and disk offering with the same storage
+tag so VM deployments would use your newly added Ceph storage pool.
+
+### Additional: Fun with CephFS
+
+[CephFS](https://docs.ceph.com/en/pacific/cephfs/index.html) is a
+POSIX-compliant file system over RADOS. I've started using CephFS as a
+distributed-shared directory for storing documents and photos which along with
+rsync allows me to keep all my home computers in sync with each other.
+
+To create a CephFS (say with the name `cephfs`), simply run:
+
+     ceph fs volume create cephfs
+
+That's it!
+
+Now to mount and use CephFS on your client/computer, you can either use Ceph
+FUSE or on Linux environment simply use the kernel based module. For that
+install `ceph-common`:
+
+    apt-get install ceph-common
+
+Now, you can mount your CephFS named `cephfs` using:
+
+    sudo mount -t ceph 192.168.1.11:6789:/ ceph -o name=<username>,secret=<password secret>
+
+Note: you create dedicated client for use with your CephFS.
 
 
-TODO: yet to write/test about CloudStack usage...
+To make this mountable using `mount -a` or upon your Linux machine boot, you can put
+this in your `/etc/fstab` where you can specify multiple `mon` hosts IPs (this
+assumes port 6789 by default when not explicitly defined):
 
-Read:
-https://docs.ceph.com/en/pacific/architecture/
-
+    192.168.1.11,192.168.1.12,192.168.1.13:/ /home/rohit/ceph  ceph  name=rohit,secret=<SecretHere>,defaults 0 2
