@@ -7,7 +7,7 @@ redirect_from: "/logs/devcloud/"
 ---
 
 Update: Newer way of appliance based CloudStack development is encouraged with
-[MonkeyBox](https://github.com/rhtyd/monkeybox).
+[MonkeyBox](https://github.com/rohityadavcloud/monkeybox).
 
 [Apache CloudStack](http://incubator.apache.org/cloudstack) development is
 not an easy task, for the simplest of deployments one requires a server where
