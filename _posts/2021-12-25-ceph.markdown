@@ -13,6 +13,14 @@ you're new to Ceph, you can [start
 here](https://docs.ceph.com/en/pacific/start/intro/), or deep dive into the
 [architecture](https://docs.ceph.com/en/pacific/architecture/).
 
+This references the ShapeBlue three-part Ceph and CloudStack blog series:
+
+[https://www.shapeblue.com/ceph-and-cloudstack-part-1/](https://www.shapeblue.com/ceph-and-cloudstack-part-1/)
+
+[https://www.shapeblue.com/ceph-and-cloudstack-part-2/](https://www.shapeblue.com/ceph-and-cloudstack-part-2/)
+
+[https://www.shapeblue.com/ceph-and-cloudstack-part-3/](https://www.shapeblue.com/ceph-and-cloudstack-part-3/)
+
 ### Host Configuration
 
 In the this Ceph cluster, we've three hosts/nodes that serve as both `mon` and
