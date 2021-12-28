@@ -234,9 +234,13 @@ Now, you can mount your CephFS named `cephfs` using:
 
 Note: you create dedicated client for use with your CephFS.
 
-
 To make this mountable using `mount -a` or upon your Linux machine boot, you can put
 this in your `/etc/fstab` where you can specify multiple `mon` hosts IPs (this
 assumes port 6789 by default when not explicitly defined):
 
     192.168.1.11,192.168.1.12,192.168.1.13:/ /home/rohit/ceph  ceph  name=rohit,secret=<SecretHere>,defaults 0 2
+
+I then use `rsync` to sync local folder to cephfs and have cephfs mounted on all
+of my home computers to keep data in sync:
+
+    rsync -avzP --delete-after documents/ ceph/documents/
