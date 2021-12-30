@@ -25,7 +25,7 @@ title: Projects
   - [CloudStack non-oss](https://github.com/shapeblue/cloudstack-nonoss)
   - [CloudStack Container Service](https://github.com/shapeblue/ccs)
 - Misc:
-  - [ipmisim](https://github.com/rohityadavcloud/ipmisim): `pip install ipmisim`
+  - [ipmisim](https://github.com/shapeblue/ipmisim): `pip install ipmisim`
   - [TinyLinux](https://github.com/rohityadavcloud/tinylinux)
 
 ### Opensource at Wingify <small><span class="light">2013-2014</span></small>
