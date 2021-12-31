@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-<a href="/assets/pic.jpg"><img align="left" src="/assets/pic.jpg" style="max-width:320px; margin-right:20px"/></a>
+<a href="/assets/avatar.gif"><img align="left" src="/assets/avatar.gif" style="max-width:320px; margin-right:20px"/></a>
 [Namaste](http://en.wikipedia.org/wiki/Namaste)! I'm Rohit Yadav, [PMC
 member](http://people.apache.org/committer-index.html#rohit)
 and [committer](https://github.com/apache/cloudstack/graphs/contributors) at the
