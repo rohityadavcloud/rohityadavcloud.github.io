@@ -157,12 +157,12 @@ as:
 To disable SSL on Ceph Dashboard when, for example, using inside an internal
 network:
 
-  ceph config set mgr mgr/dashboard/ssl false
-  ceph config set mgr mgr/dashboard/server_addr 192.168.1.10
-  ceph config set mgr mgr/dashboard/server_port 8000
-  ceph dashboard set-grafana-api-ssl-verify False
-  ceph mgr module disable dashboard
-  ceph mgr module enable dashboard
+    ceph config set mgr mgr/dashboard/ssl false
+    ceph config set mgr mgr/dashboard/server_addr 192.168.1.10
+    ceph config set mgr mgr/dashboard/server_port 8000
+    ceph dashboard set-grafana-api-ssl-verify False
+    ceph mgr module disable dashboard
+    ceph mgr module enable dashboard
 
 Now, the dashboard is accessible over http://192.168.1.10:8000/
 
