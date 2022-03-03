@@ -340,7 +340,7 @@ Early 2019: Research and Survey
 20 Feb 2020: Net meter installed, system export on
 08 Mar 2020: High record - 5.5kWh per system/DC kW tested
 30 Jun 2020: Between March-June 2020, it produced 3.4MWh or ~4.58kWh per system kW per day
-27 Sep 2021: After reivew of more than a year, added 10 new mono-perc panels with IQ7A (total plan capacity of 10kW)
+27 Sep 2021: Added 10 mono-perc panels with IQ7A (total plant capacity of 10kW)
 ```
 
 [Public Dashboard](https://enlighten.enphaseenergy.com/pv/public_systems/9NBa1754143/overview)
