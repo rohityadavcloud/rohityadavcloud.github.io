@@ -13,7 +13,7 @@ the AP is connected to the home network over VPN.
 Let's start by installing the dependencies
 
     apt-get update
-    apt-get install wireguard wireguard-tools dnsmasq hostapd
+    apt-get install wireguard wireguard-tools dnsmasq hostapd resolvconf
 
 ### Wireguard VPN
 
