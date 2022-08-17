@@ -63,7 +63,7 @@ Install podman:
     sudo apt-get update
     sudo apt-get -y install podman
 
-Finally, configure the ceph repository (pacific/v16 in this example) and install
+Finally, configure the ceph repository (quincy/v17 in this example) and install
 `cephadm` and `ceph-common` on all the nodes:
 
     wget -q -O- 'https://download.ceph.com/keys/release.asc' | sudo apt-key add -
