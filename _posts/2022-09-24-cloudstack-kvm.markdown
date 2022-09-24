@@ -10,7 +10,7 @@ This is a build your own IaaS cloud guide on setting up a Apache CloudStack
 based cloud on a single Ubuntu 18.04/20.04/22.04 (LTS) host that is also used
 as a KVM host.
 
-Note: this should work for ACS 4.11 and above, has been updated against ACS 4.17
+Note: this should work for ACS 4.16 and above, has been updated against ACS 4.17
 release. This how-to post may get outdated in future, so please [follow the
 latest docs](http://docs.cloudstack.apache.org/en/4.17.1.0/installguide) and/or
 [read the latest docs on KVM host
@@ -183,6 +183,12 @@ may not be supported, we can get the old behaviour as follows:
     systemctl mask libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket libvirtd-tls.socket libvirtd-tcp.socket
     systemctl restart libvirtd
 
+On certain hosts where you may be running docker and other services, you may need to
+add the following in `/etc/sysctl.conf` and then run `sysctl -p`:
+
+    net.bridge.bridge-nf-call-arptables = 0
+    net.bridge.bridge-nf-call-iptables = 0
+
 Optional: If you've a crappy server vendor, they may fail to make each server
 unique and libvirtd can complain that servers are not unique. To make them
 unique setup host specific UUID in libvirtd config:
@@ -192,10 +198,10 @@ unique setup host specific UUID in libvirtd config:
     echo host_uuid = \"$UUID\" >> /etc/libvirt/libvirtd.conf
     systemctl restart libvirtd
 
-Note: while adding KVM host (default, via ssh) it may fail on newer distros
-which has OpenSSH version 7+ which has deprecated some legacy algorithms. To fix
-that the `sshd_config` on the KVM host may temporarily be changed to following
-before adding the KVM host in CloudStack: (you may remove this and restart sshd
+Note: For older CloudStack v4.15 and older, when adding KVM host (default, via ssh)
+it may fail on newer distros which have OpenSSH version 7+ that has deprecated some
+legacy algorithms. To fix that the `sshd_config` on the KVM host may temporarily
+be changed to following before adding the KVM host in CloudStack: (you may remove this and restart sshd
 after adding the KVM host)
 
     PubkeyAcceptedKeyTypes=+ssh-dss
