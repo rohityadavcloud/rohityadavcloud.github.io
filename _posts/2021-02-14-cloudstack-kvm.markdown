@@ -7,18 +7,18 @@ redirect_from: "/logs/cloudstack-kvm/"
 ---
 
 This is a build your own IaaS cloud guide on setting up a Apache CloudStack
-based cloud on a single Ubuntu 18.04/20.04 (LTS) host that is also used as a KVM
-host.
+based cloud on a single Ubuntu 18.04/20.04/22.04 (LTS) host that is also used
+as a KVM host.
 
-Note: this should work for ACS 4.11 and above, has been updated against ACS 4.16
+Note: this should work for ACS 4.11 and above, has been updated against ACS 4.17
 release. This how-to post may get outdated in future, so please [follow the
-latest docs](http://docs.cloudstack.apache.org/en/4.16.1.0/installguide) and/or
+latest docs](http://docs.cloudstack.apache.org/en/4.17.1.0/installguide) and/or
 [read the latest docs on KVM host
-installation](http://docs.cloudstack.apache.org/en/4.16.1.0/installguide/hypervisor/kvm.html).
+installation](http://docs.cloudstack.apache.org/en/4.17.1.0/installguide/hypervisor/kvm.html).
 
 # Initial Setup
 
-First install Ubuntu 16.04/18.04/20.04 LTS on your x86_64 system that has at
+First install Ubuntu 18.04/20.04/22.04 LTS on your x86_64 system that has at
 least 4GB RAM (prerably 8GB or more) with Intel VT-X or AMD-V enabled. Ensure
 that the `universe` repository is enabled in `/etc/apt/sources.list`.
 
@@ -46,41 +46,18 @@ be used for all these networks. Install bridge utilities:
 This guide assumes that you're in a 192.168.1.0/24 network which is a typical
 RFC1918 private network.
 
-### Ubuntu 16.04
-
-To configure bridge on Ubuntu 16.04, make suitable changes to
-`/etc/network/interfaces`:
-
-    auto lo
-    iface lo inet loopback
-
-    auto enp2s0
-    iface enp2s0 inet manual
-
-    auto cloudbr0
-    iface cloudbr0 inet static
-        address 192.168.1.10
-        netmask 255.255.255.0
-        gateway 192.168.1.1
-        dns-nameservers 1.1.1.1
-        bridge_ports enp2s0
-        bridge_fd 0
-        bridge_stp off
-
-Restart networking or reboot the host to enforce network settings.
-
 ### Ubuntu 18.04/20.04
 
 Starting Ubuntu bionic, admins can use `netplan` to configure networking. The
-default installation creates a file at `/etc/netplan/50-cloud-init.yaml` which
-you can comment, and create a file at `/etc/netplan/01-netcfg.yaml` applying
+default installation creates a file at `/etc/netplan/50-cloud-init.yaml` that
+you should comment, and create a file at `/etc/netplan/01-netcfg.yaml` applying
 your network specific changes:
 
      network:
        version: 2
        renderer: networkd
        ethernets:
-         ens3:
+         eno1:
            dhcp4: false
            dhcp6: false
            optional: true
@@ -90,7 +67,7 @@ your network specific changes:
            gateway4: 192.168.1.1
            nameservers:
              addresses: [1.1.1.1,8.8.8.8]
-           interfaces: [ens3]
+           interfaces: [eno1]
            dhcp4: false
            dhcp6: false
            parameters:
@@ -121,10 +98,14 @@ Save the file and apply network config, finally reboot:
 
 Install CloudStack management server and MySQL server: (run as root)
 
-    apt-key adv --keyserver keys.gnupg.net --recv-keys BDF0E176584DF93F
-    echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.16 / > /etc/apt/sources.list.d/cloudstack.list
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BDF0E176584DF93F
+    echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.17 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update -y
-    apt-get install cloudstack-management cloudstack-usage mysql-server
+    apt-get install cloudstack-management mysql-server
+
+Optionally, if you want usage server you can run:
+
+    apt-get install cloudstack-usage 
 
 Make a note of the MySQL server's root user password. Configure InnoDB settings
 in mysql server's `/etc/mysql/mysql.conf.d/mysqld.cnf`:
@@ -164,8 +145,9 @@ Configure and restart NFS server:
     sed -i -e 's/^RPCRQUOTADOPTS=$/RPCRQUOTADOPTS="-p 875"/g' /etc/default/quota
     service nfs-kernel-server restart
 
-
-(Optional) Seed systemvm template: (note that starting 4.16, seeding template is automatically done by CloudStack management server on zone deployment)
+NOTE: The following is no longer necessary for CloudStack 4.16 and above as CloudStack management server does this
+automatically. For older versions, the `cloud-install-sys-tmplt` script can be used to seed the systemvmtemplate.
+For example, here's the command to use for version 4.16:
 
     wget http://packages.shapeblue.com/systemvmtemplate/4.16/systemvmtemplate-4.16.1-kvm.qcow2.bz2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
@@ -195,6 +177,12 @@ Configure default libvirtd config:
     echo 'auth_tcp = "none"' >> /etc/libvirt/libvirtd.conf
     systemctl restart libvirtd
 
+For Ubuntu 20.04/22.04 and later, the traditional socket/listen based configuration
+may not be supported, we can get the old behaviour as follows:
+
+    systemctl mask libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket libvirtd-tls.socket libvirtd-tcp.socket
+    systemctl restart libvirtd
+
 Optional: If you've a crappy server vendor, they may fail to make each server
 unique and libvirtd can complain that servers are not unique. To make them
 unique setup host specific UUID in libvirtd config:
@@ -202,15 +190,6 @@ unique setup host specific UUID in libvirtd config:
     apt-get install uuid
     UUID=$(uuid)
     echo host_uuid = \"$UUID\" >> /etc/libvirt/libvirtd.conf
-    systemctl restart libvirtd
-
-Note: In Ubuntu 18.04, the libvirt daemon process has been named libvirtd but
-libvirt-bin alias is also available.
-
-For Ubuntu 20.04 and later, the traditional socket/listen based configuration
-may not be supported, we can get the old behaviour as follows:
-
-    systemctl mask libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket libvirtd-tls.socket libvirtd-tcp.socket
     systemctl restart libvirtd
 
 Note: while adding KVM host (default, via ssh) it may fail on newer distros
