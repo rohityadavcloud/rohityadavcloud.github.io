@@ -311,7 +311,7 @@ Add your default/first host:
     Username - root
     Password - <password for root user, please enable root user ssh-access by password on the KVM host>
 
-Note: `root` user ssh-access is disabled by default, [please enable it](https://askubuntu.com/questions/469143/how-to-enable-ssh-root-access-on-ubuntu-14-04).
+Note: `root` user ssh-access is disabled by default, [please enable it](https://askubuntu.com/questions/469143/how-to-enable-ssh-root-access-on-ubuntu-14-04). To add the KVM host using ssh-access, add the management server SSH public key at /var/cloudstack/management/.ssh/id_rsa.pub to the root user at /root/.ssh/authorized_keys.
 
 Add primary storage:
 
