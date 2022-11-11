@@ -164,9 +164,11 @@ Enable VNC for console proxy:
 
     sed -i -e 's/\#vnc_listen.*$/vnc_listen = "0.0.0.0"/g' /etc/libvirt/qemu.conf
 
-Enable libvirtd in listen mode:
+On Ubuntu 18.04/20.04, enable libvirtd in listen mode:
 
     sed -i -e 's/.*libvirtd_opts.*/libvirtd_opts="-l"/' /etc/default/libvirtd
+
+On Ubuntu 22.04, add `LIBVIRTD_ARGS="--listen"` to `/etc/default/libvirtd` instead.
 
 Configure default libvirtd config:
 
