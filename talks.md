@@ -5,6 +5,8 @@ tagline:
 permalink: /talks/
 ---
 
+[Next-Gen Virtual Router and Zero-Downtime Upgrades](/files/talks/ccc22-nextgen-vr-zero-downtime-upgrade.pdf) [(Video)](), CCC Sofia 2022, 16 November, 2022
+
 [Next-Gen Virtual Router](/files/talks/ccc21-vr-agent.pdf) [(Video)](https://www.youtube.com/watch?v=1BTC-3uCYyE), Virtual CCC 2021, 11 November, 2021
 
 [mbx - Local CI/CD for CloudStack](/files/talks/ccc21-mbx.pdf) [(Video)](https://www.youtube.com/watch?v=a8xuWHrzw88), Virtual CCC 2021, 10 November, 2021
