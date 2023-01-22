@@ -12,9 +12,9 @@ as a KVM host.
 
 Note: this should work for ACS 4.16 and above, has been updated against ACS 4.17
 release. This how-to post may get outdated in future, so please [follow the
-latest docs](http://docs.cloudstack.apache.org/en/4.17.1.0/installguide) and/or
+latest docs](http://docs.cloudstack.apache.org/en/4.17.2.0/installguide) and/or
 [read the latest docs on KVM host
-installation](http://docs.cloudstack.apache.org/en/4.17.1.0/installguide/hypervisor/kvm.html).
+installation](http://docs.cloudstack.apache.org/en/4.17.2.0/installguide/hypervisor/kvm.html).
 
 # Initial Setup
 
@@ -46,7 +46,7 @@ be used for all these networks. Install bridge utilities:
 This guide assumes that you're in a 192.168.1.0/24 network which is a typical
 RFC1918 private network.
 
-### Ubuntu 18.04/20.04
+### Ubuntu 20.04/22.04
 
 Starting Ubuntu bionic, admins can use `netplan` to configure networking. The
 default installation creates a file at `/etc/netplan/50-cloud-init.yaml` that
@@ -64,7 +64,9 @@ your network specific changes:
        bridges:
          cloudbr0:
            addresses: [192.168.1.10/24]
-           gateway4: 192.168.1.1
+           routes:
+            - to: default
+              via: 192.168.1.1
            nameservers:
              addresses: [1.1.1.1,8.8.8.8]
            interfaces: [eno1]
@@ -98,8 +100,16 @@ Save the file and apply network config, finally reboot:
 
 Install CloudStack management server and MySQL server: (run as root)
 
+For Ubuntu 18.04:
+
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BDF0E176584DF93F
-    echo deb http://packages.shapeblue.com/cloudstack/upstream/debian/4.17 / > /etc/apt/sources.list.d/cloudstack.list
+    
+Recommended, for Ubuntu 22.04 and onwards:
+    
+    mkdir -p /etc/apt/keyrings
+    wget -O- http://packages.shapeblue.com/release.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cloudstack.gpg > /dev/null
+    
+    echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.17 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update -y
     apt-get install cloudstack-management mysql-server
 
