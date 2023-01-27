@@ -358,6 +358,3 @@ Next, click `Launch Zone` which will perform following actions:
 
 Finally, confirm and enable the zone. Wait for the system VMs to come up, then
 you can proceed with your IaaS usage. Happy hacking!
-
-<a href="https://cloudstack.apache.org/">Click here to visit the CloudStack Project</a>.
-
