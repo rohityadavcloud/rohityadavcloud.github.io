@@ -4,7 +4,8 @@ title: Projects
 ---
 
 
-My [dotfiles](https://github.com/rohityadavcloud/dotfiles)
+- My [dotfiles](https://github.com/rohityadavcloud/dotfiles)
+- Guide on Building [On-Prem/HomeLab](https://onprem.in) CloudStack IaaS Cloud
 
 ### Apache CloudStack <small><span class="light">2012-Present</span></small>
 
