@@ -373,4 +373,4 @@ You can register publicly available cloud-init enabled guest templates such as:
 - AlmaLinux 9: https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/AlmaLinux-9-GenericCloud-latest.x86_64.qcow2
 - OpenSUSE 15: https://download.opensuse.org/distribution/leap/15.5/appliances/openSUSE-Leap-15.5-Minimal-VM.x86_64-Cloud.qcow2
 
-Happy clouding!
+Happy labbing!
