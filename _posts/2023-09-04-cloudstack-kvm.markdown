@@ -7,18 +7,18 @@ redirect_from: "/logs/cloudstack-kvm/"
 ---
 
 This is a build your own IaaS cloud guide on setting up a Apache CloudStack
-based cloud on a single Ubuntu 18.04/20.04/22.04 (LTS) host that is also used
+based cloud on a single Ubuntu 20.04/22.04 (LTS) host that is also used
 as a KVM host.
 
-Note: this should work for ACS 4.16 and above, has been updated against ACS 4.17
+Note: this should work for ACS 4.16 and above, has been updated against ACS 4.18
 release. This how-to post may get outdated in future, so please [follow the
-latest docs](http://docs.cloudstack.apache.org/en/4.17.2.0/installguide) and/or
+latest docs](http://docs.cloudstack.apache.org/en/4.18.0.0/installguide) and/or
 [read the latest docs on KVM host
-installation](http://docs.cloudstack.apache.org/en/4.17.2.0/installguide/hypervisor/kvm.html).
+installation](http://docs.cloudstack.apache.org/en/4.18.0.0/installguide/hypervisor/kvm.html).
 
 # Initial Setup
 
-First install Ubuntu 18.04/20.04/22.04 LTS on your x86_64 system that has at
+First install Ubuntu 20.04/22.04 LTS on your x86_64 system that has at
 least 4GB RAM (prerably 8GB or more) with Intel VT-X or AMD-V enabled. Ensure
 that the `universe` repository is enabled in `/etc/apt/sources.list`.
 
@@ -51,7 +51,7 @@ RFC1918 private network.
 Starting Ubuntu bionic, admins can use `netplan` to configure networking. The
 default installation creates a file at `/etc/netplan/50-cloud-init.yaml` that
 you should comment, and create a file at `/etc/netplan/01-netcfg.yaml` applying
-your network specific changes:
+your network and interface/name specific changes:
 
      network:
        version: 2
@@ -80,7 +80,7 @@ Note: If you want to use VXLAN based traffic isolation, make sure to increase th
 
 ```
   ethernets:
-    enp2s0:
+    eno1:
       match:
         macaddress: 00:01:2e:4f:f7:d0
       mtu: 1550
@@ -100,22 +100,22 @@ Save the file and apply network config, finally reboot:
 
 Install CloudStack management server and MySQL server: (run as root)
 
-For Ubuntu 18.04:
+For older Ubuntu versions:
 
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BDF0E176584DF93F
-    
+
 Recommended, for Ubuntu 22.04 and onwards:
-    
+
     mkdir -p /etc/apt/keyrings
     wget -O- http://packages.shapeblue.com/release.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cloudstack.gpg > /dev/null
-    
-    echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.17 / > /etc/apt/sources.list.d/cloudstack.list
+
+    echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.18 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update -y
     apt-get install cloudstack-management mysql-server
 
 Optionally, if you want usage server you can run:
 
-    apt-get install cloudstack-usage 
+    apt-get install cloudstack-usage
 
 Make a note of the MySQL server's root user password. Configure InnoDB settings
 in mysql server's `/etc/mysql/mysql.conf.d/mysqld.cnf`:
@@ -155,9 +155,11 @@ Configure and restart NFS server:
     sed -i -e 's/^RPCRQUOTADOPTS=$/RPCRQUOTADOPTS="-p 875"/g' /etc/default/quota
     service nfs-kernel-server restart
 
-NOTE: The following is no longer necessary for CloudStack 4.16 and above as CloudStack management server does this
-automatically. For older versions, the `cloud-install-sys-tmplt` script can be used to seed the systemvmtemplate.
-For example, here's the command to use for version 4.16:
+NOTE: The following is no longer necessary for CloudStack 4.16 and above as
+CloudStack management server does this automatically. This is provided just for
+reference. For older versions, the `cloud-install-sys-tmplt` script can be used
+to seed the systemvmtemplate. For example, here's the command to use for version
+4.16 just for reference:
 
     wget http://packages.shapeblue.com/systemvmtemplate/4.16/systemvmtemplate-4.16.1-kvm.qcow2.bz2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
@@ -174,11 +176,19 @@ Enable VNC for console proxy:
 
     sed -i -e 's/\#vnc_listen.*$/vnc_listen = "0.0.0.0"/g' /etc/libvirt/qemu.conf
 
-On Ubuntu 18.04/20.04, enable libvirtd in listen mode:
+On older Ubuntu versions, enable libvirtd in listen mode:
 
     sed -i -e 's/.*libvirtd_opts.*/libvirtd_opts="-l"/' /etc/default/libvirtd
 
-On Ubuntu 22.04, add `LIBVIRTD_ARGS="--listen"` to `/etc/default/libvirtd` instead.
+On Ubuntu 22.04, add `LIBVIRTD_ARGS="--listen"` to `/etc/default/libvirtd` instead:
+
+    echo LIBVIRTD_ARGS=\"--listen\" >> /etc/default/libvirtd
+
+For Ubuntu 20.04/22.04 and later, the traditional socket/listen based configuration
+may not be supported, we can get the old behaviour as follows:
+
+    systemctl mask libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket libvirtd-tls.socket libvirtd-tcp.socket
+    systemctl restart libvirtd
 
 Configure default libvirtd config:
 
@@ -189,42 +199,42 @@ Configure default libvirtd config:
     echo 'auth_tcp = "none"' >> /etc/libvirt/libvirtd.conf
     systemctl restart libvirtd
 
-For Ubuntu 20.04/22.04 and later, the traditional socket/listen based configuration
-may not be supported, we can get the old behaviour as follows:
+Note: the above default libvirtd configuration is just for initial setup, when
+you add the KVM host in CloudStack by default the host will be configured to use
+a more secure TLS configuration.
 
-    systemctl mask libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket libvirtd-tls.socket libvirtd-tcp.socket
-    systemctl restart libvirtd
-
-On certain hosts where you may be running docker and other services, you may need to
-add the following in `/etc/sysctl.conf` and then run `sysctl -p`:
+On certain hosts where you may be running docker and other services, you may
+need to add the following in `/etc/sysctl.conf` and then run `sysctl -p`:
 
     net.bridge.bridge-nf-call-arptables = 0
     net.bridge.bridge-nf-call-iptables = 0
 
-Optional: If you've a crappy server vendor, they may fail to make each server
-unique and libvirtd can complain that servers are not unique. To make them
-unique setup host specific UUID in libvirtd config:
+Optional: If you've a  server vendor, they may fail to make each server unique
+and libvirtd can complain that servers are not unique. To make them unique setup
+host specific UUID in libvirtd config:
 
     apt-get install uuid
     UUID=$(uuid)
     echo host_uuid = \"$UUID\" >> /etc/libvirt/libvirtd.conf
     systemctl restart libvirtd
 
-Note: For older CloudStack v4.15 and older, when adding KVM host (default, via ssh)
-it may fail on newer distros which have OpenSSH version 7+ that has deprecated some
-legacy algorithms. To fix that the `sshd_config` on the KVM host may temporarily
-be changed to following before adding the KVM host in CloudStack: (you may remove this and restart sshd
-after adding the KVM host)
-
-    PubkeyAcceptedKeyTypes=+ssh-dss
-    HostKeyAlgorithms=+ssh-dss
-    KexAlgorithms=+diffie-hellman-group1-sha1
-
 # Configure Firewall
 
-Configure firewall:
+By default `ufw` may be disabled and this may not be required. If your system
+uses `ufw` (you can check using `ufw status`), you may run the following:
 
-    # configure iptables
+    ufw allow mysql
+    ufw allow proto tcp from any to any port 22
+    ufw allow proto tcp from any to any port 1798
+    ufw allow proto tcp from any to any port 16509
+    ufw allow proto tcp from any to any port 16514
+    ufw allow proto tcp from any to any port 5900:6100
+    ufw allow proto tcp from any to any port 49152:49216
+
+Alternatively, you can configure firewall rules using iptables for your
+management network:
+
+    # configure firewall rules to allow useful ports
     NETWORK=192.168.1.0/24
     iptables -A INPUT -s $NETWORK -m state --state NEW -p udp --dport 111 -j ACCEPT
     iptables -A INPUT -s $NETWORK -m state --state NEW -p tcp --dport 111 -j ACCEPT
@@ -241,22 +251,13 @@ Configure firewall:
 
     apt-get install iptables-persistent
 
+You must check and disable apparmour:
+
     # Disable apparmour on libvirtd
     ln -s /etc/apparmor.d/usr.sbin.libvirtd /etc/apparmor.d/disable/
     ln -s /etc/apparmor.d/usr.lib.libvirt.virt-aa-helper /etc/apparmor.d/disable/
     apparmor_parser -R /etc/apparmor.d/usr.sbin.libvirtd
     apparmor_parser -R /etc/apparmor.d/usr.lib.libvirt.virt-aa-helper
-
-If your system uses `ufw` instead (you can check using `ufw status`), run the
-following:
-
-    ufw allow mysql
-    ufw allow proto tcp from any to any port 22
-    ufw allow proto tcp from any to any port 1798
-    ufw allow proto tcp from any to any port 16509
-    ufw allow proto tcp from any to any port 16514
-    ufw allow proto tcp from any to any port 5900:6100
-    ufw allow proto tcp from any to any port 49152:49216
 
 ### Launch Management Server
 
@@ -323,7 +324,12 @@ Add your default/first host:
     Username - root
     Password - <password for root user, please enable root user ssh-access by password on the KVM host>
 
-Note: `root` user ssh-access is disabled by default, [please enable it](https://askubuntu.com/questions/469143/how-to-enable-ssh-root-access-on-ubuntu-14-04). To add the KVM host using ssh-access, add the management server SSH public key at /var/cloudstack/management/.ssh/id_rsa.pub to the root user at /root/.ssh/authorized_keys.
+Note: `root` user ssh-access is disabled by default, [please enable
+it](https://askubuntu.com/questions/469143/how-to-enable-ssh-root-access-on-ubuntu-14-04).
+The recommended approach is to add the KVM host using ssh public-key based
+access, add the management server SSH public key which is usually at
+/var/cloudstack/management/.ssh/id_rsa.pub to the root user of the KVM host(s)
+at /root/.ssh/authorized_keys.
 
 Add primary storage:
 
@@ -356,5 +362,15 @@ Next, click `Launch Zone` which will perform following actions:
     Create secondary storage
     Complete zone creation
 
-Finally, confirm and enable the zone. Wait for the system VMs to come up, then
-you can proceed with your IaaS usage. Happy hacking!
+Finally, confirm and enable the zone. Wait for the system VMs to come up under
+Infrastructure -> System VMs, then you can proceed using your IaaS cloud.
+
+You can register publicly available cloud-init enabled guest templates such as:
+
+- Ubuntu 22.04: https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-amd64.img
+- Ubuntu 20.04: https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-amd64.img
+- Debian 12: https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-genericcloud-amd64.qcow2
+- AlmaLinux 9: https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/AlmaLinux-9-GenericCloud-latest.x86_64.qcow2
+- OpenSUSE 15: https://download.opensuse.org/distribution/leap/15.5/appliances/openSUSE-Leap-15.5-Minimal-VM.x86_64-Cloud.qcow2
+
+Happy clouding!
