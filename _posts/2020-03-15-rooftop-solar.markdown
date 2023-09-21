@@ -190,8 +190,8 @@ time. IQ7+ peak output (AC) is documented as 295VA or 295W (at 1.0 power
 factor). An Enphase whitepaper recommended DC-AC ratio of 1.1-1.2, therefore the
 system requires a panel with at least 350W peak power rating.
 
-After survey and consultation with Enphase sales team, [Canadian Solar
-Hiku-410Wp](https://www.canadiansolar.com/hiku/) solar PV panels were chosen.
+After survey and consultation with Enphase sales team, [Hiku-410Wp](https://www.canadiansolar.com/hiku/)
+solar PV panels were chosen.
 These panels have 10-12years warranty and 80% power performance warranty for
 25years, and unlike traditional solar panels they have [half-cut
 cells](https://news.energysage.com/half-cut-solar-cells-overview/) that reduces
@@ -200,7 +200,7 @@ towards quarter-cut cells that may further reduce resistive losses.
 
 <div class="post-image">
   <img src="/images/solar/panel.jpg"><br/>
-  <p>Canadian Solar Hiku 410Wp Panel</p>
+  <p>Hiku 410Wp Panel</p>
 </div>
 
 #2 Micro-Inverters
@@ -243,7 +243,7 @@ official [channel partners](https://enphase.com/en-in/find-an-installer):
 
 Sunson installed a raised GI (galvanized-iron, so structure does not rust)
 structure on my roof with concrete based footing. On this GI structure (as seen
-in the photograph below) 15 Canadian Solar Hiku 410Wp panels were mounted and 15
+in the photograph below) 15 Hiku 410Wp panels were mounted and 15
 Enphase IQ7+ microinverters were installed. The 15 panel-microinverter units
 were wired into three AC strings having 5 units of panel-microinverter each.
 Each panel-microinverter unit works as an independent solar plant and on each
