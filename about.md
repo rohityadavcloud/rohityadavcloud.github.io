@@ -26,7 +26,7 @@ My [GPG key](/gpg.pub) is [0x0EE3D884](https://keyserver.ubuntu.com/pks/lookup?s
 
 My interest and journey in the cloud computing space started at CERN in 2010, where
 I got hands-on experience in virtualisation and cloud computing as a volunteer
-summer student Dr. [Ben Segal](https://www.internethalloffame.org/inductee/ben-segal). Since 2012, I've been
-working on Apache CloudStack which has allowed me to work in several areas of interest
-such as data-center virtualisation, networking, storage, distributed systems,
-resource management and scheduling, infrastructure and devops.
+summer student under Dr. [Ben Segal](https://www.internethalloffame.org/inductee/ben-segal).
+Since 2012, I've been working on Apache CloudStack which has allowed me to work in
+several areas of interest such as data-center virtualisation, networking, storage,
+distributed systems, orchestration, resource management and scheduling, and devops.
