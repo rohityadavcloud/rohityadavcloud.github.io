@@ -31,6 +31,10 @@ that was created and tested specifically against the new RaspberryPi4 and Ubuntu
   <img src="/images/rpi4/dashboard.png">
 </div>
 
+Update: I was also able to test this guide on Mac Mini M2 Pro based machine with
+ACS 4.18. I had to seed the systemvmtemplate manually using
+https://download.cloudstack.org/arm64/systemvmtemplate/4.18
+
 # Contents
 
 - [Getting Started](#getting-started)
@@ -311,6 +315,11 @@ Ensure the following options in the `/etc/cloudstack/agent/agent.properties`:
 
     guest.cpu.arch=aarch64
     guest.cpu.mode=host-passthrough
+    host.cpu.manual.speed.mhz=1500
+
+Note: the `host.cpu.manual.speed.mhz` is needed because Linux isn't able to
+report the correct CPU speed for some models such as the M1/M2/M2 Pro etc. You
+can set the correct CPU speed in Mhz of your host manually using this property.
 
 By default 1GB of host memory is reserved for agent/host usage, which you can
 change using the following in the agent.properties file:
