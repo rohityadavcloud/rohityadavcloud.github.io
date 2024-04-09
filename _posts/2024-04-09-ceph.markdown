@@ -5,12 +5,12 @@ highlight: primary
 title: Ceph Storage with CloudStack on Ubuntu/KVM
 ---
 
-In this post, we look at how to deploy a Ceph cluster (v17 +) and then use that
-with Apache CloudStack and KVM on Ubuntu 20.04.
+In this post, we look at how to deploy a Ceph cluster (v18 +) and then use that
+with Apache CloudStack and KVM on Ubuntu 22.04.
 
-Refer to [Ceph docs](https://docs.ceph.com/en/pacific/install) as necessary. If
+Refer to [Ceph docs](https://docs.ceph.com/en/reef/install) as necessary. If
 you're new to Ceph, you can [start
-here](https://docs.ceph.com/en/pacific/start/intro/), or deep dive into the
+here](https://docs.ceph.com/en/reef/start/intro/), or deep dive into the
 [architecture](https://docs.ceph.com/en/pacific/architecture/).
 
 This references the ShapeBlue three-part Ceph and CloudStack blog series:
@@ -49,7 +49,7 @@ Configure SSH config on admin or management node:
 
 Newer Ceph versions recommend using `cephadm` to install and manage Ceph cluster
 using containers and systemd.
-[Cephadm](https://docs.ceph.com/en/pacific/cephadm) requirements include
+[Cephadm](https://docs.ceph.com/en/reef/cephadm) requirements include
 python3, systemd, podman or docker, ntp and lvm2. Let's install them on all
 nodes:
 
@@ -57,17 +57,14 @@ nodes:
 
 Install podman:
 
-    source /etc/os-release
-    sudo sh -c "echo 'deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /' > /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list"
-    wget -nv https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable/xUbuntu_${VERSION_ID}/Release.key -O- | sudo apt-key add -
     sudo apt-get update
     sudo apt-get -y install podman
 
-Finally, configure the ceph repository (quincy/v17 in this example) and install
+Finally, configure the ceph repository (reef/v18 in this example) and install
 `cephadm` and `ceph-common` on all the nodes:
 
     wget -q -O- 'https://download.ceph.com/keys/release.asc' | sudo apt-key add -
-    echo deb http://download.ceph.com/debian-quincy/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/ceph.list
+    echo deb http://download.ceph.com/debian-reef/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/ceph.list
     apt-get update
     apt-get install -y cephadm
 
