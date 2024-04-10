@@ -239,11 +239,16 @@ install `ceph-common`:
 
     apt-get install ceph-common
 
-Now, you can mount your CephFS named `cephfs` using:
+Authorise client on the `mon` host and save output as config on the client host at
+`/etc/ceph/ceph.client.rohit.keyring` (replace `rohit` with username of your choice:
 
-    sudo mount -t ceph 192.168.1.11:6789:/ ceph -o name=<username>,secret=<password secret>
+    sudo ceph fs authorize cephfs client.rohit / rw
 
-Note: you create dedicated client for use with your CephFS.
+Now, you can mount your CephFS named `cephfs` using (replace `rohit` with username of your choice:
+
+    sudo mount -t ceph 192.168.1.11:6789:/ ceph -o name=rohit,secret=<password secret without quotes>
+
+Note: you create dedicated client for use with your CephFS as noted above.
 
 To make this mountable using `mount -a` or upon your Linux machine boot, you can put
 this in your `/etc/fstab` where you can specify multiple `mon` hosts IPs (this
