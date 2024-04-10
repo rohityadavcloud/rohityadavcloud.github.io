@@ -53,7 +53,7 @@ using containers and systemd.
 python3, systemd, podman or docker, ntp and lvm2. Let's install them on all
 nodes:
 
-    sudo apt-get install -y python3 ntp lvm2
+    sudo apt-get install -y python3 ntp lvm2 libvirt-daemon-driver-storage-rbd
 
 Install podman:
 
@@ -63,10 +63,11 @@ Install podman:
 Finally, configure the ceph repository (reef/v18 in this example) and install
 `cephadm` and `ceph-common` on all the nodes:
 
+    wget https://download.ceph.com/keys/release.asc -O /etc/apt/keyrings/ceph.asc
     wget -q -O- 'https://download.ceph.com/keys/release.asc' | sudo apt-key add -
-    echo deb http://download.ceph.com/debian-reef/ $(lsb_release -sc) main | sudo tee /etc/apt/sources.list.d/ceph.list
+    echo "deb [signed-by=/etc/apt/keyrings/ceph.asc] http://download.ceph.com/debian-reef/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/ceph.list
     apt-get update
-    apt-get install -y cephadm
+    apt-get install -y cephadm ceph-common
 
 If you install `cephadm` using wget, you can add specific release repos using:
 
@@ -79,7 +80,8 @@ Bootstrap Ceph cluster by running the following only on the admin node
 
     cephadm bootstrap --mon-ip 192.168.1.10 \
                       --initial-dashboard-user admin \
-                      --initial-dashboard-password Passw0rdHere
+                      --initial-dashboard-password Passw0rdHere \
+                      --allow-fqdn-hostname
 
 On successful run, the above command will bootstrap a Ceph cluster with ceph
 config in `/etc/ceph/ceph.conf` and SSH public key `/etc/ceph/ceph.pub` using
@@ -126,7 +128,7 @@ Now, enable automatic placement of daemons:
 ### Add OSDs
 
 Read more about [OSD
-here](https://docs.ceph.com/en/pacific/cephadm/services/osd/).
+here](https://docs.ceph.com/en/reef/cephadm/services/osd/).
 
 List available physical disks of the added hosts:
 
@@ -201,13 +203,13 @@ the workaround seems to set the following configuration in ceph before adding th
 Once you've ensure your Ceph cluster is up and healthy, let's create a new Ceph
 pool and add to CloudStack:
 
-    ceph osd pool create meowceph 64 replicated
-    ceph osd pool set meowceph size 3
-    rbd pool init meowceph
+    ceph osd pool create cloudstack 64 replicated
+    ceph osd pool set cloudstack size 3
+    rbd pool init cloudstack
 
 Next, create a dedicated auth key for this pool:
 
-    ceph auth get-or-create client.cloudstack mon 'profile rbd' osd 'profile rbd pool=meowceph'
+    ceph auth get-or-create client.cloudstack mon 'profile rbd' osd 'profile rbd pool=cloudstack'
 
 Finally, you can add this pool as a CloudStack zone-wide Ceph primary storage
 using the above credential as RADOS secret for the user `cloudstack` as well
