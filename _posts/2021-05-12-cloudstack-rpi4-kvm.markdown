@@ -296,7 +296,7 @@ Fix security driver issue:
 
 Enable libvirtd in listen mode:
 
-    sed -i -e 's/.*libvirtd_opts.*/libvirtd_opts="-l"/' /etc/default/libvirtd
+    echo LIBVIRTD_ARGS=\"--listen\" >> /etc/default/libvirtd
 
 Configure default libvirtd config:
 
