@@ -2,12 +2,12 @@
 layout: post
 category: cloudstack
 highlight: primary
-title: Apache CloudStack on RaspberryPi4 with Ubuntu 20.04 and KVM
+title: Apache CloudStack on RaspberryPi4 with Ubuntu 22.04 and KVM
 ---
 
     Originally posted here: https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm/
 
-Last updated: 02 Apr 2022 for ACS 4.16.1.0
+Last updated: 12 Apr 2024 for ACS 4.18.1.1
 
 [IoTs](https://en.wikipedia.org/wiki/Internet_of_things) have gained interest
 over recent times. In this post I explore and share my personal experience of
@@ -57,14 +57,14 @@ With the changes, now Ubuntu 19.10+ ARM64 builds have KVM enabled.
 
 To [get started](https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started) you need the following:
 - RPi4 board (cortex-72 quad-core 1.5Ghz processor) 4GB/8GB RAM model
-- Ubuntu 20.04.2 [arm64
-image](http://cdimage.ubuntu.com/ubuntu/releases/20.04/release/) installed on a
+- Ubuntu 22.04 [arm64
+image](http://cdimage.ubuntu.com/ubuntu/releases/22.04/release/) installed on a
 Samsung EVO+ 128GB micro sd card (any 4GB+ class 10 u3/v30 sdcard will do).
 - (Optional) An external USB-based SSD storage with high iops for storage
 
 Flash the image to your microSD card:
 
-    $ xzcat ubuntu-20.04.2-preinstalled-server-arm64+raspi.img.xz | sudo dd bs=4M of=/dev/mmcblk0
+    $ xzcat ubuntu-22.04.4-preinstalled-server-arm64+raspi.img.xz | sudo dd bs=4M of=/dev/mmcblk0
     0+381791 records in
     0+381791 records out
     3259499520 bytes (3.3 GB, 3.0 GiB) copied, 131.749 s, 24.7 MB/s
@@ -153,26 +153,28 @@ default installation creates a file at `/etc/netplan/50-cloud-init.yaml` which
 you can comment, and create a file at `/etc/netplan/01-netcfg.yaml` applying
 your network specific changes:
 
-     network:
-       version: 2
-       renderer: networkd
-       ethernets:
-         eth0:
-           dhcp4: false
-           dhcp6: false
-           optional: true
-       bridges:
-         cloudbr0:
-           addresses: [192.168.1.10/24]
-           gateway4: 192.168.1.1
-           nameservers:
-             addresses: [8.8.8.8]
-           interfaces: [eth0]
-           dhcp4: false
-           dhcp6: false
-           parameters:
-             stp: false
-             forward-delay: 0
+    network:
+      version: 2
+      renderer: networkd
+      ethernets:
+        eth0:
+          dhcp4: false
+          dhcp6: false
+          optional: true
+      bridges:
+        cloudbr0:
+          addresses: [192.168.1.10/24]
+          routes:
+           - to: default
+             via: 192.168.1.1
+          nameservers:
+            addresses: [192.168.1.1,8.8.8.8]
+          interfaces: [eth0]
+          dhcp4: false
+          dhcp6: false
+          parameters:
+            stp: false
+            forward-delay: 0
 
 Tip: If you want to use VXLAN based traffic isolation, make sure to increase the MTU setting of the physical nics by `50 bytes` (because VXLAN header size is 50 bytes). For example:
 
@@ -222,13 +224,12 @@ Restart database:
 Installing management server may give dependency errors, so download and
 manually install few packages as follows:
 
-    apt-get install python2
-    wget http://mirrors.kernel.org/ubuntu/pool/universe/m/mysql-connector-python/python-mysql.connector_2.1.6-1_all.deb
-    dpkg -i python-mysql.connector_2.1.6-1_all.deb
+    # Setup Repo
+    mkdir -p /etc/apt/keyrings
+    wget -O- http://packages.shapeblue.com/release.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cloudstack.gpg > /dev/null
+    echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.18 / > /etc/apt/sources.list.d/cloudstack.list
 
     # Install management server
-    echo deb [trusted=yes] https://download.cloudstack.org/rpi4/4.16 / > /etc/apt/sources.list.d/cloudstack.list
-    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 484248210EE3D884
     apt-get update
     apt-get install cloudstack-management cloudstack-usage
 
@@ -273,9 +274,9 @@ Configure and restart NFS server:
 
 (Optional) Seed systemvm template from the management server: (note that starting 4.16 this is done automatically by CloudStack on zone deployment, the systemvmtemplate is bundled within the CloudStack deb/rpm package)
 
-    wget https://download.cloudstack.org/rpi4/systemvmtemplate/4.16/systemvmtemplate-4.16.1-kvm-arm64.qcow2
+    wget http://download.cloudstack.org/arm64/systemvmtemplate/4.18/systemvmtemplate-4.18.0-kvm-arm64.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.16.1-kvm-arm64.qcow2 -h kvm \
+              -m /export/secondary -f systemvmtemplate-4.18.0-kvm-arm64.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
 
 ## KVM Host Setup
