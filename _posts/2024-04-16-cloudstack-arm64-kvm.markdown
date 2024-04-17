@@ -2,38 +2,37 @@
 layout: post
 category: cloudstack
 highlight: primary
-title: Apache CloudStack on RaspberryPi4 with Ubuntu 22.04 and KVM
+title: Apache CloudStack on ARM64 with Ubuntu and KVM
 ---
 
     Originally posted here: https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm/
 
-Last updated: 17 Apr 2024 for ACS 4.18.2.0
+Last updated: 16 Apr 2024 for ACS 4.18.2.0
 
-[IoTs](https://en.wikipedia.org/wiki/Internet_of_things) have gained interest
-over recent times. In this post I explore and share my personal experience of
-setting up an Apache CloudStack based IaaS cloud on
-[Raspberry Pi4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/), a
-popular single-board [ARM64](https://en.wikipedia.org/wiki/ARM_architecture) IoT
-computer that can run GNU/Linux kernel with
-[KVM](https://www.linux-kvm.org/page/Processor_support#ARM:).
+In this post I explore and share my personal experience of setting up an Apache CloudStack
+based IaaS cloud on [ARM64](https://en.wikipedia.org/wiki/ARM_architecture) platform with
+Ubuntu and [KVM](https://www.linux-kvm.org/page/Processor_support#ARM:).
+
+The following ARM64 platforms were tested by me or community:
+
+- [Raspberry Pi4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/) - tested in my homelab
+- [Raspberry Pi5](https://www.raspberrypi.com/products/raspberry-pi-5/) - tested in my homelab
+- Mac Mini M2 Pro using [Ubuntu Asahi](https://ubuntuasahi.org) - tested in my homelab
+- Ampere® Altra® based server - tested at work [ShapeBlue](https://www.shapeblue.com/building-next-generation-iaas-event-roundup/)
+- NVidia DPU - confirmed via [reddit](https://www.reddit.com/r/homelab/comments/199rrob/comment/ksfa088/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+
+Distros tested on:
+- Ubuntu 20.04 (tested in my homelab)
+- Ubuntu 22.04 (tested in my homelab)
+- EL8 and EL9 (community tested)
+
+Note: the upstream Apache CloudStack can be used without any modifications, however,
+users must use version-specific arm64 systemvm template for CloudStack systemvms
+and virtual routers upon fresh installation and upgrade from: [https://download.cloudstack.org/arm64/systemvmtemplate/](https://download.cloudstack.org/arm64/systemvmtemplate/)
 
 <div class="post-image">
   <img src="/images/rpi4/board.jpg">
 </div>
-
-CloudStack support for ARM64/RaspberryPi4 is available from version
-[4.13.1.0+](https://github.com/apache/cloudstack/pull/3644). This guide uses a
-[custom CloudStack 4.16 repository](https://download.cloudstack.org/rpi4/4.16/)
-that was created and tested specifically against the new RaspberryPi4 and Ubuntu
-20.04 aarch64/arm64 to setup an IAAS cloud computing platform.
-
-<div class="post-image">
-  <img src="/images/rpi4/dashboard.png">
-</div>
-
-Update: I was also able to test this guide on Mac Mini M2 Pro based machine with
-ACS 4.18. I had to seed the most recent 4.18 systemvmtemplate manually using
-https://download.cloudstack.org/arm64/systemvmtemplate/4.18
 
 # Contents
 
@@ -48,21 +47,24 @@ https://download.cloudstack.org/arm64/systemvmtemplate/4.18
 
 ## Getting Started
 
-By default, KVM is not enabled in the arm64 pre-built images. I found this
-during my research where I built Linux kernel with KVM enabled on the ARM64 RPi4
-board and shared my findings with the Ubuntu kernel team and influence the build
-team [to have KVM enabled by
-default](https://bugs.launchpad.net/ubuntu/+source/linux-raspi2/+bug/1783961).
-With the changes, now Ubuntu 19.10+ ARM64 builds have KVM enabled.
+Background - back in the day, KVM was not enabled in the arm64 pre-built images.
+I built custom arm64 kernel with KVM enabled and reporting my findings with the
+Ubuntu kernel team who
+[got it to be built by default](https://bugs.launchpad.net/ubuntu/+source/linux-raspi2/+bug/1783961),
+and since then Ubuntu 19.10 onwards ARM64 builds have KVM enabled.
 
-To [get started](https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started) you need the following:
-- RPi4 board (cortex-72 quad-core 1.5Ghz processor) 4GB/8GB RAM model
+To get started you'll need an ARM64 platform, for this tutorial I've used a [Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started)
+(in production environments, this can be an Ampere-based host):
+
+- RPi5 board 8GB RAM model 
 - Ubuntu 22.04 [arm64
 image](http://cdimage.ubuntu.com/ubuntu/releases/22.04/release/) installed on a
-Samsung EVO+ 128GB micro sd card (any 4GB+ class 10 u3/v30 sdcard will do).
+Samsung EVO+ 128GB micro sd card (any 16GB+ class 10 u3/v30 sdcard will do).
 - (Optional) An external USB-based SSD storage with high iops for storage
 
-Flash the image to your microSD card:
+### Install Base OS
+
+Flash the base image to your storage, in my case a microSD card:
 
     $ xzcat ubuntu-22.04.4-preinstalled-server-arm64+raspi.img.xz | sudo dd bs=4M of=/dev/mmcblk0
     0+381791 records in
@@ -95,9 +97,15 @@ Next, check and ensure that 64-bit mode is enabled:
     sudo umount /dev/mmcblk0p1
     sudo umount /dev/mmcblk0p2
 
-Next, eject and insert the microSD card in your Raspberry Pi4 and power on. Find
-the device via your router dhcp clients list and ssh into it using username
-`ubuntu` and password `ubuntu`.
+Note: some of these steps are specific for Raspberry Pi, your arm64 platform
+may need additional or different steps
+
+Next, eject and insert the microSD card in your Raspberry Pi4 and power on. 
+
+### Minimal Install and Packages
+
+Find the host via your router dhcp clients list and ssh into it using username
+`ubuntu` and password `ubuntu` (or as per your installed distro).
 
     ssh ubuntu@<ip>
 
@@ -122,14 +130,14 @@ Ensure that KVM is available at `/dev/kvm` or by running `kvm-ok`:
     INFO: /dev/kvm exists
     KVM acceleration can be used
 
-Disable automatic upgrades and unnecessary packages:
+Optional: Disable automatic upgrades and unnecessary packages:
 
     apt-get remove --purge unattended-upgrades snapd cloud-init
     # Edit the files at /etc/apt/apt.conf.d/* with following
     APT::Periodic::Update-Package-Lists "0";
     APT::Periodic::Unattended-Upgrade "1";
 
-Tip: In case you suspect IO load, to reduce load on RaspberryPi4 micrSD card
+Tip: In case you suspect IO load, to reduce load on RaspberryPi micrSD card
 change the fs commit duration, for example in `/etc/fstab`: (however this adds
 risk of potential data loss)
 
@@ -242,7 +250,7 @@ Setup database:
 
 ## Storage Setup
 
-In my setup, I'm using an external USB SSD for storage. I plug in the USB SSD
+In my setup, I'm using an external USB SSD as NFS storage. I plug in the USB SSD
 storage, with the partition formatted as `ext4`, here's the `/etc/fstab`:
 
     LABEL=writable  /        ext4   defaults        0 0
@@ -272,17 +280,18 @@ Configure and restart NFS server:
     sed -i -e 's/^RPCRQUOTADOPTS=$/RPCRQUOTADOPTS="-p 875"/g' /etc/default/quota
     service nfs-kernel-server restart
 
-Mandatory: as our target platform is ARM64-based, we must seed an appropriate arm64 based systemvm template manually from the management server:
-(note that starting 4.16, for x86_64 environments this is done automatically by CloudStack on zone deployment, and the systemvmtemplate is bundled within the CloudStack deb/rpm package)
+Mandatory: as our IaaS platform is ARM64-based, we must seed an appropriate arm64 based systemvm
+template manually from the management server:
 
     wget http://download.cloudstack.org/arm64/systemvmtemplate/4.18/systemvmtemplate-4.18.1-kvm-arm64.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
               -m /export/secondary -f systemvmtemplate-4.18.1-kvm-arm64.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
 
-Note: when upgrading a ARM64 based CloudStack version, please ensure to keep the cloudstack-management stopped post-install/upgrade and manually
-copy the version-appropriate arm64-based systemvmtemplate at `/usr/share/cloudstack-management/templates/systemvm` and
-update its md5 checksum in the `metadata.ini`, on the management server host.
+Note: when upgrading a ARM64 based CloudStack version, please ensure to keep the cloudstack-management
+stopped post-install/upgrade and manually copy the version-appropriate arm64-based systemvmtemplate
+at `/usr/share/cloudstack-management/templates/systemvm` and update its md5 checksum in the
+`metadata.ini`, on the management server host.
 
 ## KVM Host Setup
 
@@ -317,7 +326,8 @@ get the old behaviour as follows:
     systemctl mask libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket libvirtd-tls.socket libvirtd-tcp.socket
     systemctl restart libvirtd
 
-Ensure the following options in the `/etc/cloudstack/agent/agent.properties`:
+Important: Please ensure the following options in the `/etc/cloudstack/agent/agent.properties`: (you may need to
+check/re-add these for your KVM host, post zone deployment)
 
     guest.cpu.arch=aarch64
     guest.cpu.mode=host-passthrough
@@ -328,7 +338,7 @@ report the correct CPU speed for some models such as the M1/M2/M2 Pro etc. You
 can set the correct CPU speed in Mhz of your host manually using this property.
 
 By default 1GB of host memory is reserved for agent/host usage, which you can
-change using the following in the agent.properties file:
+change/reduce it using the following in the agent.properties file:
 
     host.reserved.mem.mb=800
 
@@ -375,12 +385,6 @@ and log in using the default credentials - username `admin` and password
 <div class="post-image">
   <img src="/images/rpi4/login.png">
 </div>
-
-NOTE: I found some DB issue while deploying a zone, please check/run the
-following until the bug is fixed upstream, using mysql client:
-
-    use cloud;
-    ALTER TABLE nics MODIFY COLUMN update_time timestamp NULL;
 
 ## Example Setup
 
@@ -475,8 +479,17 @@ Next, click `Launch Zone` which will perform following actions:
 Finally, confirm and enable the zone. Wait for the system VMs to come up, then
 you can proceed with your IaaS usage.
 
-You can build your own arm64 guest templates or deploy VMs using these guest
-templates at: [https://download.cloudstack.org/rpi4/templates](https://download.cloudstack.org/rpi4/templates).
+You may try the following distro-provided cloud-init enabled arm64 qcow2 templates:
+
+- Ubuntu 22.04: https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-arm64.img
+- Ubuntu 20.04: https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-arm64.img
+- Debian 12: https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-genericcloud-arm64.qcow2
+- AlmaLinux 9: https://repo.almalinux.org/almalinux/9/cloud/aarch64/images/AlmaLinux-9-GenericCloud-latest.aarch64.qcow2
+- OpenSUSE 15: https://download.opensuse.org/distribution/leap/15.5/appliances/openSUSE-Leap-15.5-Minimal-VM.aarch64-Cloud.qcow2
+
+You may also use these old arm64 template for purpose of testing: [https://download.cloudstack.org/arm64/templates](https://download.cloudstack.org/arm64/templates).
+
 To get further help and to ask questions please join the Apache CloudStack users
 mailing list:
 [https://cloudstack.apache.org/mailing-lists.html](https://cloudstack.apache.org/mailing-lists.html)
+or start a discussion thread here: [https://github.com/apache/cloudstack/discussions](https://github.com/apache/cloudstack/discussions)
