@@ -7,7 +7,7 @@ title: Apache CloudStack on RaspberryPi4 with Ubuntu 22.04 and KVM
 
     Originally posted here: https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm/
 
-Last updated: 12 Apr 2024 for ACS 4.18.2.0
+Last updated: 17 Apr 2024 for ACS 4.18.2.0
 
 [IoTs](https://en.wikipedia.org/wiki/Internet_of_things) have gained interest
 over recent times. In this post I explore and share my personal experience of
@@ -272,12 +272,17 @@ Configure and restart NFS server:
     sed -i -e 's/^RPCRQUOTADOPTS=$/RPCRQUOTADOPTS="-p 875"/g' /etc/default/quota
     service nfs-kernel-server restart
 
-(Optional) Seed systemvm template from the management server: (note that starting 4.16 this is done automatically by CloudStack on zone deployment, the systemvmtemplate is bundled within the CloudStack deb/rpm package)
+Mandatory: as our target platform is ARM64-based, we must seed an appropriate arm64 based systemvm template manually from the management server:
+(note that starting 4.16, for x86_64 environments this is done automatically by CloudStack on zone deployment, and the systemvmtemplate is bundled within the CloudStack deb/rpm package)
 
     wget http://download.cloudstack.org/arm64/systemvmtemplate/4.18/systemvmtemplate-4.18.1-kvm-arm64.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
               -m /export/secondary -f systemvmtemplate-4.18.1-kvm-arm64.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
+
+Note: when upgrading a ARM64 based CloudStack version, please ensure to keep the cloudstack-management stopped post-install/upgrade and manually
+copy the version-appropriate arm64-based systemvmtemplate at `/usr/share/cloudstack-management/templates/systemvm` and
+update its md5 checksum in the `metadata.ini`, on the management server host.
 
 ## KVM Host Setup
 
