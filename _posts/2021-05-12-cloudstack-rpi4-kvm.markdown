@@ -7,7 +7,7 @@ title: Apache CloudStack on RaspberryPi4 with Ubuntu 22.04 and KVM
 
     Originally posted here: https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm/
 
-Last updated: 12 Apr 2024 for ACS 4.18.1.1
+Last updated: 12 Apr 2024 for ACS 4.18.2.0
 
 [IoTs](https://en.wikipedia.org/wiki/Internet_of_things) have gained interest
 over recent times. In this post I explore and share my personal experience of
@@ -32,7 +32,7 @@ that was created and tested specifically against the new RaspberryPi4 and Ubuntu
 </div>
 
 Update: I was also able to test this guide on Mac Mini M2 Pro based machine with
-ACS 4.18. I had to seed the systemvmtemplate manually using
+ACS 4.18. I had to seed the most recent 4.18 systemvmtemplate manually using
 https://download.cloudstack.org/arm64/systemvmtemplate/4.18
 
 # Contents
@@ -274,9 +274,9 @@ Configure and restart NFS server:
 
 (Optional) Seed systemvm template from the management server: (note that starting 4.16 this is done automatically by CloudStack on zone deployment, the systemvmtemplate is bundled within the CloudStack deb/rpm package)
 
-    wget http://download.cloudstack.org/arm64/systemvmtemplate/4.18/systemvmtemplate-4.18.0-kvm-arm64.qcow2
+    wget http://download.cloudstack.org/arm64/systemvmtemplate/4.18/systemvmtemplate-4.18.1-kvm-arm64.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.18.0-kvm-arm64.qcow2 -h kvm \
+              -m /export/secondary -f systemvmtemplate-4.18.1-kvm-arm64.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
 
 ## KVM Host Setup
