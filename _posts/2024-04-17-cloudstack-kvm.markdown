@@ -2,7 +2,7 @@
 layout: post
 category: cloudstack
 highlight: primary
-title: Apache CloudStack on Ubuntu with x86_64 KVM
+title: Apache CloudStack on x86_64 with Ubuntu and KVM
 redirect_from: "/logs/cloudstack-kvm/"
 ---
 
@@ -10,16 +10,15 @@ This is a build your own IaaS cloud guide on setting up a Apache CloudStack
 based cloud on a single Ubuntu 20.04/22.04 (LTS) host that is also used
 as a KVM host.
 
-Note: this should work for ACS 4.16 and above, has been updated against ACS 4.19
-release. This how-to post may get outdated in future, so please [follow the
-latest docs](http://docs.cloudstack.apache.org/en/4.19.0.0/installguide) and/or
+Note: this has been updated against ACS 4.19 release. This how-to post may get outdated
+in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/en/latest/installguide) and/or
 [read the latest docs on KVM host
-installation](http://docs.cloudstack.apache.org/en/4.19.0.0/installguide/hypervisor/kvm.html).
+installation](http://docs.cloudstack.apache.org/en/latest/installguide/hypervisor/kvm.html).
 
 # Initial Setup
 
 First install Ubuntu 20.04/22.04 LTS on your x86_64 system that has at
-least 4GB RAM (prerably 8GB or more) with Intel VT-X or AMD-V enabled. Ensure
+least 8GB RAM (prerably 16GB or more) with Intel VT-X or AMD-V enabled. Ensure
 that the `universe` repository is enabled in `/etc/apt/sources.list`.
 
 Install basic packages:
@@ -100,11 +99,7 @@ Save the file and apply network config, finally reboot:
 
 Install CloudStack management server and MySQL server: (run as root)
 
-For older Ubuntu versions:
-
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BDF0E176584DF93F
-
-Recommended, for Ubuntu 22.04 and onwards:
+For Ubuntu 22.04 and onwards:
 
     mkdir -p /etc/apt/keyrings
     wget -O- http://packages.shapeblue.com/release.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cloudstack.gpg > /dev/null
@@ -159,7 +154,7 @@ Optional: The following is no longer necessary for CloudStack 4.16 and above as
 CloudStack management server does this automatically. This is provided just for
 reference. For older versions, the `cloud-install-sys-tmplt` script can be used
 to seed the systemvmtemplate. For example, here's the command to use for version
-4.16 just for reference:
+4.16 just for reference and example:
 
     wget http://packages.shapeblue.com/systemvmtemplate/4.16/systemvmtemplate-4.16.1-kvm.qcow2.bz2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
@@ -176,7 +171,7 @@ Enable VNC for console proxy:
 
     sed -i -e 's/\#vnc_listen.*$/vnc_listen = "0.0.0.0"/g' /etc/libvirt/qemu.conf
 
-On older Ubuntu versions, enable libvirtd in listen mode:
+On older Ubuntu versions (18.04/20.04), enable libvirtd in listen mode:
 
     sed -i -e 's/.*libvirtd_opts.*/libvirtd_opts="-l"/' /etc/default/libvirtd
 
