@@ -3,6 +3,7 @@ layout: post
 category: cloudstack
 highlight: primary
 title: Apache CloudStack on ARM64 with Ubuntu and KVM
+redirect_from: "/blog/cloudstack-rpi4-kvm/"
 ---
 
     Originally posted here: https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm/
