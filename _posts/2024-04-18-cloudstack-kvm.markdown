@@ -10,11 +10,11 @@ This is a build your own IaaS cloud guide on setting up a Apache CloudStack
 based cloud on a single Ubuntu 20.04/22.04 (LTS) host that is also used
 as a KVM host.
 
-Note: this should work for ACS 4.16 and above, has been updated against ACS 4.18
+Note: this should work for ACS 4.16 and above, has been updated against ACS 4.19
 release. This how-to post may get outdated in future, so please [follow the
-latest docs](http://docs.cloudstack.apache.org/en/4.18.0.0/installguide) and/or
+latest docs](http://docs.cloudstack.apache.org/en/4.19.0.0/installguide) and/or
 [read the latest docs on KVM host
-installation](http://docs.cloudstack.apache.org/en/4.18.0.0/installguide/hypervisor/kvm.html).
+installation](http://docs.cloudstack.apache.org/en/4.19.0.0/installguide/hypervisor/kvm.html).
 
 # Initial Setup
 
@@ -155,7 +155,7 @@ Configure and restart NFS server:
     sed -i -e 's/^RPCRQUOTADOPTS=$/RPCRQUOTADOPTS="-p 875"/g' /etc/default/quota
     service nfs-kernel-server restart
 
-NOTE: The following is no longer necessary for CloudStack 4.16 and above as
+Optional: The following is no longer necessary for CloudStack 4.16 and above as
 CloudStack management server does this automatically. This is provided just for
 reference. For older versions, the `cloud-install-sys-tmplt` script can be used
 to seed the systemvmtemplate. For example, here's the command to use for version
