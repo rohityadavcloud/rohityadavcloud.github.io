@@ -58,7 +58,7 @@ and since then Ubuntu 19.10 onwards ARM64 builds have KVM enabled.
 To get started you'll need an ARM64 platform, for this tutorial I've used a [Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started)
 (in production environments, this can be an Ampere-based host):
 
-- RPi5 board 8GB RAM model 
+- RPi4 board 8GB RAM model 
 - Ubuntu 22.04 [arm64
 image](http://cdimage.ubuntu.com/ubuntu/releases/22.04/release/) installed on a
 Samsung EVO+ 128GB micro sd card (any 16GB+ class 10 u3/v30 sdcard will do).
