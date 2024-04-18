@@ -16,15 +16,16 @@ Ubuntu and [KVM](https://www.linux-kvm.org/page/Processor_support#ARM:).
 
 The following ARM64 platforms were tested by me or community:
 
-- [Raspberry Pi4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/) - tested in my homelab
-- [Raspberry Pi5](https://www.raspberrypi.com/products/raspberry-pi-5/) - tested in my homelab
+- [Raspberry Pi4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/) - tested in my homelab with Ubuntu 22.04
+- [Raspberry Pi5](https://www.raspberrypi.com/products/raspberry-pi-5/) - tested in my homelab with Ubuntu 24.04
 - Mac Mini M2 Pro using [Ubuntu Asahi](https://ubuntuasahi.org) - tested in my homelab
-- Ampere® Altra® based server - tested at work [ShapeBlue](https://www.shapeblue.com/building-next-generation-iaas-event-roundup/)
+- Ampere® Altra® based server - tested at [ShapeBlue](https://www.shapeblue.com/building-next-generation-iaas-event-roundup/)
 - NVidia DPU - confirmed via [reddit](https://www.reddit.com/r/homelab/comments/199rrob/comment/ksfa088/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
 Distros tested on:
-- Ubuntu 20.04 (tested in my homelab)
-- Ubuntu 22.04 (tested in my homelab)
+- Ubuntu 20.04 (tested in my homelab with RaspberryPi4)
+- Ubuntu 22.04 (tested in my homelab with RaspberryPi4)
+- Ubuntu 24.04 (tested in my homelab with RaspberryPi5)
 - EL8 and EL9 (community tested)
 
 Note: the upstream Apache CloudStack can be used without any modifications, however,
