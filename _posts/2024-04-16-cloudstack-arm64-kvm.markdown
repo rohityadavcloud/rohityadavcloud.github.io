@@ -2,7 +2,7 @@
 layout: post
 category: cloudstack
 highlight: primary
-title: Apache CloudStack on ARM64 with Ubuntu and KVM
+title: Apache CloudStack on ARM64 with Ubuntu and KVM - Install Guide
 redirect_from: "/blog/cloudstack-rpi4-kvm/"
 ---
 
