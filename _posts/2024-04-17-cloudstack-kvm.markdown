@@ -2,7 +2,7 @@
 layout: post
 category: cloudstack
 highlight: primary
-title: Apache CloudStack on x86_64 with Ubuntu and KVM
+title: Apache CloudStack on x86_64 with Ubuntu and KVM - Install Guide
 redirect_from: "/logs/cloudstack-kvm/"
 ---
 
