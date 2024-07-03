@@ -362,10 +362,26 @@ Infrastructure -> System VMs, then you can proceed using your IaaS cloud.
 
 You can register publicly available cloud-init enabled guest templates such as:
 
+- Ubuntu 24.04: https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.img
 - Ubuntu 22.04: https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-amd64.img
-- Ubuntu 20.04: https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-amd64.img
+- Ubuntu 20.04: https://cloud-images.ubuntu.com/releases/20.04/release/ubuntu-20.04-server-cloudimg-amd64.img
 - Debian 12: https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-genericcloud-amd64.qcow2
+- AlmaLinux 8: https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/AlmaLinux-9-GenericCloud-latest.x86_64.qcow2
 - AlmaLinux 9: https://repo.almalinux.org/almalinux/9/cloud/x86_64/images/AlmaLinux-9-GenericCloud-latest.x86_64.qcow2
 - OpenSUSE 15: https://download.opensuse.org/distribution/leap/15.5/appliances/openSUSE-Leap-15.5-Minimal-VM.x86_64-Cloud.qcow2
+
+## Where to go next?
+
+If you're stuck on to something and have questions, then:
+
+- Join and ask on the CloudStack users@ mailing list: https://cloudstack.apache.org/mailing-lists
+- Start a discussion sharing the details of your problem: https://github.com/apache/cloudstack/discussions
+
+Further reading:
+
+- ShapeBlue's Apache CloudStack PoC Guide: https://www.shapeblue.com/apache-cloudstack-poc-guide/
+- ShapeBlue's Apache CloudStack Quick Build Guide: https://www.shapeblue.com/cloudstack-iaas-quick-build-guide/
+- CloudStack Networking 101: https://www.shapeblue.com/a-beginners-guide-to-cloudstack-networking/
+- Project Documentation: https://docs.cloudstack.apache.org/
 
 Happy labbing!
