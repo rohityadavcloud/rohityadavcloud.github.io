@@ -483,15 +483,25 @@ you can proceed with your IaaS usage.
 
 You may try the following distro-provided cloud-init enabled arm64 qcow2 templates:
 
+- Ubuntu 24.04: https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-arm64.img
 - Ubuntu 22.04: https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-arm64.img
-- Ubuntu 20.04: https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-arm64.img
+- Ubuntu 20.04: https://cloud-images.ubuntu.com/releases/20.04/release/ubuntu-20.04-server-cloudimg-arm64.img
 - Debian 12: https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-genericcloud-arm64.qcow2
 - AlmaLinux 9: https://repo.almalinux.org/almalinux/9/cloud/aarch64/images/AlmaLinux-9-GenericCloud-latest.aarch64.qcow2
 - OpenSUSE 15: https://download.opensuse.org/distribution/leap/15.5/appliances/openSUSE-Leap-15.5-Minimal-VM.aarch64-Cloud.qcow2
 
 You may also use these old arm64 template for purpose of testing: [https://download.cloudstack.org/arm64/templates](https://download.cloudstack.org/arm64/templates).
 
-To get further help and to ask questions please join the Apache CloudStack users
-mailing list:
-[https://cloudstack.apache.org/mailing-lists.html](https://cloudstack.apache.org/mailing-lists.html)
-or start a discussion thread here: [https://github.com/apache/cloudstack/discussions](https://github.com/apache/cloudstack/discussions)
+## Where to go next?
+
+If you're stuck on to something and have questions, then:
+
+- Join and ask on the CloudStack users@ mailing list: https://cloudstack.apache.org/mailing-lists
+- Start a discussion sharing the details of your problem: https://github.com/apache/cloudstack/discussions
+
+Further reading:
+
+- ShapeBlue's Apache CloudStack PoC Guide: https://www.shapeblue.com/apache-cloudstack-poc-guide/
+- ShapeBlue's Apache CloudStack Quick Build Guide: https://www.shapeblue.com/cloudstack-iaas-quick-build-guide/
+- CloudStack Networking 101: https://www.shapeblue.com/a-beginners-guide-to-cloudstack-networking/
+- Project Documentation: https://docs.cloudstack.apache.org/
