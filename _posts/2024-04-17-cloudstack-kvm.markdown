@@ -15,9 +15,20 @@ in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/
 [read the latest docs on KVM host
 installation](http://docs.cloudstack.apache.org/en/latest/installguide/hypervisor/kvm.html).
 
-# Initial Setup
+# Contents
 
-First install Ubuntu 20.04/22.04 LTS on your x86_64 system that has at
+- [Getting Started](#getting-started)
+- [Network Setup](#network-setup)
+- [Management Server Setup](#management-server-setup)
+- [Storage Setup](#storage-setup)
+- [KVM Host Setup](#kvm-host-setup)
+- [Configure Firewall](#configure-firewall)
+- [Launch Cloud](#launch-cloud)
+- [Example Setup](#example-setup)
+
+# Getting Started
+
+First install Ubuntu 20.04/22.04/24.04 LTS on your x86_64 system that has at
 least 8GB RAM (prerably 16GB or more) with Intel VT-X or AMD-V enabled. Ensure
 that the `universe` repository is enabled in `/etc/apt/sources.list`.
 
@@ -34,7 +45,7 @@ Change and remember the `root` password:
 
     passwd root
 
-# Setup Networking
+# Network Setup
 
 Setup Linux bridges that will handle CloudStack's public, guest, management
 and storage traffic. For simplicity, we will use a single bridge `cloudbr0` to
@@ -67,7 +78,7 @@ your network and interface/name specific changes:
             - to: default
               via: 192.168.1.1
            nameservers:
-             addresses: [1.1.1.1,8.8.8.8]
+             addresses: [1.1.1.1, 8.8.8.8]
            interfaces: [eno1]
            dhcp4: false
            dhcp6: false
@@ -95,16 +106,16 @@ Save the file and apply network config, finally reboot:
     netplan apply
     reboot
 
-# CloudStack Management Server Setup
+# Management Server Setup
 
 Install CloudStack management server and MySQL server: (run as root)
 
-For Ubuntu 22.04 and onwards:
+For Ubuntu 22.04 and onwards run this to setup the CloudStack repository:
 
     mkdir -p /etc/apt/keyrings
     wget -O- http://packages.shapeblue.com/release.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cloudstack.gpg > /dev/null
 
-    echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.18 / > /etc/apt/sources.list.d/cloudstack.list
+    echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.19 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update -y
     apt-get install cloudstack-management mysql-server
 
@@ -150,22 +161,13 @@ Configure and restart NFS server:
     sed -i -e 's/^RPCRQUOTADOPTS=$/RPCRQUOTADOPTS="-p 875"/g' /etc/default/quota
     service nfs-kernel-server restart
 
-Optional: The following is no longer necessary for CloudStack 4.16 and above as
-CloudStack management server does this automatically. This is provided just for
-reference. For older versions, the `cloud-install-sys-tmplt` script can be used
-to seed the systemvmtemplate. For example, here's the command to use for version
-4.16 just for reference and example:
-
-    wget http://packages.shapeblue.com/systemvmtemplate/4.16/systemvmtemplate-4.16.1-kvm.qcow2.bz2
-    /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.16.1-kvm.qcow2.bz2 -h kvm \
-              -o localhost -r cloud -d cloud
-
-# Setup KVM host
+# KVM Host Setup
 
 Install KVM and CloudStack agent, configure libvirt:
 
     apt-get install qemu-kvm cloudstack-agent
+
+Note: configure the CloudStack apt-repository if your KVM host is not also the management server
 
 Enable VNC for console proxy:
 
@@ -179,7 +181,7 @@ On Ubuntu 22.04, add `LIBVIRTD_ARGS="--listen"` to `/etc/default/libvirtd` inste
 
     echo LIBVIRTD_ARGS=\"--listen\" >> /etc/default/libvirtd
 
-For Ubuntu 20.04/22.04 and later, the traditional socket/listen based configuration
+For Ubuntu 20.04/22.04/24.04 and later, the traditional socket/listen based configuration
 may not be supported, we can get the old behaviour as follows:
 
     systemctl mask libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket libvirtd-tls.socket libvirtd-tcp.socket
@@ -266,7 +268,7 @@ After management server is UP, proceed to http://`192.168.1.10(i.e. the cloudbr0
 and log in using the default credentials - username `admin` and password
 `password`.
 
-# Deploying Advanced Zone
+# Launch Cloud
 
 The following is an example of how you can setup an advanced zone in the
 192.168.1.0/24 network.
