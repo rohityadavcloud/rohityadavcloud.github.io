@@ -24,7 +24,7 @@ installation](http://docs.cloudstack.apache.org/en/latest/installguide/hyperviso
 - [KVM Host Setup](#kvm-host-setup)
 - [Configure Firewall](#configure-firewall)
 - [Launch Cloud](#launch-cloud)
-- [Example Setup](#example-setup)
+- [Where To Go Next?](#where-to-go-next)
 
 # Getting Started
 
