@@ -5,7 +5,7 @@ tagline:
 permalink: /talks/
 ---
 
-[CloudStack 101 - The Best Way to Build Your Private Cloud](/files/talks/csiug24-cloudstack-101.pdf) [(Video)](), CloudStack India User Group Meetup, Hyderabad, 23 February, 2024
+[CloudStack 101 - The Best Way to Build Your Private Cloud](/files/talks/csiug24-cloudstack-101.pdf) [(Video)](https://www.youtube.com/watch?v=pASzZR57V_8), CloudStack India User Group Meetup, Hyderabad, 23 February, 2024
 
 [CloudStack Enables - State of the Union](/files/talks/ccc23-cloudstack-enables.pdf) [(Video)](https://www.youtube.com/watch?v=cCNCmJxxEPA&t=4s), CCC Paris 2023, 23 November, 2023
 
