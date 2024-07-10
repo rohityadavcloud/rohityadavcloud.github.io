@@ -19,6 +19,7 @@ installation](http://docs.cloudstack.apache.org/en/latest/installguide/hyperviso
 
 - [Getting Started](#getting-started)
 - [Network Setup](#network-setup)
+- [Repo Setup](#repo-setup)
 - [Management Server Setup](#management-server-setup)
 - [Storage Setup](#storage-setup)
 - [KVM Host Setup](#kvm-host-setup)
@@ -106,9 +107,7 @@ Save the file and apply network config, finally reboot:
     netplan apply
     reboot
 
-# Management Server Setup
-
-Install CloudStack management server and MySQL server: (run as root)
+# Repo Setup
 
 For Ubuntu 22.04 and onwards run this to setup the CloudStack repository:
 
@@ -116,6 +115,12 @@ For Ubuntu 22.04 and onwards run this to setup the CloudStack repository:
     wget -O- http://packages.shapeblue.com/release.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cloudstack.gpg > /dev/null
 
     echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.19 / > /etc/apt/sources.list.d/cloudstack.list
+    apt-get update -y
+
+# Management Server Setup
+
+Install CloudStack management server and MySQL server: (run as root, once the CloudStack repository is setup)
+
     apt-get update -y
     apt-get install cloudstack-management mysql-server
 
@@ -167,7 +172,7 @@ Install KVM and CloudStack agent, configure libvirt:
 
     apt-get install qemu-kvm cloudstack-agent
 
-Note: configure the CloudStack apt-repository if your KVM host is not also the management server
+Note: configure the [CloudStack repo](#repo-setup) if your KVM host is not also the management server
 
 Enable VNC for console proxy:
 
