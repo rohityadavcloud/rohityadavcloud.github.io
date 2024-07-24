@@ -8,7 +8,7 @@ redirect_from: "/blog/cloudstack-rpi4-kvm/"
 
     Originally posted here: https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm/
 
-Last updated: 16 Apr 2024 for ACS 4.18.2.0
+Last updated: 24 July 2024 for ACS 4.19.1.0
 
 In this post I explore and share my personal experience of setting up an Apache CloudStack
 based IaaS cloud on [ARM64](https://en.wikipedia.org/wiki/ARM_architecture) platform with
@@ -60,8 +60,8 @@ To get started you'll need an ARM64 platform, for this tutorial I've used a [Ras
 
 - RPi4 board 8GB RAM model 
 - Ubuntu 22.04 [arm64
-image](http://cdimage.ubuntu.com/ubuntu/releases/22.04/release/) installed on a
-Samsung EVO+ 128GB micro sd card (any 16GB+ class 10 u3/v30 sdcard will do).
+image](http://cdimage.ubuntu.com/ubuntu/releases/22.04/release/) (or Ubuntu 24.04 arm64)
+installed on a Samsung EVO+ 128GB micro sd card (any 16GB+ class 10 u3/v30 sdcard will do).
 - (Optional) An external USB-based SSD storage with high iops for storage
 
 ### Install Base OS
@@ -237,7 +237,7 @@ manually install few packages as follows:
     # Setup Repo
     mkdir -p /etc/apt/keyrings
     wget -O- http://packages.shapeblue.com/release.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cloudstack.gpg > /dev/null
-    echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.18 / > /etc/apt/sources.list.d/cloudstack.list
+    echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.19 / > /etc/apt/sources.list.d/cloudstack.list
 
     # Install management server
     apt-get update
@@ -285,15 +285,16 @@ Configure and restart NFS server:
 Mandatory: as our IaaS platform is ARM64-based, we must seed an appropriate arm64 based systemvm
 template manually from the management server:
 
-    wget http://download.cloudstack.org/arm64/systemvmtemplate/4.18/systemvmtemplate-4.18.1-kvm-arm64.qcow2
+    wget http://download.cloudstack.org/arm64/systemvmtemplate/4.19/systemvmtemplate-4.19.1-aarch64-kvm.qcow2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.18.1-kvm-arm64.qcow2 -h kvm \
+              -m /export/secondary -f systemvmtemplate-4.19.1-aarch64-kvm.qcow2 -h kvm \
               -o localhost -r cloud -d cloud
 
 Note: when upgrading a ARM64 based CloudStack version, please ensure to keep the cloudstack-management
 stopped post-install/upgrade and manually copy the version-appropriate arm64-based systemvmtemplate
 at `/usr/share/cloudstack-management/templates/systemvm` and update its md5 checksum in the
-`metadata.ini`, on the management server host.
+`metadata.ini`, on the management server host. Or, just manually replace the x86 systemvmtemplate qcow2 with
+the arm64 one in the secondary storage directory (under `/export/secondary/template/tmpl/1/<new folder that contains the systemvmtemplate>`).
 
 ## KVM Host Setup
 
