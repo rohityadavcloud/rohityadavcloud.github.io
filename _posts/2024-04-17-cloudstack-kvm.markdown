@@ -192,6 +192,11 @@ may not be supported, we can get the old behaviour as follows:
     systemctl mask libvirtd.socket libvirtd-ro.socket libvirtd-admin.socket libvirtd-tls.socket libvirtd-tcp.socket
     systemctl restart libvirtd
 
+Configure libvirt to connect to libvirtd and not to per-driver daemons, especially important on newer distros
+such as EL9 and Ubuntu 24.04 by edit ``/etc/libvirt/libvirt.conf`` and add the following:
+
+      remote_mode="legacy"
+      
 Configure default libvirtd config:
 
     echo 'listen_tls=0' >> /etc/libvirt/libvirtd.conf
