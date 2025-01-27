@@ -6,9 +6,9 @@ permalink: /talks/
 ---
 
 
-[What's New in Apache CloudStack](/files/talks/ccc24-whats-new-in-cloudstack.pdf) [(Video)](), CCC Madrid 2024, 21 November, 2024
+[What's New in Apache CloudStack](/files/talks/ccc24-whats-new-in-cloudstack.pdf) [(Video)](https://www.youtube.com/watch?v=hucHVixAyPg), CCC Madrid 2024, 21 November, 2024
 
-[A New CloudStack Driver Model](/files/talks/ccc24-cloudstack-extensions.pdf) [(Video)](), CCC Madrid 2024, 22 November, 2024
+[A New CloudStack Driver Model](/files/talks/ccc24-cloudstack-extensions.pdf) [(Video)](https://www.youtube.com/watch?v=cnN3BOCskZk), CCC Madrid 2024, 22 November, 2024
 
 [CloudStack 101 - The Best Way to Build Your Private Cloud](/files/talks/csiug24-cloudstack-101.pdf) [(Video)](https://www.youtube.com/watch?v=pASzZR57V_8), CloudStack India User Group Meetup, Hyderabad, 23 February, 2024
 
