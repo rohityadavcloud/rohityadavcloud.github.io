@@ -8,7 +8,7 @@ redirect_from: "/blog/cloudstack-rpi4-kvm/"
 
     Originally posted here: https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm/
 
-Last updated: 24 July 2024 for ACS 4.19.1.0
+Last updated: 26 January 2025 for ACS 4.20.0.0
 
 In this post I explore and share my personal experience of setting up an Apache CloudStack
 based IaaS cloud on [ARM64](https://en.wikipedia.org/wiki/ARM_architecture) platform with
@@ -56,13 +56,15 @@ Ubuntu kernel team who
 and since then Ubuntu 19.10 onwards ARM64 builds have KVM enabled.
 
 To get started you'll need an ARM64 platform, for this tutorial I've used a [Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started)
-(in production environments, this can be an Ampere-based host):
+(in production environments, this can be an Ampere-based host or any other ARM64 server):
 
 - RPi4 board 8GB RAM model 
 - Ubuntu 22.04 [arm64
 image](http://cdimage.ubuntu.com/ubuntu/releases/22.04/release/) (or Ubuntu 24.04 arm64)
 installed on a Samsung EVO+ 128GB micro sd card (any 16GB+ class 10 u3/v30 sdcard will do).
 - (Optional) An external USB-based SSD storage with high iops for storage
+
+Note: newer installations are recomended to use Ubuntu 24.04
 
 ### Install Base OS
 
@@ -78,7 +80,7 @@ an empty `/boot/ssh` file to enable headless ssh:
 
     # find the mount point
     mount -l | grep /dev/mmcblk0
-    # cd to the writable mount point, for example:
+    # cd to the writable mount point, for example at '/media/rohit':
     cd /media/rohit/writable
     # create an empty ssh file
     sudo touch boot/ssh
@@ -158,7 +160,7 @@ Install bridge utilities:
 Note: This part assumes that you're in a 192.168.1.0/24 home network which is a
 typical RFC1918 private network.
 
-Admins can now use `netplan` to configure networking with Ubuntu 20.04. The
+Admins can now use `netplan` to configure networking with Ubuntu 20.04 or above. The
 default installation creates a file at `/etc/netplan/50-cloud-init.yaml` which
 you can comment, and create a file at `/etc/netplan/01-netcfg.yaml` applying
 your network specific changes:
@@ -185,6 +187,8 @@ your network specific changes:
           parameters:
             stp: false
             forward-delay: 0
+
+Note: please replace `eth0` in the above configuration with the NIC device name on your system.
 
 Tip: If you want to use VXLAN based traffic isolation, make sure to increase the MTU setting of the physical nics by `50 bytes` (because VXLAN header size is 50 bytes). For example:
 
@@ -237,7 +241,7 @@ manually install few packages as follows:
     # Setup Repo
     mkdir -p /etc/apt/keyrings
     wget -O- http://packages.shapeblue.com/release.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cloudstack.gpg > /dev/null
-    echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.19 / > /etc/apt/sources.list.d/cloudstack.list
+    echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.20 / > /etc/apt/sources.list.d/cloudstack.list
 
     # Install management server
     apt-get update
@@ -285,9 +289,9 @@ Configure and restart NFS server:
 Mandatory: as our IaaS platform is ARM64-based, we must seed an appropriate arm64 based systemvm
 template manually from the management server:
 
-    wget http://download.cloudstack.org/arm64/systemvmtemplate/4.19/systemvmtemplate-4.19.1-aarch64-kvm.qcow2
+    wget http://download.cloudstack.org/systemvm/4.20/systemvmtemplate-4.20.0-aarch64-kvm.qcow2.bz2
     /usr/share/cloudstack-common/scripts/storage/secondary/cloud-install-sys-tmplt \
-              -m /export/secondary -f systemvmtemplate-4.19.1-aarch64-kvm.qcow2 -h kvm \
+              -m /export/secondary -f systemvmtemplate-4.20.0-aarch64-kvm.qcow2.bz2 -h kvm \
               -o localhost -r cloud -d cloud
 
 Note: when upgrading a ARM64 based CloudStack version, please ensure to keep the cloudstack-management
@@ -341,7 +345,7 @@ report the correct CPU speed for some models such as the M1/M2/M2 Pro etc. You
 can set the correct CPU speed in Mhz of your host manually using this property.
 
 By default 1GB of host memory is reserved for agent/host usage, which you can
-change/reduce it using the following in the agent.properties file:
+change/reduce it using the following in the agent.properties file, for example:
 
     host.reserved.mem.mb=800
 
@@ -482,7 +486,7 @@ Next, click `Launch Zone` which will perform following actions:
 Finally, confirm and enable the zone. Wait for the system VMs to come up, then
 you can proceed with your IaaS usage.
 
-You may try the following distro-provided cloud-init enabled arm64 qcow2 templates:
+You may try the following distro-provided cloud-init enabled ARM64 qcow2 templates:
 
 - Ubuntu 24.04: https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-arm64.img
 - Ubuntu 22.04: https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-arm64.img
