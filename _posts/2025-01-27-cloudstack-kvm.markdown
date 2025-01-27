@@ -7,10 +7,10 @@ redirect_from: "/logs/cloudstack-kvm/"
 ---
 
 This is a build your own IaaS cloud guide on setting up a Apache CloudStack
-based cloud on a single Ubuntu 20.04/22.04 (LTS) host that is also used
+based cloud on a single Ubuntu 22.04/24.04 (LTS) host that is also used
 as a KVM host.
 
-Note: this has been updated against ACS 4.19 release. This how-to post may get outdated
+Note: this has been updated against ACS 4.20 release. This how-to post may get outdated
 in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/en/latest/installguide) and/or
 [read the latest docs on KVM host
 installation](http://docs.cloudstack.apache.org/en/latest/installguide/hypervisor/kvm.html).
@@ -29,8 +29,8 @@ installation](http://docs.cloudstack.apache.org/en/latest/installguide/hyperviso
 
 # Getting Started
 
-First install Ubuntu 20.04/22.04/24.04 LTS on your x86_64 system that has at
-least 8GB RAM (prerably 16GB or more) with Intel VT-X or AMD-V enabled. Ensure
+First install Ubuntu 22.04/24.04 LTS on your x86_64 system that has at
+least 8GB RAM (prerably 16GB RAM or more) with Intel VT-X or AMD-V enabled. Ensure
 that the `universe` repository is enabled in `/etc/apt/sources.list`.
 
 Install basic packages:
@@ -57,7 +57,7 @@ be used for all these networks. Install bridge utilities:
 This guide assumes that you're in a 192.168.1.0/24 network which is a typical
 RFC1918 private network.
 
-### Ubuntu 20.04/22.04
+### Ubuntu 22.04/24.04
 
 Starting Ubuntu bionic, admins can use `netplan` to configure networking. The
 default installation creates a file at `/etc/netplan/50-cloud-init.yaml` that
@@ -87,6 +87,8 @@ your network and interface/name specific changes:
              stp: false
              forward-delay: 0
 
+Note: Please replace `eno1` above with the name of the physical NIC device on your host.
+
 Note: If you want to use VXLAN based traffic isolation, make sure to increase the MTU setting of the physical nics by `50 bytes` (because VXLAN header size is 50 bytes). For example:
 
 ```
@@ -109,13 +111,15 @@ Save the file and apply network config, finally reboot:
 
 # Repo Setup
 
-For Ubuntu 22.04 and onwards run this to setup the CloudStack repository:
+For Ubuntu 22.04, 24.04 and onwards run this to setup the CloudStack repository:
 
     mkdir -p /etc/apt/keyrings
     wget -O- http://packages.shapeblue.com/release.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/cloudstack.gpg > /dev/null
 
-    echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.19 / > /etc/apt/sources.list.d/cloudstack.list
+    echo deb [signed-by=/etc/apt/keyrings/cloudstack.gpg] http://packages.shapeblue.com/cloudstack/upstream/debian/4.20 / > /etc/apt/sources.list.d/cloudstack.list
     apt-get update -y
+
+This should be run on all hosts where CloudStack software packages (management server, usage server, agent etc) needs to be installed.
 
 # Management Server Setup
 
@@ -144,7 +148,7 @@ in mysql server's `/etc/mysql/mysql.conf.d/mysqld.cnf`:
 Restart MySQL server and setup database:
 
     systemctl restart mysql
-    cloudstack-setup-databases cloud:cloud@localhost --deploy-as=root:<root password, default blank> -i <cloudbr0 IP here>
+    cloudstack-setup-databases cloud:cloud@localhost --deploy-as=root:<root password, or leave default blank if MySQL server has no root password> -i <cloudbr0 IP here>
 
 # Storage Setup
 
@@ -193,7 +197,7 @@ may not be supported, we can get the old behaviour as follows:
     systemctl restart libvirtd
 
 Configure libvirt to connect to libvirtd and not to per-driver daemons, especially important on newer distros
-such as EL9 and Ubuntu 24.04 by edit ``/etc/libvirt/libvirt.conf`` and add the following:
+such as EL9 and Ubuntu 24.04 by editing the ``/etc/libvirt/libvirt.conf`` and add the following:
 
       remote_mode="legacy"
       
