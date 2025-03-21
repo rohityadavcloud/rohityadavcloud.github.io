@@ -6,9 +6,11 @@ title: Apache CloudStack on x86_64 with Ubuntu and KVM - Install Guide
 redirect_from: "/logs/cloudstack-kvm/"
 ---
 
-This is a build your own IaaS cloud guide on setting up a Apache CloudStack
-based cloud on a single Ubuntu 22.04/24.04 (LTS) host that is also used
-as a KVM host.
+This is a build your own IaaS private cloud guide using Apache CloudStack
+and Ubuntu 22.04/24.04 (LTS) with KVM.
+
+If you're new to Apache CloudStack, here an introductory video you can watch:
+[CloudStack 101: The Best Way to Build Your Private Cloud](https://www.youtube.com/watch?v=pASzZR57V_8)
 
 Note: this has been updated against ACS 4.20 release. This how-to post may get outdated
 in future, so please [follow the latest docs](http://docs.cloudstack.apache.org/en/latest/installguide) and/or
