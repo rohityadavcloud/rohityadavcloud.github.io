@@ -284,8 +284,8 @@ and log in using the default credentials - username `admin` and password
 
 # Launch Cloud
 
-The following is an example of how you can setup an advanced zone in the
-192.168.1.0/24 network.
+The following is an example of how you can setup an advanced zone (without security groups)
+in a typical (home/private) 192.168.1.0/24 network.
 
 ### Setup Zone
 
