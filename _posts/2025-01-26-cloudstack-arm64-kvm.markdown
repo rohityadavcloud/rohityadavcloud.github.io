@@ -6,7 +6,7 @@ title: Apache CloudStack on ARM64 with Ubuntu and KVM - Install Guide
 redirect_from: "/blog/cloudstack-rpi4-kvm/"
 ---
 
-    Originally posted here: https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm/
+    Old post: https://www.shapeblue.com/apache-cloudstack-on-raspberrypi4-with-kvm/
 
 Last updated: 26 January 2025 for ACS 4.20.0.0
 
