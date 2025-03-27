@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-<a href="/assets/avatar.gif"><img align="left" src="/assets/avatar.jpg" style="max-width:320px; margin-right:20px"/></a>
+<a href="/assets/avatar.gif"><img align="left" src="/assets/1681F464-4D1B-4639-8154-A29908BC5F21.png" style="max-width:320px; margin-right:20px"/></a>
 [Namaste](http://en.wikipedia.org/wiki/Namaste)! I'm Rohit Yadav, VP Engineering at
 [ShapeBlue](https://www.shapeblue.com/about/).
 
