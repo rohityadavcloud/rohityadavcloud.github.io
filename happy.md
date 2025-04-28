@@ -9,12 +9,10 @@ title: Happy
 
 This website is dedicated to my beloved kitten 'Happy' 🐱.
 
-The goal of this website is to promote cats and kittens [adoption](/adopt) in
+The goal of this website is to promote cats and kittens adoption in
 India starting with the Delhi, Gurgaon, and the NCR region. The website attempts
 to make it easier for people to discover and connect with communities who are
-trying to get kittens and cats adopted. The website has a short collection of
-articles on cats and kitten [care](/care), as well as a list of local
-[recommendations](/recommendations).
+trying to get kittens and cats adopted.
 
 ### Who was Happy?
 
