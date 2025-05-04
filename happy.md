@@ -7,12 +7,7 @@ title: Happy
   <img src="/images/happy/napping.jpg" class="img-thumbnail img-fluid rounded" style="margin-right: 10px" alt="...">
 </a>
 
-This website is dedicated to my beloved kitten 'Happy' 🐱.
-
-The goal of this website is to promote cats and kittens adoption in
-India starting with the Delhi, Gurgaon, and the NCR region. The website attempts
-to make it easier for people to discover and connect with communities who are
-trying to get kittens and cats adopted.
+This page is dedicated to my beloved kitten 'Happy' 🐱.
 
 ### Who was Happy?
 
@@ -41,9 +36,8 @@ memories for us to cherish him for the rest of our lives. He was very loyal,
 loving, playful, calm and docile. He will be missed 😿.
 
 During the final days with Happy, I was unaware about feline first-aid and
-education that I always imagine could have helped. Happy and his final days are
-a major reason for this website. At the end of this page you will find a tribute
-video - *Remembering Happy*. Thank you for reading."
+education that I always imagine could have helped. At the end of this page you
+will find a tribute video - *Remembering Happy*. Thank you for reading."
 
 -- Rohit Yadav
 <br/>
