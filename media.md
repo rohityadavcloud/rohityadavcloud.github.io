@@ -7,6 +7,7 @@ permalink: /media/
 
 Collection of interviews and media engagements:
 
+- [Inside ShapeBlue: Rohit Yadav, VP Engineering](https://www.youtube.com/watch?v=iWxORviQcOE)
 - [Apache CloudStack PMC Member - Meet the Community Series - Rohit Yadav](https://www.youtube.com/watch?v=3czJ16h0Tto)
 - [GTwGT\#82 - Exploring Alternative Hypervisors with Apache CloudStack](https://www.youtube.com/watch?v=WR2wKmgonDY)
 - [CCC 2023 Insights - Rohit Yadav](https://youtu.be/GUa6gyUTwCo?si=5GcF2j6b9Dxso26A)
