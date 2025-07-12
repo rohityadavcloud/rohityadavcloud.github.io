@@ -5,6 +5,7 @@ tagline:
 permalink: /talks/
 ---
 
+[CloudStack GPU Integration](/files/talks/csiug25-cloudstack-gpu-integration.pdf) [(Video)](), CloudStack India User Group Meetup, Greater Noida, 11 July, 2025
 
 [What's New in Apache CloudStack](/files/talks/ccc24-whats-new-in-cloudstack.pdf) [(Video)](https://www.youtube.com/watch?v=hucHVixAyPg), CCC Madrid 2024, 21 November, 2024
 
