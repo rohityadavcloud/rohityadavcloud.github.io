@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Blog
-redirect_from: "/blog/"
 ---
 
 <table class="table table-hover">
