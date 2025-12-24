@@ -5,7 +5,7 @@ tagline:
 permalink: /talks/
 ---
 
-[Webinar: Bulding Open GPU Cloud with Apache CloudStack](https://youtu.be/aYGgUpKth7I?si=MRlxrXmrn-uAHAE-)
+[Webinar: Bulding Open GPU Cloud with Apache CloudStack](https://youtu.be/aYGgUpKth7I?si=MRlxrXmrn-uAHAE-), 10 October, 2025
 
 [CloudStack GPU Integration](/files/talks/csiug25-cloudstack-gpu-integration.pdf) [(Video)](https://www.youtube.com/watch?v=ly1dmZqpaJw), CloudStack India User Group Meetup, Greater Noida, 11 July, 2025
 
