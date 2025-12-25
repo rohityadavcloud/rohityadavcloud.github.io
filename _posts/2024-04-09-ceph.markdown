@@ -3,7 +3,7 @@ layout: post
 category: cloudstack
 highlight: primary
 title: Ceph Storage with CloudStack on Ubuntu/KVM
-redirect_to: "https://onprem.in/guide/ceph/"
+redirect_to: "https://scaleninja.com/guides/ceph/"
 ---
 
-Redirect to https://onprem.in/guide/ceph/
+Redirect to https://scaleninja.com/guides/ceph/
